@@ -22,8 +22,7 @@ A final consideration is that the Robin Hood approach is commonly used in many a
 
 ### Catch-only methods with supplementary information
 
-Vasconcellos, M. and K. Cochrane (2005).
-Overview of world status of data-limited fisheries: inferences from landing statistics. In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 1–20. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.
+**Vasconcellos, M. and K. Cochrane (2005). Overview of world status of data-limited fisheries: inferences from landing statistics. In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 1–20. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.**
 
 Abstract: Data-limited fisheries are here considered to be fisheries lacking sufficient reliable biological information to infer the exploitation status of the targeted stocks. Considering species-specific catch data as the common minimum available data for assessing the status of a stock, in this paper we use the taxonomic breakdown of the reported landings statistics to FAO to make an approximate inference of data limitation of fisheries by region, country, and taxonomic groups. The paper also explores the possibility of extracting meaningful biological information from fisheries landings by applying a Bayesian approach to two selected fisheries. The contribution of data-poor fisheries to the world landings from marine capture fisheries is relatively low, but increasing (from 20 to 30% of world landings in the last 50 years). However, data limitation can be a substantial problem at the regional and country level, especially in areas with high species diversity, small stock sizes, and where fisheries play an important role for food security. Preliminary modeling results indicate that catch data, when combined with prior information about the dynamics of similar species/stocks and fisheries, could be useful for informing fisheries management in data-limited situations
 
@@ -58,9 +57,7 @@ Method of operation:
 •	The model predicts catches based on a combination of a biomass dynamics model and a harvest rate dynamics model. The biomass dynamics model follows the Schaefer surplus production model and the harvest rate dynamics model follows a logistic model.
 •	The Bayesian algorithm sampling importance resampling is used to fit the model to the catch time series by estimating four model parameters: r, K, a and x.
 
-Walters, C.J., Martell, S.J.D. and J. Korman (2006).
-
-A stochastic approach to stock reduction analysis. Can. J. Fish. Aquat. Sci 63: 212-223.
+**Walters, C.J., Martell, S.J.D. and J. Korman (2006). A stochastic approach to stock reduction analysis. Can. J. Fish. Aquat. Sci 63: 212-223.**
 
 Abstract: Stock reduction analysis (SRA) can complement more detailed assessment methods by using long-term historical catches to estimate recruitment rates needed to have produced those catches, yet still end up with stock sizes near those estimated by the detailed methods. A longer historical perspective can also add information to the estimation of reference points such as unfished biomass (B0) or target biomass (BMSY). Deterministic SRA models provide a single stock size trajectory that is vanishingly unlikely to have actually occurred, while stochastic SRA attempts to provide probability distributions for stock size over time under alternative hypotheses about unfished recruitment rates and about variability around assumed stock–recruitment relationships. These distributions can be generated with age-structured population models by doing large numbers of Monte Carlo simulation trials and retaining those sample trials for which the stock would not have been driven to extinction by historical catches. By resampling from these trials using likelihood weights (sampling – importance resampling method), it is possible to move into fully Bayesian, state–space assessment modeling through a series of straightforward steps and to provide understandable visualization of how much the data help to reduce uncertainty about historical fishing impacts and stock status.
 
@@ -68,10 +65,12 @@ Data / information requirements:
 •	Time series of total catch data – ideally going back close to virgin biomass – preferably as numbers, if not, numbers can be estimated from total weight and mean individual weight.
 •	Estimate of natural mortality M
 •	Estimate of stock-recruit steepness at low stock size (index, cpue, tagging, etc.)
+
 Assumptions:
 •	Known constant M. 
 •	Known stock recruit steepness at low stock size and a Beverton-Holt recruitment relationship
 •	Fishery selection
+
 Outputs expected:
 •	Estimates of harvest ratio (catch/vulnerable biomass)
 •	Probability distribution of current depletion level relative to Virgin Biomass
@@ -113,15 +112,14 @@ Method of operation:
 Testing:
 	DCAC was used on two stocks (widow rockfish off the west coast of the United States and redfish in the Gulf of Maine and Georges Bank) where full age-structured stock assessments had been carried out. The DCAC results were compared to the independently derived estimates of MSY from the stock assessments.
 	The DCAC performed well in both cases. In practice the DCAC is often near MSY.
+	
 Caveats:
 	Works better for longer time-series (e.g. a decade or more).
 	Should not be used if M > 0.2 year-1.
 	In data-poor circumstances it can be difficult to estimate the relative depletion over the duration of the catch series.
 	DCAC is not suitable for specifying catches in a stock-rebuilding plan.
 
-Dick, E.J. and A.D. MacCall (2011).
-
-Depletion-based stock reduction analysis: a catch-based method for determining sustainable yields for data-poor fish stocks. Fish. Res. 110:331-341.
+**Dick, E.J. and A.D. MacCall (2011). Depletion-based stock reduction analysis: a catch-based method for determining sustainable yields for data-poor fish stocks. Fish. Res. 110:331-341.**
 
 Abstract: We describe a method for determining reasonable yield and management reference points for data-poor fisheries in cases where approximate catches are known from the beginning of exploitation. The method, called Depletion-Based Stock Reduction Analysis (DB-SRA), merges stochastic Stock-Reduction Analysis with Depletion-Corrected Average Catch. Data requirements include estimates of historical annual catches, approximate natural mortality rate and age at maturity. A production function is specified based on general fishery knowledge of the relative location of maximum productivity and the relationship of MSY fishing rate to the natural mortality rate. This leaves unfished biomass as the only unknown parameter, which can be estimated given a designated relative depletion level near the end of the time series. The method produces probability distributions of management reference points concerning yield and biomass. Uncertainties in natural mortality, stock dynamics, optimal harvest rates, and recent stock status are incorporated using Monte Carlo exploration. Comparison of model outputs to data-rich stock assessments suggests that the method is effective for estimating sustainable yields for data-poor stocks.
 
@@ -133,9 +131,11 @@ Data/information requirements:
 	Relative biomass at maximum latent productivity BMSY/K (assumed 0.4 in DCAC above).
 	Relative depletion level in a recent year (∆ for DCAC = 1-depletion).
 	Age at maturity.
+	
 Assumptions:
 	Depletion-based stock reduction analysis (DB-SRA) is implemented using a delay-difference production model. 
 	This implementation uses a hybrid Schaefer-PTF model for the latent production function; this function has the form of a Pella-Tomlinson-Fletcher (PTF) production model for abundances above a join point and the form of a Schaefer model below the join point. The value of the join point is chosen to give a good approximation to the Beverton-Holt stock recruit model.
+	
 Outputs expected:
 A set of plausible trajectories giving probability distributions of:
 	Estimated biomass
@@ -143,6 +143,7 @@ A set of plausible trajectories giving probability distributions of:
 	MSY
 	BMSY
 	CFMSY or OFL (overfishing limit)
+	
 Method of operation:
 	A Monte Carlo approach is used to draw input parameters (natural mortality, FMSY/M, relative biomass at latent productivity and the relative depletion level) from prior probability distributions. Given the time series of historical catch, the delay-difference model is applied sequentially over the years of the time series, and the value of K (unfished biomass) is determined by a numerical solution that gives the recent relative depletion level. This is run 10,000 times to produce the probability distributions above. 
 Testing:
@@ -151,15 +152,14 @@ Testing:
 	DB-SRA estimates of MSY are most consistent with data-rich results (compared to the estimates of CFMSY and K).
 	The sensitivity of the model to the relative depletion level was tested by applying the model to the 31 assessed species at nine different depletion levels. 
 	Estimates of MSY, CFMSY and K based on low relative depletion levels tended to minimise the absolute relative error between the DB-SRA median and the assessment MPD.
+	
 Caveats:
 	Well suited to cases with nearly monotonic declines in abundance.
 	Gives implausibly high estimates of MSY if the stock is close to its unfished biomass in recent years. DB-SRA gives better estimates if falsely given a much lower value.
 	Requires knowledge of the entire history of catches, which may be poorly documented for early years.
 	Uncertainty in historical catches is not addressed adequately.
 
-Cope, J.M. (2013).
-
-Implementing a statistical catch-at-age model (Stock Synthesis) as a tool for deriving overfishing limits in data-limited situations. Fish. Res. 142: 3-14.
+**Cope, J.M. (2013). Implementing a statistical catch-at-age model (Stock Synthesis) as a tool for deriving overfishing limits in data-limited situations. Fish. Res. 142: 3-14.**
 
 Abstract: Stock Synthesis (SS) is a likelihood-based statistical catch-at-age modeling environment allowing multiple data sources to be used to characterize population dynamics through time. While it is typically applied in data-rich circumstances, its suitability in data-limited situations is investigated in this work. Two “Simple Stock Synthesis” (SSS) approaches are outlined, each developed to mimic the Depletion-Based Stock Reduction Analysis (DB-SRA) estimation of overfishing limits (OFLs) currently applied to data-limited U.S. west coast groundfish species. SSS-MC uses Monte Carlo draws of natural mortality, steepness, and stock depletion and estimates initial recruitment, while SSS-MCMC estimates natural mortality, steepness, and initial recruitment while fitting to an artificial abundance survey representing stock depletion with an error distribution equivalent to the stock depletion prior used in DB-SRA. These approaches are applied to 45 species of unassessed groundfishes in the Pacific Fishery Management Council Groundfish Fishery Management Plan, and the OFL estimates are compared to corresponding DB-SRA estimates. Despite model structure and parameter specification differences, SSS led to results comparable to DB-SRA over a wide range of species and life histories. SSS models with sex-specific life history parameters and growth variability are also presented as examples of how the inherent flexibility of SS can be used to account for more uncertainty in derived quantities. SSS-MCMC, while exhibiting statistically undesirable traits due to the inclusion of the artificial survey, readily includes data-informed abundance surveys into an assessment framework consistent with more complex, data-informed assessments. Establishment of viable data-limited approaches in SS is a convenient first steps in “building-up” stock assessments towards fuller implementation in SS when additional data become available, while also providing a way to inform management in data-limited situations.
 
@@ -169,7 +169,8 @@ Data/information requirements:
 	Growth parameters (possibly by sex)
 	Weight at length
 	Natural mortality (M)
-Assumptions
+	
+Assumptions:
 	Prior on stock-recruit steepness set to truncated beta distribution on 0.25-0.99.
 Outputs expected:
 	An estimate of the over-fishing limit for the stock which can be compared with that from DB-SRA.
@@ -182,9 +183,7 @@ Testing:
 Caveats:
 	The MCMC method of assessing uncertainty in model fit should mimic priors for parameters about which the data is uninformative – this doesn’t happen in all the stocks, in particular the posterior distribution of depletion is influenced by the prior for R0, and so the authors acknowledge that the MCMC fits need further investigation. 
 
-Martell, S. and R. Froese (2013).
-
-A simple method for estimating MSY from catch and resilience. Fish Fish. 14: 504-514.
+**Martell, S. and R. Froese (2013). A simple method for estimating MSY from catch and resilience. Fish Fish. 14: 504-514.**
 
 Abstract: The Law of the Sea requires that fish stocks are maintained at levels that can produce the maximum sustainable yield (MSY). However, for most fish stocks, no estimates of MSY are currently available. Here, we present a new method for estimating MSY from catch data, resilience of the respective species, and simple assumptions about relative stock sizes at the first and final year of the catch data time series. We compare our results with 146 MSY estimates derived from full stock assessments and find excellent agreement. We present principles for fisheries management of data-poor stocks, based only on information about catches and MSY.
 
@@ -224,9 +223,7 @@ Caveats:
 	The Catch-MSY method should not be applied to very lightly exploited fish stocks as the time series of catches will not contain sufficient information about productivity.
 	 It will be difficult to define the upper bound on k in a developing fishery or a fishery that has a continuous increase in catch as the maximum potential has yet to be realised.
 
-Thorson, J.T., Minto, C., Minte-Vera, C.V., Kleisner, K.M. and C. Longo (2013).
-
-A new role for effort dynamics in the theory of harvested populations and data-poor stock assessment. Can. J. Fish. Aquat. Sci. 70: 1829-1844.
+**Thorson, J.T., Minto, C., Minte-Vera, C.V., Kleisner, K.M. and C. Longo (2013). A new role for effort dynamics in the theory of harvested populations and data-poor stock assessment. Can. J. Fish. Aquat. Sci. 70: 1829-1844.**
 
 Abstract: Research shows that population status can be predicted using catch data, but there is little justification for why these predictions work or how they account for changes in fisheries management. We demonstrate that biomass can be reconstructed from catch data whenever fishing mortality follows predictable dynamics over time (called “effort dynamics”), and we develop a state-space catch only model (SSCOM) for this purpose. We use theoretical arguments and simulation modeling to demonstrate that SSCOM can, in some cases, estimate population status from catch data. Next, we use meta-analysis to estimate effort dynamics for US West Coast groundfishes before and after fisheries management changes in the mid-1990s. We apply the SSCOM using meta-analytic results to data for eight assessed species and compare results with stock assessment and data-poor methods. Results indicate general agreement among all three methods. We conclude that effort dynamics provides a theoretical basis for using catch data to reconstruct biomass and has potential for conducting data-poor assessments. However, we still recommend that index and compositional data be collected to allow application of data-rich methods.
 
@@ -263,9 +260,7 @@ Caveats:
 	Data sets that egregiously violate the model assumptions of either Schaefer biomass dynamics or the effort-dynamics model (e.g. bycatch species, highly mixed fisheries and subsistence-recreational fisheries) will be poorly reconstructed.
 	The performance of the model when sequentially applied in a control-rule management scenario is unknown.
 
-Zhou, S. and R. Sharma (2013).
-
-Stock assessment of two neritic tuna species in Indian Ocean, kawakawa and longtail tuna using catch-based stock reduction methods. IOTC-2013-WPNT03-25.
+**Zhou, S. and R. Sharma (2013). Stock assessment of two neritic tuna species in Indian Ocean, kawakawa and longtail tuna using catch-based stock reduction methods. IOTC-2013-WPNT03-25.**
 
 Abstract: We conduct stock assessments for two Indian Ocean neritic tuna species, Kawakawa and Longtail. We used a newly developed posterior-focused catch-based assessment method. The method is based on a classical biomass dynamics model, requires only catch history but not fishing effort or CPUE. Known population growth rate will improve the assessment result. In this paper, we assume that both species in the whole Indian Ocean belong to a single stock and the population size in 1950 is the virgin biomass equal to their carrying capacities. We use recently updated catch data in the analysis.
 The preliminary results show that for Kawakawa the median virgin biomass is about 358-408 thousand tonnes depending on the upper depletion level assumed in 2011. The combination of such carrying capacity and growth rate can support a maximum sustainable yield (MSY) of 128-151 thousand tonnes. This means that catch levels in recent year may have exceeded MSY.
@@ -305,9 +300,7 @@ Ability to project forward/forecast:
 
 ### Catch-only methods with supplementary data and information
 
-Thorson. J.T. and J.M. Cope (2015).
-
-Catch curve stock-reduction analysis: An alternative solution to the catch equations. Fish. Res. 171: 33-41.
+**Thorson. J.T. and J.M. Cope (2015). Catch curve stock-reduction analysis: An alternative solution to the catch equations. Fish. Res. 171: 33-41.**
 
 Abstract: Legislative changes in the United States and elsewhere now require scientific advice on catch limits for data-poor fisheries. The family of stock reduction analysis (SRA) models is widely used to calculate sustainable harvest levels given a time series of harvest data. SRA works by solving the catch equation given an assumed value for spawning biomass relative to unfished levels in the final (or recent) year, and resulting estimates of recent fishing mortality are biased when this assumed value is mis-specified. We therefore propose to replace this assumption when estimating stock status by using compositional data in recent years to estimate a catch curve and hence estimating fishing mortality in those years. We compare this new “catch-curve stock reduction analysis” (CC-SRA) with an SRA or catch curve using simulated data for slow or fast life histories and various magnitudes of recruitment variability. Results confirm that the SRA yields biased estimates of current fishing mortality given mis-specified information about recent spawning biomass, and that the catch curve is biased due to changes in fishing mortality over time. CC-SRA, by contrast, is approximately unbiased for low or moderate recruitment variability, and less biased than other methods given high recruitment variability. We therefore recommend CC-SRA as a data-poor assessment method that incorporates compositional data collection in recent years, and suggest future management strategy evaluation given a data-poor control rule.
 
@@ -349,9 +342,9 @@ Testing:
 
 	Life-history, per-recruit and length-based approaches
 
-Froese, R. (2004).
-Keep it simple: three indicators to deal with overfishing. Fish and Fish. 5:86–91.
-Abstract: This article is a Ghoti with the following abstract: 
+**Froese, R. (2004). Keep it simple: three indicators to deal with overfishing. Fish and Fish. 5:86–91.**
+
+Abstract: 
 Three simple fisheries indicators are presented: (i) percentage of mature fish in catch, with 100% as target; (ii) percent of specimens with optimum length in catch, with 100% as target; and (iii) percentage of ‘mega-spawners‘ in catch, with 0% as target, and 30–40% as representative of reasonable stock structure if no upper size limit exists. Application of these indicators to stocks of Gadus morhua, Sardinella aurita and Epinephelus aeneus demonstrate their usefulness. It is argued that such simple indicators have the potential to allow more stakeholders such as fishers, fish dealers, supermarket managers, consumers and politicians to participate in fisheries management and eventually hold and reverse the global pattern of convenience overfishing, which is defined here as deliberate overfishing sanctioned by official bodies who find it more convenient to risk eventual collapse of fish stocks than to risk social and political conflicts.
 
 Data/information requirements:
@@ -387,26 +380,24 @@ Testing:
 Caveats:
 	Selection of parameter values used for length at maturity, growth and natural mortality affects the absolute percentages of the indicators, but not their trends.
 
-O’Farrell, M.R. and L.W. Botsford (2005).
-
-Estimation of change in lifetime egg production from length frequency data. Can. J. Fish. Aquat. Sci. 62: 1626–1639.
+**O’Farrell, M.R. and L.W. Botsford (2005). Estimation of change in lifetime egg production from length frequency data. Can. J. Fish. Aquat. Sci. 62: 1626–1639.**
 
 Abstract: The percentage of unfished lifetime egg production (LEP) has been used to represent persistence in precautionary fisheries management, but estimation of this reference point requires substantial data and it is sensitive to errors in natural mortality rate. We present an estimation method that quantifies the change in LEP by a fishery when only length frequency samples, one early in the fishery and one recent, are available for assessment. Using simulated length frequency data with known parameter values, estimates of LEP had undetectable bias when challenged with random sampling variability and sample sizes as low as 100. Simulation of artificial data with (i) growth parameters that differed from the estimation model, (ii) transient size structures, and (iii) recruitment variability led to predictably biased estimates. In a direct comparison with the spawning potential ratio reference point, fractional LEP was much less sensitive to errors in natural mortality rate. Application of this method to length frequency data for blue rockfish (Sebastes mystinus) for years between 1980 and 2003 suggests that during this interval, LEP has been reduced to levels of concern.
 
 Data/information requirements:
-	Two size distributions from the catch – one from early in the fishery (before major depletion) and one recent (after fishery development)
-	An age-length relationship (e.g., von Bertalanffy)
-	A length-egg production (or biomass) relationship. If not available, a length-weight relationship may be substituted, as weight can be correlated with fecundity
-	An estimate of M
-	Size boundaries for the selectivity of F (without independent knowledge of the selectivity ogive, the size ranges over which F operates can be arbitrarily chosen). Here lc (length at first capture) and lr (length at full recruitment) were chosen a priori based on characteristics of the catch data.
+Two size distributions from the catch – one from early in the fishery (before major depletion) and one recent (after fishery development)
+An age-length relationship (e.g., von Bertalanffy)
+A length-egg production (or biomass) relationship. If not available, a length-weight relationship may be substituted, as weight can be correlated with fecundity
+An estimate of M
+Size boundaries for the selectivity of F (without independent knowledge of the selectivity ogive, the size ranges over which F operates can be arbitrarily chosen). Here lc (length at first capture) and lr (length at full recruitment) were chosen a priori based on characteristics of the catch data.
   
 Assumptions:
-	Constant recruitment to the earliest age-class (age 0).
-	Egg production (fecundity) proportional to spawning stock biomass
-	Assumed that all individuals equal to or larger than the length at 50% maturity (l50) are fecund and that fecundity was an allometric function of length.
-	Size range of the F assumed
-	Fishery selectivity assumed to be asymptotic - F increased with size until a length at which fish were fully recruited to the gear.
-	Estimation model assumes an equilibrium size structure
+Constant recruitment to the earliest age-class (age 0).
+Egg production (fecundity) proportional to spawning stock biomass
+Assumed that all individuals equal to or larger than the length at 50% maturity (l50) are fecund and that fecundity was an allometric function of length.
+Size range of the F assumed
+Fishery selectivity assumed to be asymptotic - F increased with size until a length at which fish were fully recruited to the gear.
+Estimation model assumes an equilibrium size structure
   
 Outputs expected:
 	Estimates of fractional change in LEP (FLEP) by applying a size-structured assessment method between two (time interval) size frequency distributions. The FLEP is able to recognize a shift in size structure and resulting change in LEP, thus identifying when a fishery is fishing down the accumulated, old-growth biomass of a stock.
@@ -428,9 +419,7 @@ Testing:
 Caveats:
 	The assumption that egg production is proportional to spawning stock biomass may not be correct. Fecundity may not increase with length at the same rate as biomass increase with length. Maternal age can be a better predictor of larval production than maternal size. A reduction in the number of older females owing to fishing would result a greater loss of reproductive capacity than would be expected by the equivalent loss in spawning stock biomass. 
 
-Gedamke, T. and J.M. Hoenig (2006).
-
-Estimating mortality from mean length data in non-equilibrium situations, with application to the assessment of goosefish. The American Fisheries Society 135:476–487.
+**Gedamke, T. and J.M. Hoenig (2006). Estimating mortality from mean length data in non-equilibrium situations, with application to the assessment of goosefish. The American Fisheries Society 135:476–487.**
 
 Abstract: The Beverton–Holt length-based mortality estimator has received widespread use primarily due to its applicability in data-limited situations. The mean length of animals that are fully vulnerable to the sampling gear can be used to estimate total mortality from basic growth parameters and a known length at first capture. This method requires equilibrium conditions because the mean length of a population will change only gradually after a change in mortality. In this study, we derive the transitional behavior of the mean length statistic for use in nonequilibrium conditions. We investigate conditions affecting the reliability of the Beverton–Holt results and then develop a new procedure that allows a series of mortality rates to be estimated from mean length data representing nonequilibrium conditions in multiple years. We then examine an assessment of goosefish Lophius americanus that was criticized for its use of the Beverton–Holt estimator under nonequilibrium conditions. Using data from the 1963–2002 National Marine Fisheries Service annual fall groundfish surveys off the northeastern United States and assuming a single change in total mortality, we used the maximum likelihood method to estimate that the total mortality of goosefish in the southern assessment region increased from 0.31 to 0.60 per year in 1977. Estimates of the new mortality rate made three or more years after the change were relatively stable and only ranged from 0.55 to 0.71 per year, while estimates from the standard Beverton–Holt approach ranged from 0.37 to 1.1 per year. The results for goosefish in the northern assessment region showed that total mortality changed from 0.14 to 0.29 per year in 1978 and then to 0.55 per year in 1987. The new nonequilibrium estimator allows a change in mortality to be characterized reliably several years faster than would occur with the use of the Beverton–Holt estimator.
 
@@ -472,9 +461,7 @@ Caveats:
 	If stock not in equilibrium at the beginning of a time series, a well-defined shape of the mean length over time trajectory is required
 	Variability of length measurements ignored
 
-Cope, J. M. and A.E. Punt (2009).
-
-Length‐based reference points for data‐limited situations: ap-plications and restrictions. Marine and Coastal Fisheries: Dynamics, Management, and Eco-system Science 1: 169–186.
+**Cope, J. M. and A.E. Punt (2009). Length‐based reference points for data‐limited situations: ap-plications and restrictions. Marine and Coastal Fisheries: Dynamics, Management, and Eco-system Science 1: 169–186.**
 
 Abstract: Current fisheries management policies generally require an assessment of stock status, which is a difficult task when population and fisheries data are limited. Three simple metrics based on catch length compositions (i.e., that reflect exclusive take of mature individuals, Pmat; that consist primarily of fish of optimal size, the size at which the highest yield from a cohort occurs, Popt; and that demonstrate the conservation of large, mature individuals, Pmega) can be used to monitor population status relative to exploitation. The metrics (collectively referred to as Px) were intended to avoid growth and recruitment overfishing, but there was no quantitative linkage to stock status and calculation of future sustainable catches. We attempt to make this connection by exploring the relationship of Px measures to fishing mortality and spawning biomass (SB). The relationships are compared specifically to the current target reference point (0.4 times the virgin, or unfished, SB [SB0]) and limit reference point (0.25SB0) used for the U.S. West Coast groundfish fishery by using simulations based on a deterministic age-structured population dynamics model. Sensitivity to fishery selectivity, life history traits, and recruitment compensation (steepness) is explored. Each Px measure showed a wide range of possible values depending on fishery selectivity, steepness, and the ratio of the length at maturity (Lmat) to the optimal fishing length (Lopt). Although the values of Px may be compatible with sustainable fishing, these values are not always sufficient to ensure stock protection from overfishing. Moreover, values for Px cannot be interpreted adequately without knowledge of the selectivity pattern. A new measure, Pobj (the sum of Pmat, Popt, and Pmega), is introduced to distinguish selectivity patterns and construct a decision tree for development of stock status indicators. Heuristic indicator values are presented to demonstrate the utility of this approach. Although several caveats remain, this approach builds on the recommendations of previous literature by giving further guidance related to interpreting catch length composition data under variable fishery conditions without collecting additional information. It also provides a link to developing harvest control rules that inform proactive fisheries management under data-limited conditions.
 
@@ -511,9 +498,7 @@ Caveats:
 	Responsiveness of Pmat, Popt and Pmega to population status change is unknown
 	In case of very low steepness of the stock recruitment curve (h < 0.3) the decision tree fails to identify a stock below a reference point
 
-Brooks, E.N., Powers, J.E. and E. Cortés (2010).
-
-Analytical reference points for age-structured models: application to data-poor fisheries. ICES Journal of Marine Science, 67:165-175.
+**Brooks, E.N., Powers, J.E. and E. Cortés (2010). Analytical reference points for age-structured models: application to data-poor fisheries. ICES Journal of Marine Science, 67:165-175.**
 Abstact: Analytical solutions for biological reference points are derived in terms of maximum lifetime reproductive rate. This rate can be calculated directly from biological parameters of maturity, fecundity, and natural mortality or a distribution for this rate can be derived from appropriate metadata. Minimal data needs and assumptions for determining stock status are discussed. The derivations lead to a re-parameterization of the common stock–recruit relationships, Beverton–Holt and Ricker, in terms of spawning potential ratio. Often, parameters in stock–recruit relationships are restricted by tight prior distributions or are fixed based on a hypothesized level of stock resilience. Fixing those parameters is equivalent to specifying the biological reference points. An ability to directly calculate reference points from biological data, or a meta-analysis, without need of a full assessment model or fisheries data, makes the method an attractive option for data-poor fisheries. The derivations reveal an explicit link between the biological characteristics of a species and appropriate management. Predicted stock status for a suite of shark species was compared with recent stock assessment results, and the method successfully identified whether each stock was overfished.
 
 Data/information requirements:
@@ -550,9 +535,7 @@ Caveats:
 	The derived values of SPRMER are deterministic but the biological parameters that go into it are expected to have variability associated with them.
 	The best scientific advice about the individual components of maturity, fecundity and survival can sometimes produce implausible values for steepness.
 
-Le Quesne, W.J.F. and S. Jennings (2012).
-
-Predicting species vulnerability with minimal data to support rapid risk assessment of fishing impacts on biodiversity. Journal of Applied Ecology, 49: 20-28.
+**Le Quesne, W.J.F. and S. Jennings (2012). Predicting species vulnerability with minimal data to support rapid risk assessment of fishing impacts on biodiversity. Journal of Applied Ecology, 49: 20-28.**
 
 Summary: 
 1. Large-bodied species are especially vulnerable to fishing in mixed fisheries. Their effective conservation requires predictions of sensitivity and exposure to fishing mortality, but such predictions are hard to make when the population dynamics of most of these species have not been described.
@@ -599,9 +582,7 @@ Caveats:
 Ability to project forward/forecast:
 	Used to establish reference points and compare to realised F, therefore not able to project forward.
 
-Hordyk, A., Ono, K., Sainsbury, K., Loneragen, N. and J. Prince (2015a).
-
-Some explorations of the life history ratios to describe length composition, spawning-per-recruit and the spawning potential ratio. ICES Journal of Marine Science, 72(1): 204-216.
+**Hordyk, A., Ono, K., Sainsbury, K., Loneragen, N. and J. Prince (2015a). Some explorations of the life history ratios to describe length composition, spawning-per-recruit and the spawning potential ratio. ICES Journal of Marine Science, 72(1): 204-216.**
 
 Abstract: Evaluating the status of data-poor fish stocks is often limited by incomplete knowledge of the basic life history parameters: the natural mortality rate (M), the von Bertalanffy growth parameters (L and k), and the length at maturity (Lm). A common approach to estimate these individual parameters has been to use the Beverton–Holt life history invariants, the ratios M/k and Lm/L, especially for estimating M. In this study, we assumed no knowledge of the individual parameters, and explored how the information on life history strategy contained in these ratios can be applied to assessing data-poor stocks. We developed analytical models to develop a relationship between M/k and the von Bertalanffy growth curve, and demonstrate the link between the life history ratios and yield- and spawning-per-recruit. We further developed the previously recognized relationship between M/k and yield- and spawning-per-recruit by using information on Lm/L, knife-edge selectivity (Lc/L), and the ratio of fishing to natural mortality (F/M), to demonstrate the link between an exploited stock’s expected length composition, and its spawning potential ratio (SPR), an internationally recognized measurement of stock status. Variation in length-at-age and logistic selectivity patterns were incorporated in the model to demonstrate how SPR can be calculated from the observed size composition of the catch; an advance which has potential as a cost-effective method for assessing data-poor stocks. A companion paper investigates the effects of deviations in the main assumptions of the model on the application of the analytical models developed in this study as a cost-effective method for stock assessment [Hordyk, A. R., Ono, K., Valencia, S., Loneragan, N. R., and Prince, J. D. this issue. A novel length based empirical estimation method of spawning potential ratio (SPR), and tests of its performance, for small-scale, data-poor fisheries. ICES Journal of Marine Science].
 
@@ -628,9 +609,7 @@ Caveats:
 	Knife-edged maturity assumed at a single length dependent on M⁄k and b.
 	If the knife-edged selectivity occurs at a longer length than maturity, high (effectively infinite) F values may optimise SPR.
 
-Kokkalis, A., Thygesen, U.H., Nielsen, N. and K.H. Andersen (2015).
-
-Limits to the reliability of size-based fishing status estimation for data-poor stocks. Fisheries Research, 171: 4-11.
+**Kokkalis, A., Thygesen, U.H., Nielsen, N. and K.H. Andersen (2015). Limits to the reliability of size-based fishing status estimation for data-poor stocks. Fisheries Research, 171: 4-11.**
 
 Abstract: For stocks which are considered “data-poor” no knowledge exist about growth, mortality or recruitment. The only available information is from catches. Here we examine the ability to assess the level of exploitation of a data-poor stock based only on information of the size of individuals in catches. The model is a formulation of the classic Beverton-Holt theory in terms of size where stock parameters describing growth, natural mortality, recruitment etc. are determined from life-history invariants. A simulation study was used to compare the reliability of assessments performed under different information availability scenarios, from data-limited, where none of the parameters are known beforehand, to different degrees of information availability cases where one or more parameters are known. If no parameters are known it is possible to correctly assess whether the fishing mortality is below Fmsy in more than 60% of the cases, and almost always correctly assess whether a stock is subject to overfishing. Adding information about age, i.e., assuming that growth rate and asymptotic size are known, does not improve the estimation. Only knowledge of the ratio between mortality and growth led to a considerable improvement in the assessment. Overall, the simulation study demonstrates that it may be possible to classify a data-poor stock as undergoing over- or under-fishing, while the exact status, i.e., how much the fishing mortality is above or below Fmsy, can only be assessed with a substantial uncertainty. Limitations of the approach are discussed.
 
@@ -662,9 +641,7 @@ Caveats:
 
 	Qualitative and semi-quantitative approaches
 
-Caddy, J.F. (2002).
-
-Limit reference points, traffic lights, and holistic approaches to fisheries management with minimal stock assessment input. Fish. Res. 56:133-137.
+**Caddy, J.F. (2002). Limit reference points, traffic lights, and holistic approaches to fisheries management with minimal stock assessment input. Fish. Res. 56:133-137.**
 
 Abstract: This is a viewpoint paper without an abstract, rather a short introduction: It is natural that scientists should follow the way concepts come to be used when they have had a hand in their development, and this applies in my case to the related ideas of limit reference points (LRPs) and the traffic light management system. One can never control where an idea leads to, but if there may be the danger of a methodology changing while retaining the original nomenclature, it seems worthwhile to point this out, and that is the purpose of the current note. It is suggested that adding bells and whistles to a simple methodology may postpone its practical implementation by stakeholders and fishery managers, which is urgently needed at the moment.
 
@@ -685,9 +662,7 @@ Method of operation:
 	A series of LRPs are used to judge the status of a fishery as represented by a series of traffic ‘lights’, which change from green to red as the LRP to its left is infringed. The number of red lights lit is accumulated, and dictates the severity of the management response in terms of either a quota or effort limitation, which remains in effect until some or all of the red lights turn green again. 
 	Applying characteristics of a fuzzy logic control system in allowing relatively smooth trajectories of exploitation.
 
-Froese, R. and K. Kesner-Reyes (2002).
-
-Impact of fishing on the abundance of marine species. ICES Document CM 2002/L: 12, 15 pp.
+**Froese, R. and K. Kesner-Reyes (2002). Impact of fishing on the abundance of marine species. ICES Document CM 2002/L: 12, 15 pp.**
 
 Abstract: The Census of Marine Life program aims to document the existence, distribution and abundance of marine organisms using all suitable data sources. In this study we analysed time series of catch data published by ICES and FAO in respect to trends in the resilience of species towards fishing. For this purpose we classified the fishing status of over 900 exploited species into undeveloped, developing, fully exploited, overfished, and collapsed or closed, where the sequence of the last three stages usually corresponds to a decline in species abundance.  In world fisheries the percentage of species being overfished within 10 years after start of full exploitation increased from 26% in the 1950ies to 35% in the 1980ies. In 1999 the status of 50% of the exploited species was overfished, collapsed or closed. The number of species with low or very low resilience to fishing has been increasing from 80 (26%) in 1950 to 155 (32%) in 1999. Of 24 species reaching full exploitation in 1998 or 1999 for the first time, 8 had low and 8 had very low resilience to fishing. Of 25 species that had sustained 30 or more years of full exploitation before 1989, 11 species reached overfished or collapsed status thereafter. An analysis of length-frequency studies of commercial landings showed that in most cases mean length was below length at first maturity. In the ICES area 46% of the species were overfished within 10 years after start of full exploitation and in 1999 the status of 60% of the species were overfished, collapsed or closed. We suggest an alternative management regime that would allow fish to spawn at least once before being caught. A census of marine life conducted in an exploited area will still largely be able to detect the evolutionary species composition, but will not be able to determine the evolutionary relative abundance of species and their respective roles in the ecosystem.
 
@@ -714,8 +689,8 @@ Caveats:
 	By definition, the percentage of undeveloped or developed stocks is zero in the final year of the time series (Kleisner and Pauly, 2011).
 	The stock-status plots do not take recovery into account (Kleisner and Pauly, 2011). Recovery is automatically classified as a ‘developing’ stock.
 
-Scandol, J. (2005).
-Use of quality control methods to monitor the status of fish stocks. In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 213–231. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.
+**Scandol, J. (2005). Use of quality control methods to monitor the status of fish stocks. In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 213–231. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.**
+
 Abstract: Many fisheries that are data-limited are also of low economic value. Therefore, not only are the fisheries data-limited, but there are limited human resources available for undertaking stock assessment. Qualitative methods such as “eyeballing” the data are then often used to assess such systems. Quantitative methods need to be developed that are objective, but less demanding than dynamic stock assessment models. In particular, simple methods that can signal trends in empirical stock-status indicators need to be explored. One such approach is the use of quality control methods such as Shewhart, moving-average, and CUSUM (cumulative sum) control charts. Originally designed for industrial quality control, these methods can be parameterized to detect transient or persistent causes with specific false-positive and false-negative error rates. These signals can be interpreted within a managerial context as trigger reference points.
 Results of a simulated study of yellowfin bream (Acanthopagrus australis) stocks from New South Wales (Australia) are presented. Empirical stock-status indicators including catch, catch per unit effort, mean age, mean length, recruitment fraction, total mortality, and fishery-independent surveys were processed using quality control methods. Performance of these indicators and algorithms were measured with receiver-operator characteristic curves, which captured both false-positive and false-negative error rates. Biomass surveys performed best, followed by mean age and length, and recruitment fractions. Commercial catch rates and catch had the worst performance but were still acceptable. Age-based total mortality performed poorly unless very large numbers of samples were taken. Potential applications of these methods include a rapid diagnostic tool in data-limited situations, development of empirical reference points, and empirical rule-based management systems. These methods are easily applied even when there is a short time-series of low-contrast data but a range of caveats must always be considered.
 
@@ -756,8 +731,8 @@ Caveats:
 
 	QC algorithms are simple and numerically stable but cannot provide the same insight into a fishery that a dynamic model can.
 
-Berkson, J., Barbieri, L., Cadrin, S., Cass-Calay, S. Crone, P., Dorn, M., Friess, C., Kobayashi, D., Miller, T.J., Patrick, W.S., Pautzke, S., Ralston, S. and M. Trianni (2011).
-Calculating acceptable biological catch for stocks that have reliable catch data only (Only Reliable Catch Stocks – ORCS). NOAA Technical Memorandum NMFS-SEFSC 616, 56pp.
+**Berkson, J., Barbieri, L., Cadrin, S., Cass-Calay, S. Crone, P., Dorn, M., Friess, C., Kobayashi, D., Miller, T.J., Patrick, W.S., Pautzke, S., Ralston, S. and M. Trianni (2011). Calculating acceptable biological catch for stocks that have reliable catch data only (Only Reliable Catch Stocks – ORCS). NOAA Technical Memorandum NMFS-SEFSC 616, 56pp.**
+
 Abstract: In response to the 2006 reauthorization of the Magnuson-Stevens Act (MSA), the National Marine Fisheries Service established National Standard 1 (NS1) Guidelines, which included a requirement to set an acceptable biological catch (ABC) that accounts for scientific uncertainty in the estimate of a stock’s overfishing limit (OFL). This is an exceedingly difficult task for the large number of stocks for which reliable catch data are the only information available, as these stocks cannot be assessed with traditional stock assessment methods. For the purpose of this document, these stocks will be called “only reliable catch stocks” (ORCS). Despite the inherent problem of setting ABCs for ORCS, the MSA requirement remains.
 At the second National SSC meeting November 10-13, 2009 in St. Thomas, USVI, an ad-hoc Working Group was established to identify, suggest, and evaluate alternative approaches for the setting of ABCs for ORCS. Working Group members represent seven of the eight SSCs, five of the six NMFS Science Centers, NMFS Headquarters, as well as a regional fishery management council, academic institutions, a state agency, and an NGO. The goal of the Working Group was to develop an approach for addressing ABCs in ORCS that could potentially be applied in all jurisdictions under a flexible framework.
 This report reviews existing methods for setting catch limits for ORCS. Each approach is briefly summarized followed by a description of the required data, the major assumptions and consequent cautionary advice in utilizing the particular approach, its potential for use in a risk-based decision-making framework, the status of the approach along with examples of its implementation, and the pros and cons of using the approach as viewed by the Working Group.
@@ -773,8 +748,10 @@ The Working Group emphasizes that none of the methods discussed in this report a
 Data/information requirements:
 	Historical catches
 	Depending on applicable attributes, biological data on the stocks
+	
 Outputs expected:
 	Fishing quota (acceptable biological catch ABC and overfishing limit OFL)
+	
 Method of operation:
 	Several methods were discussed and an “ORCS [only reliable catch stocks] Working Group Approach” was developed
 	The method basically comprises 4 steps:
@@ -784,16 +761,18 @@ Method of operation:
 	In the next step a guidance on an appropriate catch statistic for an overfishing limit calculation is given, such as using an average of recent catches
 	Obtaining OFL scalars for different exploitation categories
 	Depending on the exploitation and catch trend a value is chosen which decreases (0.5), maintains (1.0) or increases (2.0) the OFL
-	Obtain an ABC (acceptable biological catch) as a proportion of the OFL
-	Decision about appropriate buffer between OFL and ABC, based on scientific knowledge and uncertainty. Depending on the productivity of the stock and several possible alternatives a value between 0.5 and 0.9 is chosen.
+Obtain an ABC (acceptable biological catch) as a proportion of the OFL
+Decision about appropriate buffer between OFL and ABC, based on scientific knowledge and uncertainty. Depending on the productivity of the stock and several possible alternatives a value between 0.5 and 0.9 is chosen.
+	
 Testing:
-	The Method per se has not been (simulation) tested by Berkson et al. (2011) but some of the values recommended in this method are based on simulation studies.
+The Method per se has not been (simulation) tested by Berkson et al. (2011) but some of the values recommended in this method are based on simulation studies.
+	
 Caveats:
-	Assignment of stock exploitation status mainly based on expert judgement
-	The described method is more a set of vague guidelines than a real management strategy
+Assignment of stock exploitation status mainly based on expert judgement
+The described method is more a set of vague guidelines than a real management strategy
 
-Karnauskas, M., McClellan, D.B., Wiener, J.W., Miller, M.W. and E.A. Babcock (2011).
-Inferring trends in a small-scale, data-limited tropical fishery based on fishery-independent data. Fish. Res. 111: 40-52.
+**Karnauskas, M., McClellan, D.B., Wiener, J.W., Miller, M.W. and E.A. Babcock (2011). Inferring trends in a small-scale, data-limited tropical fishery based on fishery-independent data. Fish. Res. 111: 40-52.**
+
 Abstract: Size-based indicators have emerged as useful tools to analyze the status of fisheries which lack fishery dependent data over long time series, such as many coral reef fisheries. In this study, we calculate a number of size-based indicators for the Haitian fishery at the remote Navassa Island, where a reef fish visual census (RVC) data set is available over an 8-year study period (2002–2009). We also calculate the slope of the size spectrum indicator within a Bayesian framework, which allows for potential biases inherent in the RVC method to be accounted for in credibility intervals around parameter estimates. Results of our analyses suggest that stocks targeted by traps declined from 2002 to 2004, followed by a period of increase from 2006 to 2009. The slope of the size spectrum declined from 2002 to 2004 and remained constant for the remainder of the study period, and this pattern was driven by a decrease in abundance of larger species targeted by hook-and-line. Analysis of the Lmax spectrum also indicated a decrease in the occurrence rates of larger species throughout the study period. Our methods can be applied to fisheries in other areas where limited fishery-independent data and no fishery-dependent data are available.
 
 Data/information requirements:
@@ -830,14 +809,17 @@ Abstract: Stock-status plots are bivariate graphs summarizing the status (‘und
 
 Data/information requirements:
 	A time series of catch data.
+	
 Assumptions:
 	This model makes the same assumptions and uses the same classification system as Froese and Kesner-Reyes (2002), except:
 	There is no ‘undeveloped stage’. This is combined with the ‘developing’ stage.
 	Stocks that have a peak in catch in the final year of the time series are classified as ‘developing’.
 	An additional category ‘recovery’, which is a form of stock (re-) development, is defined as: Ccur & Cmin after Cmax, Ccur after Cmin, Cmin < 0.1 Cmax and Ccur < 0.5 Cmax. Where Cmin is a ‘post-maximum minimum’, i.e. the minimum landing occurring after the maximum landing.
+	
 Outputs expected:
 	A stock-status plot showing the percentage of stocks by status over time.
 	A stock-catch status plot showing percentage catch by stock-status over time.
+	
 Method of operation:
 	A three-year running average was used to smooth curves and remove anomalous peaks in the stock-status plots.
 Testing:
@@ -875,13 +857,14 @@ Caveats:
 
 	Comparisons and additional simulation testing
 
-Dorn M., Berkson, J., Punt, A. and K. Stokes, (2011).
-Assessment Methods for Data-Poor Stocks. Report of Methodology Review Panel Meeting. National Marine Fisheries Service (NMFS), Southwest Fisheries Science Center (SWFSC), Santa Cruz, California, 25-29 April 2011.
+**Dorn M., Berkson, J., Punt, A. and K. Stokes, (2011). Assessment Methods for Data-Poor Stocks. Report of Methodology Review Panel Meeting. National Marine Fisheries Service (NMFS), Southwest Fisheries Science Center (SWFSC), Santa Cruz, California, 25-29 April 2011.**
+
 [Note, this paper also covers data-moderate approaches]
 Overview: The requirement in the re-authorized Magnuson-Stevens Act of 2006 to set annual catch limits (ACLs) based on science recommendations implies some kind of basic assessment is required for all stocks in Fishery Management Plans (FMPs). This mandate has lead to an increased focus on assessing “data-poor” stocks. Many data-poor stocks are of minor economic importance and assessing all of them using size/age structured models would be difficult given data limitations and resources required. Simple assessment methods that use historical catches and available trend or size-composition information could potentially be applied to many data-poor stocks. These methods could be used to set ACLs, and to identify stocks which may be at risk of depletion that would be elevated to high priority for more detailed assessments. 
 With just a few exceptions, Overfishing Limits (OFLs) for all of the stocks in the Pacific Council’s Groundfish FMP were developed for 2011-2012 biennial specifications process during January to June, 2010 using new assessment methods designed for data-poor stocks. These methods included Depletion-Corrected Average Catch (DCAC) and Depletion-Based Stock Reduction Analysis (DB-SRA). The methods were applied by Southwest Fisheries Science Center staff and reviewed by the Groundfish Subcommittee of the PFMC’s Scientific and Statistical Committee (SSC), and endorsed by the full SSC. However the methods and their application did not receive the level of review afforded by a formal Stock Assessment Review (STAR) panel process, and in June, 2010, the PFMC requested a formal review of data-poor methodologies: 
 “The Council also requested a formal review of methodologies for determining harvest specifications for data-poor stocks. Such methods include catch-based approaches as well as those that might be considered rudimentary assessments, and should include the methodology used in the current biennial specifications process as well as reasonable alternatives to that methodology.” 
-Source: http://www.pcouncil.org/wp-content/uploads/0610decisions.pdf 
+[Source](http://www.pcouncil.org/wp-content/uploads/0610decisions.pdf): http://www.pcouncil.org/wp-content/uploads/0610decisions.pdf 
+
 The Panel met during the week of April 25-29, 2011, in Santa Cruz, California. Based on the Council’s request, the primary objective of the review meeting was to provide a list of endorsed methods for use with data-poor or data-limited stocks in the Groundfish FMP. DCAC and DB-SRA were reviewed during the meeting. In addition, the Panel reviewed a method based on the Stock Synthesis assessment platform that is comparable to DB-SRA. Several methods that utilize survey indices or time series of length composition data in simple assessments models were also reviewed. For each method reviewed, a set of key questions/issues were addressed by the Panel as follows:
 1. What are the data requirements of the method? 
 2. What are the conditions under which the method is applicable? 
@@ -922,6 +905,7 @@ Testing:
 	Simulations for SS-CL suggest the method can perform well if the assumptions are not violated. It is therefore necessary to have data on length-composition that are representative of the catches.
 	XDB-SRA was applied to cowcod, bocaccio and darkblotched rockfish.
 	SS-CO-1 and SS-CI were applied to three category 1 species with approved assessments (lingcod, canary rockfish and greenstriped rockfish). Application of SS-CI produced OFL estimates similar to the category 1 assessments.
+
 Caveats:
 	The approach used to implement the priors in SS-CO-1 and SS-CI results in placing two priors on one parameter. Hence SS-CO-2 was developed as an improvement on SS-CO-1.
 	In the case of SS-CL, there are concerns that length-data are not sufficient to obtain reliable estimates of quantities of management interest (e.g. depletion and OFL).
@@ -931,8 +915,8 @@ Other relevant information:
 Ability to project forward/forecast:
 	Model based methods (DB-SRA, XDB-SRA and the SS methods) will provide this functionality.
 
-Wetzel, C.R. and A.E. Punt (2011).
-Model performance for the determination of appropriate harvest levels in the case of data-poor stocks. Fish. Res. 110:342-355.
+**Wetzel, C.R. and A.E. Punt (2011). Model performance for the determination of appropriate harvest levels in the case of data-poor stocks. Fish. Res. 110:342-355.**
+
 Abstract: The determination of harvest limits for data-poor and data-limited stocks poses unique challenges for traditional complex stock assessment methods. Simulation is used to examine the performance of two new data-poor assessment methods, Depletion Corrected Average Catch (DCAC) and Depletion-Based Stock Reduction Analysis (DB-SRA), and a more complex catch-at-age method, Stock Synthesis (SS), in terms of estimating harvest levels for two life-history types (U.S. west coast flatfish and rockfish) under varying mis-specifications of parameter distributions. DCAC and DB-SRA are fairly robust to mis-specification of the distributions for natural mortality and the productivity parameter (the fishing mortality rate that corresponds to maximum sustainable yield relative to natural mortality) for the flatfish life-history, but led to greater error for the rockfish life-history when estimating harvest levels that would not result in overfishing. SS estimates of the harvest level increased when natural mortality was set to a higher value than the true value for both life-histories. Both DCAC and DB-SRA were highly sensitive to the assumed distribution for the ratio of the current to starting biomass and provided overestimates of the harvest level when based on an overly optimistic value for this ratio.
 
 Summary:
@@ -950,8 +934,8 @@ Method of operation:
 	Multiple runs examining the impact of assumed depletion should be conducted routinely to determine the potential range of HLs when using DCAC or DB-SRA.
 	The analysis should examine various parameter distributions for the biology-based parameters (natural mortality and the ratio FMSY/M).
 
-Carruthers, T.R., Walters, C.J. and M.K. McAllister (2012).
-Evaluating methods that classify fisheries stock status using only fisheries catch data. Fish. Res. 119-120: 66-79.
+**Carruthers, T.R., Walters, C.J. and M.K. McAllister (2012). Evaluating methods that classify fisheries stock status using only fisheries catch data. Fish. Res. 119-120: 66-79.**
+
 Abstract: Methods that use only fisheries catch records to determine the status of exploited fish populations have been used to draw important conclusions regarding the world’s fisheries. The reliability of two such approaches is evaluated by simulating a range of fisheries development and overfishing scenarios. The success rate and bias of stock status classification by two catch-based methods is compared with those of two stock assessment methods that explicitly model population dynamics and use additional fishing effort data. On average the catch-based methods correctly classified the status of stocks in 31% and 34% of the cases considered. Two simple stock assessments successfully classified stock status in 57% and 59% of the cases. The catch-based methods and the surplus production stock assessment were negatively biased and on average provided overly pessimistic conclusions regarding stock status. Catch-based methods were more negatively biased on average than the stock assessment approaches.
 
 The aim of this paper was to use simulation to test the reliability of the Froese and Kesner-Reyes (2002) and Kleisner and Pauly (2011) catch-based methods, and compare this to the reliability of two stock assessment methods that use additional fishing effort data.
@@ -975,8 +959,8 @@ This paper evaluates the reliability of the Froese and Kesner-Reyes (2002) and K
 	The success rates of the stock assessments were negatively related to the effort trajectory, unlike for the catch-based methods.
 
 
-Carruthers, T.R., Punt, A.E., Walters, C.J., MacCall, A., McAllister, M.K., Dick, E.J. and J. Cope (2014).
-Evaluating method for setting catch limits in data-limited fisheries. Fisheries Research 153: 48-68.
+**Carruthers, T.R., Punt, A.E., Walters, C.J., MacCall, A., McAllister, M.K., Dick, E.J. and J. Cope (2014). Evaluating method for setting catch limits in data-limited fisheries. Fisheries Research 153: 48-68.**
+
 Abstract: The majority of global fish stocks lack adequate data to evaluate stock status using conventional stock assessment methods. This poses a challenge for the sustainable management of these stocks. Recent requirements to set scientifically based catch limits in several countries, and growing consumer demand for sustainably managed fish have spurred an emerging field of methods for estimating overfishing thresholds and setting catch limits for stocks with limited data. Using a management strategy evaluation framework we quantified the performance of a number of data-limited methods. For most life-histories, we found that methods that made use of only historical catches often performed worse than maintaining current fishing levels. Only those methods that dynamically accounted for changes in abundance and/or depletion performed well at low stock sizes. Stock assessments that make use of historical catch and effort data did not necessarily out-perform simpler data-limited methods that made use of fewer data. There is a high value of additional information regarding stock depletion, historical fishing effort and current abundance when only catch data are available. We discuss the implications of our results for other data-limited methods and identify future research priorities.
 
 Data/information requirements:
