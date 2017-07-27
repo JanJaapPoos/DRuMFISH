@@ -22,6 +22,7 @@ A final consideration is that the Robin Hood approach is commonly used in many a
 
 [Data limited approaches](##Data-linited-approached)
 [Catch-only methods with supplementary information](###Catch-only-methods-with-supplementary-information)
+[Catch-only methods with supplementary data and information](###Catch-only-methods-with-supplementary-data-and-information)
 
 ## Data-limited approaches
 
