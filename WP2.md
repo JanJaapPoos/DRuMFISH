@@ -9,12 +9,20 @@ A review is provided of a wide-range of data-limited methods and a selection of 
 ## Table of Contents
 
 [Introduction and summary](#introduction-and-summary)
+
 [Data limited approaches](#data-limited-approached)
+
 [Catch-only methods with supplementary information](#catch-only-methods-with-supplementary-information)
+
 [Catch-only methods with supplementary data and information](#catch-only-methods-with-supplementary-data-and-information)
+
 [Life-history, per-recruit and length-based approaches](#life-history,-per-recruit-and-length-based-approaches)
 [Qualitative and semi-quantitative approaches](#qualitative-and-semi-quantitative-approaches)
 [Comparisons and additional simulation testing](#comparisons-and-additional-simulation-testing)
+[Real-world examples and applications](#real-world-examples-and-applications)
+[Some data-moderate approaches](#some-data-moderate-approaches)
+[Supplementary and other approaches that may be of interest](#supplementary-and-other-approaches-that-may-be-of-interest)
+
 
 ## Introduction and summary
 
@@ -744,14 +752,14 @@ An operating model was used to generate observations that were transformed into 
 There was a strong correlation with the survey indicator and relative biomass, but commercial catch did not indicate biomass in a robust way.
 The choice of control chart did not have a large effect upon performance of an indicator, though the CUSUM performed marginally better.
 Biomass surveys performed best, followed by mean age and length, and recruitment fractions. Commercial catch rates averaged lower performance across all QC methods than these previous indicators but performed better than commercial catch and total mortality from age. Total mortality from length was biased but superior to total mortality from age.
-	Performance of indicators as a function of (1) the value of the relative biomass reference point and (2) the probability of an impact occurring during the historical phase was estimated using the CUSUM scheme.
-	As the effect size decreased (larger values of relative biomass) the performance of all indicators decreased except surveys. Large effects degraded the performance of the survey indicator.
-	Performance of total mortality from age degraded badly when attempting to detect small changes to the underlying stock.
-	Large amounts of historical variation degrade the performance of all indicators.
-	Using the CUSUM, sensitivity analyses were carried out for the number of fish aged, the number of fish measured, recruitment variability and the steepness of the stock-recruitment parameter.
-	Increasing the numbers of fish aged and measured increased the precision and accuracy of all the age- and length-based indicators except total mortality from length which was always biased. Most of the increase in performance was obtained within 100~200 fish except for total mortality from age which continued to increase in performance until 10,000 fish.
-	Performance of indicators was robust to changes in the steepness of the stock-recruitment parameter.
-	Only very large values of the coefficient of variation of recruitment appeared to degrade the performance of the indicators.
+Performance of indicators as a function of (1) the value of the relative biomass reference point and (2) the probability of an impact occurring during the historical phase was estimated using the CUSUM scheme.
+As the effect size decreased (larger values of relative biomass) the performance of all indicators decreased except surveys. Large effects degraded the performance of the survey indicator.
+Performance of total mortality from age degraded badly when attempting to detect small changes to the underlying stock.
+Large amounts of historical variation degrade the performance of all indicators.
+Using the CUSUM, sensitivity analyses were carried out for the number of fish aged, the number of fish measured, recruitment variability and the steepness of the stock-recruitment parameter.
+Increasing the numbers of fish aged and measured increased the precision and accuracy of all the age- and length-based indicators except total mortality from length which was always biased. Most of the increase in performance was obtained within 100~200 fish except for total mortality from age which continued to increase in performance until 10,000 fish.
+Performance of indicators was robust to changes in the steepness of the stock-recruitment parameter.
+Only very large values of the coefficient of variation of recruitment appeared to degrade the performance of the indicators.
 
 Caveats:
 QC algorithms are simple and numerically stable but cannot provide the same insight into a fishery that a dynamic model can.
@@ -764,10 +772,10 @@ This report reviews existing methods for setting catch limits for ORCS. Each app
 The Working Group also presents its own approach, designed to build on existing approaches, while strengthening the biological and population dynamics underpinnings. The method provides additional flexibility and allows policymakers to set risk levels, as required under the NS1 guidelines.
 
 Ultimately, the Working Group recommends that the following tiered approach be used when setting ABCs for ORCS:
-	Apply depletion-based stock reduction analysis (DB-SRA) to a stock, if possible. The main limitation here is the requirement for a complete time series of historical catches, which is often not available.
-	If it is not possible to apply DB-SRA, apply depletion-corrected average catch (DCAC) to a stock. DCAC’s main limitation is that it is only appropriate for stocks with moderate to low natural mortality rates (≤ 0.20 yr-1).
-	If DB-SRA and DCAC are not appropriate, apply the ORCS Working Group’s Approach. The main limitation with this approach is that a number of critical decisions are required before it can be made operational. Some would also view this as an advantage, as it provides flexibility in its establishment.
-	Finally, in some cases none of the above methods are practical for setting ABCs for an individual stock, as specific ORCS may not be capable of being effectively managed or monitored. In these cases, it may be best to use a stock complex approach. There are many limitations of applying a stock complex approach as described in this report, and the ORCS Working Group cautions against overusing or misusing this approach, as it may result in the converse of precautionary management, exactly what MSA was designed to avoid.
+Apply depletion-based stock reduction analysis (DB-SRA) to a stock, if possible. The main limitation here is the requirement for a complete time series of historical catches, which is often not available.
+If it is not possible to apply DB-SRA, apply depletion-corrected average catch (DCAC) to a stock. DCAC’s main limitation is that it is only appropriate for stocks with moderate to low natural mortality rates (≤ 0.20 yr-1).
+If DB-SRA and DCAC are not appropriate, apply the ORCS Working Group’s Approach. The main limitation with this approach is that a number of critical decisions are required before it can be made operational. Some would also view this as an advantage, as it provides flexibility in its establishment.
+Finally, in some cases none of the above methods are practical for setting ABCs for an individual stock, as specific ORCS may not be capable of being effectively managed or monitored. In these cases, it may be best to use a stock complex approach. There are many limitations of applying a stock complex approach as described in this report, and the ORCS Working Group cautions against overusing or misusing this approach, as it may result in the converse of precautionary management, exactly what MSA was designed to avoid.
 It is important to note that the methods for setting ABCs for ORCS are in various stages of development and will be better understood and improved upon over time. For that reason, a list of research recommendations is included in the report that highlights the most important activities that must be supported to make substantive progress in the future.
 The Working Group emphasizes that none of the methods discussed in this report are a substitute for additional data and monitoring. Therefore, all of the methods impose a certain risk and imprecision that fisheries managers must acknowledge when using the results of these methods.
 
@@ -802,29 +810,29 @@ The described method is more a set of vague guidelines than a real management st
 Abstract: Size-based indicators have emerged as useful tools to analyze the status of fisheries which lack fishery dependent data over long time series, such as many coral reef fisheries. In this study, we calculate a number of size-based indicators for the Haitian fishery at the remote Navassa Island, where a reef fish visual census (RVC) data set is available over an 8-year study period (2002–2009). We also calculate the slope of the size spectrum indicator within a Bayesian framework, which allows for potential biases inherent in the RVC method to be accounted for in credibility intervals around parameter estimates. Results of our analyses suggest that stocks targeted by traps declined from 2002 to 2004, followed by a period of increase from 2006 to 2009. The slope of the size spectrum declined from 2002 to 2004 and remained constant for the remainder of the study period, and this pattern was driven by a decrease in abundance of larger species targeted by hook-and-line. Analysis of the Lmax spectrum also indicated a decrease in the occurrence rates of larger species throughout the study period. Our methods can be applied to fisheries in other areas where limited fishery-independent data and no fishery-dependent data are available.
 
 Data/information requirements:
-	Limited fishery-independent data
-	Number of fish
-	Minimum, maximum and average size observed
-	Observations of fishing activity (optional: used here to define sub-communities)
+Limited fishery-independent data
+Number of fish
+Minimum, maximum and average size observed
+Observations of fishing activity (optional: used here to define sub-communities)
 	
 Assumptions:
-	The size distribution of fish species is assumed to follow a Poisson distribution with the mean equal to the average size observed and with maximum and minimum values truncated according to observations.
-	The observed number of individuals in each length bin for fish communities is assumed to follow a multinomial distribution.
+The size distribution of fish species is assumed to follow a Poisson distribution with the mean equal to the average size observed and with maximum and minimum values truncated according to observations.
+The observed number of individuals in each length bin for fish communities is assumed to follow a multinomial distribution.
 	
 Outputs expected:
-	Size-based indicators (SBIs)
-	Time series of mean length and density for individual species
-	Time series of density for fish communities
-	Slope of size spectrum indicator for fish communities
-	Lmax spectra for fish communities
+Size-based indicators (SBIs)
+Time series of mean length and density for individual species
+Time series of density for fish communities
+Slope of size spectrum indicator for fish communities
+Lmax spectra for fish communities
 	
 Method of operation:
-	A three-way mixed-effects analysis of variance (ANOVA) is used to analyse changes in length for each species.
-	A three-way ANOVA was used on log-transformed densities to analyse changes in mean density over time for the entire fished community and some sub-communities. For individual species and one sub-community the delta lognormal method was used to test for trends due to the large number of zero counts.
-	The size spectrum slope indicator is calculated using a Bayesian hierarchical model to account for potential biases inherent in the sampling method.
-	Fish species were assigned to one of six Lmax classes. The changes in mean density were analysed for each group using a three-way ANOVA and the delta lognormal method on log-transformed densities.
-	The analysis was run using both the full data set from the unbalanced survey design and on a balanced subsample of the data set. There was little difference in the results.
-	Five models were considered for the slope of the size spectrum for the entire fished community. The final model was chosen based on the lowest deviance information criterion (DIC) value.
+A three-way mixed-effects analysis of variance (ANOVA) is used to analyse changes in length for each species.
+A three-way ANOVA was used on log-transformed densities to analyse changes in mean density over time for the entire fished community and some sub-communities. For individual species and one sub-community the delta lognormal method was used to test for trends due to the large number of zero counts.
+The size spectrum slope indicator is calculated using a Bayesian hierarchical model to account for potential biases inherent in the sampling method.
+Fish species were assigned to one of six Lmax classes. The changes in mean density were analysed for each group using a three-way ANOVA and the delta lognormal method on log-transformed densities.
+The analysis was run using both the full data set from the unbalanced survey design and on a balanced subsample of the data set. There was little difference in the results.
+Five models were considered for the slope of the size spectrum for the entire fished community. The final model was chosen based on the lowest deviance information criterion (DIC) value.
 	
 Testing:
 The analysis was applied to the Haitian fishery at Navassa Island using a reef fish visual census (RVC) data set over an 8-year period.
@@ -1395,8 +1403,8 @@ Y ̂_jt=(q ̂_j F ̂_jt)/F ̂_t  Y ̂_t
 	Projections using the recruitment function and based on hypothetical catch or effort quotas. The modelled population can be projected forward in time by using the population equations and a proposed set of yields or effort rates.
 
 Testing: 
-	North Atlantic swordfish; 2 analyses: one without and one with tuning index. Loss function on effort. Projections on 5 years. Bootstrap of 1000 iterations.
-	Similar results between the 2 analyses; greatest difference in last year, since tuning index gives different signals compared to CPUE, therefore the final estimate is a compromise between the two. Estimated median biases were small in both analyses.
+North Atlantic swordfish; 2 analyses: one without and one with tuning index. Loss function on effort. Projections on 5 years. Bootstrap of 1000 iterations.
+Similar results between the 2 analyses; greatest difference in last year, since tuning index gives different signals compared to CPUE, therefore the final estimate is a compromise between the two. Estimated median biases were small in both analyses.
 
 Caveats:
 Large errors on Yield estimates during period of high yield to be expected due to the additive proportional error structure.
@@ -1446,63 +1454,71 @@ A delay-difference population model fit to both the survey and commercial catch 
 Development of a biological reference point was explored in the context of scallop growth rates, natural mortality and exploitation. We show that exploitation rates required for no change in stock biomass can be considered a function of scallop growth rate, discounted for natural mortality. The reference exploitation should then change as the growth rate changes, primarily through changes in average stock size. This approach can be considered precautionary as scallop recruitment to the fishery, which is currently modeled as a log-normal random process, in most years would reduce the realized exploitation level. Posterior distributions of projected biomass under different harvest scenarios, and the associated probabilities of a decrease in biomass, were used to evaluate in-season increases to the interim total allowable catch limit.
 
 Data/information requirements:
-	Survey biomass indices for fully recruited and recruit size animals
-	Commercial CPUE index
-	Commercial catch
-	Estimates of growth parameters
-	Natural mortality (assumed 0.1 here)
-	Prior distributions for model parameters (proportionality coefficients, K and precision terms) 
-Assumptions:
-	The increase of body size with age follows a linear relationship.
-	Knife-edged selection to the fishery.
-	All fully-selected individuals experience the same natural mortality rate.
-	Stochastic recruitment.
-	Log-normal random variables for process variability and observation error.
-	Proportional relationships between observed indices and true biomass.
-Outputs expected:
-	Biomass estimates
-	Fishing mortality estimates
-	Posterior distributions for model parameters
-Method of operation:
-	The method consists of two coupled models that comprise a state-space model. 
-	Scallops are divided into three size classes based on shell height: Fully-recruited, recruits and pre-recruits. The process model uses a delay-difference model to model the biomass of fully recruited scallops in terms of natural mortality, growth, catch and recruits entering the fishery.
-	The observation model relates the unobserved biomass to observed indices.
-	The parameters and biomass states are estimated within a Bayesian state-space approach performed using MCMC integration via Gibbs within Metropolis-Hastings sampling. The biomass terms are rescaled to improve convergence of the Gibbs sampler.
-	A replacement exploitation level that allows for variable growth potential, discounted by constant natural mortality, through changes in stock size structure that are indexed by the average weight is determined by rearranging the delay-difference process model and setting Bt+1=Bt. This precautionary approach ignores recruitment and stochastic perturbation.
-Testing:
-	Sensitivity analyses were carried out to determine the effect of growth rate assumptions on biomass estimates and projections, and the sensitivity of the model fit to priors.
-	The model was sensitive to the range of growth parameters considered, with relative differences in biomass ranging from ~ -11% to 12%.
-	The model fits did not change substantially when changing from informative priors on precision terms to uninformative priors on variance or standard deviations.
-	Model results were compared to those of a simple surplus production model and to the ADAPT VPA model that was used to provide management advice for the stock in the past.
-	The biomass trajectories estimated by the delay-difference model and the surplus production model were similar, but the catchability estimates from the delay-difference model were more consistent with estimates from the US scallop dredge survey.
-	Biomass estimates produced by the delay-difference model were more consistent with the patterns suggested by the commercial and survey indices than the ADAPT VPA model.
-	Retrospective and prospective analyses were carried out, and show a sensitivity to initial conditions and a tendency to overestimate biomass and underestimate F during periods of peak biomass. Otherwise biomass and F estimates were similar to the default model fit.
-	The models predictive ability was assessed by comparing one-year ahead biomass predictions to the biomass estimates for the same year. The one-year ahead predictions tend to be lower than the estimates as the stock increases and higher than the estimates as the stock declines.
-Caveats:
-	The model has difficulty estimating biomass in unusual years, e.g. peaks in biomass.
-	The model fits closer to the commercial catch rate index than to the survey indices.
-Ability to project forward/forecast:
-	The model provides this functionality.
+Survey biomass indices for fully recruited and recruit size animals
+Commercial CPUE index
+Commercial catch
+Estimates of growth parameters
+Natural mortality (assumed 0.1 here)
+Prior distributions for model parameters (proportionality coefficients, K and precision terms) 
 
-Jiao, Y., Cortes E., Andrews, K. and F. Guo (2011).
-Poor-data and data-poor species stock assessment using a Bayesian hierarchical approach.
+Assumptions:
+The increase of body size with age follows a linear relationship.
+Knife-edged selection to the fishery.
+All fully-selected individuals experience the same natural mortality rate.
+Stochastic recruitment.
+Log-normal random variables for process variability and observation error.
+Proportional relationships between observed indices and true biomass.
+
+Outputs expected:
+Biomass estimates
+Fishing mortality estimates
+Posterior distributions for model parameters
+
+Method of operation:
+The method consists of two coupled models that comprise a state-space model. 
+Scallops are divided into three size classes based on shell height: Fully-recruited, recruits and pre-recruits. The process model uses a delay-difference model to model the biomass of fully recruited scallops in terms of natural mortality, growth, catch and recruits entering the fishery.
+The observation model relates the unobserved biomass to observed indices.
+The parameters and biomass states are estimated within a Bayesian state-space approach performed using MCMC integration via Gibbs within Metropolis-Hastings sampling. The biomass terms are rescaled to improve convergence of the Gibbs sampler.
+A replacement exploitation level that allows for variable growth potential, discounted by constant natural mortality, through changes in stock size structure that are indexed by the average weight is determined by rearranging the delay-difference process model and setting Bt+1=Bt. This precautionary approach ignores recruitment and stochastic perturbation.
+
+Testing:
+Sensitivity analyses were carried out to determine the effect of growth rate assumptions on biomass estimates and projections, and the sensitivity of the model fit to priors.
+The model was sensitive to the range of growth parameters considered, with relative differences in biomass ranging from ~ -11% to 12%.
+The model fits did not change substantially when changing from informative priors on precision terms to uninformative priors on variance or standard deviations.
+Model results were compared to those of a simple surplus production model and to the ADAPT VPA model that was used to provide management advice for the stock in the past.
+The biomass trajectories estimated by the delay-difference model and the surplus production model were similar, but the catchability estimates from the delay-difference model were more consistent with estimates from the US scallop dredge survey.
+Biomass estimates produced by the delay-difference model were more consistent with the patterns suggested by the commercial and survey indices than the ADAPT VPA model.
+Retrospective and prospective analyses were carried out, and show a sensitivity to initial conditions and a tendency to overestimate biomass and underestimate F during periods of peak biomass. Otherwise biomass and F estimates were similar to the default model fit.
+The models predictive ability was assessed by comparing one-year ahead biomass predictions to the biomass estimates for the same year. The one-year ahead predictions tend to be lower than the estimates as the stock increases and higher than the estimates as the stock declines.
+
+Caveats:
+The model has difficulty estimating biomass in unusual years, e.g. peaks in biomass.
+The model fits closer to the commercial catch rate index than to the survey indices.
+Ability to project forward/forecast:
+The model provides this functionality.
+
+**Jiao, Y., Cortes E., Andrews, K. and F. Guo (2011). Poor-data and data-poor species stock assessment using a Bayesian hierarchical approach.**
+
 Abstract: Appropriate inference for stocks or species with low-quality data (poor data) or limited data (data poor) is extremely important. Hierarchical Bayesian methods are especially applicable to small-area, small-sample-size estimation problems because they allow poor-data species to borrow strength from species with good-quality data. We used a hammerhead shark complex as an example to investigate the advantages of using hierarchical Bayesian models in assessing the status of poor-data and data-poor exploited species. The hammerhead shark complex (Sphyrna spp.) along the Atlantic and Gulf of Mexico coasts of the United States is composed of three species: the scalloped hammerhead (S. lewini), the great hammerhead (S. mokarran), and the smooth hammerhead (S. zygaena) sharks. The scalloped hammerhead comprises 70–80% of the catch and has catch and relative abundance data of good quality, whereas great and smooth hammerheads have relative abundance indices that are both limited and of low quality presumably because of low stock density and limited sampling. Four hierarchical Bayesian state-space surplus production models were developed to simulate variability in population growth rates, carrying capacity, and catchability of the species. The results from the hierarchical Bayesian models were considerably more robust than those of the nonhierarchical models. The hierarchical Bayesian approach represents an intermediate strategy between traditional models that assume different population parameters for each species and those that assume all species share identical parameters. Use of the hierarchical Bayesian approach is suggested for future hammerhead shark stock assessments and for modeling fish complexes with species-specific data, because the poor-data species can borrow strength from the species with good data, making the estimation more stable and robust.
 
 Data/information requirements:
-	Data for multiple species:
-	Catch/landings for all the species in exam;
-	Survey data: one species should have fairly good-quality data. The other species can have limited, low-quality data. The bayesian model will improve the assessment of the species with poor data by allowing them to borrow strength from the species with good quality. 
+Data for multiple species:
+Catch/landings for all the species in exam;
+Survey data: one species should have fairly good-quality data. The other species can have limited, low-quality data. The bayesian model will improve the assessment of the species with poor data by allowing them to borrow strength from the species with good quality. 
 	Priors:
 	rk = population growth rate of species k (normal distributed in the example); 
 	Kk = carrying capacity of species k (uniform distribution in the example);
 	N1 = abundance in the first modelled year (lognormal distribution in the example).
+
 Assumptions:
 	Abundance indices are assumed to be directly proportional to stock biomass;
 	Constant q over time.
+
 Outputs expected:
 	Variance/covariance matrix at the mode of the posterior distribution;
 	Posterior mean, standard deviation (SD), coefficient of variation (CV) and 5th, Median and 95th percentiles for parameters and management quantities of interest (Bt, r, K, MSY, BMSY, alphaB0, cat0, FMSY, Ft);
 	Probabilistic statements about the condition of the stock with respect to various indices of policy performance are then generated for different projection time intervals thus conveying the uncertainty associated with alternative harvesting strategies (in the specific case they used (i) the probability of F being larger than FMSY, i.e., P(F > FMSY) to define the risk of overfishing and (ii) the probability of N being smaller than NMSY, i.e., P(N < NMSY) to define the risk of a population being overfished.
+
 Method of operation:
 	When the species-specific data were treated as hierarchically structured, instead of assessing each species separated, the species are assessed together through a Bayesian hierarchical model. 
 	State-space (to account for process error) surplus production (where no data on size, age or stage structure are necessary) model as the basic model structure:
@@ -1517,25 +1533,27 @@ r_k~N(r ̅,〖[〖CV〗_1*r ̅]〗^2
 Now is where the hierarchical model kicks-in: mean r ̅ and coefficient of variation 〖CV〗_1 are hyperparameters. 
 r ̅~N(a_1,a_2)
 〖CV〗_1~U(b_1,b_2)
-	Inclusion of observation-process-error estimators, which considers both the process error in the function of population size and the observation error in the function of abundance indices (A lognormal error structure was used for both the process and observation errors). 
-	The Bayesian approach was used to estimate both the uncertainty in parameter estimates and population abundance.
-	A nonhierarchical Bayesian model for each species specifies a posterior density for parameters (p(θ|I)) using Bayes’ theorem.
-	MCMC for model fitting.
-	Goodness of fit: DIC (hierarchical modelling generalization of the AIC and BIC, particularly useful when posterior distributions of the models have been obtained by MCMC simulation) between models.
-Testing: 
-	The method was applied to 3 shark species and several tests have been carried out:
-	Sensitivity analysis to specified priors and different hierarchical models (more and more complex);
-	Here, three methods determine when random draws in MCMC have converged to the posterior distribution: (i) monitoring the trace for key parameters, (ii) diagnosing the autocorrelation plot for key parameters, (iii) using the Gelman and Rubin statistic (Gelman and Rubin 1992, Spiegelhalter et al. 2004).
-	Use of less informative priors for the means of r, K, or q and associated variances consistently yielded robust results with the hierarchical models.
-	The sensitivity analyses conducted showed that hierarchical Bayesian models (with a multilevel prior of r, r and q, r and K, or r, K, and q) provided a more robust fit to the data than nonhierarchical models.
-	The number of levels of priors will depend on the parameters of interest and biological reality. Since the mean of rk can be different among species, a multilevel prior of r reflects the biology of the fish species and allows the data-poor species to borrow strength from data-rich species.
-	The resulting distributions of rk for both data-rich and data-poor species were more stable and showed uncertainty reduction when hierarchical models were used.
-	The hierarchical population growth model can simulate population growth rate variation caused by the hierarchy of growth rates, which has been related to regime shifts and changes in productivity regimes in some cases.
-Caveats:
-	Informative priors influence the results of both model parameters and model fit (DIC values). Therefore, the use of informative priors and model choice may also need to be justified based on an understanding of the biology of each species in the fish complex.
+Inclusion of observation-process-error estimators, which considers both the process error in the function of population size and the observation error in the function of abundance indices (A lognormal error structure was used for both the process and observation errors). 
+The Bayesian approach was used to estimate both the uncertainty in parameter estimates and population abundance.
+A nonhierarchical Bayesian model for each species specifies a posterior density for parameters (p(θ|I)) using Bayes’ theorem.
+MCMC for model fitting.
+Goodness of fit: DIC (hierarchical modelling generalization of the AIC and BIC, particularly useful when posterior distributions of the models have been obtained by MCMC simulation) between models.
 
-McAllister, M.K. and E.A. Babcock (2014).
-Bayesian surplus production model with the Sampling Importance Resampling algorithm (BSP): a User’s Guide.
+Testing: 
+The method was applied to 3 shark species and several tests have been carried out:
+Sensitivity analysis to specified priors and different hierarchical models (more and more complex);
+Here, three methods determine when random draws in MCMC have converged to the posterior distribution: (i) monitoring the trace for key parameters, (ii) diagnosing the autocorrelation plot for key parameters, (iii) using the Gelman and Rubin statistic (Gelman and Rubin 1992, Spiegelhalter et al. 2004).
+Use of less informative priors for the means of r, K, or q and associated variances consistently yielded robust results with the hierarchical models.
+The sensitivity analyses conducted showed that hierarchical Bayesian models (with a multilevel prior of r, r and q, r and K, or r, K, and q) provided a more robust fit to the data than nonhierarchical models.
+The number of levels of priors will depend on the parameters of interest and biological reality. Since the mean of rk can be different among species, a multilevel prior of r reflects the biology of the fish species and allows the data-poor species to borrow strength from data-rich species.
+The resulting distributions of rk for both data-rich and data-poor species were more stable and showed uncertainty reduction when hierarchical models were used.
+The hierarchical population growth model can simulate population growth rate variation caused by the hierarchy of growth rates, which has been related to regime shifts and changes in productivity regimes in some cases.
+
+Caveats:
+Informative priors influence the results of both model parameters and model fit (DIC values). Therefore, the use of informative priors and model choice may also need to be justified based on an understanding of the biology of each species in the fish complex.
+
+**McAllister, M.K. and E.A. Babcock (2014). Bayesian surplus production model with the Sampling Importance Resampling algorithm (BSP): a User’s Guide.**
+
 Abstract: The BSP program fits either a Schaefer model or a Fletcher / Schaefer model to CPUE data using the Sampling /Importance Resampling algorithm. Required inputs are catch for all years (missing catch data in the first years of the fishery are allowed), at least one catch rate (CPUE) index of abundance, with CV’s if available (missing data are allowed). The parameters that can be fit are carrying capacity (K), the intrinsic rate of population growth (r), the biomass in the first modeled year defined as a ratio of K (alpha.b0), the shape parameter for the surplus production function for the Fletcher/Schaefer fit (n), the average annual catch for years before catch data were recorded (cat0), variance parameters for each CPUE series, depending on the method used to weight the CPUE series, and the catchability (q) for each CPUE series. Priors can be used for all of the fitted parameters for a Bayesian fit. The program can be used to project the biomass trajectory under any constant catch or constant F harvest policy, with confidence bounds. Program outputs include decision tables showing the probability of stock rebuilding and other indicators of policy performance at specified time horizons.
 
 Data/information requirements:
@@ -1577,6 +1595,7 @@ where h=2ɸK, and ɸ=B_MSY/K=(1/n)^(1⁄(n-1))
 	10 methods to weight CPUE data points are available; each method differs in how they estimate the variance associated with each CPUE data point and hence the weight.
 	The projections are done by using the parameter values drawn from each of the sub-sampled importance draws, along with the catch data (up to the present year) and the management policy (in the future) to predict the biomass in each year.
 	The available harvest policies are TAC, constant F, constant fraction of the median FMSY, and constant fraction of the FMSY calculated for each simulation.
+
 Testing: 
 	The method has not been tested in the paper in exam, which is only a user manual. However, BSP has been applied before to several stocks, such as the North and South Atlantic Swordfish in 1999 (McAllister et al., 2000), the Western Atlantic bluefin tuna in 2001 (McAllister et al., 2001), the Pacific Blue Marlin (Kanaiwa, 2013), just to cite some.
 	I report below the conclusion and main advantages of a first application of this model on South and North Atlantic Swordfish (McAllister et al, 2000):
@@ -1587,8 +1606,8 @@ Caveats:
 	Considers observation error only (even though a recent version, i.e. BSP2, models both process error in the dynamics equations (to account for the effects of, for example, interannual variation in recruitment), and error in predicted observations. (McAllister, 2014)).
 	High sensibility of the results as well as of the projections to the value assumed for BMSY/K.
 
-Jardim, E., Millar, C.P., Mosqueira, I., Scott, F., Osio, G.C., Ferretti, M., Alzorriz, N. and A. Orio (2015a).
-What if stock assessment is as simple as a linear model? The a4a initiative. ICES J. Mar. Sci., 72(1): 232-236.
+**Jardim, E., Millar, C.P., Mosqueira, I., Scott, F., Osio, G.C., Ferretti, M., Alzorriz, N. and A. Orio (2015a). What if stock assessment is as simple as a linear model? The a4a initiative. ICES J. Mar. Sci., 72(1): 232-236.**
+
 Abstract: This manuscript discusses the benefits of having a stock assessment model that is intuitively close to a linear model. It creates a case for the need of such models taking into account the increase in data availability and the expansion of stock assessment requests. We explore ideas around the assessment of large numbers of stocks and the need to make stock assessment easier to run and more intuitive, so that more scientists from diverse backgrounds can be involved. We show, as an example, the model developed under the European Commission Joint Research Center’s ‘Assessment for All’ Initiative (a4a) and how it fits the a4a strategy of making stock assessment simpler and accessible to a wider group of scientists.
 
 Data/information requirements:
@@ -1602,10 +1621,12 @@ Data/information requirements:
 	Estimated length-weight relationship
 	Abundance
 	Index of abundance
+
 Assumptions:
 	The statistical catch-at-age model is based on the Baranov catch equation.
 	Population numbers are assumed to decay exponentially.
 	Errors of catches and abundance indices are assumed lognormal.
+
 Outputs expected:
 	Two output objects may be obtained. The basic model output class (a4aFit) contains fitted values of:
 	Stock numbers
@@ -1621,12 +1642,13 @@ Method of operation:
 	Submodels for fishing mortality (F), survey catchability (Q) and recruitment (R) have to be given structure by the user, in the form of log-linear models. This choice should be based on knowledge of the biology of the stock, environmental conditions of the region, fishing gears and major management events. 
 Testing:
 	It is stated that “The methods being developed are subject to extensive testing to evaluate their performance and to identify the appropriate configurations for different situations, as well as robust default settings”. However, no further details are given.
+
 Caveats:
 	The flexibility introduced in the model increases the possibility of over-parameterisation.
 	Users will need to know how to operate R.
 
-Pedersen, M.W. and C.W. Berg (In press).
-A stochastic surplus production model in continuous time. Fish and Fisheries. DOI: 10.1111/faf.12174.
+**Pedersen, M.W. and C.W. Berg (2016). A stochastic surplus production model in continuous time. Fish and Fisheries. DOI: 10.1111/faf.12174.**
+
 Abstract: Surplus production modelling has a long history as a method for managing data limited fish stocks. Recent advancements have cast surplus production models as state-space models that separate random variability of stock dynamics from error in observed indices of biomass. We present a stochastic surplus production model in continuous time (SPiCT), which in addition to stock dynamics also models the dynamics of the fisheries. This enables error in the catch process to be reflected in the uncertainty of estimated model parameters and management quantities. Benefits of the continuous-time state-space model formulation include the ability to provide estimates of exploitable biomass and fishing mortality at any point in time from data sampled at arbitrary and possibly irregular intervals. We show in a simulation that the ability to analyse subannual data can increase the effective sample size and improve estimation of reference points relative to discrete-time analysis of aggregated annual data. Finally, subannual data from five North Sea stocks are analysed with particular focus on using residual analysis to diagnose model insufficiencies and identify necessary model extensions such as robust estimation and incorporation of seasonality. We argue that including all known sources of uncertainty, propagation of that uncertainty to reference points and checking of model assumptions using residuals are critical prerequisites to rigorous fish stock management based on surplus production models.
 
 Data/information requirements:
@@ -1666,26 +1688,29 @@ Caveats:
 	The previous caveats apply when n=2 (i.e. Schaefer model), but are likely exacerbates when n≠2, i.e. with increased non linearity. 
 
  
-	Supplementary and other approaches that may be of interest
+## Supplementary and other approaches that may be of interest
 
-	Mixed Fishery approaches
+### Mixed Fishery approaches
 
-Zhou, S., Smith, A.D.M., and M. Fuller (2011).
-Quantitative ecological risk assessment for fishing effects on diverse data-poor non-target species in a multi-sector and multi-gear fishery. Fisheries Research 112: 168-178
+**Zhou, S., Smith, A.D.M., and M. Fuller (2011). Quantitative ecological risk assessment for fishing effects on diverse data-poor non-target species in a multi-sector and multi-gear fishery. Fisheries Research 112: 168-178**
+
 Abstract: Assessment of ecological sustainability for all species impacted by fishing is one of the most important and practical steps towards an Ecosystem Approach to Fisheries. We extend methods for Sustainability Assessment for Fishing Effects (SAFE) to assess diverse bycatch species in a multi-sector and multi-gear fishery. We develop methods for estimating fishing mortality rate, based on limited data, for demersal trawl, Danish seine, gillnet, and longline. The general approach involves estimating spatial overlap between species distribution and fishing effort distribution, catchability resulting from probability of encountering the gear and size-dependent selectivity, and post-capture mortality. We define three reference points (Fmsm, Flim, and Fcrash) and use six methods to derive these reference points. As an example, we apply this method to nearly 500 fish species caught in the Southern and Eastern Scalefish and Shark Fishery, a multi-sector and multi-gear fishery in Australia. We assess sustainability risk for all captured fish species in each sub-fishery and the cumulative impact across all the sub-fisheries. The results indicate that chondrichthyans are more vulnerable to fishing impact than teleosts, and that impact differs among sectors of the fishery. This method could be easily applied to other fisheries. However, the results may require fine tuning by other means such as expert judgment.
 
 Data/information requirements:
 	For estimation of F: Fishery distribution; Area affected by fishing gear; Species distribution; Habitat dependent encounterability; Size dependent catchability; Post capture mortality. 
 	For reference points estimation: biological parameters, depending on the method used (e.g. r, Linf, k, average annual water temperature, average age at maturity).
+
 Assumptions:
 	Individuals of species i are evenly distributed within their distribution range.
 	Fish densities are the same between fished and unfished areas within species distribution range. 
 	When calculating the overall F (as sum of all sub-fisheries f), assumption that sub-fisheries within the jurisdiction impose impact on the same stock for each species (might not hold if big areas).
 	Assumptions on qih (=habitat dependent encounterability) and qiλ (= size and behaviour dependent selectivity), and Si (=post-capture mortality rate; convention of assuming Si = 0 – i.e. no survival – when no evidence of the contrary).
 	For variances estimation, a binomial distribution is assumed for individual fish encountering fishing gear, being retained, and surviving after discard.
+
 Outputs expected:
 	Estimation of fishing impacts by different gear types and of cumulative impacts on population from different fisheries.
 	Reference points: Fmsm (=instantaneous fishing mortality rate that corresponds to the maximum number of fish in the population that can be killed by fishing in the long term); Flim (= instantaneous fishing mortality rate that corresponds to the limit biomass Blim, where Blim is assumed to be half of the biomass that supports a maximum sustainable fishing mortality); Fcrash (= minimum unsustainable instantaneous fishing mortality rate that might lead to the extinction of the population in the long term). 
+
 Method of operation:
 	Estimation of fishing impacts as annual instantaneous fishing mortality rate, in which the fishing mortality is basically the fraction of overlap between fished area and species distribution area within the jurisdiction, adjusted by catchability and post-capture mortality. The estimation therefore changes depending on the gear used, due to the differences in the estimation of the area covered by the fishery. 
 	General equation for estimation of F:
@@ -1698,8 +1723,10 @@ Where, ∑_t▒〖L_(t,i) W〗 is the total area fished (width of trawl * trawl 
 F_i^c= ∑_f▒F_(i,f) 
 	Reference point estimation (Fmsm, Flim, Fcrash) from different methods, and then estimation of mean and ranges for the 3 reference points considered.
 	Use of reference points for inclusion of each species into ecological risk categories (e.g. Low risk, medium risk, high risk…) to link with harvest strategy policy.
+
 Testing: 
 	The method was applied to the Southern and Eastern Scalefish and Shark Fishery (SESSF) in Australia, to 5 major sub-fisheries (South East Otter Trawl fishery -440 species-, Great Australia Bight Trawl fishery – 204 species-, Danish Seine Fishery -71 species-, the Shark Gillnet fishery -195 species- and the Longline Fishery -160 species-). 
+
 Caveats:
 	If spatial information on species distribution are poor, the method can underestimate fishing mortality rate for species that aggregate. 
 	No variation or uncertainty is considered for the species distribution. 
@@ -1707,10 +1734,10 @@ Caveats:
 	Major uncertainty arises from spatial distribution of species and stocks relative to fishing effort. 
 	Can be demanding in terms of data. 
 
-	MPA approaches
+### MPA approaches
 
-Wilson, J.R., Prince, J.D. and H.S. Lenihan (2010).
-A management strategy for sedentary near-shore species that uses marine protected areas as a reference. Marine and Coastal Fisheries: Dynamics, Management, and Ecosystem Science, 2: 14–27.
+**Wilson, J.R., Prince, J.D. and H.S. Lenihan (2010). A management strategy for sedentary near-shore species that uses marine protected areas as a reference. Marine and Coastal Fisheries: Dynamics, Management, and Ecosystem Science, 2: 14–27.**
+
 Abstract: Classical approaches to fisheries stock assessment rely on methods that are not conducive to managing data-poor stocks. Moreover, many nearshore rocky reef species exhibit spatial variation in harvest pressure and demographic rates, further limiting traditional stock assessment approaches. Novel management strategies to overcome data limitations and account for spatial variability are needed. With the ever-increasing implementation of no-take marine protected areas (MPAs), there is great potential for improving decision making in management through comparisons of fished populations with populations in MPAs at spatially explicit scales. We developed a management strategy that uses a combination of data-based indicators sampled inside and outside of MPAs as well as model-based reference points for data-poor, sedentary nearshore species. We performed a management strategy evaluation of this MPA-based decision tree model for a hypothetical population of grass rockfish Sebastes rastrelliger in California. We introduced process, observation, and model uncertainty in numerous scenarios and compared these scenarios with the precautionary approach currently used to manage data-poor species. Our model consistently improved total catches while maintaining the biomass and spawning potential ratio at levels well within acceptable thresholds of management. We suggest further exploration of this MPA-based management approach, and we outline a collaborative research program in the California Channel Islands that may well be suited for testing an experimental management procedure.
 
 Data/information requirements:
@@ -1768,11 +1795,13 @@ Method of operation:
 	Above this ratio fishing effort is maintained (or increased with a limit of a 10% increase per year).
 	If the density is lower than the target value, the effort is decreased linearly to zero at a minimum density ratio such as 20%.
 	To allow the effort to increase after it was set to zero, a reference value of 10% of the last effort > 0 is used for the calculations in the following year
+
 Testing:
 	Babcock and MacCall (2011) performed a MSE simulation of their approach with five hypothetical species with differing life history and fishery characteristics, based on species from the California nearshore fishery. The MSE included a spatially explicit operating model with 20% MPAs. Various options of the control rule were tested (different ratios, mature or all fish, uncertainty, migration).
 	Target density ratios of 60% of mature fish and 80% of all fish performed well for a wide range of life history characteristics. These ratios caused the SSB to equilibrate at around 40% of unfished levels and achieved yields around 75-90% of yields under a F40% policy. Most options resulted in around 40% of unfished SSB irrespective of the initial depletion level.
 	More precautionary density ratio target rules were effective sooner and had lower fluctuations. There were always some fluctuations in effort and this was not reduced by using density ratios from last three years instead of just one year. Movements of fish from the MPA weakened the performance of the method. Illegal fishing in the MPAs caused fluctuations and resulted in an overall lower biomass. Smaller sample sizes lead to higher variations but this effect could be ameliorated by pooling the density ratio of the last three years instead of just using the value from last year.
 	The performance of multispecies runs depended on the species. For some species multispecies ratios lead to a more conservative management, for other species to less conservative management.
+
 Caveats:
 	Only relative values are use, no absolute reference points
 	Risk of depletion if fish biomass declines in the MPA
@@ -1782,10 +1811,10 @@ Caveats:
 	Density-ratio control rule could be an incentive for illegal fishing in order to reduce the ratio.
 	High variability in recruitment and/or low sample sizes lead to high variations in density ratios from year to year
 
-	PSA approaches
+### PSA approaches
 
-Osio, G.C., Orio, A. and C.P. Millar (2014).
-Assessing the vulnerability of Mediterranean demersal stocks and predicting exploitation status of un-assessed stocks. Fisheries Research 171: 110-121.
+**Osio, G.C., Orio, A. and C.P. Millar (2014). Assessing the vulnerability of Mediterranean demersal stocks and predicting exploitation status of un-assessed stocks. Fisheries Research 171: 110-121.**
+
 Abstract: According to the Common Fisheries Policy, all commercial fish stocks in the Mediterranean and Black Sea should be managed at MSY by 2015–2020. However, currently 95% of assessed stocks are overexploited and 73% of demersal species are not assessed. To explore the risk of overexploitation to un-assessed stocks, vulnerability scores were constructed using Productivity Susceptibility Analysis (PSA) for 151 Mediterranean demersal fish species. Out of 151 species, 58 displayed low vulnerability, 20 medium vulnerability, 25 high vulnerability and 48 were considered of major concern. More than half of stocks showed a risk of being overfished (termed “vulnerability”), greater than that of the stocks currently assessed in the Mediterranean Sea. Most of the cartilagineous fish fell into the high and major concern areas. The quality of data used for the PSA was scored and these scores could be used to improve future collection of data. Vulnerability scores are well correlated with IUCN red list classification. To rank the priority of commercial stocks still to be assessed, vulnerability scores were scaled with landings and mean price per stock. Eight of the top fifteen ranking stocks are currently not assessed. When the vulnerability of cartilaginous fish was tested against rate of decline estimated from trawl survey time-series, no strong correlation was found. The exploitation ratio (F/Fmsy) of assessed stocks was regressed, using generalized mixed models, against PSA scores and area and a significant relationship was found. Using this result, assessed stocks were used as a training set to predict the exploitation of un-assessed stocks. F/Fmsy was predicted for 151 species in 14 management areas (GSAs). The results over all areas is that 39 species-area combinations are exploited sustainably, all occurring in area 20 (Greece), while the remaining 2075 are exploited unsustainably with respect to Fmsy (F/Fmsy> 1). This prediction model, albeit after further refinement with more data and testing, could be used to predict exploitation ratio when no information on stock status is available. We predict that ≈98% of the unassessed demersal fish species are potentially overexploited in the evaluated areas. This makes it clear that strong management action will be required to achieve the targets of the Common Fisheries Policy in the next 1–5 years.
 
 Data/information requirements:
@@ -1823,8 +1852,8 @@ Caveats:
 	The level of exploitation in a GSA strongly affects the prediction.
 	Strong assumptions when predicting the exploitation rate for un-assessed stocks and high uncertainty in the obtained estimations. 
 
-Cope, J.M., Thorson, J.T., Wetzel, C.R. and J. DeVore (2015).
-Evaluating a prior on relative stock status using simplified age-structured models. Fish. Res., 171: 101-109.
+**Cope, J.M., Thorson, J.T., Wetzel, C.R. and J. DeVore (2015). Evaluating a prior on relative stock status using simplified age-structured models. Fish. Res., 171: 101-109.**
+
 Abstract: Fisheries management aimed to support sustainable fisheries typically operates under conditions of limited data and analytical resources. Recent developments in data-limited analytical methods have broadened the reach of science informing management. Existing approaches such as stock reduction analysis and its extensions offer simple ways to handle low data availability, but are particularly sensitive to assumptions regarding relative stock status. This study develops and introduces a prior on relative stock status using Productivity-Susceptibility Analysis vulnerability scores. Data from U.S. west coast ground-fish stocks (n = 17) were used to develop and then test the performance of the new relative stock status prior. Traditional simulation testing via an operating model was not possible because vulnerability scoring could not be simulated; we instead used the “best available scientific information” (BASI) approach. This approach uses fully-realized stock assessments (deemed the best available scientific information by management entities) and reduces data content available to simpler models. The Stock Synthesis statistical catch-at-age framework was used to nest within the full assessment two simpler models that rely on stock status priors. Relative error in derived estimates of biomass and stock status were then compared to the BASI assessment. In general, the new stock status prior improved performance over the current application of stock status assumed at 40% initial biomass. Over all stocks combined, stock status showed the least amount of bias, while initial biomass was better estimated than current biomass. The BASI approach proved a useful and possibly complimentary approach to simulation testing with operating models in order to gain insight into modelling performance germane to management needs, particularly when system components (e.g., susceptibility scoring) cannot be easily simulated.
 
 Data / information requirements:
@@ -1837,22 +1866,18 @@ Data / information requirements:
 	An index of abundance (optional)
 
 Assumptions:
-
 	Frees the assumptions of previous stock reduction analysis (SRA) type models. Those being (1) that stock status is defined in the final year of the time series and (2) relative stock status is set at 40% of the initial stock biomass.
 	The relationship of vulnerability to stock status assumes that a long period of relatively constant vulnerability has occurred.
 
 Outputs expected:
-
 	Spawning stock biomass
 	Relative stock status
 
 Method of operation:
-
 	Data limited and moderate assessments were ran with the nested Stock Synthesis models Simple Stock Synthesis (SSS; catch only data) and extended Simple Stock Synthesis (XSSS; index of abundance available) using a PSA derived prior for relative stock status.
 	A Productivity-Susceptibility Analysis (PSA) is carried out on stocks with full assessments to obtain retrospective vulnerabilities for a year prior to any significant management impact on removals. A logit-linear model can then constructed to predict relative stock status from retrospective vulnerability, and fit to the assessed species data using Markov Chain Monte Carlo sampling. This model is used to formulate the stock-status priors for the data limited and moderate assessments.
 
 Testing:
-
 	The vulnerability-based stock status priors for each of 17 fully assessed US West Coast groundfish species were compared to the defaults assumed in standard SRA type models (mean of 0.4 and standard deviation 0.2).
 	The vulnerability stock status priors showed appreciable differences across stocks to the default priors and demonstrated similar or greater uncertainty.
 	The performance of the vulnerability-based stock status prior was tested in data-reduced applications of the Stock Synthesis framework. The framework reduced the data content of the full stock assessment to that of an SRA-type analysis that uses either catch-only (SSS) or catch and biomass index data (XSSS). Model performance was compared against the fully-specified assessment for several model-derived outputs (initial and terminal spawning biomass and stock status) under the two different stock status priors: the vulnerability stock status prior and the commonly applied mean of 0.4 and standard deviation of 0.2.
@@ -1862,65 +1887,48 @@ Testing:
 	Initial spawning biomass and relative stock status showed less bias and variance compared to the terminal year biomass.
 	Relative stock status was the best performing of the derived quantities across all prior types and modelling approaches.
 
-	General approaches
+### General approaches
 
-A’mar, Z.T. and A.E. Punt (2005).
-Minimum stock size thresholds: how well can we detect whether stocks are below them? In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 487–569. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.
+**A’mar, Z.T. and A.E. Punt (2005). Minimum stock size thresholds: how well can we detect whether stocks are below them? In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 487–569. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.**
+
 Abstract: Management of marine fisheries in U.S. waters is based on the Magnuson-Stevens Fishery Conservation and Management Act. Rebuilding plans need to be developed for fish stocks that have been depleted to below a minimum stock size threshold, MSST. Whether a stock is below MSST is based on the results from a stock assessment. Two types of error can arise when a stock is assessed relative to MSST: (a) it can be assessed to be above MSST when it is not, or (b) it can be assessed to be below MSST when it is not. Simulation is used to assess the likelihood of making these two types of errors as a function of the true status of the resource, the stock assessment method applied, and the quality and quantity of the data available for assessment purposes. All three of the methods of stock assessment considered in this study (two age-structured methods and a production model) make the two errors, especially when the true status of the resource is close to MSST. The major factor influencing the likelihood of under- and over-protection errors is the extent of variability in recruitment, the impact of which is larger than that of data quality and quantity, at least within the range for data quality and quantity considered in this paper.
 
 Summary:
-
 This paper uses simulation to assess the likelihood of three models (two age-structured models and a surplus production model) assessing a stock to either be below the minimum stock size threshold (MSST) when it is not or above the MSST when it is not as a function of the true stock status, the stock assessment method and the quality and quantity of the data available.
 
 Methods:
-
 	Age-structured assessments
 	Schaefer surplus production model
 
 Testing:
+An artificial data set was generated for which the true status of the stock relative to SMSY (spawning output) and MSST (0.5 SMSY) is known. It was assessed how often each assessment method correctly determined the status of the stock relative to the true SMSY and MSST and their proxies (0.4 S0 is the proxy for SMSY and 0.25 S0 is the proxy for MSST).
+The fully integrated age-structured population model was run with four levels of available data: data-rich, data-moderate, data-poor and no-age data.
+The probability of an under-/over protection error is greatest when the actual depletion is close to the threshold depletion level.
+There was little difference among the data scenarios for the probability of being below SMSY. The performance of the no-age data scenario was worse than that of the other scenarios for the other three thresholds (MSST and the two proxies).
+Performance at detecting whether the resource is below the proxies is superior to detecting whether the resource is below SMSY and MSST for the three age-data scenarios.
+The distributions for the estimates of the depletion of the stock are wider for the data-poor scenario than for the data-rich scenario.
+The performance of the three models (two age-structured models and a Schaefer surplus production model) was compared for the data-rich scenario. The results for the data-moderate and data-poor scenarios were qualitatively identical.
+The Schaefer model assesses the stock to be below SMSY much more frequently than the two age-structured models, resulting in less frequent under-protection errors and more frequent over-protection errors.
+The Schaefer production model estimates the resource to be below the two proxies more frequently than the two age-structured models, but the effect is much smaller than for SMSY and MSST.
+Analyses were conducted in which: (a) the values of MSYR (the ratio of MSY to BMSY) and MSYL (the ratio of exploitable biomass at MSY to the average exploitable biomass in an unfished state) were varied, (b) the extent of variation in recruitment was changed, (c) the catch history was changed and (d) the age-at-maturity and the age-at-50%-recruitment were changed in the operating model.
+The impact of different values for recruitment variability is case-specific with much larger impacts for the data-rich scenario compared to the data-poor scenario.
+Changing MSYL, the age-at-maturity and the age-at-50%-recruitment have almost no impact on the ability to correctly detect whether a resource is above or below any of the thresholds.
+The frequency with which the resource is found to be below all four thresholds gets lower when the resource is less productive, but the size of the effect is small.
+The results are insensitive to the catch series, although the frequency of determining the resource to be below SMSY is higher for a stable catch history (compared to an increasing catch history or an increase followed by a decline).
 
-	An artificial data set was generated for which the true status of the stock relative to SMSY (spawning output) and MSST (0.5 SMSY) is known. It was assessed how often each assessment method correctly determined the status of the stock relative to the true SMSY and MSST and their proxies (0.4 S0 is the proxy for SMSY and 0.25 S0 is the proxy for MSST).
-	The fully integrated age-structured population model was run with four levels of available data: data-rich, data-moderate, data-poor and no-age data.
-	The probability of an under-/over protection error is greatest when the actual depletion is close to the threshold depletion level.
-	There was little difference among the data scenarios for the probability of being below SMSY. The performance of the no-age data scenario was worse than that of the other scenarios for the other three thresholds (MSST and the two proxies).
-	Performance at detecting whether the resource is below the proxies is superior to detecting whether the resource is below SMSY and MSST for the three age-data scenarios.
-	The distributions for the estimates of the depletion of the stock are wider for the data-poor scenario than for the data-rich scenario.
-	The performance of the three models (two age-structured models and a Schaefer surplus production model) was compared for the data-rich scenario. The results for the data-moderate and data-poor scenarios were qualitatively identical.
-	The Schaefer model assesses the stock to be below SMSY much more frequently than the two age-structured models, resulting in less frequent under-protection errors and more frequent over-protection errors.
-	The Schaefer production model estimates the resource to be below the two proxies more frequently than the two age-structured models, but the effect is much smaller than for SMSY and MSST.
-	Analyses were conducted in which: (a) the values of MSYR (the ratio of MSY to BMSY) and MSYL (the ratio of exploitable biomass at MSY to the average exploitable biomass in an unfished state) were varied, (b) the extent of variation in recruitment was changed, (c) the catch history was changed and (d) the age-at-maturity and the age-at-50%-recruitment were changed in the operating model.
-	The impact of different values for recruitment variability is case-specific with much larger impacts for the data-rich scenario compared to the data-poor scenario.
-	Changing MSYL, the age-at-maturity and the age-at-50%-recruitment have almost no impact on the ability to correctly detect whether a resource is above or below any of the thresholds.
-	The frequency with which the resource is found to be below all four thresholds gets lower when the resource is less productive, but the size of the effect is small.
-	The results are insensitive to the catch series, although the frequency of determining the resource to be below SMSY is higher for a stable catch history (compared to an increasing catch history or an increase followed by a decline).
+**Daan, N., Gislason, H., Pope, J.G. and J.C. Rice (2005). Changes in the North Sea fish community: evidence of indirect effects of fishing? ICES Journal of Marine Science, 62, 177–188.**
 
-Daan, N., Gislason, H., Pope, J.G. and J.C. Rice (2005).
-Changes in the North Sea fish community: evidence of indirect effects of fishing? ICES Journal of Marine Science, 62, 177–188.
-Abstract: We investigate changes in the North Sea fish community with particular reference to
-possible indirect effects of fishing, mediated through the ecosystem. In the past, long-term
-changes in the slope of size spectra of research vessel catches have been related to changes
-in fishing effort, but such changes may simply reflect the cumulative, direct effects of fishing
-through selective removal of large individuals. If there is resilience in a fish community
-towards fishing, we may expect increases in specific components, for instance as
-a consequence of an associated reduction in predation and/or competition. We show on the
-basis of three long-term trawl surveys that abundance of small fish (all species) as well as
-abundance of demersal species with a low maximum length (Lmax) have steadily and
-significantly increased in absolute numbers over large parts of the North Sea during the last
-30 years. Taking average fishing mortality of assessed commercial species as an index of
-exploitation rate of the fish community, it appears that fishing effort reached its maximum in
-the mid-1980s and has declined slightly since. If the observed changes in the community are
-caused by indirect effects of fishing, there must be a considerable delay in response time,
-because the observed changes generally proceed up to recent years, although both size and
-Lmax spectra suggest some levelling off, or even recovery in one of the surveys. Indeed,
-significant correlations between all community metrics and exploitation rate were obtained
-only if time lags ≥ 6 years were introduced.
+Abstract: We investigate changes in the North Sea fish community with particular reference to possible indirect effects of fishing, mediated through the ecosystem. In the past, long-term changes in the slope of size spectra of research vessel catches have been related to changes in fishing effort, but such changes may simply reflect the cumulative, direct effects of fishing through selective removal of large individuals. If there is resilience in a fish community towards fishing, we may expect increases in specific components, for instance as a consequence of an associated reduction in predation and/or competition. We show on the basis of three long-term trawl surveys that abundance of small fish (all species) as well as abundance of demersal species with a low maximum length (Lmax) have steadily and significantly increased in absolute numbers over large parts of the North Sea during the last 30 years. Taking average fishing mortality of assessed commercial species as an index of exploitation rate of the fish community, it appears that fishing effort reached its maximum in the mid-1980s and has declined slightly since. If the observed changes in the community are caused by indirect effects of fishing, there must be a considerable delay in response time, because the observed changes generally proceed up to recent years, although both size and Lmax spectra suggest some levelling off, or even recovery in one of the surveys. Indeed, significant correlations between all community metrics and exploitation rate were obtained only if time lags ≥ 6 years were introduced.
 
 Data/information requirements:
 	Length frequencies from survey(s)
+	
 Assumptions:
 	Fishing activity directly and indirectly influences the size distribution of fish stocks and the stock community
+	
 Outputs expected:
 	Time series for size spectra (slope and intercept), and ln-CPUE for size classes and ln-Lmax classes
+	
 Method of operation:
 	Size data obtained from surveys
 	Size spectra time series:
@@ -1930,6 +1938,7 @@ Method of operation:
 	for the creation of the ln-Lmax for each caught individual the a Lmax value derived from literature is added to the frequency distribution
 	creation of time series with relative values
 	Some of these time series correlate positively or negatively with overall community exploitation rate
+	
 Testing:
 	Size (length) and Lmax spectra extracted from three North Sea surveys (IBTS, BTS and DYFS)
 	Times series values (see Method of operation) were compared with community exploitation rates (combined F values from multi species virtual population analysis smoothed by using 3-year running means, from ten species and for the demersal species among these them)
@@ -1937,54 +1946,60 @@ Testing:
 	Slope of the size spectrum correlated negatively overall exploitation rate for time lags ≥ 6 years
 	Abundance for size classes correlated with overall exploitation rate (size class < 30 cm correlated positively for time lags ≥ 9 years; size class 30—50 cm correlated positively for time lags ≥ 6 years; size class > 50 cm correlated negatively for time lags ≥ 6 years)
 	Only abundance for ln-Lmax class < 3 (< 20.1 cm) a positive correlation with exploitation rate for demersal stocks was found
+	
 Caveats:
 	Only tested with community exploitation rate and not species specific
 	Does not work for all surveys, areas, species and size classes
 	Substantial time lag required until changes in exploitation rate are visible in size distribution
 
-McGarvey, R., Punt, A.E. and J.M. Matthews (2005).
-Assessing the Information Content of Catch-in-Numbers: A Simulation Comparison of Catch and Effort Data Sets. In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 635–681. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.
+**McGarvey, R., Punt, A.E. and J.M. Matthews (2005). Assessing the Information Content of Catch-in-Numbers: A Simulation Comparison of Catch and Effort Data Sets. In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 635–681. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.**
+
 Abstract: The fishing industry provides totals for landed catch-in-weight and fishing effort in skippers’ logbooks. Because this data-gathering infrastructure is in place, one potentially inexpensive source of additional information could be the catch reported in numbers of individuals landed. The performance of stock assessment models based on three logbook data sets,
 (1) catch-in-weight and fishing effort, (2) that of (1) plus catch-in-numbers, and (3) catch-in-weight and catch-in-numbers (no effort), was evaluated by means of simulation. Simulated data sets were generated from an individual-based model of a lobster fishery and used to test the ability of these three data sets to estimate recruitment, biomass, population numbers, and exploitation rate. The agreement of estimates from two different delay-difference models with true simulation values were quantified. With perfect knowledge of growth and natural mortality, and under nineteen simulated variations from perfect knowledge, adding catch-in-numbers to the traditional data set of catch-in-weight and effort substantially improved the precision and accuracy of the yearly population estimates.
 
-Data/information requirements
+Data/information requirements:
 	Time series of catch weight
 	Time series of catch numbers
 	Time series of effort
 	estimate of natural mortality M
-Assumptions
+
+Assumptions:
 	Either exact catch or exact CPUE (depending on model setup). 
 	Stock can be represented as a recruitment (to the fishery) age class, followed by a plus group. In the first delay difference model (DD1), numbers in a year only depend on numbers in the previous year and recruitment in the previous year. In the second model (DD2), the numbers may depend on the stock state in the previous two years.
 	Von Bertalanffy growth parameters
-Output
+
+Output:
 	Time series of harvest rate, biomass, population numbers and recruitment. 
 	Potentially enough data to perform limited forward projections, and hence define reference points.
+
 Method of operation:
 	The two different delay-difference models are fitted to simulated data to investigate the importance of having three time series of data in the assessment (catch weight, catch numbers and effort). Three different scenarios of data availability were investigated:
 	CwCnE: catch weight, number and effort time series are available
 	CwE: catch weight and effort time series are available
 	CwCn: catch weight and catch numbers time series are available
 Data were simulated with varying mis-specification to represent a possible stock of South Australian rock lobster.  
+
 Testing:
-	Twenty scenarios were tested, for 100 runs each, including a base case with no model mis-specification. 
-	In the well specified situation, all three series were required to be able to recreate the ‘truth’ assumed in simulation. 
-	If catch numbers were omitted, trends were correctly modelled by DD1 (on the few occasions that it converged), but not scaled correctly, whereas DD2 did not even capture the trends. 
-	Where effort data was omitted, the models typically fitted well over the majority of the time period, but with substantial error in the most recent year. The authors hypothesise that this is due to increases in mean weight (which is effectively what the data provide together) being possible due to either decreasing fishing effort leading to greater survival, or to low recruitment, and it takes observations over a few subsequent years to correctly detect which is happening.
-	Given the demonstrated importance of having all three time series, the results for the majority of scenarios are only presented for the case where all three sources of data are available (CwCnE). In these cases, the authors report poor model fitting in the following situations:
+Twenty scenarios were tested, for 100 runs each, including a base case with no model mis-specification. 
+In the well specified situation, all three series were required to be able to recreate the ‘truth’ assumed in simulation. 
+If catch numbers were omitted, trends were correctly modelled by DD1 (on the few occasions that it converged), but not scaled correctly, whereas DD2 did not even capture the trends. 
+Where effort data was omitted, the models typically fitted well over the majority of the time period, but with substantial error in the most recent year. The authors hypothesise that this is due to increases in mean weight (which is effectively what the data provide together) being possible due to either decreasing fishing effort leading to greater survival, or to low recruitment, and it takes observations over a few subsequent years to correctly detect which is happening.
+Given the demonstrated importance of having all three time series, the results for the majority of scenarios are only presented for the case where all three sources of data are available (CwCnE). In these cases, the authors report poor model fitting in the following situations:
 	High variability in recruitment (cv=1)
 	High noise in effort-exploitation relationship (cv=0.4)
 	Low exploitation rates (harvest rate of 5% and 10%) 
-Caveats:
-	Despite the large number of simulations run, they were effectively based around a single life history, and the conclusions may not extend beyond this species. 
-	Under some forms of mis-specification, the model had a high rate of failure to converge when applied to the simulated data. This was particularly true when the catch number time series was excluded. 
-	Only one of the simulation sets included variation in time of the individual growth function parameters. 
 
-Bentley, N. (2015).
-Data and time poverty in fisheries estimation: potential approaches and solutions.  ICES Journal of Marine Science, 72: 186–193.
+Caveats:
+Despite the large number of simulations run, they were effectively based around a single life history, and the conclusions may not extend beyond this species. 
+Under some forms of mis-specification, the model had a high rate of failure to converge when applied to the simulated data. This was particularly true when the catch number time series was excluded. 
+Only one of the simulation sets included variation in time of the individual growth function parameters. 
+
+**Bentley, N. (2015). Data and time poverty in fisheries estimation: potential approaches and solutions. ICES Journal of Marine Science, 72: 186–193.**
+
 Abstract: The increasingly sophisticated methods developed for stock assessment are not always suited to data-poor fisheries. Data-poor fisheries are often low in value, so the researcher time available for their assessment is also small. The dual constraints of reduced data and reduced time make stock assessments for low-value stocks particularly challenging. Prior probability distributions are useful for transferring knowledge from data-rich to data-poor fisheries. When data are limited, it is important to make the most of what few data is available. However, fully understanding potential biases in data are just as important in the data-poor context as it is in data-rich fisheries. A key aspect of stock assessment is peer review. Providing a comprehensive, yet concise, set of diagnostics is crucial to a stock assessment where time is limited. Against the standards by which data-rich stock assessments are judged, stock assessments for data-poor stocks are likely to be found deficient. A key challenge is to maintain a balance between the opposing risks of inappropriate management “action” due to assessment inaccuracy, and inappropriate management “inaction” due to assessment uncertainty.
 
-Prince, J., Hordyk, A., Valencia, S.R., Loneragan, N., and K. Sainsbury (2015)
-Revisiting the concept of Beverton–Holt life-history invariants with the aim of informing data-poor fisheries assessment. – ICES Journal of Marine Science, 72: 194–203.
+**Prince, J., Hordyk, A., Valencia, S.R., Loneragan, N., and K. Sainsbury (2015) Revisiting the concept of Beverton–Holt life-history invariants with the aim of informing data-poor fisheries assessment. ICES Journal of Marine Science, 72: 194–203.**
+
 Abstract: The complexity and cost of assessment techniques prohibits their application to 90% of ﬁsheries. Simple generic approaches are needed for the world’s small-scale and data-poor ﬁsheries. This meta-analysis of the relationship between spawning potential and the normalized size and age of 123 marine species suggests that the so-called Beverton–Holt life-history invariants (BH-LHI; Lm/L1 , M/k, M × Agem ) actually vary together in relation to life-history strategy, determining the relationship between size, age, and reproductive potential for each species. Although little realized, the common assumption of unique values for the BH-LHI also implies that all species share the same relationship between size, age, and reproductive potential. This implicit assumption is not supported by this meta-analysis, which suggests that there is considerable but predictable natural variation in the BH-LHI ratios and the relationships between size, age, and reproductive potential that they determine. We believe that this reconceptualization of the BH-LHI has potential to provide a theoretical framework for “borrowing” knowledge from well-studied species to apply to related, unstudied species and populations, and when applied together with the assessment technique described by Hordyk et al. (2015b), could make simple forms of size-based assessment possible for many currently unassessable ﬁsh stocks.
 
 Study:
@@ -1994,6 +2009,7 @@ Study:
 	Lm/L∞ = 0.66 (length at maturity and asymptotic length)
 	M x Tm = 1.65 (M and the age of maturity)
 	Analysis about the use of size composition data to evaluate the spawning potential ratio (SPR)
+
 Key findings:
 	BH-LHI are merely median of various species, individual species deviate substantially from the values, but similar species show similar patterns
 	Three types of species evident
@@ -2007,6 +2023,7 @@ Key findings:
 	Do not reproduce until growth is almost complete
 	Unfished populations are dominated by adult size classes
 	Reach maturity and asymptotic size relatively early in live
+
 Caveats:
 	Findings only generated for unfished/slightly fished populations
 	Analysis used only simulated data based on life history parameters, no real world application
@@ -2014,8 +2031,8 @@ Ability to project forward/forecast:
 	No
 	But implications from this study can be used for the modelling of stocks with various life history strategies, i.e. knowledge for poorly studies species can be derived from related species
 
-Millar, C.P., Jardim, E., Scott, F., Osio, G.C., Mosqueira, I. and N. Alzorriz (2015).
-Model averaging to streamline the stock assessment process. ICES J. Mar. Sci., 72(1): 93-98.
+**Millar, C.P., Jardim, E., Scott, F., Osio, G.C., Mosqueira, I. and N. Alzorriz (2015). Model averaging to streamline the stock assessment process. ICES J. Mar. Sci., 72(1): 93-98.**
+
 Abstract: The current fish stock assessment process in Europe can be very resource- and time-intensive. The scientists involved require a very particular set of skills, acquired over their career, drawing from biology, ecology, statistics, mathematical modelling, oceanography, fishery policy, and computing. There is a particular focus on producing a single “best” stock assessment model, but as fishery science advances, there are clear needs to address a range of hypotheses and uncertainties, from large-scale issues such as climate change to specific ones, such as high observation error on young hake. Key to our discussion is the use of the assessment for all frameworks to translate hypotheses into models. We propose a change to the current stock assessment procedure, driven by the use of model averaging to address a range of plausible hypotheses, where increased collaboration between the varied disciplines within fishery science will result in more robust advice.
 
 Data/information requirements:
