@@ -13,8 +13,8 @@ A review is provided of a wide-range of data-limited methods and a selection of 
 [Catch-only methods with supplementary information](#Catch-only-methods-with-supplementary-information)
 [Catch-only methods with supplementary data and information](#Catch-only-methods-with-supplementary-data-and-information)
 [Life-history, per-recruit and length-based approaches](#Life-history,-per-recruit-and-length-based-approaches)
-[Qualitative and semi-quantitative approaches](Qualitative-and-semi-quantitative approaches)
-[Comparisons and additional simulation testing](Comparisons-and-additional-simulation-testing)
+[Qualitative and semi-quantitative approaches](#Qualitative-and-semi-quantitative approaches)
+[Comparisons and additional simulation testing](#Comparisons-and-additional-simulation-testing)
 
 ## Introduction and summary
 
