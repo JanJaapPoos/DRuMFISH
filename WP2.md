@@ -18,6 +18,11 @@ Despite the fact that CMSY with catch-only data can take the form of, and behave
 
 A final consideration is that the Robin Hood approach is commonly used in many applications. The idea has a relatively long history, but has been formally described in Punt et al. (2011 - not reviewed here, but available in the sharepoint). The Robin-Hood approach refers to the practice of borrowing information from data-rich stock assessments, e.g. trends in fishing mortality and values for parameters of selectivity functions, to assess data-poor stock, which leads to stock assessments for the most data-poor stocks being informed by those for the most data-rich stocks. Bentley (2015) argues a similar approach where prior probability distributions are used to transfer knowledge from data-rich to data-poor fisheries. This practice has been widely recognized as effective whenever the lack of data prevents an assessment, and as such relevant for the DRUMFISH project.
 
+## Table of Contents
+
+[Data limited approaches](##Data-linited-approached)
+[Catch-only methods with supplementary information](###Catch-only-methods-with-supplementary-information)
+
 ## Data-limited approaches
 
 ### Catch-only methods with supplementary information
@@ -823,7 +828,7 @@ Trends at the species level can be detected only when occurrence is high (>20%).
 The slope of the size spectrum should only be calculated for size classes well-selected by the sampling methodology, often excluding upper and lower size classes. Therefore this indicator is unable to account for information contained in some of the larger size classes that are excluded due to poor representation in the survey.
 Length distributions and densities of individual fish populations may fluctuate dramatically due to a range of factors in addition to fishing pressure e.g. large stochastic recruitment and environmental conditions. Community level indicators may be less influenced by stochastic recruitment and may be more favourable over species-specific indicators to detect fishing impacts in data-limited situations.
 
-** Kleisner, K. and D. Pauly (2011). Stock-status plots of fisheries for regional seas. In: Christensen, V. Lai, S., Palomares, M. L. D., Zeller, D. And Pauly, D. (Eds.). The State of Biodiversity and Fisheries in Regional Seas. Fisheries Centre Research Reports 19(3). Fisheries Centre, University of British Columbia, pp. 37-40, ISSN 1198-6727.**
+**Kleisner, K. and D. Pauly (2011). Stock-status plots of fisheries for regional seas. In: Christensen, V. Lai, S., Palomares, M. L. D., Zeller, D. And Pauly, D. (Eds.). The State of Biodiversity and Fisheries in Regional Seas. Fisheries Centre Research Reports 19(3). Fisheries Centre, University of British Columbia, pp. 37-40, ISSN 1198-6727.**
 
 Abstract: Stock-status plots are bivariate graphs summarizing the status (‘underdeveloped’, ‘developing’, ‘fully exploited’, ‘overexploited’, etc.), through time, of the multispecies fisheries of an area or ecosystem. Given that the limitations of these plots are understood, they are very useful for communicating, at a glance, the evolving status of multispecies fisheries in Regional Seas. Here, we present a new version of this approach that addresses some previous concerns.
 
@@ -2090,8 +2095,8 @@ Caveats:
 	An appropriate natural mortality value needs to be selected for the harvest strategy to perform effectively.
 	The method cannot be used as described if selectivity is assumed to be dome-shaped, because fishing mortality will be over-estimated. 
 
-AFMA (Australian Fisheries Management Authority, 2015).
-Harvest Strategy Framework for the southern and eastern scalefish and shark fishery 2009 amended (February 2015). Canberra, Australia, 25 pp.
+**AFMA (Australian Fisheries Management Authority, 2015).Harvest Strategy Framework for the southern and eastern scalefish and shark fishery 2009 amended (February 2015). Canberra, Australia, 25 pp.**
+
 Description of the Southern and Eastern Scalefish and Shark Fishery (SESSF) harvest strategy framework (AFMA 2015):
 The SESSF harvest strategy framework aims to manage fish stock sustainably at maximum economic yield (MEY) level. The framework was developed in 2005 and comprised 4 tiers with methods depending on the data availability (Wayte, 2009):
 	Tier 1: stock with well established and agreed quantitative stock assessment
@@ -2150,81 +2155,95 @@ Caveats:
 	The SESSF HCR is more a set of HCRs that use existing methods for determining stock dynamics and consequently depends on the performance of these methods.
 	The methods (in particular from tiers 3 and 4) depend heavily on the definition of reference points. As actual biomass reference points are not available here proxies have to be used. Hence, the definition of the reference points has to be thought trough as poorly chosen values jeopardize the desired management targets.
 	Tier 4 HCR is based on estimates of CPUE corresponding to B0. In the Australian fisheries B0 might be easily obtained. The European fishery has a much longer history and B0 estimates are more difficult to estimate.
+
 Reference:
 Wayte, S.E. [ed.] (2009). Evaluation of new harvest strategies for SESSF species. CSIRO Marine and
 Atmospheric Research, Hobart and Australian Fisheries Management Authority, Canberra. 137 p.
 
-Geromont, H.F. and Butterworth, D.S. (2015).
-Generic management procedures for data-poor fisheries: forecasting with few data. ICES Journal of Marine Science, 72(1): 251-261.
+**Geromont, H.F. and Butterworth, D.S. (2015). Generic management procedures for data-poor fisheries: forecasting with few data. ICES Journal of Marine Science, 72(1): 251-261.**
+
 Abstract: The majority of fish stocks worldwide are not managed quantitatively as they lack sufficient data, particularly a direct index of abundance, on which to base an assessment. Often these stocks are relatively “low value”, which renders dedicated scientific management too costly, and a generic solution is therefore desirable. A management procedure (MP) approach is suggested where simple harvest control rules are simulation tested to check robustness to uncertainties. The aim of this analysis is to test some very simple “off-the-shelf” MPs that could be applied to groups of data-poor stocks which share similar key characteristics in terms of status and demographic parameters. For this initial investigation, a selection of empirical MPs is simulation tested over a wide range of operating models (OMs) representing resources of medium productivity classified as severely depleted, to ascertain how well these different MPs perform. While the data-moderate MPs (based on an index of abundance) perform somewhat better than the data-limited ones (which lack such input) as would be expected, the latter nevertheless perform surprisingly well across wide ranges of uncertainty. These simple MPs could well provide the basis to develop candidate MPs to manage data-limited stocks, ensuring if not optimal, at least relatively stable sustainable future catches.
 
 Data/information requirements:
-	Data-limited HCRs: mean length in the catch
-	Data-moderate HCRs: direct index of abundance (commercial cpue or from surveys)
-Assumptions:
-	For data-limited HCRs: mean length in the catch is a quantitative, though indirect, indicator of the trend in resource abundance
-	For data-moderate HCRs: index of abundance reflects unbiased population trends
-	All these data have reasonable information content and the associated observation error is not too large
-Outputs expected:
-	HCRs that can be applied to obtain catch advice in both data-limited and data moderate scenarios that are able to recover the stock if it is depleted, and minimise the risk of stock depletion
-Method of operation:
-	Data-limited: rules ranging from simple constant catch to step up/down constant catch strategies as a function of the current mean length of the catch, and a target rule based on current mean length as a function of target mean length
-	Data-moderate: slope and target rules based on the index of abundance
-	The TAC each year is adjusted up or down from the previous year’s TAC or recent years average catch depending on either the rate of increase or decrease in the size of the resource or whether it is above or below some target level indicated by data
-	The success of a rule depends on how much information, rather than noise due to observation error, data series contain
-Testing:
-	Testing within an MSE framework, accounting for observation error (when generating future abundance indices and length data), process error (recruitment and fishing selectivity) and implementation error.
-	Age-structured production model used as the operating model, parameterised using a Bayes-like approach (integrating over ranges specified for model variables such as current depletion B/K, stock-recruit steepness h, and natural mortality M). Parameter distributions are chosen to reflect qualitative information typically available, while allowing for the amount of model uncertainty expected.
-	Fish stocks grouped into “baskets” according to perceived level depletion (severely depleted, moderately depleted, near target) and productivity (low, medium and high). However, for the paper only one of the baskets is considered (severely depleted of medium productivity).
-	Simple empirical rules lack used in data-limited situations lack estimates of stock status and quantities such as MSY on which to base TACs, so additional caution is needed to avoid undetected resource depletion. Therefore, if little information is known about stock status, the starting point of these empirical rules should correspond to an appropriately precautionary level of catch.
-	As expected, data-moderate rules performed better than data-limited ones; nevertheless, the data-limited rules performed surprisingly well across a wide range of uncertainty. The rules were not robust to misclassification of the depletion/productivity “basket”, suggesting that correct classification is key for HCRs to meet their objectives.
-Caveats
-	The generic HCRs cannot be applied “as is” in practice without further testing to account for the full extent of uncertainty for the group of stocks under consideration.
-	The simulations assumed the availability of reliable direct/indirect indices of population abundance and trends – reliable indices may not be available, so robustness to biases in available indices would need to be demonstrated.
-	Simulation study only considered severely depleted stocks of medium productivity (only one of the nine “baskets”).
-	Classification of “depletion” is challenging and may need to be supported by use of classification approaches such is in FAO (2011).
-	The extent of uncertainty, as reflected by pre-specified distributions, may need to be closely examined by stakeholders to ensure acceptance.
+Data-limited HCRs: mean length in the catch
+Data-moderate HCRs: direct index of abundance (commercial cpue or from surveys)
 
-Jardim, E., Azevedo, M. and N.M. Brites (2015b).
-Harvest Control Rules for data limited stocks using length-based reference points and survey biomass indices. Fisheries Research, 171: 12-19.
+Assumptions:
+For data-limited HCRs: mean length in the catch is a quantitative, though indirect, indicator of the trend in resource abundance
+For data-moderate HCRs: index of abundance reflects unbiased population trends
+All these data have reasonable information content and the associated observation error is not too large
+
+Outputs expected:
+HCRs that can be applied to obtain catch advice in both data-limited and data moderate scenarios that are able to recover the stock if it is depleted, and minimise the risk of stock depletion
+
+Method of operation:
+Data-limited: rules ranging from simple constant catch to step up/down constant catch strategies as a function of the current mean length of the catch, and a target rule based on current mean length as a function of target mean length
+Data-moderate: slope and target rules based on the index of abundance
+The TAC each year is adjusted up or down from the previous year’s TAC or recent years average catch depending on either the rate of increase or decrease in the size of the resource or whether it is above or below some target level indicated by data
+The success of a rule depends on how much information, rather than noise due to observation error, data series contain
+
+Testing:
+Testing within an MSE framework, accounting for observation error (when generating future abundance indices and length data), process error (recruitment and fishing selectivity) and implementation error.
+Age-structured production model used as the operating model, parameterised using a Bayes-like approach (integrating over ranges specified for model variables such as current depletion B/K, stock-recruit steepness h, and natural mortality M). Parameter distributions are chosen to reflect qualitative information typically available, while allowing for the amount of model uncertainty expected.
+Fish stocks grouped into “baskets” according to perceived level depletion (severely depleted, moderately depleted, near target) and productivity (low, medium and high). However, for the paper only one of the baskets is considered (severely depleted of medium productivity).
+Simple empirical rules lack used in data-limited situations lack estimates of stock status and quantities such as MSY on which to base TACs, so additional caution is needed to avoid undetected resource depletion. Therefore, if little information is known about stock status, the starting point of these empirical rules should correspond to an appropriately precautionary level of catch.
+As expected, data-moderate rules performed better than data-limited ones; nevertheless, the data-limited rules performed surprisingly well across a wide range of uncertainty. The rules were not robust to misclassification of the depletion/productivity “basket”, suggesting that correct classification is key for HCRs to meet their objectives.
+
+Caveats:
+The generic HCRs cannot be applied “as is” in practice without further testing to account for the full extent of uncertainty for the group of stocks under consideration.
+The simulations assumed the availability of reliable direct/indirect indices of population abundance and trends – reliable indices may not be available, so robustness to biases in available indices would need to be demonstrated.
+Simulation study only considered severely depleted stocks of medium productivity (only one of the nine “baskets”).
+Classification of “depletion” is challenging and may need to be supported by use of classification approaches such is in FAO (2011).
+The extent of uncertainty, as reflected by pre-specified distributions, may need to be closely examined by stakeholders to ensure acceptance.
+
+**Jardim, E., Azevedo, M. and N.M. Brites (2015b). Harvest Control Rules for data limited stocks using length-based reference points and survey biomass indices. Fisheries Research, 171: 12-19.**
+
 Abstract: There are a large number of commercially exploited stocks lacking quantitative assessments and reliable estimates of stock status. Providing MSY-based advice for these data limited stocks remains a challenge for fisheries science. For many data-limited stocks, catch length composition and/or survey biomass indices or catch-per-unit effort (cpue) are available. Information on life history traits may also be available or borrowed from similar species/stocks. In this work we present three harvest control rules (HCRs), driven by indicators derived from key monitoring data. These were tested through simulation using two exploitation scenarios (development and over-exploitation) applied to 50 stocks (pelagic, demersal, deep sea species and Nephrops). We examine the performance of the HCRs to deliver catch-based advice that is risk adverse and drives stocks to MSY. The HCR with a biomass index-adjusted status quo catch, used to provide catch-based advice for several European data-limited stocks, showed the poorest performance, keeping the biomass at low or very low levels. The HCRs that adjust the status quo catch based on the variability of the biomass index time series was able to drive most of the stocks to MSY, showing low to moderate biological risk. The recovery of biomass required asymmetric confidence intervals for the biomass index and larger decreases in status quo catch than increases. The HCR based on length reference points as proxies for the FSQ/FMSY ratio was able to reverse the decreasing trend in biomass but with levels of catch below MSY. This HCR did not prevent some of the stocks declining when subject to over-exploitation. For data-limited stocks, the empirical HCRs tested in this work can provide the basis for catch advice. Nevertheless, applications to real life cases require simulation testing to be carried out to tune the HCRs. Our approach to simulation testing can be used for such analysis.
 
 Data/information requirements:
-	For survey-based HCRs: time series of survey biomass indices (survey-based HCR) 
-	For length-based HCR: current mean length in the catch, mean length at first capture (Lc), and the von Bertalanffy growth parameters L.
+For survey-based HCRs: time series of survey biomass indices (survey-based HCR) 
+For length-based HCR: current mean length in the catch, mean length at first capture (Lc), and the von Bertalanffy growth parameters L.
+	
 Assumptions:
-	For survey-based HCRs: Survey biomass indices reflect unbiased population trends
-	For length-based HCR: mean length in the catch reasonably reflects population status; LSQ/LF=M is used as a proxy for FSQ/FMSY
+For survey-based HCRs: Survey biomass indices reflect unbiased population trends
+For length-based HCR: mean length in the catch reasonably reflects population status; LSQ/LF=M is used as a proxy for FSQ/FMSY
+
 Outputs expected:
-	HCRs that can be applied to obtain catch advice in data-limited scenarios that are able to recover the stock if it is depleted, and minimise the risk of stock depletion
+HCRs that can be applied to obtain catch advice in data-limited scenarios that are able to recover the stock if it is depleted, and minimise the risk of stock depletion
+
 Method of operation:
-	Survey-based HCR1: calculate the ratio of the mean of the most recent two years relative to the mean of the three preceding years for the survey biomass index, and apply this ratio to recent catch to obtain catch advice
-	Survey-based HCR2: compare the most recent survey index to survey confidence intervals based on survey means and standard deviations that are continuously updated with new data, and apply a multiplier depending on whether the recent index is above or below the survey confidence interval. Apply this multiplier to recent catch to obtain catch advice. The interval need not be symmetrical, nor the multipliers equal.
-	Length-based HCR3: calculate the ratio of the current mean length in the catch (LSQ) o the mean length used as a proxy for the mean catch length at MSY (LF=M=0.75Lc+0.25L), and apply this ratio to recent catch to obtain catch advice
+Survey-based HCR1: calculate the ratio of the mean of the most recent two years relative to the mean of the three preceding years for the survey biomass index, and apply this ratio to recent catch to obtain catch advice
+Survey-based HCR2: compare the most recent survey index to survey confidence intervals based on survey means and standard deviations that are continuously updated with new data, and apply a multiplier depending on whether the recent index is above or below the survey confidence interval. Apply this multiplier to recent catch to obtain catch advice. The interval need not be symmetrical, nor the multipliers equal.
+Length-based HCR3: calculate the ratio of the current mean length in the catch (LSQ) o the mean length used as a proxy for the mean catch length at MSY (LF=M=0.75Lc+0.25L), and apply this ratio to recent catch to obtain catch advice
+
 Testing:
-	Testing within an MSE framework (FLR), accounting for observation, process and implementation error.
-	Tested under two exploitation scenarios: development and over-exploitation
-	Applied to 50 stocks (pelagic, demersal, deep-sea, Nephrops).
-	Steepness of h=0.75 used for all stocks, with M calculated from Gislason et al. (2010) and von Bertalanffy growth parameters from ICES (2012).
-	Fleet selectivity modelled as double-normal with a mode at 50% maturity, with survey selectivity modelled as asymptotically flat-topped.
-	Operating model was age-structured, with mean length in the catch calculated as a weighted average of length-at-age with the weights being catch-at-age. Mean length at first capture calculated using von Bertalanffy growth parameters assuming age at first capture at 25% maturity.
-	Results indicated that HCR1 was unable to recover depleted stocks. HCR3 was able to reverse decreasing trends in biomass, but with levels of catch below MSY; in some cases, HCR3 was unable to prevent stocks that were over-exploited from declining further. HCR2 required the use of asymmetric intervals and multipliers (resulting in larger decreases than increases) in order to drive stocks towards MSY levels and secure low to moderate levels of biological risk.
-Caveats
+Testing within an MSE framework (FLR), accounting for observation, process and implementation error.
+Tested under two exploitation scenarios: development and over-exploitation
+Applied to 50 stocks (pelagic, demersal, deep-sea, Nephrops).
+Steepness of h=0.75 used for all stocks, with M calculated from Gislason et al. (2010) and von Bertalanffy growth parameters from ICES (2012).
+Fleet selectivity modelled as double-normal with a mode at 50% maturity, with survey selectivity modelled as asymptotically flat-topped.
+Operating model was age-structured, with mean length in the catch calculated as a weighted average of length-at-age with the weights being catch-at-age. Mean length at first capture calculated using von Bertalanffy growth parameters assuming age at first capture at 25% maturity.
+Results indicated that HCR1 was unable to recover depleted stocks. HCR3 was able to reverse decreasing trends in biomass, but with levels of catch below MSY; in some cases, HCR3 was unable to prevent stocks that were over-exploited from declining further. HCR2 required the use of asymmetric intervals and multipliers (resulting in larger decreases than increases) in order to drive stocks towards MSY levels and secure low to moderate levels of biological risk.
+
+Caveats: 
 	Application to real-life scenarios requires that the HCRs be “tuned” in order to ensure reasonable performance under the specific scenario
 	How reliable the performance of an HCRs is for a given stock scenario depends on the appropriateness of testing assumptions 
 
 	Other Reviews
 
-Honey, K.T., Moxley, J.H. and R.M. Fujita (2010).
-From Rags to Fishes: Data-Poor Methods for Fishery Managers. Managing Data-Poor Fisheries: Case Studies, Models & Solutions 1:159–184.
+**Honey, K.T., Moxley, J.H. and R.M. Fujita (2010). From Rags to Fishes: Data-Poor Methods for Fishery Managers. Managing Data-Poor Fisheries: Case Studies, Models & Solutions 1:159–184.**
+
 Abstract: Fishery managers often must make decisions regardless of data availability or completeness of scientific understanding. Existing and new legal mandates, such as the requirement to establish Annual Catch Limits for each United States fishery by 2011, as well as the ongoing need to improve understanding of fish stock dynamics, are driving efforts to develop new, more efficient ways to assess fish stocks when resources are insufficient for full stock assessments. Moreover, there is an increasing recognition of the need to assess stocks at smaller spatial scales. In December 2008, fishery scientists, fishermen, and managers convened at a workshop in Berkeley, California (USA), to discuss such methods. One goal of the workshop was to identify methods for estimating potential reference points for managing data-poor fisheries, such as science-based overfishing thresholds, allowable biological catch levels, and vulnerability indices. Here we review methods presented at the workshop, as well as some promising methods gleaned from the literature, for establishing reference points for data-poor situations. We present a new framework to help managers and stakeholders consider and choose appropriate analytical methods and alternative management approaches, based on available data (type, quantity, and quality) and feasibility constraints (scale, value, and implementation costs). We highlight limitations and considerations for each method and illustrate the use of our framework by presenting case-study examples. Too often, lack of data and/or proper data analysis results in lack of management. This status quo, however, poses risks to the economic and biological sustainability of fisheries. Application of data-poor methods, while subject to many caveats, can reduce these risks by providing scientific guidance for management.
 
 Data/information requirements:
 	The framework can almost cope with any kind of data, from virtually no available data to extensive stock knowledge allowing a full quantitative stock assessment
+	
 Assumptions:
 	Assumptions depend on the particular method(s) used
+	
 Outputs expected:
 	Outputs depend on the particular methods used, the ultimate results is some kind of management measure for the considered stock.
+	
 Method of operation:
 	This paper describes a 4 step framework for evaluating and managing data-poor fisheries. Depending on the data availability different methods are proposed.
 	Step 1: Gauge data-richness
@@ -2318,8 +2337,7 @@ Extract from the paper:
  
  
 
-Newman, D., Carruthers, T., MacCall, A., Porch, C. and L. Suatoni (2014).
-Improving the Science and Management of Data-Limited Fisheries: An Evaluation of Current Methods and Recommended Approaches. NDRC report, October 2014. R:14-09-B. 38pp.
+**Newman, D., Carruthers, T., MacCall, A., Porch, C. and L. Suatoni (2014). Improving the Science and Management of Data-Limited Fisheries: An Evaluation of Current Methods and Recommended Approaches. NDRC report, October 2014. R:14-09-B. 38pp.**
 
 Abstract: Congress amended the Magnuson-Stevens Fishery Conservation and Management Act (MSA) in 2006 to require annual catch limits (ACL) for most federally-managed fish stocks by 2011,
 with the goals of ending overfishing, improving accountability within the fisheries management system, and encouraging research into more precise assessment methods (U.S. Senate, 2006). Meeting this mandate required fishery managers to establish new mechanisms for setting ACLs for hundreds of previously unassessed stocks and stock complexes, a considerable undertaking that required substantial resources of time and energy by the regional fishery management councils, the National Marine Fisheries Service (NMFS), stock assessment scientists, and technical advisors.
@@ -2342,8 +2360,10 @@ situations in the two regions in such a short time, the scope of the Workshop wa
 
 Data/information requirements:
 	Variable, depending on the methods selected
+	
 Outputs expected:
 	An ABC (Acceptable Biological Catch)
+	
 Method of operation:
 	Data Moderate
 	Fratio (FMSY/M) (Cope et al., 2012; Gulland, 1971; NPFMC, 2013; Taylor et al., 2013; Walters and Martell, 2002.)
@@ -2386,6 +2406,7 @@ Testing:
 	Catch scalars below average catch are generally precautionary when biomass greater than 50% of BMSY.
 	Catch scalars at average catch generally lead to a high risk of over-fishing
 	25% buffer between OFL and ABC had little effect on long term yield, but relatively large impact on the probability of overfishing.
+	
 Caveats:
 	No proof that data-rich assessments are always better than data-moderate and data-poor methods in reliability. Counter-examples can be found when delay-difference models perform less well than some data-poor methods.
 
@@ -2428,8 +2449,8 @@ Western Pacific Fishery Management Council. 2011b. Annual Catch Limit Specificat
 
 Western Pacific Fishery Management Council. 2013. Annual Catch Limit Specifications and Accountability Measures for Pacific Islands Bottomfish Fisheries in 2013 and 2014, February 26, 2013.
 
-Edwards, C.T.T. (2015). 
-Review of data-poor assessment methods for New Zealand fisheries. New Zealand Fisheries Assessment Report No. 2015/27: 24 pp.
+**Edwards, C.T.T. (2015). Review of data-poor assessment methods for New Zealand fisheries. New Zealand Fisheries Assessment Report No. 2015/27: 24 pp.**
+
 Abstract: There is growing interest from MPI and other fisheries stakeholders in methods to assess New Zealand fish stocks with low levels of data. While some preliminary work has been done in New Zealand, there has been no recent overview of available methods or practices internationally. This qualitative review gives an overview of data-poor methods in use internationally, drawing in particular on those presented at the world conference on stock assessments methods (WCSAM) held in Boston MA, USA, in July 2013. Reference is also made to interesting presentations from the Knowledge Based Bio-Economy (KBBE) workshop in Hobart TAS, Australia, in November 2013. I have noted the types of data required for each method, summarised the assumptions required, and, where appropriate, linked to examples of their use. In addition, I have further commented on the potential utility of each method in New Zealand.
 
 Data/information requirements:
@@ -2493,9 +2514,11 @@ Method of operation:
 	Swept area methods require neither an accurate record of commercial catch, nor any time series data, with an estimate of exploitation (U or F) obtainable from a single year of survey data and fishing effort records alone. In the simplest weighted swept-area approach, only survey data on spatial distribution is required, with local exploitation rates (U) considered proportional to the fraction of the inhabited area swept by the fishing gear. Sustainability assessment methods are similar to swept area methods for estimating U, but differ by estimating F directly, assuming a continuous (rather than instantaneous) fishing process.
 	Non-parametric and time-series models are data driven, with much weaker assumptions about underlying processes than the more traditional stock assessment models. The intention of these approaches is to extract a trend signal from noisy data, potentially integrating over more than one index. These methods are not dependent on catch data being available, but more advanced methods are developing that can include catch information as well.
 	Priors can play an important role in data poor methods, and many of these methods depend on the availability of prior information on life-history parameters, particularly natural mortality and somatic growth, and in the case of the simplest catch-only methods, productivity. Meta-analysis is also a powerful tool, allowing the sharing of information across stocks. This can be augmented by known relationships between life-history parameters.
+	
 Testing:
 	A variety of the methods covered in this paper have formed part of simulation testing studies (see elsewhere), and for some of these, there is also a wealth of applications (see table under outputs expected).
 	Non-parametric and time-series approaches have not been fully developed or tested in data-poor settings, and therefore their utility remains unclear.
+	
 Caveats:
 	Model-based catch-only methods (DB-SRA, Catch-MSY) require strong prior assumptions regarding productivity and depletion, often poorly justified; for incomplete catch data, scaler catch-only methods (DACS, DCAC) may be more appropriate, but simulation tests (covered elsewhere) indicate that catch-only methods are not reliable, although they are widely used. Model-based catch-only methods will remain of limited use unless further progress is made towards the development of informative priors for both productivity and initial biomass.
 	Process-based models (production and delay-difference models) that include abundance indices still require contrast in the data (e.g. if catch has changed over time, then the index must also have changed), which can be limiting for the application of the method. For example, an unresponsive index of abundance or one that is inconsistent with the catch data could be caused by catches being small relative to the absolute biomass, the index not tracking abundance, or the abundance being driven by other unknown factors. In these cases, process-based models will usually fail.
@@ -2505,13 +2528,13 @@ Caveats:
 Ability to project forward/forecast:
 	Model-based catch-only methods (DB-SRA, Catch-MSY) and process-based models (production and delay difference) will provide this functionality.
 
-Geromont, H.F. and D.S. Butterworth. (2015).
-A review of assessment methods and the development of management procedures for data-poor fisheries. FAO Report. The Marine Resource Assessment and Management Group (MARAM), University of Cape Town, South Africa. 219pp
+**Geromont, H.F. and D.S. Butterworth. (2015). A review of assessment methods and the development of management procedures for data-poor fisheries. FAO Report. The Marine Resource Assessment and Management Group (MARAM), University of Cape Town, South Africa. 219pp**
+
 Abstract: There are as yet few quantitative measures in place to manage the majority of low-value fish stocks worldwide, mainly due to the lack of reliable data on which to base quantitative assessments. The FAO (2010) has highlighted the need for the development of scientific assessment methods and management procedures for an estimated 90% of the stocks exploited worldwide that are currently not assessed. Formal quantitative stock assessments are generally costly, because they are expertise hungry and demand large quantities of time and information. As such, they do not present a practical management solution for most data-poor stocks, particularly when these are also low value (as is generally the case). Due to the high costs of data collection, these methods and procedures need to be less data-demanding, easy to implement, give reliable estimates of stock status were possible (e.g. abundance relative to some biomass reference point such as MSY B ) and provide the quantitative information necessary for providing effective management solutions. This review summarises a suite of approaches when data are limited. These approaches include both simple assessment methods and empirical management procedures (or harvest control rules), grouped according to the data required.
 The Report consists of three parts: Part 1 gives an overview of world practices in fisheries assessment and management, followed by Part 2 which reviews existing data-poor assessment methods and their application to provide management advice. The Report concludes with Part 3 which provides two examples of the evaluation of the performance of some simple management procedures when applied to two data-poor stocks.
 
-Newman, D., Berkson, J. and L. Suatoni (2015).
-Current methods for setting catch limits for data-limited fish stocks in the United States. Fisheries Research 164 (2015) 86-93
+**Newman, D., Berkson, J. and L. Suatoni (2015). Current methods for setting catch limits for data-limited fish stocks in the United States. Fisheries Research 164 (2015) 86-93**
+
 Abstract: This paper examines how the requirement for annual catch limits (ACLs) has been implemented for data-limited stocks in all federally-managed fisheries in the United States. The legal mandate to establish ACLs in the U.S. has spurred substantial scientific advances, including the development and adoption of at least 16 methods for establishing catch limits for data-limited fisheries. This study analyzed the assessment methods that form the basis of ACLs, those which determine the overfishing limits (OFLs)and the acceptable biological catches (ABCs). Nationally, 30% (150) of OFLs/ABCs are currently calculated using conventional data-rich assessment methods, 11% (59) using data-moderate methods, and 59% (295) using data-poor approaches. There is substantial variation in the proportion of stocks that are currently managed with data-rich versus data-limited methods across regions, and there are clear geographical patterns in the types and diversity of methods being utilized to calculate OFLs/ABCs. Data-poor methods are the most commonly used OFL/ABC-setting methods in the U.S., particularly in the Southeast, Atlantic highly migratory species (HMS), Pacific, and Western Pacific regions. The Southeast and Atlantic HMS regions use some form of catch scalar or an ABC of zero landings for each data-limited stock. The Pacific and North Pacific regions currently employ a higher diversity of data-limited methods than any other region; these include both data-moderate methods and data-poor methods. Regional disparities in data-limited method development and implementation are attributed to regional differences in the number of stocks being managed, the data types and lengths of the time series available, and the resources dedicated to data processing and stock assessment. Recommendations for improving management of data-limited stocks include establishing a complete inventory of all available data for each managed stock, dedicating resources and expertise to data-limited method development and evaluation, and developing a more streamlined assessment process to handle the expanded volume of stocks requiring ACLs.
 
 [Considerable overlap with Newman et al. 2014 (summarised above), which provides much more detail.]
@@ -2520,8 +2543,8 @@ Extract from the paper:
  
 Figure 1: From Newman et al. 2015: OFL/ABC setting methods by region. Respectively: New England Fisheries Management Council (FMC), Mid-Atlantic FMC, South Atlantic FMC, Gulf of Mexico FMC, Caribbean FMC, highly migratory species, Pacific FMC, North Pacific FMC,
 
-Chrysafi, A. and A. Kuparinen (2016).
-Assessing abundance of populations with limited data: Lessons learned from data-poor fisheries stock assessment. Environ. Rev. 24: 25-38.
+**Chrysafi, A. and A. Kuparinen (2016).Assessing abundance of populations with limited data: Lessons learned from data-poor fisheries stock assessment. Environ. Rev. 24: 25-38.**
+
 Abstract: Estimation of population abundances in the absence of good observational data are notoriously difficult, yet urgently needed for biodiversity conservation and sustainable use of natural resources. In the field of fisheries research, management regulations have long demanded population abundance estimates even if data available are sparse, leading to the development of a range of fish stock assessment methods designed for data-poor populations. Here, we present methods developed within the context of fisheries research that can be applied to conduct population abundance estimations when facing data-limitations. We begin the review from the less data-demanding approaches and continue with more data-intensive ones. We discuss the advantages and caveats of these approaches, the challenges and management implications associated with data-poor stock assessments, and we propose the implementation of the Bayesian hierarchical framework as the most promising avenue for future development and improvement of the current practices.
 
 
