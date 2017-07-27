@@ -883,7 +883,7 @@ It is necessary to correct for a retransformation bias as mPRM predicts log(B/BM
 Caveats:
 This approach is not suitable for formal assessment as it does not produce precise estimates for individual fisheries.
 
-###Comparisons and additional simulation testing
+### Comparisons and additional simulation testing
 
 **Dorn M., Berkson, J., Punt, A. and K. Stokes, (2011). Assessment Methods for Data-Poor Stocks. Report of Methodology Review Panel Meeting. National Marine Fisheries Service (NMFS), Southwest Fisheries Science Center (SWFSC), Santa Cruz, California, 25-29 April 2011.**
 
@@ -1177,11 +1177,12 @@ Method of operation and testing:
 Testing of the methods was done within a management strategy evaluation framework. Two life-history types common to U.S. west coast groundfish were tested: a fast-growing, short-lived flatfish, and a slow-growing, long-lived rockfish. The operating model was defined to be a specified proportion of virgin biomass at the start of management-based projections, depending on life-history and simulation scenario. Scenarios comprised one where all prior distributions were centred about their true values and the relative biomass at the start of projections was at the management target, and the remaining scenarios being variations of this, with priors (for depletion and productivity) being over-optimistically specified (i.e. biased in a negative direction relative to their true distributions); for these remaining scenarios, the relative biomass at the start of projections was always below the management target. OFLs were calculated for each of the methods tested, and ABCs derived from these by applying a buffer factor (0.69 for DCAC and DB-SRA, and 0.83 for XDB-SRA and XSSS). The OFL was calculated only once for DCAC at the start of the projection, because this method defines a one-time only calculation of yield. Although the OFL is calculated each year for DB-SRA, the estimation is only applied once (deriving a vector of OFLs for the future) and prior distributions are not updated. The data-moderate methods (XDB-SRA and XSSS) estimate biomass and OFLs for the subsequent four years (mirroring the management cycle) based on the available index data.
 
 Main conclusions:
-	DCAC and DB-SRA generally avoided overfishing when depletion was correctly assumed to be at the target level (0.25B0 for flatfish and 0.4B0 for rockfish) at the start of the projection period. However, under this scenario, XDB-SRA set OFLs and ABCs that were well above the true OFLs, resulting in poor outcomes for each stock; this is partly explained by an initially non-informative biomass index, with the buffer reduction not large enough to prevent overfishing. XDB-SRA performed particularly poorly in the flatfish case with rapid population dynamics and little contrast in the biomass index.
+DCAC and DB-SRA generally avoided overfishing when depletion was correctly assumed to be at the target level (0.25B0 for flatfish and 0.4B0 for rockfish) at the start of the projection period. However, under this scenario, XDB-SRA set OFLs and ABCs that were well above the true OFLs, resulting in poor outcomes for each stock; this is partly explained by an initially non-informative biomass index, with the buffer reduction not large enough to prevent overfishing. XDB-SRA performed particularly poorly in the flatfish case with rapid population dynamics and little contrast in the biomass index.
 	
-	All estimation methods, except DCAC, resulted in overfishing when the prior on depletion at the start of the projection period was misspecified (i.e. assumed more optimistic than the true level) and the stock was below the target level at the start of projections. This was most notable for DB-SRA. However, XDB-SRA and XSSS were able to utilise the index data such that, within 10-15 years, the updated prior distributions for depletion at the start of projections resulted in OFLs and ABCs that allowed stock rebuilding. DCAC generally resulted in increasing or flat population trajectories, but overfishing still occurred for portions of the trajectory when parameters were misspecified, despite application of a higher buffer (0.69) to account for uncertainty. 
+All estimation methods, except DCAC, resulted in overfishing when the prior on depletion at the start of the projection period was misspecified (i.e. assumed more optimistic than the true level) and the stock was below the target level at the start of projections. This was most notable for DB-SRA. However, XDB-SRA and XSSS were able to utilise the index data such that, within 10-15 years, the updated prior distributions for depletion at the start of projections resulted in OFLs and ABCs that allowed stock rebuilding. DCAC generally resulted in increasing or flat population trajectories, but overfishing still occurred for portions of the trajectory when parameters were misspecified, despite application of a higher buffer (0.69) to account for uncertainty. 
 	
-	DCAC and DB-SRA performed somewhat better for the rockfish scenarios because these methods tend to estimate the “windfall” biomass of the older age classes associated with long-lived species. However, long-term application of these methods could have undesirable effects compared to XDB-SRA and XSSS because of the lack of ability to update priors based on data. Nevertheless, these methods could be useful for management in the short term (≤10 years), particularly for stocks that have low historical exploitation.
+DCAC and DB-SRA performed somewhat better for the rockfish scenarios because these methods tend to estimate the “windfall” biomass of the older age classes associated with long-lived species. However, long-term application of these methods could have undesirable effects compared to XDB-SRA and XSSS because of the lack of ability to update priors based on data. Nevertheless, these methods could be useful for management in the short term (≤10 years), particularly for stocks that have low historical exploitation.
+
 Ability to project forward/forecast:
 All the methods apart from DCAC can be used for projections.
 
@@ -1198,122 +1199,133 @@ Assumptions:
 All assumption from PSA analysis.
 
 Outputs expected:
-	The same of PSA (among those, index of how vulnerable the managed stocks are to becoming overfished and guidance to help determine the needed strength of conservation measures and the degree of precaution to apply in management measures).
+The same of PSA (among those, index of how vulnerable the managed stocks are to becoming overfished and guidance to help determine the needed strength of conservation measures and the degree of precaution to apply in management measures).
 
 Method of operation: 
-	PSA: used 35 attributes of the 75 proposed by Hobday et al (2004) and Rosenberg et al. (2007), after removal of attributes perceived as redundant or pertaining more to risk analyses for fishing impacts on habitat quality or overall ecosystem health. 
-	Evaluation of the attributes in a two-phase process: 
-	individual scores (i.e., “yes”, “no”, or “maybe”) to determine whether each attribute was: i) scientifically valid for calculating productivity or susceptibility of a stock, ii) useful at different scales and iii) capable of being calculated for most fisheries. Attributes receiving a majority of “yes” scores for all three factors were retained. 
-	attributes receiving mixed scores, as well as new attributes that had not been previously identified, were evaluated and 18 (9 productivity, 9 susceptibility) of the 35 attributes were selected and four new attributes were added, including: i) recruitment pattern, ii) management strategy, iii) fishing rate relative to natural mortality, and iv) desirability/value of the fishery. Overall, 22 attributes (10 productivity, 12 susceptibility) were selected for the analysis.
-	Default weight of 2 for the productivity and susceptibility attributes, where attribute weights can be adjusted within a scale from 0 to 4 (based on the relevance of the attribute rather than data availability). 
-	Productivity: information on maximum length, maximum age, age at maturity, natural mortality, and von Bertalanffy growth coefficient were available from 140+ stocks considered to be representative of U.S. fisheries. For these attributes, analysis of variance (ANOVA) was used to define attribute scoring thresholds that produced significantly different bins of data.
-	Susceptibility: catchability (likelihood of a stock’s capture by a particular fishery, 7 attributes) and management attributes (how the fishery is managed, 5 attributes) treated as subcategories under the susceptibility factor.
-	A data quality index was developed that provides an estimate of uncertainty for individual vulnerability scores based on five tiers ranging from high belief to little belief in the score. The data quality score is computed for the productivity and susceptibility scores as a weighted average of the data quality scores for the individual attributes, and denotes the overall quality of the data or belief in the score. In the case of missing data for an attribute (data quality score of 5), this attribute would not be used in the computation of the vulnerability score but would be reflected in the computation of overall data quality score.
-	To evaluate the effect of fishing pressure on vulnerability: Kruskall-Wallis tests to explore if significant differences in susceptibility and vulnerability scores between stocks that had been overfished or undergone overfishing in the past and those that had not.
+PSA: used 35 attributes of the 75 proposed by Hobday et al (2004) and Rosenberg et al. (2007), after removal of attributes perceived as redundant or pertaining more to risk analyses for fishing impacts on habitat quality or overall ecosystem health. 
+Evaluation of the attributes in a two-phase process: 
+individual scores (i.e., “yes”, “no”, or “maybe”) to determine whether each attribute was: i) scientifically valid for calculating productivity or susceptibility of a stock, ii) useful at different scales and iii) capable of being calculated for most fisheries. Attributes receiving a majority of “yes” scores for all three factors were retained. 
+attributes receiving mixed scores, as well as new attributes that had not been previously identified, were evaluated and 18 (9 productivity, 9 susceptibility) of the 35 attributes were selected and four new attributes were added, including: i) recruitment pattern, ii) management strategy, iii) fishing rate relative to natural mortality, and iv) desirability/value of the fishery. Overall, 22 attributes (10 productivity, 12 susceptibility) were selected for the analysis.
+Default weight of 2 for the productivity and susceptibility attributes, where attribute weights can be adjusted within a scale from 0 to 4 (based on the relevance of the attribute rather than data availability). 
+Productivity: information on maximum length, maximum age, age at maturity, natural mortality, and von Bertalanffy growth coefficient were available from 140+ stocks considered to be representative of U.S. fisheries. For these attributes, analysis of variance (ANOVA) was used to define attribute scoring thresholds that produced significantly different bins of data.
+Susceptibility: catchability (likelihood of a stock’s capture by a particular fishery, 7 attributes) and management attributes (how the fishery is managed, 5 attributes) treated as subcategories under the susceptibility factor.
+A data quality index was developed that provides an estimate of uncertainty for individual vulnerability scores based on five tiers ranging from high belief to little belief in the score. The data quality score is computed for the productivity and susceptibility scores as a weighted average of the data quality scores for the individual attributes, and denotes the overall quality of the data or belief in the score. In the case of missing data for an attribute (data quality score of 5), this attribute would not be used in the computation of the vulnerability score but would be reflected in the computation of overall data quality score.
+To evaluate the effect of fishing pressure on vulnerability: Kruskall-Wallis tests to explore if significant differences in susceptibility and vulnerability scores between stocks that had been overfished or undergone overfishing in the past and those that had not.
 
 Testing:
-	6 U.S. fisheries: 1) Northeast Groundfish Multi-species Fishery; 2) Highly Migratory Atlantic Shark Complexes; 3) California Nearshore Groundfish Finfish Assemblage; 4) California Current Coastal Pelagic Species; 5) Skates (Rajidae) of the Bering Sea and Aleutian Islands Management Area; 6) Hawaii-based Longline Fishery: A Comparison of the Tuna and Swordfish Sectors.
+6 U.S. fisheries: 1) Northeast Groundfish Multi-species Fishery; 2) Highly Migratory Atlantic Shark Complexes; 3) California Nearshore Groundfish Finfish Assemblage; 4) California Current Coastal Pelagic Species; 5) Skates (Rajidae) of the Bering Sea and Aleutian Islands Management Area; 6) Hawaii-based Longline Fishery: A Comparison of the Tuna and Swordfish Sectors.
 
 Caveats:
-	All caveats of PSA.
+All caveats of PSA.
 
 **Dick, E.J. and A.D. MacCall (2010). Estimates of sustainable yield for 50 data-poor stocks in the Pacific Coast Groundfish Fishery Management Plan. NOAA Technical Memorandum NMFS, June 2010. NOAA-TM-NMFS-SWFSC-460: 208pp.**
 
 Abstract: The Magnuson-Stevens Fishery Conservation and Management Reauthorization Act of 2006 requires Regional Fishery Management Councils to set annual catch limits for all stocks or stock complexes in Federal fishery management plans beginning in 2011. Most species listed in the Pacific Coast Groundfish Fishery Management Plan have not been assessed, in large part due to data limitations. Estimates of sustainable yield for many these species were previously based on undocumented, ad-hoc analyses. We present estimates of sustainable yield for 50 of these stocks using two recently developed models designed to inform management of data-poor stocks. These models rely on recently reconstructed time series of historical catch for west-coast groundfish species and species-specific information related to stock productivity. For this set of data-poor stocks, recent landings statistics reflect shifts in the relative importance of certain species to west-coast fisheries (e.g. increased catches of nearshore and slope rockfish species relative to shelf species), largely due to recent regulatory actions. We provide estimates of overfishing limits (OFLs) for each of the 50 stocks along with comparisons to recent catch levels. Our results suggest that status quo harvest levels range from light exploitation of some stocks to potential overfishing of others. This information could help inform decisions regarding prioritization of future stock assessments for unassessed species. OFLs are expressed as probability distributions, reflecting our uncertainty in model parameters. We select median values as point estimates of OFL, as this statistic is most consistent with National Standard 1 guidelines.
 
-Field, J., Cope, J. and M. Key (2010).
-A descriptive example of applying vulnerability evaluation criteria to California nearshore finfish species. Managing Data-Poor Fisheries: Case Studies, Models & Solutions 1:235–246.
+**Field, J., Cope, J. and M. Key (2010). A descriptive example of applying vulnerability evaluation criteria to California nearshore finfish species. Managing Data-Poor Fisheries: Case Studies, Models & Solutions 1:235–246.**
+
 Abstract: In light of ongoing crises in fisheries and marine ecosystem management, a growing body of literature has highlighted the need for biologists and resource managers to develop and apply methodologies that are capable of identifying species or populations at greater risk of overexploitation and extirpation. One increasingly popular approach is a productivity and susceptibility analysis (PSA), originally developed for Australian prawn fisheries, in which the vulnerability of a given stock is based on a combination of the estimated or perceived productivity of the stock plotted against the susceptibility to overfishing. This manuscript provides an example of this type of analysis developed for the 19 species included in the California Nearshore Fishery Management Plan (NFMP). The methodology is based on a version of the PSA approach being developed by the NOAA Fisheries Vulnerability Evaluation Working Group (VEWG), which is currently in the process of preparing draft technical guidance for conducting vulnerability assessments for species managed under Fishery Management Plans implemented by the regional Fishery Management Councils. Results of this case study in particular indicate that the more vulnerable species in the NFMP include China, copper, quillback and blue rockfishes, of which only the latter has been evaluated in a formal stock assessment. More importantly, we suggest that additional and more rigorous analysis of these or of other species managed by either (or both) the State of California and the Pacific Fishery Management Council, may aid managers and stakeholders in setting research and assessment priorities, considering management alternatives and strategies, developing or revising species assemblages for multispecies management systems, and evaluating how precautionary catch limits should be based.
 
 Data/information requirements:
-	Measures that reflect the potential for stock growth and recovery from perturbations (VB growth coefficients, natural mortality, maturity, fecundity…); measures of impact on stocks (relative fishing mortality rate, survival rates of bycatch, behavioural responses of the stock, etc…).
+Measures that reflect the potential for stock growth and recovery from perturbations (VB growth coefficients, natural mortality, maturity, fecundity…); measures of impact on stocks (relative fishing mortality rate, survival rates of bycatch, behavioural responses of the stock, etc…).
 
 Assumptions:
-	All assumption from PSA – Productivity: low productivity for stock with slow growth, low natural mortality, late age at maturity and therefore assumption that are intrinsically more vulnerable to long term impacts of overexploitation. Susceptibility: based on assessment of the impacts of fishing on stock abundance and habitat. Highly vulnerable stock: low productivity and high susceptibility. 
+All assumption from PSA – Productivity: low productivity for stock with slow growth, low natural mortality, late age at maturity and therefore assumption that are intrinsically more vulnerable to long term impacts of overexploitation. Susceptibility: based on assessment of the impacts of fishing on stock abundance and habitat. Highly vulnerable stock: low productivity and high susceptibility. 
 
 Outputs expected:
-	Measure of vulnerability based on overall scores for productivity and susceptibility.
+Measure of vulnerability based on overall scores for productivity and susceptibility.
 
 Method of operation: 
-	PSA.
-	In this paper, ranges for several attributes differ slightly from the guidelines recommended from Patrick et al (2009) to allow a greater resolution and increase contrast. 
-	Overall scores are based on the average of each attribute scores. 
+PSA.
+In this paper, ranges for several attributes differ slightly from the guidelines recommended from Patrick et al (2009) to allow a greater resolution and increase contrast. 
+Overall scores are based on the average of each attribute scores. 
 
 Testing:
-	California nearshore finfish assemblage: a complex of 19 nearshore species with a unique history of landings. Additional 13 species of groundfish which occupy deeper continental shelf or slope habitats, but are often encountered in the recreational fishery or commercial fishery.
+California nearshore finfish assemblage: a complex of 19 nearshore species with a unique history of landings. Additional 13 species of groundfish which occupy deeper continental shelf or slope habitats, but are often encountered in the recreational fishery or commercial fishery.
 
 Caveats:
-	All caveats of PSA.
-	Many of these attributes are unknown for most data-poor species. Possible approaches: excluding unknowns in a given analysis, use of Delphi approaches for arriving at consensus-based qualitative estimates, assignment of average values for unknown species, use of other data poor methodologies to develop proxies (this last option is beneficial since an integration of several data-poor approaches could potentially be more robust than any given approach individually). 
-	May be covariation among different attributes (however, found that redundancy among key attributes was typically minimal).
-	Some attributes might be difficult to interpret meaningfully (can be left out). 
+All caveats of PSA.
+Many of these attributes are unknown for most data-poor species. Possible approaches: excluding unknowns in a given analysis, use of Delphi approaches for arriving at consensus-based qualitative estimates, assignment of average values for unknown species, use of other data poor methodologies to develop proxies (this last option is beneficial since an integration of several data-poor approaches could potentially be more robust than any given approach individually). 
+May be covariation among different attributes (however, found that redundancy among key attributes was typically minimal).
+Some attributes might be difficult to interpret meaningfully (can be left out). 
 
 Reuter, R.F., Conners, M.E., Dicosimo, J., Gaichas, S., Ormseth, O. and T.T. Tenbrink (2010).
 Managing non-target, data-poor species using catch limits; lessons from the Alaskan groundfish fishery. Fisheries Management and Ecology, 17: 323-335.
 Abstract. The 2006 reauthorisation of the Magnuson-Stevens Fishery Conservation and Management Act requires annual catch limits for all target and non-target species within federally managed fisheries in the United States. In Alaska, both target and non-target species in the Alaska groundfish fisheries have been managed using catch limits since the early 1990s. Non-target species that are caught incidentally in a fishery require monitoring to ensure that the population is not negatively impacted by commercial fishing. Resource assessment scientists have been challenged with obtaining sufficient data to recommend an acceptable catch level for management of these species. This paper reviews three case studies where a catch limit is determined for non-target species when certain data are limited: (1) varying levels of biomass and catch data for all species within a species group or complex; (2) adequate catch data but no biomass data; (3) emerging target fishery of data-poor species, plus an example of how a complex of ecosystem component species is managed.
 
-Berkson, J. and J. Thorson (2015).
-The determination of data-poor catch limits in the United States: is there a better way. ICES Journal of Marine Science., 72(1): 237-242.
+**Berkson, J. and J. Thorson (2015). The determination of data-poor catch limits in the United States: is there a better way. ICES Journal of Marine Science., 72(1): 237-242.**
+
 Abstract: Methods for determining appropriate management actions for data-poor stocks, including annual catch limits (ACLs), have seen an explosion of research interest in the past decade. We perform an inventory of methods for determining ACLs for stocks in the United States, and find that ACLs are assigned to 371 stocks and/or stock complexes with 193 (52%) determined using methods involving catch data only. The proportion of ACLs involving these methods varies widely among fisheries management regions, with all the 67 ACLs in the Caribbean determined using recent catch when compared with 1 of 33 ACLs in the New England region (US Northeast). Given this prevalence of data-poor ACLs, we recommend additional research regarding the potential effectiveness of simple management procedures for data-poor stocks that are currently managed using ACLs. In particular, simple management procedures may allow a broader range of data types and management instruments that better suit the particulars of individual regions and stocks.
+
 Summary:
 A review of existing Annual Catch Limits showed that there were 371 ACLs for management (some covering multiple species), of which 193 were based on catch only methods. The authors consider that catch only methods are incompatible with an MSY approach unless additional data is included (catch composition or an index of abundance), an alternative would be to base targets on achieving high average yield and/or low risk of depletion. 
 An alternative to a full assessment is to use a simple management plans (Butterworth, 1997; Rademeyer et al., 2007) based on an indicator (such as average length), although this still needs an operating model to estimate suitable action points. As with catch only assessments, these would not be compatible with an MSY approach, but could be part of a risk based approach. The reason that simple management plans may be more suitable than assessments for some stocks is that they can use a wider variety of data than is used in traditional stock assessments.
 
-Methods
-	Scaling past catches, e.g. 75% of previous catches over past decade, depending on judgement of stock state.
-	DCAC (MacCall, 2009)
-	DB-SRA (Dick and MacCall, 2011)
-	Taking biological parameters from other stocks
-Caveats
-	To calibrate a model-free management plan, it is necessary to create some model of the stock to test the plan, so assumptions about the stock and fishery still need to be made.
+Methods:
+Scaling past catches, e.g. 75% of previous catches over past decade, depending on judgement of stock state.
+DCAC (MacCall, 2009)
+DB-SRA (Dick and MacCall, 2011)
+Taking biological parameters from other stocks
 
-	Some data-moderate approaches
-
-Deriso, R.B. (1980).
-Harvesting strategies and parameter estimation for an age-structured model. Can. J. Fish. Aquat. Sci. 37:268–282.
-Abstract: An age-structured model with knife-edge recruitment describes the dynamics of exploited, seasonally breeding populations. For management strategy, an equation is derived that characterizes the economic optimal state of exploitation of a modeled stock. A further generalization is derived to account for those species where recruitment to the mature stock occurs over many age-categories. Since the parameters all have phenomenological definitions, they can be estimated from information independent of the model. These parameters can also be estimated by regression of the model to catch and effort data. Test regressions of the general model are made on catch and effort data from three exploited fish stocks: the yellowtail flounder of New England, the Pacific halibut of Area II, and the haddock of Georges Bank; the corresponding R2 values are 0.75, 0.87, and 0.86. Although the confidence intervals for individual parameter estimates are very large, the estimates compare favorably with published parameter values. Since only certain combinations of parameters from the general model appear to have low sensitivity to small perturbations to the data, some guiding suggestions are made that may lead to an improved robustness in the statistical procedures.
-Data/information requirements:
-	Catch and effort data
-Assumptions:
-	Knife-edged recruitment
-	Seasonally breeding stock
-	Catchable adults experience a common annual mortality
-	Very few adults reach maximum age (infinite number of age classes)
-	Recruitment is a function of escapement spawning stock biomass
-Outputs expected:
-	Estimates and trend about stock parameters, such as stock size, exploitation pattern and MSY values
-	An economic optimal state of exploitation and an optimal equilibrium catch of a modelled stock
-Method of operation:
-	Definition of an age-structured delay-difference model with knife-edge recruitment for seasonally breeding populations
-	A form of the Brody weight equation is used to model age-specific weights of the catchable adults in the population
-	Optimal harvesting strategy assessed by considering marketplace effects (balance current allocation of the resource against future economic benefits)
-	The basic delay-difference model assumes knife-edge recruitment but adjustments to the model allow deviations
-	Model parameters are estimated by regression of the delay-difference model with catch and effort data
-Testing:
-	The model was tested with three stocks (yellowtail flounder of New England, Pacific halibut of Area II, haddock of Georges Bank)
-	The results from the regression for the three species resulted in R2 values of 0.75, 0.86 and 0.87.
-	The estimated trends and parameters resembled results from other publications.
 Caveats:
-	Model is based on heavy assumptions
-	Optimal harvesting strategies solely based on the delay-difference model
+To calibrate a model-free management plan, it is necessary to create some model of the stock to test the plan, so assumptions about the stock and fishery still need to be made.
 
-Prager, M.H. (1992).
-ASPIC – A surplus-production model incorporating covariates. Col. Vol. Sci. Pap. ICCAT, 38: 218-229.
+## Some data-moderate approaches
+
+**Deriso, R.B. (1980). Harvesting strategies and parameter estimation for an age-structured model. Can. J. Fish. Aquat. Sci. 37:268–282.**
+
+Abstract: An age-structured model with knife-edge recruitment describes the dynamics of exploited, seasonally breeding populations. For management strategy, an equation is derived that characterizes the economic optimal state of exploitation of a modeled stock. A further generalization is derived to account for those species where recruitment to the mature stock occurs over many age-categories. Since the parameters all have phenomenological definitions, they can be estimated from information independent of the model. These parameters can also be estimated by regression of the model to catch and effort data. Test regressions of the general model are made on catch and effort data from three exploited fish stocks: the yellowtail flounder of New England, the Pacific halibut of Area II, and the haddock of Georges Bank; the corresponding R2 values are 0.75, 0.87, and 0.86. Although the confidence intervals for individual parameter estimates are very large, the estimates compare favorably with published parameter values. Since only certain combinations of parameters from the general model appear to have low sensitivity to small perturbations to the data, some guiding suggestions are made that may lead to an improved robustness in the statistical procedures.
+
+Data/information requirements:
+Catch and effort data
+
+Assumptions:
+Knife-edged recruitment
+Seasonally breeding stock
+Catchable adults experience a common annual mortality
+Very few adults reach maximum age (infinite number of age classes)
+Recruitment is a function of escapement spawning stock biomass
+
+Outputs expected:
+Estimates and trend about stock parameters, such as stock size, exploitation pattern and MSY values
+An economic optimal state of exploitation and an optimal equilibrium catch of a modelled stock
+
+Method of operation:
+Definition of an age-structured delay-difference model with knife-edge recruitment for seasonally breeding populations
+A form of the Brody weight equation is used to model age-specific weights of the catchable adults in the population
+Optimal harvesting strategy assessed by considering marketplace effects (balance current allocation of the resource against future economic benefits)
+The basic delay-difference model assumes knife-edge recruitment but adjustments to the model allow deviations
+Model parameters are estimated by regression of the delay-difference model with catch and effort data
+
+Testing:
+The model was tested with three stocks (yellowtail flounder of New England, Pacific halibut of Area II, haddock of Georges Bank)
+The results from the regression for the three species resulted in R2 values of 0.75, 0.86 and 0.87.
+The estimated trends and parameters resembled results from other publications.
+
+Caveats:
+Model is based on heavy assumptions
+Optimal harvesting strategies solely based on the delay-difference model
+
+**Prager, M.H. (1992). ASPIC – A surplus-production model incorporating covariates. Col. Vol. Sci. Pap. ICCAT, 38: 218-229.**
+
 Abstract: Surplus-production modelling has often assumed equilibrium conditions, although stocks are rarely thought to be in equilibrium. This paper describes a simple non-equilibrium approach (ASPIC) to fitting a logistic production model to catch and effort data. From such data, ASPIC provide estimates of the two logistic parameters r and K, catchability q, and the stock biomass B1 in the first year of the time series. From these four quantities, estimates can be made of MSY, stock size at MSY, optimal effort at MSY, optimal fishing mortality at MSY, and the time series of stock biomass levels, surplus production levels, and fishing mortality levels. The general optimization approach is similar to that used by Pella and Tomlinson in their GENPROD computer program; however ASPIC uses an analytical solution of the yield equation, a revised loss function, and incorporates several other refinements including bootstrap estimates of variability. The method handles missing data, (years with no fishery) correctly without modification and is extremely flexible in handling different pattern of fishing, such as (i) two or more simultaneous fisheries with different types of gear, (ii) a fishery that ends and then resumes with a different type of gear, (iii) density-dependent catchability; and (iv) time trends in catchability. The model can be adopted easily to use auxiliary information (e.g. external estimates of population biomass) to tune the model. The major advantages of the ASPIC model are as follows; it is a true non-solution of the production equations; it retains true population persistence; it eliminates the need to use catch-per-unit-effort as an index of abundance, a practice that has been criticized on statistical grounds; and it can be modified easily. The paper describes the structure of the model and its performance on several simulated and real data sets. 
 
 Data/information requirements:
 	Yield (harvest in weight);
 	Fishing effort (f);
 	starting estimates for B1 (initial biomass), r (intrinsic growth rate of the population), K (carrying capacity) & q (catchability).
+
 Assumptions:
 	K & r assumed constant over time.
 	Fishing mortality rate (F) is proportional to the fishing effort rate f, with proportionality constant q (F=qf).
 	B1 < K
+
 Outputs expected:
 	Biomass level;
 	Stock’s production during each period of time; 
 	Estimates of the four parameters (k, q, r, and B1); 
 	MSY, stock size at MSY, F at MSY, effort at MSY.
+
 Method of operation:
 	Obtain starting estimates of the four parameters (B1, K, r, q);
 	Starting with current estimates of B1, simulate the population through time according to the following equation: 
@@ -1323,45 +1335,50 @@ B_(t+1)=(-B_t K(qf_t-r)e^(r-qf_t ))/(B_t re^(r-qf_t )+r(K-B_t )-qf_t K)
 Y ̂_t=(qf_t K)/r ln⁡((B_t re^(r-qf_t )-qf_t K+Kr-B_t r)/(Kr-qf_t K))
 
 	During the simulation, a loss function on yield is minimized (best option is an additive proportional loss function with penalty to avoid B1 > K, i.e.:
-loss=∑_(t=1)^t▒〖((Y_t-Y ̂_t)/Y_t )^2+dw_B (2 (B ̂_1-K)/(B ̂_1+K))^2 〗
+loss=∑_(t=1)^t〖((Y_t-Y ̂_t)/Y_t )^2+dw_B (2 (B ̂_1-K)/(B ̂_1+K))^2 〗
 
 An alternative is a loss function on effort: 
-loss=∑_(t=1)^t▒〖((f_t-f ̂_t)/f_t )^2+dw_B (2 (B ̂_1-K)/(B ̂_1+K))^2 〗
+loss=∑_(t=1)^t〖((f_t-f ̂_t)/f_t )^2+dw_B (2 (B ̂_1-K)/(B ̂_1+K))^2 〗
 
 	The variability in the estimated quantities is implemented using bootstrap method with resampled residuals.
 	Auxiliary series of population biomass estimates can be incorporated, either as absolute values or index of biomass.
 
 Testing: 
-	2 simulated populations (fishery following logistic dynamics): 
-	15% proportional noise added to the observed values of yield;
-	15% proportional noise added to the observed values of yield and to the observed values of effort.
-	1 real population: yellowfin tuna in East Atlantic (Fonteneau, 1989).
-	The additive proportional loss function with penalty is the best option, since constrains the estimates of B to more reasonable values but not degrades the other parameters. 
-	Estimates of MSY and effort at MSY seems to be quite robust to error in the data. 
-	Even in the presence of substantial errors in both catch and effort, the model’s estimates of the population trajectories is quite close to the simulated population from which the catch and effort data were simulated.
-Caveats:
-	Large errors on Yield estimates during period of high yield to be expected due to the additive proportional error structure.
-	Bias in the estimates may occur from errors in effort (advisable therefore loss function on effort instead of loss function on yield).
-	The estimation of absolute levels of stock biomass Bt and fishing mortality rate Ft are usually not so precise. Also, the estimation of the starting biomass in the first year is quite imprecise.
-	May not be suitable for species with marked seasonality in growth, reproduction and harvest. Also, may not work well when applied to stocks with large recruitment fluctuations unrelated to population size, especially when catch-effort series is short.
-	No process error implemented (assumption that the production of biomass is a deterministic function of the current biomass).
+2 simulated populations (fishery following logistic dynamics): 
+15% proportional noise added to the observed values of yield;
+15% proportional noise added to the observed values of yield and to the observed values of effort.
+1 real population: yellowfin tuna in East Atlantic (Fonteneau, 1989).
+The additive proportional loss function with penalty is the best option, since constrains the estimates of B to more reasonable values but not degrades the other parameters. 
+Estimates of MSY and effort at MSY seems to be quite robust to error in the data. 
+Even in the presence of substantial errors in both catch and effort, the model’s estimates of the population trajectories is quite close to the simulated population from which the catch and effort data were simulated.
 
-Prager, M.H. (1994).
-A suite of extensions to a nonequilibrium surplus-production model. Fishery Bulletin 92: 374-389.
+Caveats:
+Large errors on Yield estimates during period of high yield to be expected due to the additive proportional error structure.
+Bias in the estimates may occur from errors in effort (advisable therefore loss function on effort instead of loss function on yield).
+The estimation of absolute levels of stock biomass Bt and fishing mortality rate Ft are usually not so precise. Also, the estimation of the starting biomass in the first year is quite imprecise.
+May not be suitable for species with marked seasonality in growth, reproduction and harvest. Also, may not work well when applied to stocks with large recruitment fluctuations unrelated to population size, especially when catch-effort series is short.
+No process error implemented (assumption that the production of biomass is a deterministic function of the current biomass).
+
+**Prager, M.H. (1994).A suite of extensions to a nonequilibrium surplus-production model. Fishery Bulletin 92: 374-389.**
+
 Abstract: Surplus-production models, because of their simplicity and relatively undemanding data needs, are attractive tools for many stock assessments. This paper reviews the logistic production model, starting with the basic differential equation and continuing with a description of the model development without the equilibrium assumption. It then describes several extensions, including "tuning" the model to a biomass index; partitioning fishing mortality by gear, time, or area; and making projections. Computation of confidence intervals on quantities of interest (e.g. maximum sustainable yield (MSY), effort at MSY, level of stock biomass relative to the optimum level) can be done through bootstrapping, and the bootstrap can also be used to construct nonparametric tests of hypotheses about changes in catchability. To fit the model, an algorithm that uses a forward solution of the population equations can be implemented on a small computer. An example of the utility of surplus-production models (illustrating several of these extensions) is given. The example is loosely based on swordfish (Xiphias gladius) in the North Atlantic Ocean, but is not intended to describe the actual status of that stock.
+
 Data/information requirements:
-	Yield (harvest in weight);
+Yield (harvest in weight);
 	Fishing effort (f);
 	starting estimates for B1 (initial biomass), r (intrinsic growth rate of the population), k (carrying capacity) & q (catchability).
+	
 Assumptions:
 	K & r assumed constant over time.
 	Fishing mortality rate (F) is proportional to the fishing effort rate f, with proportionality constant q (F=qf).
 	B1 < K
+	
 Outputs expected:
 	Biomass level;
 	Stock’s production during each period of time; 
 	Estimates of the four parameters (k, q, r, and B1); 
 	MSY, stock size at MSY, F at MSY, effort at MSY.
+	
 Method of operation:
 	To the formulation described in Prager (1992) the following extensions are possible:
 	Missing data: years with no effort (and therefore no catch) can easily be treated by defining the residual to be zero. When effort is known to have existed, but for which the data are missing or highly, effort levels can be estimated, simultaneously with the other parameters, for a limited number of such years within the series.
@@ -1376,18 +1393,20 @@ Y ̂_jt=(q ̂_j F ̂_jt)/F ̂_t  Y ̂_t
 	Varying catchability: different catchability coefficients for segments of a single time series, treated as different fisheries (see option above on different gear types) each having nonzero catch and effort data only during its respective time period. Or possibility to incorporate other model into the estimation framework (e.g. linear model).
 	Bootstrap estimates of bias and variability, or to estimate bias corrections and bias corrected confidence intervals for any estimated quantity (e.g. MSY, fMSY, the population biomass in the final year, f0.1, projections of biomass levels, etc.).
 	Projections using the recruitment function and based on hypothetical catch or effort quotas. The modelled population can be projected forward in time by using the population equations and a proposed set of yields or effort rates.
+
 Testing: 
 	North Atlantic swordfish; 2 analyses: one without and one with tuning index. Loss function on effort. Projections on 5 years. Bootstrap of 1000 iterations.
 	Similar results between the 2 analyses; greatest difference in last year, since tuning index gives different signals compared to CPUE, therefore the final estimate is a compromise between the two. Estimated median biases were small in both analyses.
-Caveats:
-	Large errors on Yield estimates during period of high yield to be expected due to the additive proportional error structure.
-	Bias in the estimates may occur from errors in effort.
-	The estimation of absolute levels of stock biomass Bt and fishing mortality rate Ft are usually not so precise. Also, the estimation of the starting biomass in the first year is quite imprecise.
-	May not be suitable for species with marked seasonality in growth, reproduction and harvest. Also, may not work well when applied to stocks with large recruitment fluctuations unrelated to population size, especially when catch-effort series is short.
-	No process error implemented (assumption that the production of biomass is a deterministic function of the current biomass). 
 
-Brandao, A. and D.S. Butterworth (2008 and 2013).
-2008 paper: A “Replacement Yield” Model Fit to Catch and Survey Data for he South Coast Kingklip Resource of South Africa. 2008:WG-Dem:K:05.
+Caveats:
+Large errors on Yield estimates during period of high yield to be expected due to the additive proportional error structure.
+Bias in the estimates may occur from errors in effort.
+The estimation of absolute levels of stock biomass Bt and fishing mortality rate Ft are usually not so precise. Also, the estimation of the starting biomass in the first year is quite imprecise.
+May not be suitable for species with marked seasonality in growth, reproduction and harvest. Also, may not work well when applied to stocks with large recruitment fluctuations unrelated to population size, especially when catch-effort series is short.
+No process error implemented (assumption that the production of biomass is a deterministic function of the current biomass). 
+
+**Brandao, A. and D.S. Butterworth (2008 and 2013). 2008 paper: A “Replacement Yield” Model Fit to Catch and Survey Data for he South Coast Kingklip Resource of South Africa. 2008:WG-Dem:K:05.**
+
 Abstract: A “Replacement Yield” model is applied to the total annual catches and the survey abundance estimates for the South African kingklip component of the South coast over the 1986 to 2007 period. A replacement yield (RY) of some 1 670 tonnes is estimated. An average decline of about 7% per year in the abundance of kingklip in the South coast over the last five years is indicated.
 2013 paper: A "Replacement Yield" Model fit to catch and survey data for the South and West Coasts Kingklip resource of South Africa. FISHERIES/2013/SEP/SWG-DEM/51.
 Abstract: A Bayesian “Replacement Yield” model is applied to the total annual catches and the survey abundance estimates for the South African kingklip resource off the South coast and that off the West coast over the 1986 to 2012 period. A posterior median replacement yield (RY) of 1 412 tonnes is estimated for the South coast and of 4 526 tonnes for the West coast; these values are suggested as upper bounds for the catch limit recommendations. Setting the catch limit at the 25th percentile of the posterior distribution results in 1 408 t and 3 856 t for the South and West coasts respectively. The corresponding posterior median rates of increase over the last five years are estimated at 2% and 3% for the South and West coasts respectively.
@@ -1395,26 +1414,32 @@ Abstract: A Bayesian “Replacement Yield” model is applied to the total annua
 Data/information requirements:
 	Annual catches
 	Survey abundance indices, including coefficient of variation for each annual index value
+	
 Assumptions:
 	Replacement Yield constant over the period considered
+	
 Outputs expected:
 	Replacement yield
 	Biomass time series trend over last 5 years
+	
 Method of operation:
 	Simple biomass population dynamics model:
 	B_(y+1)=B_y+RY-C_y(B = biomass, RY = replacement yield, C = catch)
 	Model is then fitted to survey abundance indices, assuming a log-normally distributed observation error
 	Fitting performed by using Bayesian estimations and Markov Chain Monte Carlo (MCMC) algorithm (to generate random draws from model parameters, prior distribution of estimable parameters).
+	
 Testing:
 	Method not simulation tested but applied for south African stocks (South Coast Kingklip, West Coast Kingklip)
+	
 Caveats:
 	Simple method
 	Stock trend estimated only over a short time period (last 5 years)
+	
 Ability to project forward/forecast:
 	The assumptions of constant replacement yield (RY) limits the use of this method for forward projections/forecasting.
 
-Jonsen, I.D., Glass, A., Hubley, B. and J. Sameoto (2009).
-Georges Bank ‘a’ Scallop (Placopecten magellanicus) Framework Assessment: Data Inputs and Population Models. DFO Can. Sci. Advis. Sec. Res. Doc. 2009/034. iv + 76 p.
+**Jonsen, I.D., Glass, A., Hubley, B. and J. Sameoto (2009). Georges Bank ‘a’ Scallop (Placopecten magellanicus) Framework Assessment: Data Inputs and Population Models. DFO Can. Sci. Advis. Sec. Res. Doc. 2009/034. iv + 76 p.**
+
 Abstract: This research document presents a summary of relevant data inputs and an evaluation of a proposed population model for the assessment of sea scallops (Placopecten magellanicus) on the Canadian portion of Georges Bank, zone 'a'. This document was presented as a working paper as part of the advisory process for developing a new assessment framework for Georges Bank 'a' scallops.
 Until 2007, the status of the Georges Bank scallop stock has been assessed using a cohort analysis tuned to a commercial catch rate-stratified survey index and a commercial catch per unit effort index. This model suffered both from strong retrospective effects, which resulted in inconsistent estimates of biomass from year to year, and from a lack of recent, reliable aging data, which were used to construct the catch at age matrix. Georges Bank scallops are difficult to age reliably due primarily to the high prevalence of shock marks that are difficult to distinguish from annual growth rings. Consequently, an alternate population model that placed less reliance on aging data was thought to be a more appropriate candidate for assessment of this stock.
 A delay-difference population model fit to both the survey and commercial catch rate indices was proposed. This model was implemented in a Bayesian state-space framework, accounting for observation error and process variability separately. Model parameters were estimated using Metropolis-within-Gibbs sampling, a type of Markov chain Monte Carlo sampling method. Scallop growth rates were parameterized from previously published von Bertallanfy growth parameters for the Georges Bank scallop stock. Biomass estimates from this model were compared with estimates from both the cohort analysis and from a surplus production model. These comparisons indicated that the delay-difference model produced biomass estimates that were more consistent with the pattern suggested by both the survey and commercial catch rate indices than did the cohort analysis. Although the biomass trajectories estimated by the delay difference and surplus production models were similar, the survey catchability estimates from the delay-difference model were more consistent with estimates from the US scallop dredge survey.
