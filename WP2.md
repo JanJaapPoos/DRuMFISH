@@ -8,13 +8,13 @@ A review is provided of a wide-range of data-limited methods and a selection of 
 
 ## Table of Contents
 
-[Introduction and summary](#Introduction-and-summary)
-[Data limited approaches](#Data-linited-approached)
-[Catch-only methods with supplementary information](#Catch-only-methods-with-supplementary-information)
-[Catch-only methods with supplementary data and information](#Catch-only-methods-with-supplementary-data-and-information)
-[Life-history, per-recruit and length-based approaches](#Life-history,-per-recruit-and-length-based-approaches)
-[Qualitative and semi-quantitative approaches](#Qualitative-and-semi-quantitative approaches)
-[Comparisons and additional simulation testing](#Comparisons-and-additional-simulation-testing)
+[Introduction and summary](#introduction-and-summary)
+[Data limited approaches](#data-limited-approached)
+[Catch-only methods with supplementary information](#catch-only-methods-with-supplementary-information)
+[Catch-only methods with supplementary data and information](#catch-only-methods-with-supplementary-data-and-information)
+[Life-history, per-recruit and length-based approaches](#life-history,-per-recruit-and-length-based-approaches)
+[Qualitative and semi-quantitative approaches](#qualitative-and-semi-quantitative-approaches)
+[Comparisons and additional simulation testing](#comparisons-and-additional-simulation-testing)
 
 ## Introduction and summary
 
