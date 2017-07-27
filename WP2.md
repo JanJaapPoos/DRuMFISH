@@ -6,6 +6,16 @@ José A. A. De Oliveira, Piera Carpi, Nicola D. Walker, Simon Fischer, Timothy J
 
 A review is provided of a wide-range of data-limited methods and a selection of data moderate methods that could be useful to the DRUMFISH project. Included in the review are papers that have compared some of the methodologies, providing additional simulation-testing and real-world applications of some of these methods. Requirements for DRUMFISH are methods that are easily accessible and available for application, and that can be used for forward projections/forecasting. Two methods in particular are highlighted as meeting these criteria for data-limited and data-moderate cases, namely CMSY for the former and SPiCT for the latter, given their track record of use in the ICES advisory process and the ease of “slotting in” with current simulation tools for DRUMFISH. Nevertheless, there are a range of other methods that also meet the criteria and could be used.
 
+## Table of Contents
+
+[Introduction and summary](#Introduction-and-summary)
+[Data limited approaches](#Data-linited-approached)
+[Catch-only methods with supplementary information](#Catch-only-methods-with-supplementary-information)
+[Catch-only methods with supplementary data and information](#Catch-only-methods-with-supplementary-data-and-information)
+[Life-history, per-recruit and length-based approaches](#Life-history,-per-recruit-and-length-based-approaches)
+[Qualitative and semi-quantitative approaches](Qualitative-and-semi-quantitative approaches)
+[Comparisons and additional simulation testing](Comparisons-and-additional-simulation-testing)
+
 ## Introduction and summary
 
 This document provides a review of data-limited approaches, alternatively referred to as “data-poor”, and distinct from both data-moderate approaches, which typically include indices of biomass/abundance in addition to catch data and life-history information, and data-rich approaches, which include full analytical assessments. Data limited approaches (Section 2) cover catch-based approaches (catch-only methods with supplementary information), life-history, per-recruit and length-based approaches, and qualitative and semi-quantitative approaches. There are a number of papers that compared the performance of some of the methods and that conducted additional simulation testing, providing some useful additional insights into the methods presented (Section 3). Real-world applications are covered in Section 4, although sometimes only the abstract is provided for reference: these papers provide useful examples of application of the methods. Some data-moderate methods that may be of interest are covered in Section 5, although this section is not intended to be fully comprehensive. Supplementary and other approaches that may be of interest are covered in Section 6, including mixed fishery, MPA, PSA and other general approaches (sometimes only the abstract is supplied). Section 7 covers simulation-tested data-limited harvest control rules, not directly relevant to the DRUMFISH project, but nevertheless included for interest. Other methods’ reviews, similar to this document, and from which some inspiration was drawn (e.g. Geromont and Butterworth) are covered in Section 8 (again, sometimes only the abstract is supplied for completeness). Within each review the authorship, title and abstract is supplied, and the paper is generally summarised through the topics “data/information requirements”, “assumptions”, “outputs expected”, “method of operation”, “testing”, “caveats” and in some cases “ability to project forward/forecast” (the latter topic was added much later, so is not universally used). Some adjustments to this general structure are made for, e.g. simulation-testing papers that cover several methods.
@@ -18,11 +28,6 @@ Despite the fact that CMSY with catch-only data can take the form of, and behave
 
 A final consideration is that the Robin Hood approach is commonly used in many applications. The idea has a relatively long history, but has been formally described in Punt et al. (2011 - not reviewed here, but available in the sharepoint). The Robin-Hood approach refers to the practice of borrowing information from data-rich stock assessments, e.g. trends in fishing mortality and values for parameters of selectivity functions, to assess data-poor stock, which leads to stock assessments for the most data-poor stocks being informed by those for the most data-rich stocks. Bentley (2015) argues a similar approach where prior probability distributions are used to transfer knowledge from data-rich to data-poor fisheries. This practice has been widely recognized as effective whenever the lack of data prevents an assessment, and as such relevant for the DRUMFISH project.
 
-## Table of Contents
-
-[Data limited approaches](##Data-linited-approached)
-[Catch-only methods with supplementary information](###Catch-only-methods-with-supplementary-information)
-[Catch-only methods with supplementary data and information](###Catch-only-methods-with-supplementary-data-and-information)
 
 ## Data-limited approaches
 
@@ -877,7 +882,8 @@ It is necessary to correct for a retransformation bias as mPRM predicts log(B/BM
 
 Caveats:
 This approach is not suitable for formal assessment as it does not produce precise estimates for individual fisheries.
-Comparisons and additional simulation testing
+
+###Comparisons and additional simulation testing
 
 **Dorn M., Berkson, J., Punt, A. and K. Stokes, (2011). Assessment Methods for Data-Poor Stocks. Report of Methodology Review Panel Meeting. National Marine Fisheries Service (NMFS), Southwest Fisheries Science Center (SWFSC), Santa Cruz, California, 25-29 April 2011.**
 
