@@ -59,29 +59,28 @@ Abstract: Data-limited fisheries are here considered to be fisheries lacking suf
 
 Data / information requirements:
 
-•	Time series of catch
-•	Priors for:
-o	Intrinsic growth rate, r
-o	Carrying capacity, K
-o	Bioeconomic equilibrium as a proportion of K, a
-o	Increase of harvest rate over time, x
-•	Process error variability
+* Time series of catch
+* Priors for:
+ * Intrinsic growth rate, r
+ * Carrying capacity, K
+ * Bioeconomic equilibrium as a proportion of K, a
+ * Increase of harvest rate over time, x
+* Process error variability
 
 Assumptions:
 
-•	Fisheries follow a pattern where the relative rate of increase in catch increases rapidly during a development stage, drops to zero when a mature stage has been reached and becomes negative during a senescent phase.
-•	Time series of catch data contain information on both fishing effort and stock biomass dynamics.
-•	Initial catch is equal to the first observed catch in the time series and is assumed to be measured without error.
-•	Initial biomass is equal to the carrying capacity.
-•	Either no harvest control regulations are in place or any existing regulations have only negligible effects so that the harvest rate dynamics respond only to the economic / market stimulus.
-•	Observed catches follow a lognormal likelihood function.
-•	The variability parameter is assumed known and equal to 0.4.
+* Fisheries follow a pattern where the relative rate of increase in catch increases rapidly during a development stage, drops to zero when a mature stage has been reached and becomes negative during a senescent phase.
+* Time series of catch data contain information on both fishing effort and stock biomass dynamics.
+* Initial catch is equal to the first observed catch in the time series and is assumed to be measured without error.
+* Initial biomass is equal to the carrying capacity.
+* Either no harvest control regulations are in place or any existing regulations have only negligible effects so that the harvest rate dynamics respond only to the economic / market stimulus.
+* Observed catches follow a lognormal likelihood function.
+* The variability parameter is assumed known and equal to 0.4.
 
 Outputs expected:
-
-•	Stock status
-•	Production
-•	Exploitation rate
+* Stock status
+* Production
+* Exploitation rate
 
 Method of operation:
 
