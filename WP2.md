@@ -865,7 +865,7 @@ Method of operation:
 A three-year running average was used to smooth curves and remove anomalous peaks in the stock-status plots.
 
 Testing:
-No testing described here. Tested by Carruthers et al. (2012) below.
+No testing described here. Tested by [Carruthers et al. (2012)](#carruthers-tr-walters-cj-and-mk-mcallister-2012-evaluating-methods-that-classify-fisheries-stock-status-using-only-fisheries-catch-data-fish-res-119-120-66-79) below.
 Applied to the Norwegian Exclusive Economic Zone (EEZ) as an example. 
 
 Caveats:
@@ -984,7 +984,7 @@ Method of operation:
 The aim of this paper was to use simulation to test the reliability of the Froese and Kesner-Reyes (2002) and Kleisner and Pauly (2011) catch-based methods, and compare this to the reliability of two stock assessment methods that use additional fishing effort data.
 
 Testing:
-This paper evaluates the reliability of the [Froese and Kesner-Reyes (2002)](#froese-r-and-k-kesner-reyes-2002-impact-of-fishing-on-the-abundance-of-marine-species-ices-document-cm-2002l-12-15-pp) and [Kleisner and Pauly (2011)](#kleisner-k-and-d-Pauly-2011-stock-status-plots-of-fisheries-for-regional-seas-in-christensen-v-lai-s-palomares-m-l-d-zeller-d-and-pauly-d-eds-the-state-of-biodiversity- and-fisheries-in-regional-seas-fisheries-centre-research-reports-193-fisheries-centre-university-of-british-columbia-pp-37-40-issn 1198-6727) catch-based methods under a range of simulated fishery development and exploitation scenarios. Success rate and bias were quantified by comparing the stock status (final year) conclusions of the two catch-based methods to reference points (BMSY and FMSY) obtained from the simulated ‘truth’.
+This paper evaluates the reliability of the [Froese and Kesner-Reyes (2002)](#froese-r-and-k-kesner-reyes-2002-impact-of-fishing-on-the-abundance-of-marine-species-ices-document-cm-2002l-12-15-pp) and [Kleisner and Pauly (2011)](#kleisner-k-and-d-pauly-2011-stock-status-plots-of-fisheries-for-regional-seas-in-christensen-v-lai-s-palomares-m-l-d-zeller-d-and-pauly-d-eds-the-state-of-biodiversity-and-fisheries-in-regional-seas-fisheries-centre-research-reports-193-fisheries-centre-university-of-british-columbia-pp-37-40-issn-1198-6727) catch-based methods under a range of simulated fishery development and exploitation scenarios. Success rate and bias were quantified by comparing the stock status (final year) conclusions of the two catch-based methods to reference points (BMSY and FMSY) obtained from the simulated ‘truth’.
 Success rate was calculated as the fraction of simulations the methods correctly classified.
 The success rate of the Froese and Kesner-Reyes (2002) method was 34% and the success rate of the Kleisner and Pauly (2011) method was 31%. Hence both methods are error-prone, but average success rates are above the 20% that could be expected by random selection of stock classification.
 Both models were unable to achieve success rates appreciably higher than random selection when the current spawning stock level is higher than 10% unfished biomass.
