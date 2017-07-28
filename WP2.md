@@ -197,106 +197,104 @@ Caveats:
 [Abstract:](http://www.sciencedirect.com/science/article/pii/S0165783612001257) Stock Synthesis (SS) is a likelihood-based statistical catch-at-age modeling environment allowing multiple data sources to be used to characterize population dynamics through time. While it is typically applied in data-rich circumstances, its suitability in data-limited situations is investigated in this work. Two “Simple Stock Synthesis” (SSS) approaches are outlined, each developed to mimic the Depletion-Based Stock Reduction Analysis (DB-SRA) estimation of overfishing limits (OFLs) currently applied to data-limited U.S. west coast groundfish species. SSS-MC uses Monte Carlo draws of natural mortality, steepness, and stock depletion and estimates initial recruitment, while SSS-MCMC estimates natural mortality, steepness, and initial recruitment while fitting to an artificial abundance survey representing stock depletion with an error distribution equivalent to the stock depletion prior used in DB-SRA. These approaches are applied to 45 species of unassessed groundfishes in the Pacific Fishery Management Council Groundfish Fishery Management Plan, and the OFL estimates are compared to corresponding DB-SRA estimates. Despite model structure and parameter specification differences, SSS led to results comparable to DB-SRA over a wide range of species and life histories. SSS models with sex-specific life history parameters and growth variability are also presented as examples of how the inherent flexibility of SS can be used to account for more uncertainty in derived quantities. SSS-MCMC, while exhibiting statistically undesirable traits due to the inclusion of the artificial survey, readily includes data-informed abundance surveys into an assessment framework consistent with more complex, data-informed assessments. Establishment of viable data-limited approaches in SS is a convenient first steps in “building-up” stock assessments towards fuller implementation in SS when additional data become available, while also providing a way to inform management in data-limited situations.
 
 Data/information requirements:
-	Time series of total catch weight
-	Estimate of depletion level from virgin biomass as a distribution
-	Growth parameters (possibly by sex)
-	Weight at length
-	Natural mortality (M)
+* Time series of total catch weight
+* Estimate of depletion level from virgin biomass as a distribution
+* Growth parameters (possibly by sex)
+* Weight at length
+* Natural mortality (M)
 	
 Assumptions:
-Prior on stock-recruit steepness set to truncated beta distribution on 0.25-0.99.
+* Prior on stock-recruit steepness set to truncated beta distribution on 0.25-0.99.
 
 Outputs expected:
-An estimate of the over-fishing limit for the stock which can be compared with that from DB-SRA.
+* An estimate of the over-fishing limit for the stock which can be compared with that from DB-SRA.
 
 Method of operation:
-The authors present an investigation of the utility of stock synthesis (an age-structured assessment method) for assessments of data-poor stocks, which they define as having a catch time series, and estimates of a few key biological parameters which can be implied from similar stocks. While it may seem to be a particularly complicated way to use this data, they point out that it has the advantage of being able to build up the assessment progressively if more data sources become available, providing a route towards a fully assessed stock.
-The model recognises that there is uncertainty in input parameters, this can either be used in the model by generating Monte Carlo realisations of the input parameters, and performing effectively a deterministic assessment on each set, or alternatively uncertainty in output parameters can be assessed by MCMC methods (Markov chain Monte Carlo). 
+* The authors present an investigation of the utility of stock synthesis (an age-structured assessment method) for assessments of data-poor stocks, which they define as having a catch time series, and estimates of a few key biological parameters which can be implied from similar stocks. While it may seem to be a particularly complicated way to use this data, they point out that it has the advantage of being able to build up the assessment progressively if more data sources become available, providing a route towards a fully assessed stock.
+* The model recognises that there is uncertainty in input parameters, this can either be used in the model by generating Monte Carlo realisations of the input parameters, and performing effectively a deterministic assessment on each set, or alternatively uncertainty in output parameters can be assessed by MCMC methods (Markov chain Monte Carlo). 
 
 Testing:
-The model was set up to closely resemble depletion based SRA, and tested on 45 assessments where DB-SRA can also be applied. 
-For the great majority of the stocks, SS produced higher estimates of the over-fishing limit, but there was greater uncertainty about these values than for DB-SRA in all cases. 
+* The model was set up to closely resemble depletion based SRA, and tested on 45 assessments where DB-SRA can also be applied. For the great majority of the stocks, SS produced higher estimates of the over-fishing limit, but there was greater uncertainty about these values than for DB-SRA in all cases. 
 
 Caveats:
-The MCMC method of assessing uncertainty in model fit should mimic priors for parameters about which the data is uninformative – this doesn’t happen in all the stocks, in particular the posterior distribution of depletion is influenced by the prior for R0, and so the authors acknowledge that the MCMC fits need further investigation. 
+* The MCMC method of assessing uncertainty in model fit should mimic priors for parameters about which the data is uninformative – this doesn’t happen in all the stocks, in particular the posterior distribution of depletion is influenced by the prior for R0, and so the authors acknowledge that the MCMC fits need further investigation. 
 
 ### [Martell, S. and R. Froese (2013). A simple method for estimating MSY from catch and resilience. Fish Fish. 14: 504-514.](http://onlinelibrary.wiley.com/doi/10.1111/j.1467-2979.2012.00485.x/abstract)
 
 [Abstract:](http://onlinelibrary.wiley.com/doi/10.1111/j.1467-2979.2012.00485.x/abstract) The Law of the Sea requires that fish stocks are maintained at levels that can produce the maximum sustainable yield (MSY). However, for most fish stocks, no estimates of MSY are currently available. Here, we present a new method for estimating MSY from catch data, resilience of the respective species, and simple assumptions about relative stock sizes at the first and final year of the catch data time series. We compare our results with 146 MSY estimates derived from full stock assessments and find excellent agreement. We present principles for fisheries management of data-poor stocks, based only on information about catches and MSY.
 
 Data / information requirements:
-Time series of catch
-Prior ranges of r (intrinsic growth) and k (carrying capacity)
-A range of possible initial and current depletion levels
-Standard deviation in process errors (if including a stochastic component)
+* Time series of catch
+* Prior ranges of r (intrinsic growth) and k (carrying capacity)
+* A range of possible initial and current depletion levels
+* Standard deviation in process errors (if including a stochastic component)
 
 Assumptions:
-The stock-productivity relationship follows the Schaefer model.
-A stationary production function, i.e. constant model parameters.
-Process errors are assumed lognormal, independent and identically distributed.
+* The stock-productivity relationship follows the Schaefer model.
+* A stationary production function, i.e. constant model parameters.
+* Process errors are assumed lognormal, independent and identically distributed.
 
 Outputs expected:
-An estimate of MSY with error margins
+* An estimate of MSY with error margins
 
 Method of operation:
-The Schaefer production model is used to calculate annual biomasses for r-k pairs randomly drawn from the prior distributions. r-k pairs that have never collapsed the stock or exceeded carrying capacity, and that result in a final relative biomass estimate between the values specified in the inputs are accepted and used to calculate MSY.
-Here the prior distribution range for k was taken as the maximum catch in the times series and 100 times the maximum catch. The prior distribution range for r was obtained using resilience estimates from FishBase. However, the best available knowledge about the stocks should be used to obtain these priors.
-The geometric means of the resulting density distributions of r, k and MSY were taken as the most probable values.
+* The Schaefer production model is used to calculate annual biomasses for r-k pairs randomly drawn from the prior distributions. r-k pairs that have never collapsed the stock or exceeded carrying capacity, and that result in a final relative biomass estimate between the values specified in the inputs are accepted and used to calculate MSY.
+* Here the prior distribution range for k was taken as the maximum catch in the times series and 100 times the maximum catch. The prior distribution range for r was obtained using resilience estimates from FishBase. However, the best available knowledge about the stocks should be used to obtain these priors.
+* The geometric means of the resulting density distributions of r, k and MSY were taken as the most probable values.
 
 Testing:
-The method was demonstrated on Greenland halibut and Strait of Georgia lingcod.
-Catch-MSY was applied to 48 Northeast Atlantic stocks and compared to independent estimates of MSY from a previous study.
-A log-log linear regression accounted for 98.6% of the variability of Catch-MSY estimates relative to full assessment assessments of MSY, with an intercept not significantly different from zero and a gradient not significantly different from one.
-The 95% confidence limits of MSY provided by the assessments overlapped with 42 out of the 48 stocks, suggesting that the Catch-MSY estimates were not significantly different.
-Catch-MSY was applied to 98 global stocks with MSY estimates derived from full stock assessments.
-Suitable r-k combinations were not found for about 10 of the 98 stocks. These stocks had intermediate resilience or were very lightly exploited.
-Most of the Catch-MSY estimates fell within a range of 0.5-1.5 of the assessment estimates.
-The r and k estimates of the Catch-MSY method were compared to related fisheries reference points.
-The Catch-MSY method tends to overestimate k by about 10%.
-The Catch-MSY method tends to underestimate r and derived reference points such as FMSY, but is better matched with F0.1.
-r and k estimates strongly depend on the lower prior for r.
+* The method was demonstrated on Greenland halibut and Strait of Georgia lingcod.
+* Catch-MSY was applied to 48 Northeast Atlantic stocks and compared to independent estimates of MSY from a previous study.
+  * A log-log linear regression accounted for 98.6% of the variability of Catch-MSY estimates relative to full assessment assessments of MSY, with an intercept not significantly different from zero and a gradient not significantly different from one.
+  * The 95% confidence limits of MSY provided by the assessments overlapped with 42 out of the 48 stocks, suggesting that the Catch-MSY estimates were not significantly different.
+* Catch-MSY was applied to 98 global stocks with MSY estimates derived from full stock assessments.
+  * Suitable r-k combinations were not found for about 10 of the 98 stocks. These stocks had intermediate resilience or were very lightly exploited.
+  * Most of the Catch-MSY estimates fell within a range of 0.5-1.5 of the assessment estimates.
+* The r and k estimates of the Catch-MSY method were compared to related fisheries reference points.
+  * The Catch-MSY method tends to overestimate k by about 10%.
+  * The Catch-MSY method tends to underestimate r and derived reference points such as FMSY, but is better matched with F0.1.
+  * r and k estimates strongly depend on the lower prior for r.
 
 Caveats:
-The Catch-MSY method should not be applied to very lightly exploited fish stocks as the time series of catches will not contain sufficient information about productivity.
-It will be difficult to define the upper bound on k in a developing fishery or a fishery that has a continuous increase in catch as the maximum potential has yet to be realised.
+* The Catch-MSY method should not be applied to very lightly exploited fish stocks as the time series of catches will not contain sufficient information about productivity.
+* It will be difficult to define the upper bound on k in a developing fishery or a fishery that has a continuous increase in catch as the maximum potential has yet to be realised.
 
 ### [Thorson, J.T., Minto, C., Minte-Vera, C.V., Kleisner, K.M. and C. Longo (2013). A new role for effort dynamics in the theory of harvested populations and data-poor stock assessment. Can. J. Fish. Aquat. Sci. 70: 1829-1844.](http://www.nrcresearchpress.com/doi/abs/10.1139/cjfas-2013-0280) 
 
 [Abstract:](http://www.nrcresearchpress.com/doi/abs/10.1139/cjfas-2013-0280) Research shows that population status can be predicted using catch data, but there is little justification for why these predictions work or how they account for changes in fisheries management. We demonstrate that biomass can be reconstructed from catch data whenever fishing mortality follows predictable dynamics over time (called “effort dynamics”), and we develop a state-space catch only model (SSCOM) for this purpose. We use theoretical arguments and simulation modeling to demonstrate that SSCOM can, in some cases, estimate population status from catch data. Next, we use meta-analysis to estimate effort dynamics for US West Coast groundfishes before and after fisheries management changes in the mid-1990s. We apply the SSCOM using meta-analytic results to data for eight assessed species and compare results with stock assessment and data-poor methods. Results indicate general agreement among all three methods. We conclude that effort dynamics provides a theoretical basis for using catch data to reconstruct biomass and has potential for conducting data-poor assessments. However, we still recommend that index and compositional data be collected to allow application of data-rich methods.
 
 Data/information requirements:
-A time series of catch data
-Prior distributions for model parameters
+* A time series of catch data
+* Prior distributions for model parameters
   
 Assumptions:
-BMSY is equal to half of the average unfished biomass.
-Effort enters and exits the fishery as a function of the difference between current biomass and biomass at bioeconomic equilibrium, and follows semipredictable dynamics.
-There is a yield that will produce both a biological and economic (average revenue equals average costs) equilibrium.
-Nominal effort is proportional to fishing mortality, where either the catchability coefficient is constant or fluctuates around an average value due to random variation in fish vulnerability and fishing efficiency.
-Process error parameters (for effort, biomass and catchability) are independently and lognormally distributed, and have equal magnitude to each other.
-The population begins at average unfished biomass.
+* BMSY is equal to half of the average unfished biomass.
+* Effort enters and exits the fishery as a function of the difference between current biomass and biomass at bioeconomic equilibrium, and follows semipredictable dynamics.
+* There is a yield that will produce both a biological and economic (average revenue equals average costs) equilibrium.
+* Nominal effort is proportional to fishing mortality, where either the catchability coefficient is constant or fluctuates around an average value due to random variation in fish vulnerability and fishing efficiency.
+* Process error parameters (for effort, biomass and catchability) are independently and lognormally distributed, and have equal magnitude to each other.
+* The population begins at average unfished biomass.
   
 Outputs expected:
-Information regarding depletion
-An estimate of stock status and productivity
+* Information regarding depletion
+* An estimate of stock status and productivity
   
 Method of operation:
-A two-parameter effort dynamics model is combined with a conventional surplus production model to create a coupled population- and effort-dynamics model.
-A time series of catch data is analysed using Takens’ Theorem to recover trajectories that resemble the original effort and biomass time series. The model is fit to the time series of catch data and parameters representing effort dynamics, population dynamics and catchability are estimated using standard statistical methods.
-An index of abundance or fishing effort could be added by including an additional model component.
+* A two-parameter effort dynamics model is combined with a conventional surplus production model to create a coupled population- and effort-dynamics model.
+* A time series of catch data is analysed using Takens’ Theorem to recover trajectories that resemble the original effort and biomass time series. The model is fit to the time series of catch data and parameters representing effort dynamics, population dynamics and catchability are estimated using standard statistical methods.
+* An index of abundance or fishing effort could be added by including an additional model component.
 
 Testing:
-Simulation was used to explore model sensitivity to the magnitude of errors and to show the performance of the model with and without a prior on final depletion.
-Increasing the magnitude of errors causes the trajectory to become more irregular.
-The model results in imprecise estimates of final depletion with no prior and gets progressively worse with increased variability. Including a prior results in improved estimates of final depletion and enhanced reconstruction of the entire effort and biomass trajectory.
-MSY estimates are accurate and precisely estimated without a prior on final depletion when variability is low. Increasing the error magnitude without a prior on final depletion generally decreases the precision for all estimated parameters and increases the magnitude of bias in final depletion. Therefore, a prior on final depletion improves performance in the high variability case, but is not necessary for accurate MSY estimates in the low and medium variability cases.
-The method was applied to US West Coast groundfishes that were subject to management changes during the time series. The results for eight species were compared to stock assessment estimates using both Stock Synthesis (data-rich method) and DB-SRA (data-limited method; [Dick and MacCall, 2011](#dick-ej-and-ad-maccall-2011-depletion-based-stock-reduction-analysis-a-catch-based-method-for-determining-sustainable-yields-for-data-poor-fish-stocks-fish-res-110331-341)).
-SSCOM obtains similar estimates of exploitation rate and relative biomass in the final year to both DB-SRA and the assessment.
+* Simulation was used to explore model sensitivity to the magnitude of errors and to show the performance of the model with and without a prior on final depletion.
+  * Increasing the magnitude of errors causes the trajectory to become more irregular.
+  * The model results in imprecise estimates of final depletion with no prior and gets progressively worse with increased variability. Including a prior results in improved estimates of final depletion and enhanced reconstruction of the entire effort and biomass trajectory.
+  * MSY estimates are accurate and precisely estimated without a prior on final depletion when variability is low. Increasing the error magnitude without a prior on final depletion generally decreases the precision for all estimated parameters and increases the magnitude of bias in final depletion. Therefore, a prior on final depletion improves performance in the high variability case, but is not necessary for accurate MSY estimates in the low and medium variability cases.
+*  The method was applied to US West Coast groundfishes that were subject to management changes during the time series. The results for eight species were compared to stock assessment estimates using both Stock Synthesis (data-rich method) and DB-SRA (data-limited method; [Dick and MacCall, 2011](#dick-ej-and-ad-maccall-2011-depletion-based-stock-reduction-analysis-a-catch-based-method-for-determining-sustainable-yields-for-data-poor-fish-stocks-fish-res-110331-341)). SSCOM obtains similar estimates of exploitation rate and relative biomass in the final year to both DB-SRA and the assessment.
   
 Caveats:
-The model is highly dependent upon contrast in the catch time series and must reach a peak and subsequently decline.
-Data sets that egregiously violate the model assumptions of either Schaefer biomass dynamics or the effort-dynamics model (e.g. bycatch species, highly mixed fisheries and subsistence-recreational fisheries) will be poorly reconstructed.
-The performance of the model when sequentially applied in a control-rule management scenario is unknown.
+* The model is highly dependent upon contrast in the catch time series and must reach a peak and subsequently decline.
+* Data sets that egregiously violate the model assumptions of either Schaefer biomass dynamics or the effort-dynamics model (e.g. bycatch species, highly mixed fisheries and subsistence-recreational fisheries) will be poorly reconstructed.
+* The performance of the model when sequentially applied in a control-rule management scenario is unknown.
 
 ### Zhou, S. and R. Sharma (2013). Stock assessment of two neritic tuna species in Indian Ocean, kawakawa and longtail tuna using catch-based stock reduction methods. IOTC-2013-WPNT03-25.
 
@@ -305,27 +303,31 @@ The preliminary results show that for Kawakawa the median virgin biomass is abou
 The situations are similar for Longtail. The median virgin biomass was about 380 to 440 thousand tonnes, and the intrinsic population growth rate is about 1.14–1.26, somewhat less productive than Kawakawa. The entire stock can support a MSY of nearly 110–140 thousand tonnes. Catch levels in recent year may have been too high, and likely overfishing is occurring on the stock.
 
 Data/information requirements:
-Catch history
-Estimated prior ranges for carrying capacity and population growth rate
-An assumed upper limit on depletion level
+* Catch history
+* Estimated prior ranges for carrying capacity and population growth rate
+* An assumed upper limit on depletion level
   
 Assumptions:
-Both species (kawakawa and longtail) in the whole Indian ocean belong to a single stock.
-Virgin biomass is equal to the carrying capacity.
-Forward projections require an assumed catch.
+* Both species (kawakawa and longtail) in the whole Indian ocean belong to a single stock.
+* Virgin biomass is equal to the carrying capacity.
+* Forward projections require an assumed catch.
   
 Outputs expected:
-Posterior distributions for key biological parameters: K, r, MSY, BT (biomass at the end of the time series) and DT (depletion at the end of the time series)
-Biomass trajectories
+* Posterior distributions for key biological parameters: K, r, MSY, BT (biomass at the end of the time series) and DT (depletion at the end of the time series)
+* Biomass trajectories
   
 Method of operation:
-The method applies a Graham-Shaefer surplus production model, starting with prior ranges for carrying capacity K and intrinsic growth rate r, and including available catch data:
+* The method applies a Graham-Shaefer surplus production model, starting with prior ranges for carrying capacity K and intrinsic growth rate r, and including available catch data:
+
 B_(t+1)=B_t+rB_t (1-B_t/B_0 )-C_t
-A series of assumed depletion levels is set up:
+
+* A series of assumed depletion levels is set up:
+
 D=B_T/K
-The model systematically searches through possible parameter spaces retaining feasible parameter values and discarding mathematically and biologically unfeasible values to progressively derive basic parameters.
-Stochastic simulations are carried out using the base parameters to obtain biomass trajectories and additional parameters.
-The model is projected to the future to explore alternative harvest polices.
+
+* The model systematically searches through possible parameter spaces retaining feasible parameter values and discarding mathematically and biologically unfeasible values to progressively derive basic parameters.
+* Stochastic simulations are carried out using the base parameters to obtain biomass trajectories and additional parameters.
+* The model is projected to the future to explore alternative harvest polices.
   
 Testing:
 The method described uses some data poor techniques that have been developed and tested on Australian stocks in: 
@@ -344,39 +346,39 @@ This method has the ability to project forward
 
 
 Data/information requirements:
-A time series of catch data
-Priors for life history parameters
-Catch age composition for at least the final year of catches
+* A time series of catch data
+* Priors for life history parameters
+* Catch age composition for at least the final year of catches
 
 Assumptions:
-Fishery selection is age-specific and follows a logistic curve.
-Fishery catch-at-age follows the Baranov catch equation and population numbers decay exponentially.
-Recruitment is variable around a stock-recruit relationship. There exists some prior information regarding the strength of density-dependent recruitment and the true magnitude of variability in recruitment is known.
-Fishing mortality is variable and follows no specified parametric function.
-Abundance at age at the beginning of available catch data is from an approximately unfished state.
-Age composition sampling is available for the final year of catches. This represents a catch-curve on a synthetic cohort allowing estimation of fishing mortality in the final year. This fishing mortality estimate replaces the requirement of pre-specifying depletion in conventional stock-reduction analysis.
-Maturity-at-age and weight-at-age are known without error. 
+* Fishery selection is age-specific and follows a logistic curve.
+* Fishery catch-at-age follows the Baranov catch equation and population numbers decay exponentially.
+* Recruitment is variable around a stock-recruit relationship. There exists some prior information regarding the strength of density-dependent recruitment and the true magnitude of variability in recruitment is known.
+* Fishing mortality is variable and follows no specified parametric function.
+* Abundance at age at the beginning of available catch data is from an approximately unfished state.
+* Age composition sampling is available for the final year of catches. This represents a catch-curve on a synthetic cohort allowing estimation of fishing mortality in the final year. This fishing mortality estimate replaces the requirement of pre-specifying depletion in conventional stock-reduction analysis.
+* Maturity-at-age and weight-at-age are known without error. 
   
 Outputs expected:
-Estimates of fishing mortality
-Estimates of stock status
+* Estimates of fishing mortality
+* Estimates of stock status
   
 Method of operation:
-The CC-SRA model is fit to a time-series of catch data, with the estimable parameters being annual recruitment and fishing mortality rates, the stock-recruit parameters, the selectivity parameters and natural mortality (given prior). Maximum penalised likelihood is used to estimate the parameters. The implementation uses an “explicit-F” parameterisation to solve for the levels of fishing mortality that would generate the given catch time series.
+* The CC-SRA model is fit to a time-series of catch data, with the estimable parameters being annual recruitment and fishing mortality rates, the stock-recruit parameters, the selectivity parameters and natural mortality (given prior). Maximum penalised likelihood is used to estimate the parameters. The implementation uses an “explicit-F” parameterisation to solve for the levels of fishing mortality that would generate the given catch time series.
   
 Testing:
-Simulation modelling was used to evaluate the performance of CC-SRA, compared to catch curves and stock-reduction analysis (SRA), when estimating spawning biomass relative to unfished levels and fishing mortality. Two life history types were simulated: a “fast” or “opportunistic” type modelled on Pacific sardine, and a “slow” or “periodic” type modelled on red snapper. Three levels of recruitment variability were explored for each life history type.
-The CC-SRA has wider confidence intervals that SRA for estimates of final spawning biomass but more closely matches the true spawning biomass relative to unfished levels for the “periodic” species. The catch curve does not provide a measure of stock status.
-The catch curve provides the most accurate estimate of fishing mortality for the “periodic” species. CC-SRA provides a similar estimate of final fishing mortality to the SRA.
-For the “periodic” species CC-SRA is least biased and has lowest errors given low recruitment variability. SRA produced biased estimates of spawning biomass relative to unfished levels and final fishing mortality for both life histories, but had the lowest error in estimates of terminal fishing mortality for the “fast” life history type. The catch curve was positively biased in fishing mortality for all scenarios. The CC-SRA largely eliminates this bias.
-The catch curve and CC-SRA perform significantly worse for the “fast” life history than the “slow”.
+* Simulation modelling was used to evaluate the performance of CC-SRA, compared to catch curves and stock-reduction analysis (SRA), when estimating spawning biomass relative to unfished levels and fishing mortality. Two life history types were simulated: a “fast” or “opportunistic” type modelled on Pacific sardine, and a “slow” or “periodic” type modelled on red snapper. Three levels of recruitment variability were explored for each life history type.
+  * The CC-SRA has wider confidence intervals that SRA for estimates of final spawning biomass but more closely matches the true spawning biomass relative to unfished levels for the “periodic” species. The catch curve does not provide a measure of stock status.
+  * The catch curve provides the most accurate estimate of fishing mortality for the “periodic” species. CC-SRA provides a similar estimate of final fishing mortality to the SRA.
+  * For the “periodic” species CC-SRA is least biased and has lowest errors given low recruitment variability. SRA produced biased estimates of spawning biomass relative to unfished levels and final fishing mortality for both life histories, but had the lowest error in estimates of terminal fishing mortality for the “fast” life history type. The catch curve was positively biased in fishing mortality for all scenarios. The CC-SRA largely eliminates this bias.
+  * The catch curve and CC-SRA perform significantly worse for the “fast” life history than the “slow”.
   
 Caveats:
-CC-SRA and other data-poor methods require additional testing prior to use for management of data-poor fisheries.
-Model performance will likely degrade in the following situations:
-Fishery selection is non-asymptotic
-Natural mortality is age specific
-Misspecification of life history parameter priors
+* CC-SRA and other data-poor methods require additional testing prior to use for management of data-poor fisheries.
+* Model performance will likely degrade in the following situations:
+  * Fishery selection is non-asymptotic
+  * Natural mortality is age specific
+  * Misspecification of life history parameter priors
 
 ## Data-limited approaches: Life-history, per-recruit and length-based approaches
 
