@@ -721,12 +721,12 @@ Outputs expected:
 A stock-status plot showing the percentage of stocks by status over time.
 
 Testing:
-No testing described here. Tested by Carruthers et al. (2012) below.
+No testing described here. Tested by [Carruthers et al. (2012)](#carruthers-tr-walters-cj-and-mk-mcallister-2012-evaluating-methods-that-classify-fisheries-stock-status-using-only-fisheries-catch-data-fish-res-119-120-66-79) below.
 Applied to time series of catch data published by FAO (Fisheries production time series 1950-1999) and ICES (catch data for NE Atlantic 1973-1999).
 
 Caveats:
 By definition, the percentage of undeveloped or developed stocks is zero in the final year of the time series (Kleisner and Pauly, 2011).
-The stock-status plots do not take recovery into account (Kleisner and Pauly, 2011). Recovery is automatically classified as a ‘developing’ stock.
+The stock-status plots do not take recovery into account [Kleisner and Pauly (2011)](#kleisner-k-and-d-pauly-2011-stock-status-plots-of-fisheries-for-regional-seas-in-christensen-v-lai-s-palomares-m-l-d-zeller-d-and-pauly-d-eds-the-state-of-biodiversity-and-fisheries-in-regional-seas-fisheries-centre-research-reports-193-fisheries-centre-university-of-british-columbia-pp-37-40-issn-1198-6727). Recovery is automatically classified as a ‘developing’ stock.
 
 #### Scandol, J. (2005). Use of quality control methods to monitor the status of fish stocks. In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 213–231. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.
 
@@ -886,7 +886,7 @@ Outputs expected:
 An estimate of B/BMSY with 95% confidence intervals
 
 Method of operation:
-mPRM is a regression model that estimates log(B/BMSY) from predictors of stock status, and  was trained on a subset of assessed fisheries from the RAM Legacy database. This model is used to predict the status of unassessed fisheries using the same regression coefficients as estimated for the assessed species.
+mPRM is a regression model that estimates log(B/BMSY) from predictors of stock status, and  was trained on a subset of assessed fisheries from the [RAM Legacy database](http://www.ramlegacy.org/). This model is used to predict the status of unassessed fisheries using the same regression coefficients as estimated for the assessed species.
 The mPRM only uses the “developed” period of a fishery, which is defined as the period that begins once catch exceeds 15% of the maximum catch recorded for that fishery.
 It is necessary to correct for a retransformation bias as mPRM predicts log(B/BMSY).
 
