@@ -801,7 +801,7 @@ Obtain an ABC (acceptable biological catch) as a proportion of the OFL
 Decision about appropriate buffer between OFL and ABC, based on scientific knowledge and uncertainty. Depending on the productivity of the stock and several possible alternatives a value between 0.5 and 0.9 is chosen.
 	
 Testing:
-The Method per se has not been (simulation) tested by Berkson et al. (2011) but some of the values recommended in this method are based on simulation studies.
+The Method per se has not been (simulation) tested by [Berkson et al. (2011)](#berkson-j-barbieri-l-cadrin-s-cass-calay-s-crone-p-dorn-m-friess-c-kobayashi-d-miller-tj-patrick-ws-pautzke-s-ralston-s-and-m-trianni-2011-calculating-acceptable-biological-catch-for-stocks-that-have-reliable-catch-data-only-only-reliable-catch-stocks--orcs-noaa-technical-memorandum-nmfs-sefsc-616-56pp) but some of the values recommended in this method are based on simulation studies.
 	
 Caveats:
 Assignment of stock exploitation status mainly based on expert judgement
@@ -1245,7 +1245,7 @@ All caveats of PSA.
 
 #### Dick, E.J. and A.D. MacCall (2010). Estimates of sustainable yield for 50 data-poor stocks in the Pacific Coast Groundfish Fishery Management Plan. NOAA Technical Memorandum NMFS, June 2010. NOAA-TM-NMFS-SWFSC-460: 208pp.
 
-Abstract: The Magnuson-Stevens Fishery Conservation and Management Reauthorization Act of 2006 requires Regional Fishery Management Councils to set annual catch limits for all stocks or stock complexes in Federal fishery management plans beginning in 2011. Most species listed in the Pacific Coast Groundfish Fishery Management Plan have not been assessed, in large part due to data limitations. Estimates of sustainable yield for many these species were previously based on undocumented, ad-hoc analyses. We present estimates of sustainable yield for 50 of these stocks using two recently developed models designed to inform management of data-poor stocks. These models rely on recently reconstructed time series of historical catch for west-coast groundfish species and species-specific information related to stock productivity. For this set of data-poor stocks, recent landings statistics reflect shifts in the relative importance of certain species to west-coast fisheries (e.g. increased catches of nearshore and slope rockfish species relative to shelf species), largely due to recent regulatory actions. We provide estimates of overfishing limits (OFLs) for each of the 50 stocks along with comparisons to recent catch levels. Our results suggest that status quo harvest levels range from light exploitation of some stocks to potential overfishing of others. This information could help inform decisions regarding prioritization of future stock assessments for unassessed species. OFLs are expressed as probability distributions, reflecting our uncertainty in model parameters. We select median values as point estimates of OFL, as this statistic is most consistent with National Standard 1 guidelines.
+[Abstract:](https://swfsc.noaa.gov/publications/FED/01044.pdf) The Magnuson-Stevens Fishery Conservation and Management Reauthorization Act of 2006 requires Regional Fishery Management Councils to set annual catch limits for all stocks or stock complexes in Federal fishery management plans beginning in 2011. Most species listed in the Pacific Coast Groundfish Fishery Management Plan have not been assessed, in large part due to data limitations. Estimates of sustainable yield for many these species were previously based on undocumented, ad-hoc analyses. We present estimates of sustainable yield for 50 of these stocks using two recently developed models designed to inform management of data-poor stocks. These models rely on recently reconstructed time series of historical catch for west-coast groundfish species and species-specific information related to stock productivity. For this set of data-poor stocks, recent landings statistics reflect shifts in the relative importance of certain species to west-coast fisheries (e.g. increased catches of nearshore and slope rockfish species relative to shelf species), largely due to recent regulatory actions. We provide estimates of overfishing limits (OFLs) for each of the 50 stocks along with comparisons to recent catch levels. Our results suggest that status quo harvest levels range from light exploitation of some stocks to potential overfishing of others. This information could help inform decisions regarding prioritization of future stock assessments for unassessed species. OFLs are expressed as probability distributions, reflecting our uncertainty in model parameters. We select median values as point estimates of OFL, as this statistic is most consistent with National Standard 1 guidelines.
 
 #### Field, J., Cope, J. and M. Key (2010). A descriptive example of applying vulnerability evaluation criteria to California nearshore finfish species. Managing Data-Poor Fisheries: Case Studies, Models & Solutions 1:235–246.
 
@@ -2465,20 +2465,20 @@ Outputs expected:
 	
 Method of operation:
 	Data Moderate
-	Fratio (FMSY/M) (Cope et al., 2012; Gulland, 1971; NPFMC, 2013; Taylor et al., 2013; Walters and Martell, 2002.)
-	Extended Depletion Based-Stock Reduction Analysis (Cope, 2013; Cope et al., 2013.)
-	Extended Simple Stock Synthesis (Cope, 2013; Cope et al., 2013.)
+	Fratio (FMSY/M) ([Cope et al., 2012](http://www.pcouncil.org/wp-content/uploads/F2a_ATT2_OFLS_OTHER_FISH_MAR2012BB.pdf); Gulland, 1971; NPFMC, 2013; Taylor et al., 2013; [Walters and Martell, 2002](http://www.ingentaconnect.com/openurl?genre=article&issn=0007-4977&volume=70&issue=2&spage=629&epage=638&aulast=Walters))
+	Extended Depletion Based-Stock Reduction Analysis (Cope, 2013; Cope et al., 2013)
+	Extended Simple Stock Synthesis (Cope, 2013; Cope et al., 2013)
 	Predation Model (NPFMC, 2013a.)
-	Biomass-Augmented Catch MSY (Martell and Froese, 2013; Sabater and Kleiber, 2014.)
-	Catch + survey Biomass (Miller and Rago, 2012; NEFMC, 2009.)
-	Piggyback on Related Assessment (Cope et al., 2012; WPFMC 2011b, 2013.)
+	Biomass-Augmented Catch MSY (Martell and Froese, 2013; Sabater and Kleiber, 2014)
+	Catch + survey Biomass (Miller and Rago, 2012; NEFMC, 2009)
+	Piggyback on Related Assessment (Cope et al., 2012; WPFMC 2011b, 2013)
 	Data Poor
-	DB-SRA (Dick and MacCall, 2011.)
-	DCAC (MacCall, 2009.)
+	DB-SRA (Dick and MacCall, 2011)
+	DCAC (MacCall, 2009)
 	Catch-scalars (e.g. average of reference period) including zero catch (CFMC, 2010, 2011; GMFMC, 2011; MAFMC, 2011; NMFS HMS, 2010; NEFMC, 2011; PFMC, 2012; SAFMC, 2011.)
 	Zero Contribution to Complex (NMFS HMS, 2010; PFMC, 2012.)
 	Percent of Assessed Stock Habitat (WPFMC, 2011a.)
-	ORCS (Berkson et al., 2011)
+	ORCS [(Berkson et al., 2011)](#berkson-j-barbieri-l-cadrin-s-cass-calay-s-crone-p-dorn-m-friess-c-kobayashi-d-miller-tj-patrick-ws-pautzke-s-ralston-s-and-m-trianni-2011-calculating-acceptable-biological-catch-for-stocks-that-have-reliable-catch-data-only-only-reliable-catch-stocks--orcs-noaa-technical-memorandum-nmfs-sefsc-616-56pp)
 	Choice of method should be driven by data availability, so the first step in analysis should be identification of what (reliable) datasets are available. Possible to apply multiple methods and weight outputs based on subjective judgement, statistical analysis or simulation testing. 
 	Methods available as an R package (DLMtool). The methods available within the toolkit include:
 	Depletion-Based Stock Reduction Analysis
@@ -2515,7 +2515,7 @@ Caribbean Fishery Management Council. 2010. Amendment 2 to the fishery managemen
 
 Caribbean Fishery Management Council. 2011. Comprehensive ACL Amendment for the Caribbean.
 
-Cope, J., Dick, E.J., and MacCall, A. 2012. Deriving estimates of OFL for species in the “Other Fish” complex. PFMC March 2012 Meeting, Agenda Item F.2.a, Attachment 2.
+[Cope, J., Dick, E.J., and MacCall, A. 2012. Deriving estimates of OFL for species in the “Other Fish” complex. PFMC March 2012 Meeting, Agenda Item F.2.a, Attachment 2.](http://www.pcouncil.org/wp-content/uploads/F2a_ATT2_OFLS_OTHER_FISH_MAR2012BB.pdf)
 
 Cope, J., Dick, E.J., MacCall, A., Monk, M., Soper, B., and Wetzel, C. 2013. Data-moderate stock assessments for brown, China, copper, sharpchin, stripetail, and yellowtail rockfishes and English and rex soles in 2013. PFMC June 2013 Meeting, Agenda Item F.5.a, Attachment.
 
@@ -2582,7 +2582,7 @@ Outputs expected:
 The following table is extracted from the paper.
 Method	Output	Example applications
 DACS	Catch-limit	Berkson et al. (2011)
-DCAC	Catch-limit	Dick and MacCall (2010)
+DCAC	Catch-limit	[Dick and MacCall (2010)](https://swfsc.noaa.gov/publications/FED/01044.pdf)
 DB-SRA	Catch-limit and MSY	Dick and MacCall (2010)
 Catch-MSY	Catch-limit and MSY	Martell and Froese (2013)
 Average length	Fishing mortality (F)	Kell et al. (2013a, b)
