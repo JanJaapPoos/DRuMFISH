@@ -10,8 +10,6 @@ A review is provided of a wide-range of data-limited methods and a selection of 
 
 [Introduction and summary](#introduction-and-summary)
 
-[Data limited approaches](#data-limited-approached)
-
 [Data limited approaches: catch-only methods with supplementary information](#data-limited-approaches-catch-only-methods-with-supplementary-information)
 
 [Data limited approaches: catch-only methods with supplementary data and information](#data-limited-approaches-catch-only-methods-with-supplementary-data-and-information)
