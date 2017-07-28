@@ -26,8 +26,17 @@ A review is provided of a wide-range of data-limited methods and a selection of 
 
 [Some data-moderate approaches](#some-data-moderate-approaches)
 
-[Supplementary and other approaches that may be of interest](#supplementary-and-other-approaches-that-may-be-of-interest)
+[Supplementary and other approaches: mixed fishery approaches](#supplementary-and-other-approaches-mixed-fishery-approaches)
 
+[Supplementary and other approaches: MPA approaches](#supplementary-and-other-approaches-mpa-approaches)
+
+[Supplementary and other approaches: PSA approaches](#supplementary-and-other-approaches-psa-approaches)
+
+[Supplementary and other approaches: general](#supplementary-and-other-approaches-general)
+
+[Simulation-tested data-limited harvest control rules](#simulation-tested-data-limited-harvest-control-rules)
+
+[Other reviews](#other-reviews)
 
 ## Introduction and summary
 
@@ -1149,7 +1158,7 @@ Proportional error (PE) and mean proportional error (MPE) were used to estimate 
 Abstract: The quality and quantity of data affect the reliability of all stock assessments. Over time, we expect data to improve and assessment predictions to become more reliable. There is a potential for strong bias in estimates of sustainable yield if the available data are not a good representation of stock dynamics, particularly for catch-based data-poor methods that rely on limited information and assumptions about stock status. We retrospectively investigated the interaction of data quantity and quality through time using the “real-world” data for a stock as it progressed from data-poor to data-rich. For this analysis, we chose a currently data-rich and overfished stock with historical assessments representing both a data-poor and data-moderate state, the canary rockfish (Sebastes pinniger). We asked how changes in the catch history and biological parameters over time affected the estimates of sustainable yield and the overfishing limit (OFL) predicted by two data-poor assessment tools, depletion-corrected average catch (DCAC) and depletion-based stock reduction analysis (DB-SRA). We found that both of these methods underestimated the “true” OFL in simulations with catch error alone. While there was slightly less bias for DB-SRA than DCAC, increasing error in the catch led to a more rapid increase in the variance of the DB-SRA harvest limit (HL). Our retrospective analysis showed that the expectation for a more accurate HL estimate between the data-poor and data-moderate canary rockfish assessments does not come from an increase in the quantity or quality of the catch data alone; a decrease in the quality of the biological data between assessments had the greatest impact. By evaluating these methods with historical data, our retrospective approach highlighted the impact of change in data quality and quantity on HL estimates for a long-lived rockfish, and could be used to define the amount and type of error included in simulation studies that further evaluate data-poor methods.
 
 Summary:
-The aim of this paper was to test the robustness of the Depletion-Corrected Average Catch (DCAC; MacCall, 2009) and Depletion-Based Stock Reduction Analysis (DB-SRA, [Dick & MacCall, 2011](#dick-ej-and-ad-maccall-2011-depletion-based-stock-reduction-analysis-a-catch-based-method-for-determining-sustainable-yields-for-data-poor-fish-stocks-fish-res-110331-341)) methods using a retrospective analysis of a data-rich stock (canary rockfish) using the data that were available to past assessments, when the stock was considered data-moderate or poor.
+The aim of this paper was to test the robustness of the Depletion-Corrected Average Catch (DCAC; [MacCall, 2009](#maccall-ad-2009-depletion-corrected-average-catch-a-simple-formula-for-estimating-sustainable-yields-in-data-poor-situations-ices-j-mar-sci-662267-2271)) and Depletion-Based Stock Reduction Analysis (DB-SRA, [Dick & MacCall, 2011](#dick-ej-and-ad-maccall-2011-depletion-based-stock-reduction-analysis-a-catch-based-method-for-determining-sustainable-yields-for-data-poor-fish-stocks-fish-res-110331-341)) methods using a retrospective analysis of a data-rich stock (canary rockfish) using the data that were available to past assessments, when the stock was considered data-moderate or poor.
 
 Assumptions:
 The current data-rich assessment is considered the truth and serves as the baseline to compare DCAC and DB-SRA harvest limits (HLs).
@@ -1193,7 +1202,7 @@ Large variability in recruitment led to poor estimates of F⁄M, but generally l
 Abstract: The estimation of sustainable harvest limits for stocks that have never been assessed and have limited data available can be challenging. Harvest limits for previously un-assessed U.S. west coast groundfish have been set using catch-only methods (Depletion Corrected Average Catch [DCAC] and Depletion-Based Stock Reduction Analysis [DB-SRA]) for data-limited stocks, as well as catch and index based methods (Extended Depletion-Based Stock Reduction Analysis [XDB-SRA] and Extended Simple Stock Synthesis[XSSS]) for data-moderate stocks. To account for uncertainty and to prevent overfishing the harvest levels for U.S. west coast groundfish are reduced based upon the estimation method and the amount of data used. A management strategy evaluation was applied to evaluate the performance of each estimation method to provide benchmark harvest levels for two life-history types (U.S. west coast flatfish and rockfish) under varying misspecifications of the parameter distributions used by these methods. Both, data-moderate and catch-only (data-limited) methods, resulted in overfishing > 0.50 (except XSSS in select scenarios) when the simulated stock was below the relative biomass target for both life-histories. Each of the data-moderate methods (XDB-SRA and XSSS) that applied biomass index data failed to estimate the correct stock status in the first assessment when an overly optimistic prior distribution about the stock status was assumed. However, during the projection period as the biomass index lengthened, the estimates of current stock size improved for both of these estimation methods, reducing the probability of overfishing to <0.50 (except XSSS for one scenario). The ability to incorporate index data by the data-moderate methods resulted in improved estimates, as the data became more informative, for stock status and the subsequent harvest limits, that when reduced to account for uncertainty resulted in population stock sizes that either remain stable or rebuild toward the biomass targets for both life-histories. A notable exception was the performance of XDB-SRA for the flatfish life-history when the stock was at the target level and the prior was assumed correctly. In this instance the index data were non-informative, resulting in overfishing due to overly optimistic estimates of relative population size.
 
 Data/information requirements:
-See MacCall (2009) for DCAC, [Dick and MacCall (2011)](#dick-ej-and-ad-maccall-2011-depletion-based-stock-reduction-analysis-a-catch-based-method-for-determining-sustainable-yields-for-data-poor-fish-stocks-fish-res-110331-341) for DB-SRA and Cope (2013) for SSS (but note, only the extension to this, XSSS, was tested). An additional requirement for the extensions XDB-SRA and XSSS is incorporating observed biomass indices that are used to update input prior distributions based on model fits to these indices (using adaptive importance sampling); the additional requirement classifies these extended methods as data-moderate rather than data-poor.
+See [MacCall (2009)](#maccall-ad-2009-depletion-corrected-average-catch-a-simple-formula-for-estimating-sustainable-yields-in-data-poor-situations-ices-j-mar-sci-662267-2271) for DCAC, [Dick and MacCall (2011)](#dick-ej-and-ad-maccall-2011-depletion-based-stock-reduction-analysis-a-catch-based-method-for-determining-sustainable-yields-for-data-poor-fish-stocks-fish-res-110331-341) for DB-SRA and Cope (2013) for SSS (but note, only the extension to this, XSSS, was tested). An additional requirement for the extensions XDB-SRA and XSSS is incorporating observed biomass indices that are used to update input prior distributions based on model fits to these indices (using adaptive importance sampling); the additional requirement classifies these extended methods as data-moderate rather than data-poor.
 
 Assumptions:
 See descriptions elsewhere, as indicated above.
@@ -1288,7 +1297,7 @@ An alternative to a full assessment is to use a simple management plans (Butterw
 
 Methods:
 Scaling past catches, e.g. 75% of previous catches over past decade, depending on judgement of stock state.
-DCAC (MacCall, 2009)
+DCAC ([MacCall, 2009](#maccall-ad-2009-depletion-corrected-average-catch-a-simple-formula-for-estimating-sustainable-yields-in-data-poor-situations-ices-j-mar-sci-662267-2271))
 DB-SRA ([Dick and MacCall, 2011](#dick-ej-and-ad-maccall-2011-depletion-based-stock-reduction-analysis-a-catch-based-method-for-determining-sustainable-yields-for-data-poor-fish-stocks-fish-res-110331-341))
 Taking biological parameters from other stocks
 
@@ -1576,27 +1585,30 @@ Informative priors influence the results of both model parameters and model fit 
 Abstract: The BSP program fits either a Schaefer model or a Fletcher / Schaefer model to CPUE data using the Sampling /Importance Resampling algorithm. Required inputs are catch for all years (missing catch data in the first years of the fishery are allowed), at least one catch rate (CPUE) index of abundance, with CV’s if available (missing data are allowed). The parameters that can be fit are carrying capacity (K), the intrinsic rate of population growth (r), the biomass in the first modeled year defined as a ratio of K (alpha.b0), the shape parameter for the surplus production function for the Fletcher/Schaefer fit (n), the average annual catch for years before catch data were recorded (cat0), variance parameters for each CPUE series, depending on the method used to weight the CPUE series, and the catchability (q) for each CPUE series. Priors can be used for all of the fitted parameters for a Bayesian fit. The program can be used to project the biomass trajectory under any constant catch or constant F harvest policy, with confidence bounds. Program outputs include decision tables showing the probability of stock rebuilding and other indicators of policy performance at specified time horizons.
 
 Data/information requirements:
-	Catch for all years (missing catch data in the first years of the fishery are allowed);
-	One catch rate (CPUE) index of abundance with CV’s -if available (missing data are allowed).
-	Priors:
-	Lognormal on alpha.b0 (biomass in the first modelled year);
-	Lognormal on cat0 (the average annual catch for years before catch data were recorded);
-	Intrinsic growth rate r (can be lognormal, t-distributed or multivariate t-distributed);
-	If Fletcher/Schaefer fit, multivariate t-distribution on n (shape parameter);
-	Uniform on log(K) (carrying capacity);
-	lognormal on the variance parameters (sigma) for some weighting methods;
-	uniform on log(q) if q is estimated.
+Catch for all years (missing catch data in the first years of the fishery are allowed);
+One catch rate (CPUE) index of abundance with CV’s -if available (missing data are allowed).
+Priors:
+Lognormal on alpha.b0 (biomass in the first modelled year);
+Lognormal on cat0 (the average annual catch for years before catch data were recorded);
+Intrinsic growth rate r (can be lognormal, t-distributed or multivariate t-distributed);
+If Fletcher/Schaefer fit, multivariate t-distribution on n (shape parameter);
+Uniform on log(K) (carrying capacity);
+lognormal on the variance parameters (sigma) for some weighting methods;
+uniform on log(q) if q is estimated.
+
 Assumptions:
-	CPUE index data assumed to be lognormally distributed;
-	Abundance indices are assumed to be directly proportional to stock biomass;
-	Constant q over time.
+CPUE index data assumed to be lognormally distributed;
+Abundance indices are assumed to be directly proportional to stock biomass;
+Constant q over time.
+
 Outputs expected:
-	Variance/covariance matrix at the mode of the posterior distribution;
-	Posterior mean, standard deviation (SD), coefficient of variation (CV) and 5th, Median and 95th percentiles for parameters and management quantities of interest (Bt, r, K, MSY, BMSY, alphaB0, cat0, FMSY, Ft);
-	Probabilistic statements about the condition of the stock with respect to various indices of policy performance are then generated for different projection time intervals thus conveying the uncertainty associated with alternative harvesting strategies.
+Variance/covariance matrix at the mode of the posterior distribution;
+Posterior mean, standard deviation (SD), coefficient of variation (CV) and 5th, Median and 95th percentiles for parameters and management quantities of interest (Bt, r, K, MSY, BMSY, alphaB0, cat0, FMSY, Ft);
+Probabilistic statements about the condition of the stock with respect to various indices of policy performance are then generated for different projection time intervals thus conveying the uncertainty associated with alternative harvesting strategies.
+
 Method of operation:
-	This Bayesian Surplus Production model program (BSP) fits either a Schaefer model or a Fletcher/Schaefer model to CPUE data using the Sampling/Importance Resampling (SIR) algorithm.
-	Schaefer model: 
+This Bayesian Surplus Production model program (BSP) fits either a Schaefer model or a Fletcher/Schaefer model to CPUE data using the Sampling/Importance Resampling (SIR) algorithm.
+Schaefer model: 
 (dB_t)/dt=rB_t-r/K B_t^2-F_t B_t
 
 	Fletcher formulation: 
@@ -1620,10 +1632,11 @@ The method has not been tested in the paper in exam, which is only a user manual
 I report below the conclusion and main advantages of a first application of this model on South and North Atlantic Swordfish (McAllister et al, 2000):
 “First, the use of the Fletcher-Schaefer model can help to avoid the potentially overly optimistic predictions about surplus production that may result from the Fletcher and Pella-Tomlinson models. 
 Second, the new formulation is much more conducive to parameter estimation than the previous formulations for generalized surplus production. The shape parameter, n, that determines the inflection point of the surplus production function is a parameter not estimable from relative abundance data and this has been the main reason why Pella-Tomlinson formulations have not been applied. Furthermore, MSY, a key parameter in the Fletcher model, is not a quantity that can be readily estimated using data or information other than stock assessment data on relative abundance. Therefore it would not be ordinarily possible to construct an informative prior distribution for this parameter to aid parameter estimation. In contrast, the application of new formulation in combination with Bayesian methods, allows the use of demographic data to estimate a joint prior distribution for the surplus production parameters r and n. However, care must be taken to ensure that the inputs to the prior for r and n are sensibly constructed to avoid overly precise or strongly biased results. 
-	Third, providing that the joint prior for r and n is carefully constructed, this approach provides an improvement to the Schaefer surplus production function which may often incorrectly assume that the inflection point is at 0.5K.”
+Third, providing that the joint prior for r and n is carefully constructed, this approach provides an improvement to the Schaefer surplus production function which may often incorrectly assume that the inflection point is at 0.5K.”
+
 Caveats:
-	Considers observation error only (even though a recent version, i.e. BSP2, models both process error in the dynamics equations (to account for the effects of, for example, interannual variation in recruitment), and error in predicted observations. (McAllister, 2014)).
-	High sensibility of the results as well as of the projections to the value assumed for BMSY/K.
+Considers observation error only (even though a recent version, i.e. BSP2, models both process error in the dynamics equations (to account for the effects of, for example, interannual variation in recruitment), and error in predicted observations. (McAllister, 2014)).
+High sensibility of the results as well as of the projections to the value assumed for BMSY/K.
 
 #### Jardim, E., Millar, C.P., Mosqueira, I., Scott, F., Osio, G.C., Ferretti, M., Alzorriz, N. and A. Orio (2015a). What if stock assessment is as simple as a linear model? The a4a initiative. ICES J. Mar. Sci., 72(1): 232-236.
 
@@ -1653,14 +1666,16 @@ Fishing mortality
 Catch numbers 
 Indices
 The full assessment model output class (a4aFitSA) contains model summaries and the model parameters in addition to the fitted values above.
-	Commands are available to obtain:
-	The standardised residuals.
-	A stock summary plot showing time series of recruitment, SSB, catch and fishing mortality.
+Commands are available to obtain:
+The standardised residuals.
+A stock summary plot showing time series of recruitment, SSB, catch and fishing mortality.
+
 Method of operation:
-	The stock assessment model framework is a nonlinear statistical catch-at-age model implemented in R, making use of the FLR platform and using automatic differentiation in ADMB.
-	Submodels for fishing mortality (F), survey catchability (Q) and recruitment (R) have to be given structure by the user, in the form of log-linear models. This choice should be based on knowledge of the biology of the stock, environmental conditions of the region, fishing gears and major management events. 
+The stock assessment model framework is a nonlinear statistical catch-at-age model implemented in R, making use of the FLR platform and using automatic differentiation in ADMB.
+Submodels for fishing mortality (F), survey catchability (Q) and recruitment (R) have to be given structure by the user, in the form of log-linear models. This choice should be based on knowledge of the biology of the stock, environmental conditions of the region, fishing gears and major management events. 
+
 Testing:
-	It is stated that “The methods being developed are subject to extensive testing to evaluate their performance and to identify the appropriate configurations for different situations, as well as robust default settings”. However, no further details are given.
+It is stated that “The methods being developed are subject to extensive testing to evaluate their performance and to identify the appropriate configurations for different situations, as well as robust default settings”. However, no further details are given.
 
 Caveats:
 The flexibility introduced in the model increases the possibility of over-parameterisation.
@@ -1711,17 +1726,15 @@ Estimating both process and observation noise is difficult.
 The previous caveats apply when n=2 (i.e. Schaefer model), but are likely exacerbates when n≠2, i.e. with increased non linearity. 
 
  
-## Supplementary and other approaches that may be of interest
-
-### Mixed Fishery approaches
+## Supplementary and other approaches: mixed fishery approaches
 
 #### Zhou, S., Smith, A.D.M., and M. Fuller (2011). Quantitative ecological risk assessment for fishing effects on diverse data-poor non-target species in a multi-sector and multi-gear fishery. Fisheries Research 112: 168-178
 
 Abstract: Assessment of ecological sustainability for all species impacted by fishing is one of the most important and practical steps towards an Ecosystem Approach to Fisheries. We extend methods for Sustainability Assessment for Fishing Effects (SAFE) to assess diverse bycatch species in a multi-sector and multi-gear fishery. We develop methods for estimating fishing mortality rate, based on limited data, for demersal trawl, Danish seine, gillnet, and longline. The general approach involves estimating spatial overlap between species distribution and fishing effort distribution, catchability resulting from probability of encountering the gear and size-dependent selectivity, and post-capture mortality. We define three reference points (Fmsm, Flim, and Fcrash) and use six methods to derive these reference points. As an example, we apply this method to nearly 500 fish species caught in the Southern and Eastern Scalefish and Shark Fishery, a multi-sector and multi-gear fishery in Australia. We assess sustainability risk for all captured fish species in each sub-fishery and the cumulative impact across all the sub-fisheries. The results indicate that chondrichthyans are more vulnerable to fishing impact than teleosts, and that impact differs among sectors of the fishery. This method could be easily applied to other fisheries. However, the results may require fine tuning by other means such as expert judgment.
 
 Data/information requirements:
-	For estimation of F: Fishery distribution; Area affected by fishing gear; Species distribution; Habitat dependent encounterability; Size dependent catchability; Post capture mortality. 
-	For reference points estimation: biological parameters, depending on the method used (e.g. r, Linf, k, average annual water temperature, average age at maturity).
+For estimation of F: Fishery distribution; Area affected by fishing gear; Species distribution; Habitat dependent encounterability; Size dependent catchability; Post capture mortality. 
+For reference points estimation: biological parameters, depending on the method used (e.g. r, Linf, k, average annual water temperature, average age at maturity).
 
 Assumptions:
 Individuals of species i are evenly distributed within their distribution range.
@@ -1757,7 +1770,7 @@ In the case of gears that use bait to attract fish, estimation of affected area 
 Major uncertainty arises from spatial distribution of species and stocks relative to fishing effort. 
 Can be demanding in terms of data. 
 
-### MPA approaches
+## Supplementary and other approaches: MPA approaches
 
 #### Wilson, J.R., Prince, J.D. and H.S. Lenihan (2010). A management strategy for sedentary near-shore species that uses marine protected areas as a reference. Marine and Coastal Fisheries: Dynamics, Management, and Ecosystem Science, 2: 14–27.
 
@@ -1797,51 +1810,51 @@ Testing:
 	Furthermore, using triennial quotas did not reduce the performance and resulted in an increasing SPR until the end of the simulated period (30 years)
 	
 Caveats:
-	MPAs required for obtaining reference values 
-	Data from both inside and outside MPAs required
-	Only tested in one simulation based on one particular stock.
-	Method assumes a linear relationship between CPUE and abundance. As data from commercial vessels are (or could be) used nonlinear relationships are possible and could undermine the entire approach.
-	Some of the parameter values used in the decision tree were chosen by maximizing the catch while maintaining SPR40. In reality this data might not be available and hence reduce the performance of the method.
+MPAs required for obtaining reference values 
+Data from both inside and outside MPAs required
+Only tested in one simulation based on one particular stock.
+Method assumes a linear relationship between CPUE and abundance. As data from commercial vessels are (or could be) used nonlinear relationships are possible and could undermine the entire approach.
+Some of the parameter values used in the decision tree were chosen by maximizing the catch while maintaining SPR40. In reality this data might not be available and hence reduce the performance of the method.
 
 #### Babcock, E.A. and A.D. MacCall (2011). How useful is the ratio of fish density outside versus inside no take marine reserves as a metric for fishery management control rules? Canadian Journal of Fisheries and Aquatic Sciences, 68, 343–359.
 
 [Abstract:](http://www.nrcresearchpress.com/doi/abs/10.1139/F10-146#.WXr4RoSGO9I) A management strategy evaluation (based on five species in the California, USA, nearshore fishery) of control rules that reduce relative fishing effort as a function of the ratio of fish density outside versus inside no-take marine reserves (as a measure of depletion) showed that although the control rules allowed effort to increase at first, in the long term, they were effective at maintaining spawning stock biomass and yield for all simulated species, including depleted ones. Scenarios with fish movement, illegal fishing in the reserve, or post-dispersal density dependence in recruitment required higher density ratio targets, such as 60% of mature fish or 80% of all fish, to avoid stock depletion. The effort allowed by multispecies density-ratio control rules depended on the relative weight given to more or less depleted species. High variability in recruitment or in monitoring data caused the allowable effort to fluctuate. Density-ratio control rules have the advantages that they require no historical data, they can be used at local spatial scales, and they adjust to changing environmental conditions.
 
 Data/information requirements:
-	Monitoring data (fish densities) from inside and outside of MPAs (e.g. scuba monitoring program)
+Monitoring data (fish densities) from inside and outside of MPAs (e.g. scuba monitoring program)
 
 Assumptions:
-	Fish density recorded in a monitoring program is representative of stock size
-	No fishing activity in MPA
+Fish density recorded in a monitoring program is representative of stock size
+No fishing activity in MPA
 
 Outputs expected:
-	Ratio of fish density that is used for calculating allowed effort for one year
+Ratio of fish density that is used for calculating allowed effort for one year
 
 Method of operation:
-	A ratio of fish densities outside reserves to inside reserves is calculated (average number of fish per transect outside the reserve divided by the average number of fish per transect in the reserve).
-	This can be done species specific or in a multispecies approach where the ratios for several species are.
-	A control rule is used that specifies the amount of fishing effort allowed in each year based on the density ratio from the previous year.
-	A target density ratio is defined, e.g. 60% of mature fish or 80% of all fish.
-	Above this ratio fishing effort is maintained (or increased with a limit of a 10% increase per year).
-	If the density is lower than the target value, the effort is decreased linearly to zero at a minimum density ratio such as 20%.
-	To allow the effort to increase after it was set to zero, a reference value of 10% of the last effort > 0 is used for the calculations in the following year
+A ratio of fish densities outside reserves to inside reserves is calculated (average number of fish per transect outside the reserve divided by the average number of fish per transect in the reserve).
+This can be done species specific or in a multispecies approach where the ratios for several species are.
+A control rule is used that specifies the amount of fishing effort allowed in each year based on the density ratio from the previous year.
+A target density ratio is defined, e.g. 60% of mature fish or 80% of all fish.
+Above this ratio fishing effort is maintained (or increased with a limit of a 10% increase per year).
+If the density is lower than the target value, the effort is decreased linearly to zero at a minimum density ratio such as 20%.
+To allow the effort to increase after it was set to zero, a reference value of 10% of the last effort > 0 is used for the calculations in the following year
 
 Testing:
 Babcock and MacCall (2011) performed a MSE simulation of their approach with five hypothetical species with differing life history and fishery characteristics, based on species from the California nearshore fishery. The MSE included a spatially explicit operating model with 20% MPAs. Various options of the control rule were tested (different ratios, mature or all fish, uncertainty, migration).
-	Target density ratios of 60% of mature fish and 80% of all fish performed well for a wide range of life history characteristics. These ratios caused the SSB to equilibrate at around 40% of unfished levels and achieved yields around 75-90% of yields under a F40% policy. Most options resulted in around 40% of unfished SSB irrespective of the initial depletion level.
-	More precautionary density ratio target rules were effective sooner and had lower fluctuations. There were always some fluctuations in effort and this was not reduced by using density ratios from last three years instead of just one year. Movements of fish from the MPA weakened the performance of the method. Illegal fishing in the MPAs caused fluctuations and resulted in an overall lower biomass. Smaller sample sizes lead to higher variations but this effect could be ameliorated by pooling the density ratio of the last three years instead of just using the value from last year.
-	The performance of multispecies runs depended on the species. For some species multispecies ratios lead to a more conservative management, for other species to less conservative management.
+Target density ratios of 60% of mature fish and 80% of all fish performed well for a wide range of life history characteristics. These ratios caused the SSB to equilibrate at around 40% of unfished levels and achieved yields around 75-90% of yields under a F40% policy. Most options resulted in around 40% of unfished SSB irrespective of the initial depletion level.
+More precautionary density ratio target rules were effective sooner and had lower fluctuations. There were always some fluctuations in effort and this was not reduced by using density ratios from last three years instead of just one year. Movements of fish from the MPA weakened the performance of the method. Illegal fishing in the MPAs caused fluctuations and resulted in an overall lower biomass. Smaller sample sizes lead to higher variations but this effect could be ameliorated by pooling the density ratio of the last three years instead of just using the value from last year.
+The performance of multispecies runs depended on the species. For some species multispecies ratios lead to a more conservative management, for other species to less conservative management.
 
 Caveats:
-	Only relative values are use, no absolute reference points
-	Risk of depletion if fish biomass declines in the MPA
-	The method is more suitable for fish species which do not migrate far and are equally distributed in the area and for small scale fisheries and areas, due to monitoring requirements (e.g. scuba diving)
-	Model assumes selectivity and relative catchability (for multispecies fishery) are constant over time. In reality this might not be true.
-	The simulated control rules managed effort and not absolute catch
-	Density-ratio control rule could be an incentive for illegal fishing in order to reduce the ratio.
-	High variability in recruitment and/or low sample sizes lead to high variations in density ratios from year to year
+Only relative values are use, no absolute reference points
+Risk of depletion if fish biomass declines in the MPA
+The method is more suitable for fish species which do not migrate far and are equally distributed in the area and for small scale fisheries and areas, due to monitoring requirements (e.g. scuba diving)
+Model assumes selectivity and relative catchability (for multispecies fishery) are constant over time. In reality this might not be true.
+The simulated control rules managed effort and not absolute catch
+Density-ratio control rule could be an incentive for illegal fishing in order to reduce the ratio.
+High variability in recruitment and/or low sample sizes lead to high variations in density ratios from year to year
 
-### PSA approaches
+## Supplementary and other approaches: PSA approaches
 
 #### Osio, G.C., Orio, A. and C.P. Millar (2014). Assessing the vulnerability of Mediterranean demersal stocks and predicting exploitation status of un-assessed stocks. Fisheries Research 171: 110-121.
 
@@ -1916,7 +1929,7 @@ XSSS models typically produced results with less bias and variance in error rela
 Initial spawning biomass and relative stock status showed less bias and variance compared to the terminal year biomass.
 Relative stock status was the best performing of the derived quantities across all prior types and modelling approaches.
 
-### General approaches
+## Supplementary and other approaches: general
 
 #### A’mar, Z.T. and A.E. Punt (2005). Minimum stock size thresholds: how well can we detect whether stocks are below them? In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 487–569. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.
 
@@ -2095,7 +2108,7 @@ A flexible and intuitive interface is the key to success. A4a is suggested as su
 Model averaging may result in bimodal distributions due to competing hypotheses / models.
 Model averaging is not easy. Simpler methods make more assumptions, while more complex methods, such as Bayesian treatment through reversible jump MCMC, are very difficult.
 
-### Simulation-tested data-limited harvest control rules
+## Simulation-tested data-limited harvest control rules
 
 #### Prince, J.D., Dowling, N.A., Davies, C.R., Campbell, R.A. and D.S. Kolody (2011). A simple cost-effective and scale-less empirical approach to harvest strategies. ICES Journal of Marine Science, 68: 947–960.
 
@@ -2474,7 +2487,7 @@ Method of operation:
 	Piggyback on Related Assessment (Cope et al., 2012; WPFMC 2011b, 2013)
 	Data Poor
 	DB-SRA ([Dick and MacCall, 2011](#dick-ej-and-ad-maccall-2011-depletion-based-stock-reduction-analysis-a-catch-based-method-for-determining-sustainable-yields-for-data-poor-fish-stocks-fish-res-110331-341))
-	DCAC (MacCall, 2009)
+	DCAC ([MacCall, 2009](#maccall-ad-2009-depletion-corrected-average-catch-a-simple-formula-for-estimating-sustainable-yields-in-data-poor-situations-ices-j-mar-sci-662267-2271))
 	Catch-scalars (e.g. average of reference period) including zero catch (CFMC, 2010, 2011; GMFMC, 2011; MAFMC, 2011; NMFS HMS, 2010; NEFMC, 2011; PFMC, 2012; SAFMC, 2011.)
 	Zero Contribution to Complex (NMFS HMS, 2010; PFMC, 2012.)
 	Percent of Assessed Stock Habitat (WPFMC, 2011a.)
