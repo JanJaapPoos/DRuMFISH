@@ -12,13 +12,13 @@ A review is provided of a wide-range of data-limited methods and a selection of 
 
 [Data limited approaches](#data-limited-approached)
 
-[Data limited approaches: catch-only methods with supplementary information](#data-limited-approaches:catch-only-methods-with-supplementary-information)
+[Data limited approaches: catch-only methods with supplementary information](#data-limited-approaches-catch-only-methods-with-supplementary-information)
 
-[Data limited approaches: catch-only methods with supplementary data and information](#data-limited-approaches:-catch-only-methods-with-supplementary-data-and-information)
+[Data limited approaches: catch-only methods with supplementary data and information](#data-limited-approaches-catch-only-methods-with-supplementary-data-and-information)
 
 [Data limited approaches: life-history, per-recruit and length-based approaches](#data-limited-approaches-life-history,-per-recruit-and-length-based-approaches)
 
-[Data limited approaches: qualitative and semi-quantitative approaches](#data-limited-approaches:-qualitative-and-semi-quantitative-approaches)
+[Data limited approaches: qualitative and semi-quantitative approaches](#data-limited-approaches-qualitative-and-semi-quantitative-approaches)
 
 [Comparisons and additional simulation testing](#comparisons-and-additional-simulation-testing)
 
