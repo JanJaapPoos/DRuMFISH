@@ -12,13 +12,13 @@ A review is provided of a wide-range of data-limited methods and a selection of 
 
 [Data limited approaches](#data-limited-approached)
 
-[Catch-only methods with supplementary information](#catch-only-methods-with-supplementary-information)
+[Data limited approaches: catch-only methods with supplementary information](#data-limited-approaches:catch-only-methods-with-supplementary-information)
 
-[Catch-only methods with supplementary data and information](#catch-only-methods-with-supplementary-data-and-information)
+[Data limited approaches: catch-only methods with supplementary data and information](#data-limited-approaches:-catch-only-methods-with-supplementary-data-and-information)
 
-[Life-history, per-recruit and length-based approaches](#life-history,-per-recruit-and-length-based-approaches)
+[Data limited approaches: life-history, per-recruit and length-based approaches](#data-limited-approaches:-life-history,-per-recruit-and-length-based-approaches)
 
-[Qualitative and semi-quantitative approaches](#qualitative-and-semi-quantitative-approaches)
+[Data limited approaches: qualitative and semi-quantitative approaches](#data-limited-approaches:-qualitative-and-semi-quantitative-approaches)
 
 [Comparisons and additional simulation testing](#comparisons-and-additional-simulation-testing)
 
@@ -42,9 +42,7 @@ Despite the fact that CMSY with catch-only data can take the form of, and behave
 A final consideration is that the Robin Hood approach is commonly used in many applications. The idea has a relatively long history, but has been formally described in [Punt et al. (2011 - not reviewed here, but available in the sharepoint)](https://academic.oup.com/icesjms/article/68/5/972/653125/Among-stock-comparisons-for-improving-stock). The Robin-Hood approach refers to the practice of borrowing information from data-rich stock assessments, e.g. trends in fishing mortality and values for parameters of selectivity functions, to assess data-poor stock, which leads to stock assessments for the most data-poor stocks being informed by those for the most data-rich stocks. [Bentley (2015)](https://academic.oup.com/icesjms/article/72/1/186/822177/Data-and-time-poverty-in-fisheries-estimation) argues a similar approach where prior probability distributions are used to transfer knowledge from data-rich to data-poor fisheries. This practice has been widely recognized as effective whenever the lack of data prevents an assessment, and as such relevant for the DRUMFISH project.
 
 
-## Data-limited approaches
-
-### Catch-only methods with supplementary information
+## Data-limited approaches: Catch-only methods with supplementary information
 
 #### Vasconcellos, M. and K. Cochrane (2005). Overview of world status of data-limited fisheries: inferences from landing statistics. In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 1–20. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.
 
@@ -223,18 +221,18 @@ The MCMC method of assessing uncertainty in model fit should mimic priors for pa
 [Abstract:](http://onlinelibrary.wiley.com/doi/10.1111/j.1467-2979.2012.00485.x/abstract) The Law of the Sea requires that fish stocks are maintained at levels that can produce the maximum sustainable yield (MSY). However, for most fish stocks, no estimates of MSY are currently available. Here, we present a new method for estimating MSY from catch data, resilience of the respective species, and simple assumptions about relative stock sizes at the first and final year of the catch data time series. We compare our results with 146 MSY estimates derived from full stock assessments and find excellent agreement. We present principles for fisheries management of data-poor stocks, based only on information about catches and MSY.
 
 Data / information requirements:
-	Time series of catch
-	Prior ranges of r (intrinsic growth) and k (carrying capacity)
-	A range of possible initial and current depletion levels
-	Standard deviation in process errors (if including a stochastic component)
+Time series of catch
+Prior ranges of r (intrinsic growth) and k (carrying capacity)
+A range of possible initial and current depletion levels
+Standard deviation in process errors (if including a stochastic component)
 
 Assumptions:
-	The stock-productivity relationship follows the Schaefer model.
-	A stationary production function, i.e. constant model parameters.
-	Process errors are assumed lognormal, independent and identically distributed.
+The stock-productivity relationship follows the Schaefer model.
+A stationary production function, i.e. constant model parameters.
+Process errors are assumed lognormal, independent and identically distributed.
 
 Outputs expected:
-	An estimate of MSY with error margins
+An estimate of MSY with error margins
 
 Method of operation:
 The Schaefer production model is used to calculate annual biomasses for r-k pairs randomly drawn from the prior distributions. r-k pairs that have never collapsed the stock or exceeded carrying capacity, and that result in a final relative biomass estimate between the values specified in the inputs are accepted and used to calculate MSY.
@@ -334,7 +332,7 @@ The results are affected by assumed depletion and the assumed upper limit on dep
 Ability to project forward/forecast:
 This method has the ability to project forward
 
-### Catch-only methods with supplementary data and information
+## Data-limited approaches: Catch-only methods with supplementary data and information
 
 #### Thorson. J.T. and J.M. Cope (2015). Catch curve stock-reduction analysis: An alternative solution to the catch equations. Fish. Res. 171: 33-41.
 
@@ -376,7 +374,7 @@ Fishery selection is non-asymptotic
 Natural mortality is age specific
 Misspecification of life history parameter priors
 
-### Life-history, per-recruit and length-based approaches
+## Data-limited approaches: Life-history, per-recruit and length-based approaches
 
 #### Froese, R. (2004). Keep it simple: three indicators to deal with overfishing. Fish and Fish. 5:86–91.
 
@@ -677,7 +675,7 @@ During testing, the same model was used for simulation and estimation, so the re
 Misspecification of the selection function and inaccuracies in the estimation of asymptotic size can have severe consequences for the estimation of fishing mortality and reference points.
 Asymptotic size is difficult to estimate when the largest individuals are not selected, and may need additional information (e.g. local knowledge or information from other stocks of the same species).
 
-### Qualitative and semi-quantitative approaches
+## Data-limited approaches: Qualitative and semi-quantitative approaches
 
 #### Caddy, J.F. (2002). Limit reference points, traffic lights, and holistic approaches to fisheries management with minimal stock assessment input. Fish. Res. 56:133-137.
 
@@ -895,7 +893,7 @@ It is necessary to correct for a retransformation bias as mPRM predicts log(B/BM
 Caveats:
 This approach is not suitable for formal assessment as it does not produce precise estimates for individual fisheries.
 
-### Comparisons and additional simulation testing
+## Comparisons and additional simulation testing
 
 #### Dorn M., Berkson, J., Punt, A. and K. Stokes, (2011). Assessment Methods for Data-Poor Stocks. Report of Methodology Review Panel Meeting. National Marine Fisheries Service (NMFS), Southwest Fisheries Science Center (SWFSC), Santa Cruz, California, 25-29 April 2011.
 
@@ -1213,7 +1211,7 @@ DCAC and DB-SRA performed somewhat better for the rockfish scenarios because the
 Ability to project forward/forecast:
 All the methods apart from DCAC can be used for projections.
 
-### Real-world examples and applications
+## Real-world examples and applications
 
 #### Patrik, W.S., Spencer, P., Ormseth, O., Cope, J. Field, J., Kobayashi, D., Gedamke, T., Cortés, E., Bigelow, K., Overholtz, W., Link, J. and P. Lawson (2009). Use of productivity and susceptibility indices to determine stock vulnerability, with example applications to six U.S. fisheries. U.S. Dep. Commer., NOAA Tech. Memo. NMFS-F/SPO-101, 90 p.
 
