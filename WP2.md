@@ -334,7 +334,7 @@ The model is projected to the future to explore alternative harvest polices.
   
 Testing:
 The method described uses some data poor techniques that have been developed and tested on Australian stocks in: 
-Zhou, S., Pascoe, S., Dowling, N., Haddon, M., Klaer, N., Larcombe, J., Smith, A.D.M., Thebaud, O., and Vieira, S. 2013. Quantitatively defining biological and economic reference points in data poor and data limited fisheries. Final Report on FRDC Project 2010/044. Canberra, Australia. 
+[Zhou, S., et a. 2013. Quantitatively defining biological and economic reference points in data poor and data limited fisheries. Final Report on FRDC Project 2010/044.](http://www.frdc.com.au/research/Final_Reports/2010-044-DLD.pdf)
 
 Caveats:
 The results are affected by assumed depletion and the assumed upper limit on depletion.
