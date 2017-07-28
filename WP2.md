@@ -61,10 +61,10 @@ Data / information requirements:
 
 * Time series of catch
 * Priors for:
- * Intrinsic growth rate, r
- * Carrying capacity, K
- * Bioeconomic equilibrium as a proportion of K, a
- * Increase of harvest rate over time, x
+  * Intrinsic growth rate, r
+  * Carrying capacity, K
+  * Bioeconomic equilibrium as a proportion of K, a
+  * Increase of harvest rate over time, x
 * Process error variability
 
 Assumptions:
