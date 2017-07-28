@@ -387,38 +387,40 @@ Caveats:
 [Abstract:](http://onlinelibrary.wiley.com/doi/10.1111/j.1467-2979.2004.00144.x/abstract) Three simple fisheries indicators are presented: (i) percentage of mature fish in catch, with 100% as target; (ii) percent of specimens with optimum length in catch, with 100% as target; and (iii) percentage of ‘mega-spawners‘ in catch, with 0% as target, and 30–40% as representative of reasonable stock structure if no upper size limit exists. Application of these indicators to stocks of Gadus morhua, Sardinella aurita and Epinephelus aeneus demonstrate their usefulness. It is argued that such simple indicators have the potential to allow more stakeholders such as fishers, fish dealers, supermarket managers, consumers and politicians to participate in fisheries management and eventually hold and reverse the global pattern of convenience overfishing, which is defined here as deliberate overfishing sanctioned by official bodies who find it more convenient to risk eventual collapse of fish stocks than to risk social and political conflicts.
 
 Data/information requirements:
-Length-frequency time series.
-biological parameters: 
-Maximum total length; 
-Length at first maturity; 
-K;
-M
+* Length-frequency time series.
+* biological parameters: 
+  * Maximum total length; 
+  * Length at first maturity; 
+  * K;
+  * M
   
 Assumptions:
-That overfishing changes the length frequency of populations
+* That overfishing changes the length frequency of populations
   
 Outputs expected:
-Three simple and easily understood indicators that allow an effective assessment of status and trends in most fisheries by all concerned stakeholders including the general public:
-Percentage of mature specimens in the catch (‘Let the spawn!’).
-Percentage of fish caught at optimum length (‘Let them grow!’) i.e. the length where the number of fish in a given unfished year class multiplied with their mean individual weight is maximum and where thus the maximum yield and revenue can be obtained.
-Percentage of old, large fish in the catch (‘Let the mega-spawners live!’), i.e. fish of a size larger than optimum length plus 10%. This indicator is a proxy for resilience against random events.
-Good for non-commercial species affected by the impacts of fishing.
+* Three simple and easily understood indicators that allow an effective assessment of status and trends in most fisheries by all concerned stakeholders including the general public:
+  * Percentage of mature specimens in the catch (‘Let them spawn!’).
+  * Percentage of fish caught at optimum length (‘Let them grow!’) i.e. the length where the number of fish in a given unfished year class multiplied with their mean individual weight is maximum and where thus the maximum yield and revenue can be obtained.
+  * Percentage of old, large fish in the catch (‘Let the mega-spawners live!’), i.e. fish of a size larger than optimum length plus 10%. This indicator is a proxy for resilience against random events.
+* Good for non-commercial species affected by the impacts of fishing.
 
 Method of operation:
-Years were analysed individually, i.e. no connection between years was made and no assumption about recruitment made. Results were averaged over the available samples. 
-Actual yield was calculated by transforming length into weight multiplying weight classes with the respective frequencies, and summing over all classes. 
-For the estimation of potential yield, Lopt was derived from growth parameters as:
+* Years were analysed individually, i.e. no connection between years was made and no assumption about recruitment made. Results were averaged over the available samples. 
+* Actual yield was calculated by transforming length into weight multiplying weight classes with the respective frequencies, and summing over all classes. 
+* For the estimation of potential yield, Lopt was derived from growth parameters as:
+
 Lopt = L∞ x [3/(3 + M/K)]
-Frequencies in lower length classes reduced by natural mortality and added to the length class containing Lopt. Multiplying the frequency of the Lopt class with the corresponding weight gave the potential yield. Specimens in length classes above Lopt excluded. 
-A ‘Length–Frequency Wizard’ to perform these calculations is available in [FishBase](http://www.fishbase.org).
+
+* Frequencies in lower length classes reduced by natural mortality and added to the length class containing Lopt. Multiplying the frequency of the Lopt class with the corresponding weight gave the potential yield. Specimens in length classes above Lopt excluded. 
+* A ‘Length–Frequency Wizard’ to perform these calculations is available in [FishBase](http://www.fishbase.org).
   
 Testing:
-Examined Western channel cod 1994-2001 data from the ICES 2002 assessment in relation to the three indicators. Low to very low indicator values reflected the dire state of the stock and the prevalent practice of fisheries to remove large specimens first and foremost. 
-Pelagic Round sardinella (Sardinella aurita, Clupeidae): the percentage of mature specimens in the catch was above 90% since 1992, and the percentage of specimens with optimum length increased from by around 30% between 1990 and 2002. Indicate a healthy stock in-line with the traditional CPUE assessment. The percentage of mega-spawners in the catch decreased ~10-20%, this was not the result of an upper size limit, this age-structure erosion reduces the stock’s resilience. 
-Demersal White grouper (Epinephelus aeneus, Serranidae): the percentage of mature specimens decreased by 42% from the early nineties to 1999. The percentages of specimens at optimum size and of mega-spawners also decreased from about 35% to less than 20%. The indicators suggest the stock is overfished, in agreement with traditional assessment.
+* Examined Western channel cod 1994-2001 data from the ICES 2002 assessment in relation to the three indicators. Low to very low indicator values reflected the dire state of the stock and the prevalent practice of fisheries to remove large specimens first and foremost. 
+* Pelagic Round sardinella (Sardinella aurita, Clupeidae): the percentage of mature specimens in the catch was above 90% since 1992, and the percentage of specimens with optimum length increased from by around 30% between 1990 and 2002. Indicate a healthy stock in-line with the traditional CPUE assessment. The percentage of mega-spawners in the catch decreased ~10-20%, this was not the result of an upper size limit, this age-structure erosion reduces the stock’s resilience. 
+* Demersal White grouper (Epinephelus aeneus, Serranidae): the percentage of mature specimens decreased by 42% from the early nineties to 1999. The percentages of specimens at optimum size and of mega-spawners also decreased from about 35% to less than 20%. The indicators suggest the stock is overfished, in agreement with traditional assessment.
   
 Caveats:
-Selection of parameter values used for length at maturity, growth and natural mortality affects the absolute percentages of the indicators, but not their trends.
+* Selection of parameter values used for length at maturity, growth and natural mortality affects the absolute percentages of the indicators, but not their trends.
 
 ### [O’Farrell, M.R. and L.W. Botsford (2005). Estimation of change in lifetime egg production from length frequency data. Can. J. Fish. Aquat. Sci. 62: 1626–1639.](http://www.nrcresearchpress.com/doi/abs/10.1139/f05-064)
 
