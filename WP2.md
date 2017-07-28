@@ -84,117 +84,115 @@ Outputs expected:
 
 Method of operation:
 
-•	The model predicts catches based on a combination of a biomass dynamics model and a harvest rate dynamics model. The biomass dynamics model follows the Schaefer surplus production model and the harvest rate dynamics model follows a logistic model.
-•	The Bayesian algorithm sampling importance resampling is used to fit the model to the catch time series by estimating four model parameters: r, K, a and x.
+* The model predicts catches based on a combination of a biomass dynamics model and a harvest rate dynamics model. The biomass dynamics model follows the Schaefer surplus production model and the harvest rate dynamics model follows a logistic model.
+* The Bayesian algorithm sampling importance resampling is used to fit the model to the catch time series by estimating four model parameters: r, K, a and x.
 
 ### Walters, C.J., Martell, S.J.D. and J. Korman (2006). A stochastic approach to stock reduction analysis. Can. J. Fish. Aquat. Sci 63: 212-223.
 
 [Abstract:](http://www.nrcresearchpress.com/doi/abs/10.1139/f05-213#.WXn85ISGO9I) Stock reduction analysis (SRA) can complement more detailed assessment methods by using long-term historical catches to estimate recruitment rates needed to have produced those catches, yet still end up with stock sizes near those estimated by the detailed methods. A longer historical perspective can also add information to the estimation of reference points such as unfished biomass (B0) or target biomass (BMSY). Deterministic SRA models provide a single stock size trajectory that is vanishingly unlikely to have actually occurred, while stochastic SRA attempts to provide probability distributions for stock size over time under alternative hypotheses about unfished recruitment rates and about variability around assumed stock–recruitment relationships. These distributions can be generated with age-structured population models by doing large numbers of Monte Carlo simulation trials and retaining those sample trials for which the stock would not have been driven to extinction by historical catches. By resampling from these trials using likelihood weights (sampling – importance resampling method), it is possible to move into fully Bayesian, state–space assessment modeling through a series of straightforward steps and to provide understandable visualization of how much the data help to reduce uncertainty about historical fishing impacts and stock status.
 
 Data / information requirements:
-•	Time series of total catch data – ideally going back close to virgin biomass – preferably as numbers, if not, numbers can be estimated from total weight and mean individual weight.
-•	Estimate of natural mortality M
-•	Estimate of stock-recruit steepness at low stock size (index, cpue, tagging, etc.)
+* Time series of total catch data – ideally going back close to virgin biomass – preferably as numbers, if not, numbers can be estimated from total weight and mean individual weight.
+* Estimate of natural mortality M
+* Estimate of stock-recruit steepness at low stock size (index, cpue, tagging, etc.)
 
 Assumptions:
-•	Known constant M. 
-•	Known stock recruit steepness at low stock size and a Beverton-Holt recruitment relationship
-•	Fishery selection
+* Known constant M. 
+* Known stock recruit steepness at low stock size and a Beverton-Holt recruitment relationship
+* Fishery selection
 
 Outputs expected:
-•	Estimates of harvest ratio (catch/vulnerable biomass)
-•	Probability distribution of current depletion level relative to Virgin Biomass
+* Estimates of harvest ratio (catch/vulnerable biomass)
+* Probability distribution of current depletion level relative to Virgin Biomass
+
 Method of operation:
-•	In deterministic SRA, stock numbers at age are projected forward from an initial recruitment of R0. Using estimates of M, and historic catch data, divided among the age classes proportional to the total selected weight at each age. If there are years where catch is greater than estimated vulnerable biomass, this is a strong indication that the initial biomass or recruitment steepness are too low. This method places no upper bound on the steepness or initial biomass, but information about relative abundance may be used to inform an upper bound on these parameters.
-•	Bayesian fitting of the SRA model uses historic catch data to investigate a range of Virgin Biomass and recruitment assumptions to find feasible parameter space, acknowledging that recruitment is variable between years, by taking a large number of simulations with randomly generated deviations from the stock-recruit relationship. Auto-correlation can be added to these deviations. The authors suggest that the Bayesian SRA can be considered as a stepping-stone to a full assessment as more sources of data become available and are integrated into the method.
+* In deterministic SRA, stock numbers at age are projected forward from an initial recruitment of R0. Using estimates of M, and historic catch data, divided among the age classes proportional to the total selected weight at each age. If there are years where catch is greater than estimated vulnerable biomass, this is a strong indication that the initial biomass or recruitment steepness are too low. This method places no upper bound on the steepness or initial biomass, but information about relative abundance may be used to inform an upper bound on these parameters.
+* Bayesian fitting of the SRA model uses historic catch data to investigate a range of Virgin Biomass and recruitment assumptions to find feasible parameter space, acknowledging that recruitment is variable between years, by taking a large number of simulations with randomly generated deviations from the stock-recruit relationship. Auto-correlation can be added to these deviations. The authors suggest that the Bayesian SRA can be considered as a stepping-stone to a full assessment as more sources of data become available and are integrated into the method.
 
 Testing:
-•Fraser River white sturgeon is used as an example of fitting in the deterministic case. In this case, as well as the time series of catches, there are individual weight measurements that indicate a roughly 10-fold reduction in mean body weight due to the truncated age structure caused by past exploitation
-•Data from the Fraser River white sturgeon is used for an example of deterministic stock reduction analysis. The parameters were varied to achieve a current vulnerable biomass estimate of 40,000-60,000 fish, and to follow recent trends indicated by mark-recapture analysis. This implied virgin recruitment around 21,600, which has fallen to around 7,500 in recent years. Comparable results are not shown for the Bayesian method, but they show probability distributions of output quantities such as depletion level given the assumptions about input parameters.
-•The fit of the model to the data can either be judged by comparing to some measure of abundance trend, or by evaluating the probability of extinction given the observed catches – if this is high, then the initial parameter estimates should be reviewed.
+* Fraser River white sturgeon is used as an example of fitting in the deterministic case. In this case, as well as the time series of catches, there are individual weight measurements that indicate a roughly 10-fold reduction in mean body weight due to the truncated age structure caused by past exploitation
+* Data from the Fraser River white sturgeon is used for an example of deterministic stock reduction analysis. The parameters were varied to achieve a current vulnerable biomass estimate of 40,000-60,000 fish, and to follow recent trends indicated by mark-recapture analysis. This implied virgin recruitment around 21,600, which has fallen to around 7,500 in recent years. Comparable results are not shown for the Bayesian method, but they show probability distributions of output quantities such as depletion level given the assumptions about input parameters.
+* The fit of the model to the data can either be judged by comparing to some measure of abundance trend, or by evaluating the probability of extinction given the observed catches – if this is high, then the initial parameter estimates should be reviewed.
 
 Caveats:
-•Auto-correlation in estimates of recruitment deviates lead to high uncertainty in stock size – this might be particularly the case if there is a regime shift due to environmental factors, where effectively one stock-recruit relationship is used to model two substantially different ones.
-•Small populations may have high uncertainty if a small number of large fish contribute substantially to the biomass 
+* Auto-correlation in estimates of recruitment deviates lead to high uncertainty in stock size – this might be particularly the case if there is a regime shift due to environmental factors, where effectively one stock-recruit relationship is used to model two substantially different ones.
+* Small populations may have high uncertainty if a small number of large fish contribute substantially to the biomass 
 
 ### MacCall, A.D. (2009). Depletion-corrected average catch: a simple formula for estimating sustainable yields in data-poor situations. ICES J. Mar. Sci. 66:2267-2271.
 
 [Abstract:](https://academic.oup.com/isejms/article-pdf/66/10/2267/1992515/fsp-209.pdf) The depletion-corrected average catch (DCAC) formula is an extension of the potential-yield formula, and it provides useful estimates of sustainable yield for data-poor fisheries on long-lived species. Over an extended period (e.g. a decade or more), the catch is divided into a sustainable yield component and an unsustainable “windfall” component associated with a one-time reduction in stock biomass. The size of the windfall is expressed as being equivalent to a number of years of sustainable production, in the form of a “windfall ratio”. The DCAC is calculated as the sum of catches divided by the sum of the number of years in the catch series and this windfall ratio. Input information includes the sum of catches and associated number of years, the relative reduction in biomass during that period, the natural mortality rate (M, which should be <0.2 year-1), and the assumed ratio of FMSY to M. These input values are expected to be approximate, and based on the estimates of their imprecision, the uncertainty can be integrated by Monte Carlo exploration of DCAC values.
 
 Data/information requirements:
-	The sum of catches over the time series.
-	The number of years in the time series.
-	The following parameters (with an associated probability distribution and standard deviation for Monte Carlo):
-	An estimate of the relative reduction in biomass over the time series (∆).
-	Natural mortality (M).
-	An assumed ratio (c) of FMSY to M.
+* The sum of catches over the time series.
+* The number of years in the time series.
+* The following parameters (with an associated probability distribution and standard deviation for Monte Carlo):
+  * An estimate of the relative reduction in biomass over the time series (∆).
+  * Natural mortality (M).
+  * An assumed ratio (c) of FMSY to M.
   
 Assumptions:
-	Modified potential yield assumptions:
-	BMSY=0.4B0, i.e. BMSY is 0.4 times the unfished vulnerable biomass.
-	FMSY=cM where c < 1, i.e. FMSY is proportional to natural mortality.
-	Assuming, on average, each year produces one unit of sustainable yield, the catch is divided into a sustainable yield component and an unsustainable “windfall” component associated with a one-time reduction in stock biomass (which is assumed to be the relative reduction in vulnerable stock biomass over the duration of the catch time-series). 
-	The “windfall ratio” expresses the size of the windfall equivalent to a number of years of sustainable production (Windfall/Potential yield).
-	The Depletion-corrected average catch (DCAC) divides the sum of catches by the number of years in the catch series plus the windfall ratio, to give an average (sustainable catch) that accounts for changes in the underlying resource abundance.
+* Modified potential yield assumptions:
+  * BMSY=0.4B0, i.e. BMSY is 0.4 times the unfished vulnerable biomass.
+  * FMSY=cM where c < 1, i.e. FMSY is proportional to natural mortality.
+* Assuming, on average, each year produces one unit of sustainable yield, the catch is divided into a sustainable yield component and an unsustainable “windfall” component associated with a one-time reduction in stock biomass (which is assumed to be the relative reduction in vulnerable stock biomass over the duration of the catch time-series). 
+* The “windfall ratio” expresses the size of the windfall equivalent to a number of years of sustainable production (Windfall/Potential yield).
+* The Depletion-corrected average catch (DCAC) divides the sum of catches by the number of years in the catch series plus the windfall ratio, to give an average (sustainable catch) that accounts for changes in the underlying resource abundance.
 	
 Outputs expected:
-An estimate of sustainable yield over the catch period (this is expected to be moderately high while having a low probability of greatly exceeding MSY).
-Estimates of confidence intervals (if using Monte Carlo).
+* An estimate of sustainable yield over the catch period (this is expected to be moderately high while having a low probability of greatly exceeding MSY).
+* Estimates of confidence intervals (if using Monte Carlo).
 	
 Method of operation:
-The DCAC can be calculated as a point estimate using the most likely values of the inputs, but this is not recommended.
-Should be used with Monte Carlo exploration of DCAC estimates to provide information on precision and bias.
+* The DCAC can be calculated as a point estimate using the most likely values of the inputs, but this is not recommended.
+* Should be used with Monte Carlo exploration of DCAC estimates to provide information on precision and bias.
 	
 Testing:
-DCAC was used on two stocks (widow rockfish off the west coast of the United States and redfish in the Gulf of Maine and Georges Bank) where full age-structured stock assessments had been carried out. The DCAC results were compared to the independently derived estimates of MSY from the stock assessments.
-The DCAC performed well in both cases. In practice the DCAC is often near MSY.
+* DCAC was used on two stocks (widow rockfish off the west coast of the United States and redfish in the Gulf of Maine and Georges Bank) where full age-structured stock assessments had been carried out. The DCAC results were compared to the independently derived estimates of MSY from the stock assessments: the DCAC performed well in both cases. In practice the DCAC is often near MSY.
 	
 Caveats:
-Works better for longer time-series (e.g. a decade or more).
-Should not be used if M > 0.2 year-1.
-In data-poor circumstances it can be difficult to estimate the relative depletion over the duration of the catch series.
-DCAC is not suitable for specifying catches in a stock-rebuilding plan.
+* Works better for longer time-series (e.g. a decade or more).
+* Should not be used if M > 0.2 year-1.
+* In data-poor circumstances it can be difficult to estimate the relative depletion over the duration of the catch series.
+* DCAC is not suitable for specifying catches in a stock-rebuilding plan.
 
 ### Dick, E.J. and A.D. MacCall (2011). Depletion-based stock reduction analysis: a catch-based method for determining sustainable yields for data-poor fish stocks. Fish. Res. 110:331-341.
 
 [Abstract:](http://www.sciencedirect.com/science/article/pii/S0165783611001962) We describe a method for determining reasonable yield and management reference points for data-poor fisheries in cases where approximate catches are known from the beginning of exploitation. The method, called Depletion-Based Stock Reduction Analysis (DB-SRA), merges stochastic Stock-Reduction Analysis with Depletion-Corrected Average Catch. Data requirements include estimates of historical annual catches, approximate natural mortality rate and age at maturity. A production function is specified based on general fishery knowledge of the relative location of maximum productivity and the relationship of MSY fishing rate to the natural mortality rate. This leaves unfished biomass as the only unknown parameter, which can be estimated given a designated relative depletion level near the end of the time series. The method produces probability distributions of management reference points concerning yield and biomass. Uncertainties in natural mortality, stock dynamics, optimal harvest rates, and recent stock status are incorporated using Monte Carlo exploration. Comparison of model outputs to data-rich stock assessments suggests that the method is effective for estimating sustainable yields for data-poor stocks.
 
 Data/information requirements:
-Time series of historical catches from the beginning of exploitation.
-The following parameters with an associated probability distribution and standard deviation:
-Natural mortality (M).
-Ratio of FMSY to M.
-Relative biomass at maximum latent productivity BMSY/K (assumed 0.4 in DCAC above).
-Relative depletion level in a recent year (∆ for DCAC = 1-depletion).
-Age at maturity.
+* Time series of historical catches from the beginning of exploitation.
+* The following parameters with an associated probability distribution and standard deviation:
+  * Natural mortality (M).
+  * Ratio of FMSY to M.
+  * Relative biomass at maximum latent productivity BMSY/K (assumed 0.4 in DCAC above).
+  * Relative depletion level in a recent year (∆ for DCAC = 1-depletion).
+* Age at maturity.
 	
 Assumptions:
-Depletion-based stock reduction analysis (DB-SRA) is implemented using a delay-difference production model. 
-This implementation uses a hybrid Schaefer-PTF model for the latent production function; this function has the form of a Pella-Tomlinson-Fletcher (PTF) production model for abundances above a join point and the form of a Schaefer model below the join point. The value of the join point is chosen to give a good approximation to the Beverton-Holt stock recruit model.
+* Depletion-based stock reduction analysis (DB-SRA) is implemented using a delay-difference production model. 
+* This implementation uses a hybrid Schaefer-PTF model for the latent production function; this function has the form of a Pella-Tomlinson-Fletcher (PTF) production model for abundances above a join point and the form of a Schaefer model below the join point. The value of the join point is chosen to give a good approximation to the Beverton-Holt stock recruit model.
 	
 Outputs expected:
-A set of plausible trajectories giving probability distributions of:
-Estimated biomass
-Reference points:
-MSY
-BMSY
-CFMSY or OFL (overfishing limit)
+* A set of plausible trajectories giving probability distributions of estimated biomass and reference points:
+  * MSY
+  * BMSY
+  * CFMSY or OFL (overfishing limit)
 	
 Method of operation:
-A Monte Carlo approach is used to draw input parameters (natural mortality, FMSY/M, relative biomass at latent productivity and the relative depletion level) from prior probability distributions. Given the time series of historical catch, the delay-difference model is applied sequentially over the years of the time series, and the value of K (unfished biomass) is determined by a numerical solution that gives the recent relative depletion level. This is run 10,000 times to produce the probability distributions above.
+* A Monte Carlo approach is used to draw input parameters (natural mortality, FMSY/M, relative biomass at latent productivity and the relative depletion level) from prior probability distributions. Given the time series of historical catch, the delay-difference model is applied sequentially over the years of the time series, and the value of K (unfished biomass) is determined by a numerical solution that gives the recent relative depletion level. This is run 10,000 times to produce the probability distributions above.
 	
 Testing:
-DB-SRA was used on 31 data-rich assessed species of groundfish managed by the Pacific Fishery Management Council (PFMC) on the west coast of the United States, assuming current stock biomass is 40% of the unfished biomass. The maximum posterior density (MPD) estimates from the full stock assessment were taken as benchmarks to compare the performance of DB-SRA. 
-Median estimates of MSY and K from DB-SRA tend to be between one half and double the assessment value. 
-DB-SRA estimates of MSY are most consistent with data-rich results (compared to the estimates of CFMSY and K).
-The sensitivity of the model to the relative depletion level was tested by applying the model to the 31 assessed species at nine different depletion levels. 
-Estimates of MSY, CFMSY and K based on low relative depletion levels tended to minimise the absolute relative error between the DB-SRA median and the assessment MPD.
+* DB-SRA was used on 31 data-rich assessed species of groundfish managed by the Pacific Fishery Management Council (PFMC) on the west coast of the United States, assuming current stock biomass is 40% of the unfished biomass. The maximum posterior density (MPD) estimates from the full stock assessment were taken as benchmarks to compare the performance of DB-SRA. 
+  * Median estimates of MSY and K from DB-SRA tend to be between one half and double the assessment value. 
+  * DB-SRA estimates of MSY are most consistent with data-rich results (compared to the estimates of CFMSY and K).
+* The sensitivity of the model to the relative depletion level was tested by applying the model to the 31 assessed species at nine different depletion levels. 
+  * Estimates of MSY, CFMSY and K based on low relative depletion levels tended to minimise the absolute relative error between the DB-SRA median and the assessment MPD.
 	
 Caveats:
-Well suited to cases with nearly monotonic declines in abundance.
-Gives implausibly high estimates of MSY if the stock is close to its unfished biomass in recent years. DB-SRA gives better estimates if falsely given a much lower value.
-Requires knowledge of the entire history of catches, which may be poorly documented for early years.
-Uncertainty in historical catches is not addressed adequately.
+* Well suited to cases with nearly monotonic declines in abundance.
+* Gives implausibly high estimates of MSY if the stock is close to its unfished biomass in recent years. DB-SRA gives better estimates if falsely given a much lower value.
+* Requires knowledge of the entire history of catches, which may be poorly documented for early years.
+* Uncertainty in historical catches is not addressed adequately.
 
 ### Cope, J.M. (2013). Implementing a statistical catch-at-age model (Stock Synthesis) as a tool for deriving overfishing limits in data-limited situations. Fish. Res. 142: 3-14.
 
