@@ -51,7 +51,7 @@ A final consideration is that the Robin Hood approach is commonly used in many a
 
 ## Data-limited approaches: Catch-only methods with supplementary information
 
-### Vasconcellos, M. and K. Cochrane (2005). Overview of world status of data-limited fisheries: inferences from landing statistics. In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 1–20. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.
+### [Vasconcellos, M. and K. Cochrane (2005). Overview of world status of data-limited fisheries: inferences from landing statistics. In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 1–20. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.](https://seagrant.uaf.edu/bookstore/pubs/item.php?id=11958)
 
 Abstract: Data-limited fisheries are here considered to be fisheries lacking sufficient reliable biological information to infer the exploitation status of the targeted stocks. Considering species-specific catch data as the common minimum available data for assessing the status of a stock, in this paper we use the taxonomic breakdown of the reported landings statistics to FAO to make an approximate inference of data limitation of fisheries by region, country, and taxonomic groups. The paper also explores the possibility of extracting meaningful biological information from fisheries landings by applying a Bayesian approach to two selected fisheries. The contribution of data-poor fisheries to the world landings from marine capture fisheries is relatively low, but increasing (from 20 to 30% of world landings in the last 50 years). However, data limitation can be a substantial problem at the regional and country level, especially in areas with high species diversity, small stock sizes, and where fisheries play an important role for food security. Preliminary modeling results indicate that catch data, when combined with prior information about the dynamics of similar species/stocks and fisheries, could be useful for informing fisheries management in data-limited situations
 
@@ -296,7 +296,7 @@ Caveats:
 * Data sets that egregiously violate the model assumptions of either Schaefer biomass dynamics or the effort-dynamics model (e.g. bycatch species, highly mixed fisheries and subsistence-recreational fisheries) will be poorly reconstructed.
 * The performance of the model when sequentially applied in a control-rule management scenario is unknown.
 
-### Zhou, S. and R. Sharma (2013). Stock assessment of two neritic tuna species in Indian Ocean, kawakawa and longtail tuna using catch-based stock reduction methods. IOTC-2013-WPNT03-25.
+### [Zhou, S. and R. Sharma (2013). Stock assessment of two neritic tuna species in Indian Ocean, kawakawa and longtail tuna using catch-based stock reduction methods. IOTC-2013-WPNT03-25.](http://www.iotc.org/documents/stock-assessment-two-neritic-tuna-species-indian-ocean-kawakawa-and-longtail-tuna-using)
 
 Abstract: We conduct stock assessments for two Indian Ocean neritic tuna species, Kawakawa and Longtail. We used a newly developed posterior-focused catch-based assessment method. The method is based on a classical biomass dynamics model, requires only catch history but not fishing effort or CPUE. Known population growth rate will improve the assessment result. In this paper, we assume that both species in the whole Indian Ocean belong to a single stock and the population size in 1950 is the virgin biomass equal to their carrying capacities. We use recently updated catch data in the analysis.
 The preliminary results show that for Kawakawa the median virgin biomass is about 358-408 thousand tonnes depending on the upper depletion level assumed in 2011. The combination of such carrying capacity and growth rate can support a maximum sustainable yield (MSY) of 128-151 thousand tonnes. This means that catch levels in recent year may have exceeded MSY.
@@ -427,156 +427,154 @@ Caveats:
 [Abstract:](http://www.nrcresearchpress.com/doi/abs/10.1139/f05-064) The percentage of unfished lifetime egg production (LEP) has been used to represent persistence in precautionary fisheries management, but estimation of this reference point requires substantial data and it is sensitive to errors in natural mortality rate. We present an estimation method that quantifies the change in LEP by a fishery when only length frequency samples, one early in the fishery and one recent, are available for assessment. Using simulated length frequency data with known parameter values, estimates of LEP had undetectable bias when challenged with random sampling variability and sample sizes as low as 100. Simulation of artificial data with (i) growth parameters that differed from the estimation model, (ii) transient size structures, and (iii) recruitment variability led to predictably biased estimates. In a direct comparison with the spawning potential ratio reference point, fractional LEP was much less sensitive to errors in natural mortality rate. Application of this method to length frequency data for blue rockfish (Sebastes mystinus) for years between 1980 and 2003 suggests that during this interval, LEP has been reduced to levels of concern.
 
 Data/information requirements:
-Two size distributions from the catch – one from early in the fishery (before major depletion) and one recent (after fishery development)
-An age-length relationship (e.g., von Bertalanffy)
-A length-egg production (or biomass) relationship. If not available, a length-weight relationship may be substituted, as weight can be correlated with fecundity
-An estimate of M
-Size boundaries for the selectivity of F (without independent knowledge of the selectivity ogive, the size ranges over which F operates can be arbitrarily chosen). Here lc (length at first capture) and lr (length at full recruitment) were chosen a priori based on characteristics of the catch data.
+* Two size distributions from the catch – one from early in the fishery (before major depletion) and one recent (after fishery development)
+* An age-length relationship (e.g., von Bertalanffy)
+* A length-egg production (or biomass) relationship. If not available, a length-weight relationship may be substituted, as weight can be correlated with fecundity
+* An estimate of M
+* Size boundaries for the selectivity of F (without independent knowledge of the selectivity ogive, the size ranges over which F operates can be arbitrarily chosen). Here lc (length at first capture) and lr (length at full recruitment) were chosen a priori based on characteristics of the catch data.
   
 Assumptions:
-Constant recruitment to the earliest age-class (age 0).
-Egg production (fecundity) proportional to spawning stock biomass
-Assumed that all individuals equal to or larger than the length at 50% maturity (l50) are fecund and that fecundity was an allometric function of length.
-Size range of the F assumed
-Fishery selectivity assumed to be asymptotic - F increased with size until a length at which fish were fully recruited to the gear.
-Estimation model assumes an equilibrium size structure
+* Constant recruitment to the earliest age-class (age 0).
+* Egg production (fecundity) proportional to spawning stock biomass
+* Assumed that all individuals equal to or larger than the length at 50% maturity (l50) are fecund and that fecundity was an allometric function of length.
+* Size range of the F assumed
+* Fishery selectivity assumed to be asymptotic - F increased with size until a length at which fish were fully recruited to the gear.
+* Estimation model assumes an equilibrium size structure
   
 Outputs expected:
-Estimates of fractional change in LEP (FLEP) by applying a size-structured assessment method between two (time interval) size frequency distributions. The FLEP is able to recognize a shift in size structure and resulting change in LEP, thus identifying when a fishery is fishing down the accumulated, old-growth biomass of a stock.
-FLEP estimates equivalent to SPR (spawning potential ratio) if the early size distribution taken prior to the commencement of a fishery and spawning stock biomass were proportional to egg production. 
+* Estimates of fractional change in LEP (FLEP) by applying a size-structured assessment method between two (time interval) size frequency distributions. The FLEP is able to recognize a shift in size structure and resulting change in LEP, thus identifying when a fishery is fishing down the accumulated, old-growth biomass of a stock.
+* FLEP estimates equivalent to SPR (spawning potential ratio) if the early size distribution taken prior to the commencement of a fishery and spawning stock biomass were proportional to egg production. 
   
 Method of operation:
-This method allows a quantitative description of how changes in size structure affect persistence when sample size is not representative of total abundance. This can be done the requirement of expensive, and often unavailable, catch at age data.
-Length at age is described by the von Bertalanffy growth function (although possible to apply other growth functions if more appropriate). Growth rate variability was explicitly incorporated by making the asymptotic length parameter (L∞) a normally distributed random variable. The von Bertalanffy k parameter was fixed. The result of this form of growth variability was a normal distribution of lengths for each cohort. The degree of variation adjusted by varying the coefficient of variation (CV) of L∞. Summing the size distribution of each cohort from age 0 to the maximum age observed gives a population size structure constructed with known growth parameters and a predetermined degree of variation in length at age (CV L∞). The size structure of a population was further shaped by addition of constant recruitment (age 0) along with size dependent mortality consisting of constant natural mortality and an F at length which varied with gear.
-The estimated population size structure and length – egg production relationship were then used to calculate LEP, one for each size distributions, one from early in the fishery the other from recently. FLEP can then be determined from LEP values, whereby recent LEP is divided by the early (or earliest) LEP.
-The calculation of LEP is contingent on estimates of F, μsel (the mean of the cumulative Gaussian selectivity ogive), and σsel (the standard deviation of the selectivity ogive), which describe the harvest characteristics and the shape of population size distribution. With the size range of the F assumed, maximum likelihood estimates of these three parameters were obtained from the catch data.
+* This method allows a quantitative description of how changes in size structure affect persistence when sample size is not representative of total abundance. This can be done the requirement of expensive, and often unavailable, catch at age data.
+* Length at age is described by the von Bertalanffy growth function (although possible to apply other growth functions if more appropriate). Growth rate variability was explicitly incorporated by making the asymptotic length parameter (L∞) a normally distributed random variable. The von Bertalanffy k parameter was fixed. The result of this form of growth variability was a normal distribution of lengths for each cohort. The degree of variation adjusted by varying the coefficient of variation (CV) of L∞. Summing the size distribution of each cohort from age 0 to the maximum age observed gives a population size structure constructed with known growth parameters and a predetermined degree of variation in length at age (CV L∞). The size structure of a population was further shaped by addition of constant recruitment (age 0) along with size dependent mortality consisting of constant natural mortality and an F at length which varied with gear.
+* The estimated population size structure and length – egg production relationship were then used to calculate LEP, one for each size distributions, one from early in the fishery the other from recently. FLEP can then be determined from LEP values, whereby recent LEP is divided by the early (or earliest) LEP.
+* The calculation of LEP is contingent on estimates of F, μsel (the mean of the cumulative Gaussian selectivity ogive), and σsel (the standard deviation of the selectivity ogive), which describe the harvest characteristics and the shape of population size distribution. With the size range of the F assumed, maximum likelihood estimates of these three parameters were obtained from the catch data.
   
 Testing:
-Performance of the estimation method was evaluated using simulated data generated by a size-structured governing model described within the paper. All simulations used the von Bertalanffy parameter set, M estimate, maximum age, CV L∞, and length–weight allometric relationship parameters (a and b) for female blue rockfish. Monte Carlo data sets with a variety of departures from assumptions that could arise in a practical context were generated. With distributions of LEP estimates compared to the true LEP value.
-Estimation of LEP from transient size structures (simulating an instantaneous development of a new fishery) with this equilibrium-based estimation model resulted in biases when F was abruptly increased.
-Variable recruitment resulted in variability in egg production. The magnitude of changes in egg production was dependent on F. The varying proportions of individuals at size as large cohorts move through the size structure resulted in bias F estimations. Estimated LEP lagged behind the time series of actual egg production. Although recruitment variation resulted in estimates of LEP fluctuating about the true values of LEP, estimates of FLEP had undetectable bias. Precision of FLEP estimates depended on the level of recruitment variation. 
-Estimation of FLEP was determined to be much less sensitive to changes in M than traditional SPR estimates.
-Authors compare FLEP and SPR estimates to sport catch length-frequencies of blue rockfish (Sebastes mystinus) in northern California. Random resampling uncertainty was accounted for by estimating on 30 bootstrapped size frequency distributions per year. Model fits to the data varied in quality. Convergence to a single minimum of the separation statistic could not be obtained for 2/21 years. The model fit poorly in cases with distinct age-class effects (possibly caused by relatively large recruitment events). However, good fits were obtained for most years where size distributions lack obvious cohort size modes. 
+* Performance of the estimation method was evaluated using simulated data generated by a size-structured governing model described within the paper. All simulations used the von Bertalanffy parameter set, M estimate, maximum age, CV L∞, and length–weight allometric relationship parameters (a and b) for female blue rockfish. Monte Carlo data sets with a variety of departures from assumptions that could arise in a practical context were generated. With distributions of LEP estimates compared to the true LEP value.
+  * Estimation of LEP from transient size structures (simulating an instantaneous development of a new fishery) with this equilibrium-based estimation model resulted in biases when F was abruptly increased.
+  * Variable recruitment resulted in variability in egg production. The magnitude of changes in egg production was dependent on F. The varying proportions of individuals at size as large cohorts move through the size structure resulted in bias F estimations. Estimated LEP lagged behind the time series of actual egg production. Although recruitment variation resulted in estimates of LEP fluctuating about the true values of LEP, estimates of FLEP had undetectable bias. Precision of FLEP estimates depended on the level of recruitment variation. 
+  * Estimation of FLEP was determined to be much less sensitive to changes in M than traditional SPR estimates.
+* Authors compare FLEP and SPR estimates to sport catch length-frequencies of blue rockfish (Sebastes mystinus) in northern California. Random resampling uncertainty was accounted for by estimating on 30 bootstrapped size frequency distributions per year. Model fits to the data varied in quality. Convergence to a single minimum of the separation statistic could not be obtained for 2/21 years. The model fit poorly in cases with distinct age-class effects (possibly caused by relatively large recruitment events). However, good fits were obtained for most years where size distributions lack obvious cohort size modes. 
   
 Caveats:
-The assumption that egg production is proportional to spawning stock biomass may not be correct. Fecundity may not increase with length at the same rate as biomass increase with length. Maternal age can be a better predictor of larval production than maternal size. A reduction in the number of older females owing to fishing would result a greater loss of reproductive capacity than would be expected by the equivalent loss in spawning stock biomass. 
+* The assumption that egg production is proportional to spawning stock biomass may not be correct. Fecundity may not increase with length at the same rate as biomass increase with length. Maternal age can be a better predictor of larval production than maternal size. A reduction in the number of older females owing to fishing would result a greater loss of reproductive capacity than would be expected by the equivalent loss in spawning stock biomass. 
 
 ### [Gedamke, T. and J.M. Hoenig (2006). Estimating mortality from mean length data in non-equilibrium situations, with application to the assessment of goosefish. The American Fisheries Society 135:476–487.](http://www.tandfonline.com/doi/abs/10.1577/T05-153.1)
 
 [Abstract:](http://www.tandfonline.com/doi/abs/10.1577/T05-153.1) The Beverton–Holt length-based mortality estimator has received widespread use primarily due to its applicability in data-limited situations. The mean length of animals that are fully vulnerable to the sampling gear can be used to estimate total mortality from basic growth parameters and a known length at first capture. This method requires equilibrium conditions because the mean length of a population will change only gradually after a change in mortality. In this study, we derive the transitional behavior of the mean length statistic for use in nonequilibrium conditions. We investigate conditions affecting the reliability of the Beverton–Holt results and then develop a new procedure that allows a series of mortality rates to be estimated from mean length data representing nonequilibrium conditions in multiple years. We then examine an assessment of goosefish Lophius americanus that was criticized for its use of the Beverton–Holt estimator under nonequilibrium conditions. Using data from the 1963–2002 National Marine Fisheries Service annual fall groundfish surveys off the northeastern United States and assuming a single change in total mortality, we used the maximum likelihood method to estimate that the total mortality of goosefish in the southern assessment region increased from 0.31 to 0.60 per year in 1977. Estimates of the new mortality rate made three or more years after the change were relatively stable and only ranged from 0.55 to 0.71 per year, while estimates from the standard Beverton–Holt approach ranged from 0.37 to 1.1 per year. The results for goosefish in the northern assessment region showed that total mortality changed from 0.14 to 0.29 per year in 1978 and then to 0.55 per year in 1987. The new nonequilibrium estimator allows a change in mortality to be characterized reliably several years faster than would occur with the use of the Beverton–Holt estimator.
 
 Data/information requirements:
-Bertalanffy growth parameters K and L∞
-Length of first capture Lc
-Mean length of animals larger than Lc
-Length frequency time series
+* Bertalanffy growth parameters K and L∞
+* Length of first capture Lc
+* Mean length of animals larger than Lc
+* Length frequency time series
   
 Assumptions:
-For Beverton—Holt estimator
-asymptotic growth with known parameters K and L∞, which are constant over time
-no individual variability in growth
-constant and continuous recruitment over time
-the mortality rate is constant with age for all ages greater than tc;
-the mortality rate is constant over time
-Knife-edge selection by fisheries at Lc
+* For Beverton—Holt estimator
+  1 asymptotic growth with known parameters K and L∞, which are constant over time
+  2 no individual variability in growth
+  3 constant and continuous recruitment over time
+  4 the mortality rate is constant with age for all ages greater than tc;
+  5 the mortality rate is constant over time
+* Knife-edge selection by fisheries at Lc
   
 Outputs expected:
-Estimates of historical total mortality
-Estimates about years in which changes in mortality occurred in history
+*Estimates of historical total mortality
+*Estimates about years in which changes in mortality occurred in history
   
 Method of operation:
-Beverton—Holt mortality estimator
-Extended for the case that population is not in equilibrium
-Maximum likelihood estimation 
-Year(s) of change in mortality determined either by repeating the model iteratively for all possible years or by estimating within the maximization procedure
+*Beverton—Holt mortality estimator
+  * Extended for the case that population is not in equilibrium
+* Maximum likelihood estimation 
+* Year(s) of change in mortality determined either by repeating the model iteratively for all possible years or by estimating within the maximization procedure
   
 Testing:
-Tested for northeast U.S. goosefish Lophius americanus (separately for Southern and Northern Management Region Data)
-Method was able to give estimates of total mortality and about the years in which mortality changed
-Tested for simulated data with a known change in mortality
-Estimate sensitive to miss-specification of L∞, less to K
+* Tested for northeast U.S. goosefish Lophius americanus (separately for Southern and Northern Management Region Data): method was able to give estimates of total mortality and about the years in which mortality changed 
+* Tested for simulated data with a known change in mortality: estimate sensitive to miss-specification of L∞, less to K
   
 Caveats:
-Number of changes in mortality have to be known or model has to be repeated for several number of changes in mortality and best fit has to be found
-Estimates give only one or more constant mortality values and abrupt changes between them
-Results give only total mortality estimate
-If stock not in equilibrium at the beginning of a time series, a well-defined shape of the mean length over time trajectory is required
-Variability of length measurements ignored
+* Number of changes in mortality have to be known or model has to be repeated for several number of changes in mortality and best fit has to be found
+* Estimates give only one or more constant mortality values and abrupt changes between them
+* Results give only total mortality estimate
+* If stock not in equilibrium at the beginning of a time series, a well-defined shape of the mean length over time trajectory is required
+* Variability of length measurements ignored
 
 ### [Cope, J. M. and A.E. Punt (2009). Length‐based reference points for data‐limited situations: applications and restrictions. Marine and Coastal Fisheries: Dynamics, Management, and Eco-system Science 1: 169–186.](http://www.bioone.org/doi/abs/10.1577/c08-025.1)
 
 [Abstract:](http://www.bioone.org/doi/abs/10.1577/c08-025.1) Current fisheries management policies generally require an assessment of stock status, which is a difficult task when population and fisheries data are limited. Three simple metrics based on catch length compositions (i.e., that reflect exclusive take of mature individuals, Pmat; that consist primarily of fish of optimal size, the size at which the highest yield from a cohort occurs, Popt; and that demonstrate the conservation of large, mature individuals, Pmega) can be used to monitor population status relative to exploitation. The metrics (collectively referred to as Px) were intended to avoid growth and recruitment overfishing, but there was no quantitative linkage to stock status and calculation of future sustainable catches. We attempt to make this connection by exploring the relationship of Px measures to fishing mortality and spawning biomass (SB). The relationships are compared specifically to the current target reference point (0.4 times the virgin, or unfished, SB [SB0]) and limit reference point (0.25SB0) used for the U.S. West Coast groundfish fishery by using simulations based on a deterministic age-structured population dynamics model. Sensitivity to fishery selectivity, life history traits, and recruitment compensation (steepness) is explored. Each Px measure showed a wide range of possible values depending on fishery selectivity, steepness, and the ratio of the length at maturity (Lmat) to the optimal fishing length (Lopt). Although the values of Px may be compatible with sustainable fishing, these values are not always sufficient to ensure stock protection from overfishing. Moreover, values for Px cannot be interpreted adequately without knowledge of the selectivity pattern. A new measure, Pobj (the sum of Pmat, Popt, and Pmega), is introduced to distinguish selectivity patterns and construct a decision tree for development of stock status indicators. Heuristic indicator values are presented to demonstrate the utility of this approach. Although several caveats remain, this approach builds on the recommendations of previous literature by giving further guidance related to interpreting catch length composition data under variable fishery conditions without collecting additional information. It also provides a link to developing harvest control rules that inform proactive fisheries management under data-limited conditions.
 
 Data/information requirements:
-Catch length composition data
-Estimates of Lmat and Lopt (length at 50% maturity and length at which the biomass of a cohort is maximized)
+* Catch length composition data
+* Estimates of Lmat and Lopt (length at 50% maturity and length at which the biomass of a cohort is maximized)
   
 Assumptions:
-Catch length composition is representative of fishery catch at length
+* Catch length composition is representative of fishery catch at length
   
 Outputs expected:
-Statement about selectivity of the fishery and whether the spawning biomass is at or above reference points
-Reference (trigger) points for Pmat, Popt and Pmega for individual stocks
+* Statement about selectivity of the fishery and whether the spawning biomass is at or above reference points
+* Reference (trigger) points for Pmat, Popt and Pmega for individual stocks
   
 Method of operation:
-Based on the ideas of Froese (2004), calculation of the three values:
-P_mat= ∑_(L_mat)^(L_max)▒P_L ; P_opt= ∑_(〖0.9L〗_opt)^(1.1L_opt)▒P_L ; P_mega= ∑_(〖1.1L〗_opt)^(L_max)▒P_L 
+* Based on the ideas of Froese (2004), calculation of the three values:
+* P_mat= ∑_(L_mat)^(L_max) P_L ; P_opt= ∑_(0.9L_opt)^(1.1L_opt) P_L ; P_mega= ∑_(1.1L_opt)^(L_max) P_L 
 (PL is proportion of catch that is in length-class L, Lmat is length at 50% maturity, Lmax is maximum length, Lopt is the length at which the biomass of a cohort is maximized)
-Calculation of objective value: P_obj=P_mat+P_opt+P_mega
-Statement about the stock by using the following decision tree:  
+* Calculation of objective value: P_obj=P_mat+P_opt+P_mega
+* Statement about the stock by using the following decision tree:  
 	
 Testing:
-Tested with simulations of age-structured population dynamics models
-Model simulated different life history traits, based on data from U.S. West Coast groundfish fishery but scenarios did not represent any one species in particular
-Simulations tested several fishing mortalities, selectivities and life history traits
-Results indicated that Pmat, Popt and Pmega alone cannot determine the status of the stock as a wide range of values is possible and the values depend on steepness of the stock recruitment relationship and fishery selectivity
-The combination of these values and additionally using a decision tree was able to determine the selectivity of the fishery and estimate the status of the stock in relation to reference points used in the U.S. (0.4SB0 and 0.25SB0).
+* Tested with simulations of age-structured population dynamics models
+* Model simulated different life history traits, based on data from U.S. West Coast groundfish fishery but scenarios did not represent any one species in particular
+  * Simulations tested several fishing mortalities, selectivities and life history traits
+  * Results indicated that Pmat, Popt and Pmega alone cannot determine the status of the stock as a wide range of values is possible and the values depend on steepness of the stock recruitment relationship and fishery selectivity
+  * The combination of these values and additionally using a decision tree was able to determine the selectivity of the fishery and estimate the status of the stock in relation to reference points used in the U.S. (0.4SB0 and 0.25SB0).
   
 Caveats:
-Decision tree purely based on simulated data and not on real stocks
-Simulations assumed maturity to be size based. In case of age based maturity, results might be different.
-Fishing activities might change life history traits and lead to different results
-Responsiveness of Pmat, Popt and Pmega to population status change is unknown
-In case of very low steepness of the stock recruitment curve (h < 0.3) the decision tree fails to identify a stock below a reference point
+* Decision tree purely based on simulated data and not on real stocks
+* Simulations assumed maturity to be size based. In case of age based maturity, results might be different.
+* Fishing activities might change life history traits and lead to different results
+* Responsiveness of Pmat, Popt and Pmega to population status change is unknown
+* In case of very low steepness of the stock recruitment curve (h < 0.3) the decision tree fails to identify a stock below a reference point
 
 ### [Brooks, E.N., Powers, J.E. and E. Cortés (2010). Analytical reference points for age-structured models: application to data-poor fisheries. ICES Journal of Marine Science, 67:165-175.](https://academic.oup.com/icesjms/article/67/1/165/595670/Analytical-reference-points-for-age-structured)
 
 [Abstract:](https://academic.oup.com/icesjms/article/67/1/165/595670/Analytical-reference-points-for-age-structured) Analytical solutions for biological reference points are derived in terms of maximum lifetime reproductive rate. This rate can be calculated directly from biological parameters of maturity, fecundity, and natural mortality or a distribution for this rate can be derived from appropriate metadata. Minimal data needs and assumptions for determining stock status are discussed. The derivations lead to a re-parameterization of the common stock–recruit relationships, Beverton–Holt and Ricker, in terms of spawning potential ratio. Often, parameters in stock–recruit relationships are restricted by tight prior distributions or are fixed based on a hypothesized level of stock resilience. Fixing those parameters is equivalent to specifying the biological reference points. An ability to directly calculate reference points from biological data, or a meta-analysis, without need of a full assessment model or fisheries data, makes the method an attractive option for data-poor fisheries. The derivations reveal an explicit link between the biological characteristics of a species and appropriate management. Predicted stock status for a suite of shark species was compared with recent stock assessment results, and the method successfully identified whether each stock was overfished.
 
 Data/information requirements:
-Estimates of stock-recruit relationship parameters
-Estimates of current fishing mortality and spawning stock biomass (i.e. from indices of abundance) if estimates of stock status (depletion and exploitation) required.
-A management specification about the proportion below optimal depletion where the stock is considered overfished.
+* Estimates of stock-recruit relationship parameters
+* Estimates of current fishing mortality and spawning stock biomass (i.e. from indices of abundance) if estimates of stock status (depletion and exploitation) required.
+* A management specification about the proportion below optimal depletion where the stock is considered overfished.
   
 Assumptions:
-Knowledge of the stock-recruit form, either Ricker or Beverton-Holt
-All age classes beyond recruitment are fully selected by the fishery
+* Knowledge of the stock-recruit form, either Ricker or Beverton-Holt
+* All age classes beyond recruitment are fully selected by the fishery
   
 Outputs expected:
-Spawners per recruit as a function of F, allowing reference point proxies (e.g. F40%) to be estimated.
-Maximum excess recruitment (MER) – numbers that can potentially be fished (as opposed to MSY giving weight)
-Depletion at MER (SMER/S0) 
+* Spawners per recruit as a function of F, allowing reference point proxies (e.g. F40%) to be estimated.
+* Maximum excess recruitment (MER) – numbers that can potentially be fished (as opposed to MSY giving weight)
+* Depletion at MER (SMER/S0) 
   
 Method of operation:
-The authors formulate the analytical solution for SPRMER for both the Beverton-Holt and Ricker stock-recruit functions in terms of maximum lifetime reproductive rate and steepness. They then derive analytical reference points for depletion at MER (SMER/S0) for which relative indices of abundance can be compared to obtain stock status.
+* The authors formulate the analytical solution for SPRMER for both the Beverton-Holt and Ricker stock-recruit functions in terms of maximum lifetime reproductive rate and steepness. They then derive analytical reference points for depletion at MER (SMER/S0) for which relative indices of abundance can be compared to obtain stock status.
   
 Testing:
-A simulation study was conducted to evaluate how analytical values of SPRMER compared with numerical estimation of SPRMSY. A standard age-structured population dynamics model was used for the simulation and MSY was estimated across a range of age-constant natural mortality rates and steepness levels.
-When all ages are fully selected FMER > FMSY, although the disparity was greatly reduced at lower levels of steepness.
-The rule of thumb that FMSY ≈ M was only true at the highest levels of steepness when all ages were fully selected.
-When the selectivity ogive was equal to the maturity ogive there were more cases where FMSY or FMER exceed M.
-When selectivity occurred at 75% of the age of maturity results were similar to when all ages are fully selected, except that FMSY and FMER only exceeded M for h > 0.75.
-When the selectivity ogive was shifted to the right of the maturity ogive only the lowest levels of steepness had FMSY or FMER less than M.
-As an example the method was applied to Dusky sharks for which biological information was available to calculate the SPR-based reference points and a fisheries-independent index of abundance was available to provide information on relative depletion. The analytical prediction was compared to results from multiple stock assessment methodologies. 
-The conclusions were in agreement with the results of the stock assessment methodologies.
-Results from recently assessed shark stocks were compared with analytically predicted spawner depletions.
-For all nine cases the predictions from the analytic methodology consistently matched those from the stock assessments.
+* A simulation study was conducted to evaluate how analytical values of SPRMER compared with numerical estimation of SPRMSY. A standard age-structured population dynamics model was used for the simulation and MSY was estimated across a range of age-constant natural mortality rates and steepness levels.
+  * When all ages are fully selected FMER > FMSY, although the disparity was greatly reduced at lower levels of steepness.
+  * The rule of thumb that FMSY ≈ M was only true at the highest levels of steepness when all ages were fully selected.
+  * When the selectivity ogive was equal to the maturity ogive there were more cases where FMSY or FMER exceed M.
+  * When selectivity occurred at 75% of the age of maturity results were similar to when all ages are fully selected, except that FMSY and FMER only exceeded M for h > 0.75.
+  * When the selectivity ogive was shifted to the right of the maturity ogive only the lowest levels of steepness had FMSY or FMER less than M.
+* As an example the method was applied to Dusky sharks for which biological information was available to calculate the SPR-based reference points and a fisheries-independent index of abundance was available to provide information on relative depletion. The analytical prediction was compared to results from multiple stock assessment methodologies. 
+  * The conclusions were in agreement with the results of the stock assessment methodologies.
+* Results from recently assessed shark stocks were compared with analytically predicted spawner depletions.
+  * For all nine cases the predictions from the analytic methodology consistently matched those from the stock assessments.
 
 Caveats:
-Using the analytical result for SPRMER in place of SPRMSY produces reference points that are biased low.
-Bias in any of the life history parameter estimates could have a small effect on SPR.
-The derived values of SPRMER are deterministic but the biological parameters that go into it are expected to have variability associated with them.
-The best scientific advice about the individual components of maturity, fecundity and survival can sometimes produce implausible values for steepness.
+* Using the analytical result for SPRMER in place of SPRMSY produces reference points that are biased low.
+* Bias in any of the life history parameter estimates could have a small effect on SPR.
+* The derived values of SPRMER are deterministic but the biological parameters that go into it are expected to have variability associated with them.
+* The best scientific advice about the individual components of maturity, fecundity and survival can sometimes produce implausible values for steepness.
 
 ### [Le Quesne, W.J.F. and S. Jennings (2012). Predicting species vulnerability with minimal data to support rapid risk assessment of fishing impacts on biodiversity. Journal of Applied Ecology, 49: 20-28.](https://academic.oup.com/icesjms/article/67/1/165/595670/Analytical-reference-points-for-age-structured)
 
@@ -589,99 +587,99 @@ The best scientific advice about the individual components of maturity, fecundit
 6. Synthesis and applications. The method presented provides a clear objective procedure to construct ranked species sensitivity lists that can inform management, monitoring and research. The Celtic Sea case study demonstrated that limiting fishing pressure on key commercial stocks to meet fisheries production targets may be insufficient to guarantee the persistence of more sensitive species. Management actions that effectively decouple the mortality rates on commercial species and ‘conservation’ species are likely to be required to make progress in relation to conservation objectives. The method would support rapid assessment of sensitivity to fishing in many regions around the world as only taxonomic lists and estimates of body size are required.
 
 Data/information requirements:
-Taxonomic affiliation (teleost or elasmobranch)
-Maximum body size Lmax
+* Taxonomic affiliation (teleost or elasmobranch)
+* Maximum body size Lmax
   
 Assumptions:
-Pope’s postulate: the fishing mortality affecting non-target species is unlikely to exceed that of assessed target species, and can be taken as a precautionary upper limit for the F on non-target species.
-Population models are parameterised using generic relationships between Lmax and other life history parameters.
-Knife-edge selection by the fishery at age 1.
+* Pope’s postulate: the fishing mortality affecting non-target species is unlikely to exceed that of assessed target species, and can be taken as a precautionary upper limit for the F on non-target species.
+* Population models are parameterised using generic relationships between Lmax and other life history parameters.
+* Knife-edge selection by the fishery at age 1.
   
 Outputs expected:
-Conservation limit and fishery reference points for F
-Ranked species sensitivity list
-SSB-per recruit as a percentage of the SSB-per-recruit expected in the absence of fishing (%SPR)
-% reproductive output-per-recruit (%RPR)
-Costs and trade-offs of meeting conservation limit reference points
+* Conservation limit and fishery reference points for F
+* Ranked species sensitivity list
+* SSB-per recruit as a percentage of the SSB-per-recruit expected in the absence of fishing (%SPR)
+* % reproductive output-per-recruit (%RPR)
+* Costs and trade-offs of meeting conservation limit reference points
 
 Method of operation:
-Life history relationships are used to parameterise an age-structured population model, which is then used to establish reference points and the sensitivity of species to fishing mortality.
-Conservation limit reference points for reproductive output measured as %SPR or %RPR are set at 10% and fishing mortality conservation reference points (FconS and FconR) are defined as the Fs that reduce a population to 10% %SPR and %RPR. Fisheries reference points are Fmax: the fishing mortality to achieve maximum YPR and F40: The F that reduces %SPR to 40%.
-Simulations are run for Fs ranging 0 to 1 per year, incrementing in 0.01 steps, and the conservation and fisheries reference points calculated.
-Conservation reference points are compared to realised rates of F to assess vulnerability.
-Potential costs and trade-offs are calculated by comparing the YPR taken from the main commercial stocks when fishing at a rate equivalent to FconS for the species of conservation concern, with the YPR obtained from the main commercial stock when fished at their own Fmax or F40.
+* Life history relationships are used to parameterise an age-structured population model, which is then used to establish reference points and the sensitivity of species to fishing mortality.
+* Conservation limit reference points for reproductive output measured as %SPR or %RPR are set at 10% and fishing mortality conservation reference points (FconS and FconR) are defined as the Fs that reduce a population to 10% %SPR and %RPR. Fisheries reference points are Fmax: the fishing mortality to achieve maximum YPR and F40: The F that reduces %SPR to 40%.
+* Simulations are run for Fs ranging 0 to 1 per year, incrementing in 0.01 steps, and the conservation and fisheries reference points calculated.
+* Conservation reference points are compared to realised rates of F to assess vulnerability.
+* Potential costs and trade-offs are calculated by comparing the YPR taken from the main commercial stocks when fishing at a rate equivalent to FconS for the species of conservation concern, with the YPR obtained from the main commercial stock when fished at their own Fmax or F40.
   
 Testing:
-No simulation testing, but sensitivity analyses were carried out to assess the effects of uncertainty in the life-history relationships used.
-Estimates of FconS are sensitive to the choice of threshold conservation %SPR, and the proportion of species at risk depends on this choice.
-The estimated cost in terms of foregone yield of meeting conservation limit reference points is sensitive to the assumption of age of first capture.
-Sensitivity analysis of life-history relationships used in the population model were most sensitive to the assumed Lmax-k relationship and Lmax-Lmat relationships.
-The sensitivity of conservation limit reference points decreased with increasing Lmax.
+* No simulation testing, but sensitivity analyses were carried out to assess the effects of uncertainty in the life-history relationships used.
+* Estimates of FconS are sensitive to the choice of threshold conservation %SPR, and the proportion of species at risk depends on this choice.
+* The estimated cost in terms of foregone yield of meeting conservation limit reference points is sensitive to the assumption of age of first capture.
+* Sensitivity analysis of life-history relationships used in the population model were most sensitive to the assumed Lmax-k relationship and Lmax-Lmat relationships.
+* The sensitivity of conservation limit reference points decreased with increasing Lmax.
   
 Caveats:
-Species lists are compiled from trawl surveys which can contain misidentifications for non-target fish.
-Pope’s postulate may be violated for species with a morphology that leads to relatively high catchability and species that occupy a limited area within fishing grounds for target species.
-By using generic life-history relationships the analysis considers trade-offs for average species and may not pick up exceptional cases that deviate from the norm.
+* Species lists are compiled from trawl surveys which can contain misidentifications for non-target fish.
+* Pope’s postulate may be violated for species with a morphology that leads to relatively high catchability and species that occupy a limited area within fishing grounds for target species.
+* By using generic life-history relationships the analysis considers trade-offs for average species and may not pick up exceptional cases that deviate from the norm.
   
 Ability to project forward/forecast:
-Used to establish reference points and compare to realised F, therefore not able to project forward.
+* Used to establish reference points and compare to realised F, therefore not able to project forward.
 
 ### [Hordyk, A., Ono, K., Sainsbury, K., Loneragen, N. and J. Prince (2015a). Some explorations of the life history ratios to describe length composition, spawning-per-recruit and the spawning potential ratio. ICES Journal of Marine Science, 72(1): 204-216.](https://academic.oup.com/icesjms/article/72/1/204/815363/Some-explorations-of-the-life-history-ratios-to)
 
 [Abstract:](https://academic.oup.com/icesjms/article/72/1/204/815363/Some-explorations-of-the-life-history-ratios-to) Evaluating the status of data-poor fish stocks is often limited by incomplete knowledge of the basic life history parameters: the natural mortality rate (M), the von Bertalanffy growth parameters (L and k), and the length at maturity (Lm). A common approach to estimate these individual parameters has been to use the Beverton–Holt life history invariants, the ratios M/k and Lm/L, especially for estimating M. In this study, we assumed no knowledge of the individual parameters, and explored how the information on life history strategy contained in these ratios can be applied to assessing data-poor stocks. We developed analytical models to develop a relationship between M/k and the von Bertalanffy growth curve, and demonstrate the link between the life history ratios and yield- and spawning-per-recruit. We further developed the previously recognized relationship between M/k and yield- and spawning-per-recruit by using information on Lm/L, knife-edge selectivity (Lc/L), and the ratio of fishing to natural mortality (F/M), to demonstrate the link between an exploited stock’s expected length composition, and its spawning potential ratio (SPR), an internationally recognized measurement of stock status. Variation in length-at-age and logistic selectivity patterns were incorporated in the model to demonstrate how SPR can be calculated from the observed size composition of the catch; an advance which has potential as a cost-effective method for assessing data-poor stocks. A companion paper investigates the effects of deviations in the main assumptions of the model on the application of the analytical models developed in this study as a cost-effective method for stock assessment [Hordyk, A. R., Ono, K., Valencia, S., Loneragan, N. R., and Prince, J. D. this issue. A novel length based empirical estimation method of spawning potential ratio (SPR), and tests of its performance, for small-scale, data-poor fisheries. ICES Journal of Marine Science].
 
 Data/information requirements:
-Knowledge of the proportion of population that survive to some maximum age tmax in virgin state, which is used to estimate M.
-Estimate of exponent from length-weight relationship, b (typically around 3).
+* Knowledge of the proportion of population that survive to some maximum age tmax in virgin state, which is used to estimate M.
+* Estimate of exponent from length-weight relationship, b (typically around 3).
   
 Assumptions:
-Relationship between Beverton-Holt life history invariants and YPR/SPR reference points. 
-Selectivity either flat or knife-edged
+* Relationship between Beverton-Holt life history invariants and YPR/SPR reference points. 
+* Selectivity either flat or knife-edged
   
 Outputs expected:
-Spawning potential ratio (eggs per spawner compared to virgin eggs per spawner) and length distribution.
-A ratio F/M which optimises SPR values.
+* Spawning potential ratio (eggs per spawner compared to virgin eggs per spawner) and length distribution.
+* A ratio F/M which optimises SPR values.
   
 Method of operation:
-Numbers per recruit surviving to age x can be approximated in the virgin stock by 〖(1-L ̃_x)〗^(M⁄k) where L ̃_x is length relative to L_∞  and M⁄k can be inferred from similar stocks. Length at maturity is estimated from M⁄k and b. These, combined with a selectivity ogive allow yield to be calculated as a function of F, and an optimum found.
-Variation in growth between individuals can be incorporated by specifying L_∞   as being drawn from a normal distribution and solved analytically. When selectivity at length is modelled as varying, there is no known analytical solution, and numerical methods or simulation are required.
+* Numbers per recruit surviving to age x can be approximated in the virgin stock by (1-L ̃_x)^(M⁄k) where L ̃_x is length relative to L_∞  and M⁄k can be inferred from similar stocks. Length at maturity is estimated from M⁄k and b. These, combined with a selectivity ogive allow yield to be calculated as a function of F, and an optimum found.
+* Variation in growth between individuals can be incorporated by specifying L_∞   as being drawn from a normal distribution and solved analytically. When selectivity at length is modelled as varying, there is no known analytical solution, and numerical methods or simulation are required.
   
 Testing:
-Results are based on simulation testing rather than application to particular stocks.
+* Results are based on simulation testing rather than application to particular stocks.
   
 Caveats:
-Knife-edged maturity assumed at a single length dependent on M⁄k and b.
-If the knife-edged selectivity occurs at a longer length than maturity, high (effectively infinite) F values may optimise SPR.
+* Knife-edged maturity assumed at a single length dependent on M⁄k and b.
+* If the knife-edged selectivity occurs at a longer length than maturity, high (effectively infinite) F values may optimise SPR.
 
 ### [Kokkalis, A., Thygesen, U.H., Nielsen, N. and K.H. Andersen (2015). Limits to the reliability of size-based fishing status estimation for data-poor stocks. Fisheries Research, 171: 4-11.](http://www.sciencedirect.com/science/article/pii/S0165783614003002)
 
 [Abstract:](http://www.sciencedirect.com/science/article/pii/S0165783614003002) For stocks which are considered “data-poor” no knowledge exist about growth, mortality or recruitment. The only available information is from catches. Here we examine the ability to assess the level of exploitation of a data-poor stock based only on information of the size of individuals in catches. The model is a formulation of the classic Beverton-Holt theory in terms of size where stock parameters describing growth, natural mortality, recruitment etc. are determined from life-history invariants. A simulation study was used to compare the reliability of assessments performed under different information availability scenarios, from data-limited, where none of the parameters are known beforehand, to different degrees of information availability cases where one or more parameters are known. If no parameters are known it is possible to correctly assess whether the fishing mortality is below Fmsy in more than 60% of the cases, and almost always correctly assess whether a stock is subject to overfishing. Adding information about age, i.e., assuming that growth rate and asymptotic size are known, does not improve the estimation. Only knowledge of the ratio between mortality and growth led to a considerable improvement in the assessment. Overall, the simulation study demonstrates that it may be possible to classify a data-poor stock as undergoing over- or under-fishing, while the exact status, i.e., how much the fishing mortality is above or below Fmsy, can only be assessed with a substantial uncertainty. Limitations of the approach are discussed.
 
 Data/information requirements:
-Catches of fish (numbers) as a function of size (weight) for one year (no requirement for time series, although the approach could be used to derive estimates for each year of available data). Size-based information can also come from surveys.
-Case-specific life history parameters characterising growth, mortality and recruitment, if available (otherwise a “Robin-Hood” approach, e.g. Punt et al. 2011, is used)
+* Catches of fish (numbers) as a function of size (weight) for one year (no requirement for time series, although the approach could be used to derive estimates for each year of available data). Size-based information can also come from surveys.
+* Case-specific life history parameters characterising growth, mortality and recruitment, if available (otherwise a “Robin-Hood” approach, e.g. Punt et al. 2011, is used)
   
 Assumptions:
-Model follows the size-based theory of exploited fish stocks (Andersen and Beyer, 2013)
-A species-independent set of life-history parameters together with asymptotic size W define a stock
-The model assumes steady-state, and uses a Beverton-Holt stock-recruit function, von Bertalanffy growth parameters, size-dependent M, and a sigmoid curve for selection.
+* Model follows the size-based theory of exploited fish stocks (Andersen and Beyer, 2013)
+* A species-independent set of life-history parameters together with asymptotic size W define a stock
+* The model assumes steady-state, and uses a Beverton-Holt stock-recruit function, von Bertalanffy growth parameters, size-dependent M, and a sigmoid curve for selection.
   
 Outputs expected:
-Distribution of F/Fmsy (with sensitivity intervals defined by scanning over a range of plausible physiological mortality values) for each year of available catch-at-size data
+* Distribution of F/Fmsy (with sensitivity intervals defined by scanning over a range of plausible physiological mortality values) for each year of available catch-at-size data
   
 Method of operation:
-Given catch-at-size data and a life-history parameter set (if available), the model estimates only three parameters, namely fishing mortality, asymptotic weight W and the size at 50% retainment. All other parameters are constant during the estimation.
+* Given catch-at-size data and a life-history parameter set (if available), the model estimates only three parameters, namely fishing mortality, asymptotic weight W and the size at 50% retainment. All other parameters are constant during the estimation.
 	
 Testing:
-Simulation testing was based on 100 artificial stocks, with 20 catch-at-size data sets (each with 10 000 individuals) with varying fishing mortality (ranging from 0.1Fmsy to 2Fmsy) generated for each. The analysis was repeated for three asymptotic weights (0.1, 1 and 10 kg).
-Estimation was repeated for the case where none of the life-history parameters were known (and therefore default values assumed), where all of the life-history –parameters were known, and for cases in between (varying amounts of life-history parameters known.
-While estimation of a specific F or how much above or below Fmsy a stock was quite uncertain, simulation testing showed that the method was able to correctly classify whether the stock was undergoing over- or under-exploitation better than random classification.
-Physiological mortality, which corresponds to the classical M/K invariant, was the most important parameters in the life-history set for the estimation.
+* Simulation testing was based on 100 artificial stocks, with 20 catch-at-size data sets (each with 10 000 individuals) with varying fishing mortality (ranging from 0.1Fmsy to 2Fmsy) generated for each. The analysis was repeated for three asymptotic weights (0.1, 1 and 10 kg).
+* Estimation was repeated for the case where none of the life-history parameters were known (and therefore default values assumed), where all of the life-history –parameters were known, and for cases in between (varying amounts of life-history parameters known.
+* While estimation of a specific F or how much above or below Fmsy a stock was quite uncertain, simulation testing showed that the method was able to correctly classify whether the stock was undergoing over- or under-exploitation better than random classification.
+* Physiological mortality, which corresponds to the classical M/K invariant, was the most important parameters in the life-history set for the estimation.
   
 Caveats:
-During testing, the same model was used for simulation and estimation, so the reliability of the method is optimistic and results cannot be generalised to real situations without further investigation. However, subsequent to the paper, the method was applied to a couple of data-rich stocks for comparison, and revealed broadly similar trends in relative exploitation to the data-rich assessments. It has also been applied to a handful of data-poor stocks.
-Misspecification of the selection function and inaccuracies in the estimation of asymptotic size can have severe consequences for the estimation of fishing mortality and reference points.
-Asymptotic size is difficult to estimate when the largest individuals are not selected, and may need additional information (e.g. local knowledge or information from other stocks of the same species).
+* During testing, the same model was used for simulation and estimation, so the reliability of the method is optimistic and results cannot be generalised to real situations without further investigation. However, subsequent to the paper, the method was applied to a couple of data-rich stocks for comparison, and revealed broadly similar trends in relative exploitation to the data-rich assessments. *  It has also been applied to a handful of data-poor stocks.
+* Misspecification of the selection function and inaccuracies in the estimation of asymptotic size can have severe consequences for the estimation of fishing mortality and reference points.
+* Asymptotic size is difficult to estimate when the largest individuals are not selected, and may need additional information (e.g. local knowledge or information from other stocks of the same species).
 
 ## Data-limited approaches: Qualitative and semi-quantitative approaches
 
@@ -690,51 +688,51 @@ Asymptotic size is difficult to estimate when the largest individuals are not se
 [Abstract:](http://dx.doi.org/10.1016/S0165-7836(01)00343-5) This is a viewpoint paper without an abstract, rather a short introduction: It is natural that scientists should follow the way concepts come to be used when they have had a hand in their development, and this applies in my case to the related ideas of limit reference points (LRPs) and the traffic light management system. One can never control where an idea leads to, but if there may be the danger of a methodology changing while retaining the original nomenclature, it seems worthwhile to point this out, and that is the purpose of the current note. It is suggested that adding bells and whistles to a simple methodology may postpone its practical implementation by stakeholders and fishery managers, which is urgently needed at the moment.
 
 Data/information requirements:
-A series of indices as measures or proxies for exploitation rate or stock size, relating to the biology, economic, and social aspects of a fishery
-A series of limit reference points (LRPs) associated with the indices
-A fisheries department or other fisheries management body has a data storage facility from which the indices can be regularly extracted.
+* A series of indices as measures or proxies for exploitation rate or stock size, relating to the biology, economic, and social aspects of a fishery
+* A series of limit reference points (LRPs) associated with the indices
+* A fisheries department or other fisheries management body has a data storage facility from which the indices can be regularly extracted.
   
 Assumptions:
-Presence of a co-management framework with a feedback loop capable of registering and taking avoidance steps when faced with dangerous situations (i.e. high risk of stock collapse). 
-The system does not require a major investment in stock assessment and complex population modelling, focus is rather on getting management feedback loop implemented.
+* Presence of a co-management framework with a feedback loop capable of registering and taking avoidance steps when faced with dangerous situations (i.e. high risk of stock collapse). 
+* The system does not require a major investment in stock assessment and complex population modelling, focus is rather on getting management feedback loop implemented.
   
 Outputs expected:
-Traffic light management system applying multiple LRPs associated with relevant available indices in a cumulative fashion in a decision framework context.
-The current state of the fishery traffic light index for a particular resource is made readily available to stakeholders (e.g. over the Internet).
+* Traffic light management system applying multiple LRPs associated with relevant available indices in a cumulative fashion in a decision framework context.
+* The current state of the fishery traffic light index for a particular resource is made readily available to stakeholders (e.g. over the Internet).
   
 Method of operation:
-A series of LRPs are used to judge the status of a fishery as represented by a series of traffic ‘lights’, which change from green to red as the LRP to its left is infringed. The number of red lights lit is accumulated, and dictates the severity of the management response in terms of either a quota or effort limitation, which remains in effect until some or all of the red lights turn green again. 
-Applying characteristics of a fuzzy logic control system in allowing relatively smooth trajectories of exploitation.
+*  series of LRPs are used to judge the status of a fishery as represented by a series of traffic ‘lights’, which change from green to red as the LRP to its left is infringed. The number of red lights lit is accumulated, and dictates the severity of the management response in terms of either a quota or effort limitation, which remains in effect until some or all of the red lights turn green again. 
+* Applying characteristics of a fuzzy logic control system in allowing relatively smooth trajectories of exploitation.
 
 ### [Froese, R. and K. Kesner-Reyes (2002). Impact of fishing on the abundance of marine species. ICES Document CM 2002/L: 12, 15 pp.](http://www.ices.dk/sites/pub/CM%20Doccuments/2002/L/L1202.pdf)
 
 [Abstract:](http://www.ices.dk/sites/pub/CM%20Doccuments/2002/L/L1202.pdf) The Census of Marine Life program aims to document the existence, distribution and abundance of marine organisms using all suitable data sources. In this study we analysed time series of catch data published by ICES and FAO in respect to trends in the resilience of species towards fishing. For this purpose we classified the fishing status of over 900 exploited species into undeveloped, developing, fully exploited, overfished, and collapsed or closed, where the sequence of the last three stages usually corresponds to a decline in species abundance.  In world fisheries the percentage of species being overfished within 10 years after start of full exploitation increased from 26% in the 1950ies to 35% in the 1980ies. In 1999 the status of 50% of the exploited species was overfished, collapsed or closed. The number of species with low or very low resilience to fishing has been increasing from 80 (26%) in 1950 to 155 (32%) in 1999. Of 24 species reaching full exploitation in 1998 or 1999 for the first time, 8 had low and 8 had very low resilience to fishing. Of 25 species that had sustained 30 or more years of full exploitation before 1989, 11 species reached overfished or collapsed status thereafter. An analysis of length-frequency studies of commercial landings showed that in most cases mean length was below length at first maturity. In the ICES area 46% of the species were overfished within 10 years after start of full exploitation and in 1999 the status of 60% of the species were overfished, collapsed or closed. We suggest an alternative management regime that would allow fish to spawn at least once before being caught. A census of marine life conducted in an exploited area will still largely be able to detect the evolutionary species composition, but will not be able to determine the evolutionary relative abundance of species and their respective roles in the ecosystem.
 
 Data/information requirements:
-A time series of catch data.
+* A time series of catch data.
 
 Assumptions:
-Assumes a model in which catches for a fish population increase during fisheries development and subsequently decline as fisheries become increasingly exploited.
-Given a time series of catch data, the total production per year is calculated. This is then used to classify the status of the fishery in any given year into one of the following (arbitrary) development stages:
-Undeveloped: Ccur before Cmax and Ccur < 0.1 Cmax.
-Developing: Ccur before Cmax and 0.1 Cmax < Ccur < 0.5 Cmax.
-Fully exploited: Ccur > 0.5 Cmax.
-Overfished: Ccur after Cmax and 0.1 Cmax < Ccur < 0.5 Cmax.
-Collapsed/Closed: Ccur after Cmax and Ccur < 0.1 Cmax.
+* Assumes a model in which catches for a fish population increase during fisheries development and subsequently decline as fisheries become increasingly exploited. 
+* Given a time series of catch data, the total production per year is calculated. This is then used to classify the status of the fishery in any given year into one of the following (arbitrary) development stages:
+  * Undeveloped: Ccur before Cmax and Ccur < 0.1 Cmax.
+  * Developing: Ccur before Cmax and 0.1 Cmax < Ccur < 0.5 Cmax.
+  * Fully exploited: Ccur > 0.5 Cmax.
+  * Overfished: Ccur after Cmax and 0.1 Cmax < Ccur < 0.5 Cmax.
+  * Collapsed/Closed: Ccur after Cmax and Ccur < 0.1 Cmax.
 Where Ccur is the current catch and Cmax is the maximum catch in the time series.
-The first and last year are excluded as the ‘after maximum year’ and ‘before maximum year’ criteria cannot be applied to them.
-Assumes catch data are representative of changes in abundance.
+* The first and last year are excluded as the ‘after maximum year’ and ‘before maximum year’ criteria cannot be applied to them.
+* Assumes catch data are representative of changes in abundance.
 
 Outputs expected:
-A stock-status plot showing the percentage of stocks by status over time.
+* A stock-status plot showing the percentage of stocks by status over time.
 
 Testing:
-No testing described here. Tested by [Carruthers et al. (2012)](#carruthers-tr-walters-cj-and-mk-mcallister-2012-evaluating-methods-that-classify-fisheries-stock-status-using-only-fisheries-catch-data-fish-res-119-120-66-79) below.
-Applied to time series of catch data published by FAO (Fisheries production time series 1950-1999) and ICES (catch data for NE Atlantic 1973-1999).
+* No testing described here. Tested by [Carruthers et al. (2012)](#carruthers-tr-walters-cj-and-mk-mcallister-2012-evaluating-methods-that-classify-fisheries-stock-status-using-only-fisheries-catch-data-fish-res-119-120-66-79) below.
+* Applied to time series of catch data published by FAO (Fisheries production time series 1950-1999) and ICES (catch data for NE Atlantic 1973-1999).
 
 Caveats:
-By definition, the percentage of undeveloped or developed stocks is zero in the final year of the time series (Kleisner and Pauly, 2011).
-The stock-status plots do not take recovery into account [Kleisner and Pauly (2011)](#kleisner-k-and-d-pauly-2011-stock-status-plots-of-fisheries-for-regional-seas-in-christensen-v-lai-s-palomares-m-l-d-zeller-d-and-pauly-d-eds-the-state-of-biodiversity-and-fisheries-in-regional-seas-fisheries-centre-research-reports-193-fisheries-centre-university-of-british-columbia-pp-37-40-issn-1198-6727). Recovery is automatically classified as a ‘developing’ stock.
+* By definition, the percentage of undeveloped or developed stocks is zero in the final year of the time series (Kleisner and Pauly, 2011).
+* The stock-status plots do not take recovery into account [Kleisner and Pauly (2011)](#kleisner-k-and-d-pauly-2011-stock-status-plots-of-fisheries-for-regional-seas-in-christensen-v-lai-s-palomares-m-l-d-zeller-d-and-pauly-d-eds-the-state-of-biodiversity-and-fisheries-in-regional-seas-fisheries-centre-research-reports-193-fisheries-centre-university-of-british-columbia-pp-37-40-issn-1198-6727). Recovery is automatically classified as a ‘developing’ stock.
 
 ### Scandol, J. (2005). Use of quality control methods to monitor the status of fish stocks. In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 213–231. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.
 
