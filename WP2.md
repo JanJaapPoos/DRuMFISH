@@ -1086,6 +1086,7 @@ Main conclusions:
 * A large quantity of data is no guarantee of reliable information on which to base management decisions; for example, a smaller amount of data used in a simpler method to provide information about current stock status may be more valuable than using a greater amount of historical data in a more complex method where model assumptions are at greater risk of being violated (e.g. for short-lived species such as butterfish).
 * The simulation of spatial population and fishery dynamics had minimal impact on performance, with all methods being relatively insensitive to variability in simulated targeting, stock viscosity and spatial heterogeneity; an MSE with no spatial dynamics led to very similar results. This suggests that problems with inaccuracy and imprecision of key inputs dominate any subtleties related spatial stock dynamics.
 * Considerable imprecision in depletion estimates does not lead to dramatic loss of yield or increase in probability of overfishing; however, bias in depletion strongly determines performance.
+
 Reference:
 [Beddington, J.R. and G.P. Kirkwood (2005). The estimation of potential yield and stock status using life history parameters. Philos. Trans. R. Soc. Lond. B: Biol. Sci. 360,163–170.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1636111/)
 
