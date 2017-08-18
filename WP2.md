@@ -299,7 +299,9 @@ Caveats:
 ### [Zhou, S. and R. Sharma (2013). Stock assessment of two neritic tuna species in Indian Ocean, kawakawa and longtail tuna using catch-based stock reduction methods. IOTC-2013-WPNT03-25.](http://www.iotc.org/documents/stock-assessment-two-neritic-tuna-species-indian-ocean-kawakawa-and-longtail-tuna-using)
 
 Abstract: We conduct stock assessments for two Indian Ocean neritic tuna species, Kawakawa and Longtail. We used a newly developed posterior-focused catch-based assessment method. The method is based on a classical biomass dynamics model, requires only catch history but not fishing effort or CPUE. Known population growth rate will improve the assessment result. In this paper, we assume that both species in the whole Indian Ocean belong to a single stock and the population size in 1950 is the virgin biomass equal to their carrying capacities. We use recently updated catch data in the analysis.
+
 The preliminary results show that for Kawakawa the median virgin biomass is about 358-408 thousand tonnes depending on the upper depletion level assumed in 2011. The combination of such carrying capacity and growth rate can support a maximum sustainable yield (MSY) of 128-151 thousand tonnes. This means that catch levels in recent year may have exceeded MSY.
+
 The situations are similar for Longtail. The median virgin biomass was about 380 to 440 thousand tonnes, and the intrinsic population growth rate is about 1.14–1.26, somewhat less productive than Kawakawa. The entire stock can support a MSY of nearly 110–140 thousand tonnes. Catch levels in recent year may have been too high, and likely overfishing is occurring on the stock.
 
 Data/information requirements:
@@ -343,7 +345,6 @@ This method has the ability to project forward
 ### [Thorson. J.T. and J.M. Cope (2015). Catch curve stock-reduction analysis: An alternative solution to the catch equations. Fish. Res. 171: 33-41.](http://www.sciencedirect.com/science/article/pii/S0165783614001507)
 
 [Abstract:](http://www.sciencedirect.com/science/article/pii/S0165783614001507) Legislative changes in the United States and elsewhere now require scientific advice on catch limits for data-poor fisheries. The family of stock reduction analysis (SRA) models is widely used to calculate sustainable harvest levels given a time series of harvest data. SRA works by solving the catch equation given an assumed value for spawning biomass relative to unfished levels in the final (or recent) year, and resulting estimates of recent fishing mortality are biased when this assumed value is mis-specified. We therefore propose to replace this assumption when estimating stock status by using compositional data in recent years to estimate a catch curve and hence estimating fishing mortality in those years. We compare this new “catch-curve stock reduction analysis” (CC-SRA) with an SRA or catch curve using simulated data for slow or fast life histories and various magnitudes of recruitment variability. Results confirm that the SRA yields biased estimates of current fishing mortality given mis-specified information about recent spawning biomass, and that the catch curve is biased due to changes in fishing mortality over time. CC-SRA, by contrast, is approximately unbiased for low or moderate recruitment variability, and less biased than other methods given high recruitment variability. We therefore recommend CC-SRA as a data-poor assessment method that incorporates compositional data collection in recent years, and suggest future management strategy evaluation given a data-poor control rule.
-
 
 Data/information requirements:
 * A time series of catch data
@@ -737,6 +738,7 @@ Caveats:
 ### Scandol, J. (2005). Use of quality control methods to monitor the status of fish stocks. In G.H. Kruse, V.F. Gallucci, D.E. Hay, R.I. Perry, R.M. Peterman, T.C. Shirley, P.D. Spencer, B. Wilson & D. Woodby, eds. Fisheries assessment and management in data-limited situations, pp. 213–231. Fairbanks, USA, Alaska Sea Grant College Program AK-SG-05-02.
 
 Abstract: Many fisheries that are data-limited are also of low economic value. Therefore, not only are the fisheries data-limited, but there are limited human resources available for undertaking stock assessment. Qualitative methods such as “eyeballing” the data are then often used to assess such systems. Quantitative methods need to be developed that are objective, but less demanding than dynamic stock assessment models. In particular, simple methods that can signal trends in empirical stock-status indicators need to be explored. One such approach is the use of quality control methods such as Shewhart, moving-average, and CUSUM (cumulative sum) control charts. Originally designed for industrial quality control, these methods can be parameterized to detect transient or persistent causes with specific false-positive and false-negative error rates. These signals can be interpreted within a managerial context as trigger reference points.
+
 Results of a simulated study of yellowfin bream (Acanthopagrus australis) stocks from New South Wales (Australia) are presented. Empirical stock-status indicators including catch, catch per unit effort, mean age, mean length, recruitment fraction, total mortality, and fishery-independent surveys were processed using quality control methods. Performance of these indicators and algorithms were measured with receiver-operator characteristic curves, which captured both false-positive and false-negative error rates. Biomass surveys performed best, followed by mean age and length, and recruitment fractions. Commercial catch rates and catch had the worst performance but were still acceptable. Age-based total mortality performed poorly unless very large numbers of samples were taken. Potential applications of these methods include a rapid diagnostic tool in data-limited situations, development of empirical reference points, and empirical rule-based management systems. These methods are easily applied even when there is a short time-series of low-contrast data but a range of caveats must always be considered.
 
 Data/information requirements:
@@ -775,8 +777,11 @@ Caveats:
 ### Berkson, J., Barbieri, L., Cadrin, S., Cass-Calay, S. Crone, P., Dorn, M., Friess, C., Kobayashi, D., Miller, T.J., Patrick, W.S., Pautzke, S., Ralston, S. and M. Trianni (2011). Calculating acceptable biological catch for stocks that have reliable catch data only (Only Reliable Catch Stocks – ORCS). NOAA Technical Memorandum NMFS-SEFSC 616, 56pp.
 
 Abstract: In response to the 2006 reauthorization of the Magnuson-Stevens Act (MSA), the National Marine Fisheries Service established National Standard 1 (NS1) Guidelines, which included a requirement to set an acceptable biological catch (ABC) that accounts for scientific uncertainty in the estimate of a stock’s overfishing limit (OFL). This is an exceedingly difficult task for the large number of stocks for which reliable catch data are the only information available, as these stocks cannot be assessed with traditional stock assessment methods. For the purpose of this document, these stocks will be called “only reliable catch stocks” (ORCS). Despite the inherent problem of setting ABCs for ORCS, the MSA requirement remains.
+
 At the second National SSC meeting November 10-13, 2009 in St. Thomas, USVI, an ad-hoc Working Group was established to identify, suggest, and evaluate alternative approaches for the setting of ABCs for ORCS. Working Group members represent seven of the eight SSCs, five of the six NMFS Science Centers, NMFS Headquarters, as well as a regional fishery management council, academic institutions, a state agency, and an NGO. The goal of the Working Group was to develop an approach for addressing ABCs in ORCS that could potentially be applied in all jurisdictions under a flexible framework.
+
 This report reviews existing methods for setting catch limits for ORCS. Each approach is briefly summarized followed by a description of the required data, the major assumptions and consequent cautionary advice in utilizing the particular approach, its potential for use in a risk-based decision-making framework, the status of the approach along with examples of its implementation, and the pros and cons of using the approach as viewed by the Working Group.
+
 The Working Group also presents its own approach, designed to build on existing approaches, while strengthening the biological and population dynamics underpinnings. The method provides additional flexibility and allows policymakers to set risk levels, as required under the NS1 guidelines.
 
 Ultimately, the Working Group recommends that the following tiered approach be used when setting ABCs for ORCS:
@@ -907,7 +912,9 @@ Caveats:
 
 [Note, this paper also covers data-moderate approaches]
 Overview: The requirement in the re-authorized Magnuson-Stevens Act of 2006 to set annual catch limits (ACLs) based on science recommendations implies some kind of basic assessment is required for all stocks in Fishery Management Plans (FMPs). This mandate has lead to an increased focus on assessing “data-poor” stocks. Many data-poor stocks are of minor economic importance and assessing all of them using size/age structured models would be difficult given data limitations and resources required. Simple assessment methods that use historical catches and available trend or size-composition information could potentially be applied to many data-poor stocks. These methods could be used to set ACLs, and to identify stocks which may be at risk of depletion that would be elevated to high priority for more detailed assessments. 
+
 With just a few exceptions, Overfishing Limits (OFLs) for all of the stocks in the Pacific Council’s Groundfish FMP were developed for 2011-2012 biennial specifications process during January to June, 2010 using new assessment methods designed for data-poor stocks. These methods included Depletion-Corrected Average Catch (DCAC) and Depletion-Based Stock Reduction Analysis (DB-SRA). The methods were applied by Southwest Fisheries Science Center staff and reviewed by the Groundfish Subcommittee of the PFMC’s Scientific and Statistical Committee (SSC), and endorsed by the full SSC. However the methods and their application did not receive the level of review afforded by a formal Stock Assessment Review (STAR) panel process, and in June, 2010, the PFMC requested a formal review of data-poor methodologies: 
+
 “The Council also requested a formal review of methodologies for determining harvest specifications for data-poor stocks. Such methods include catch-based approaches as well as those that might be considered rudimentary assessments, and should include the methodology used in the current biennial specifications process as well as reasonable alternatives to that methodology.” 
 [Source](http://www.pcouncil.org/wp-content/uploads/0610decisions.pdf): http://www.pcouncil.org/wp-content/uploads/0610decisions.pdf 
 
@@ -932,6 +939,7 @@ Assessment methods presented to the Panel consisted of two broad categories, met
 *SS-CI*—Simple implementation of the Stock Synthesis platform that uses catch and a time series of survey indices. 
 
 This report is organized as follows. For each assessment method, the report provides a short description of the method and the Panel’s conclusions and recommendations pertaining to the method. Short responses are given to the list of seven key questions identified above. Each section concludes with a list of the requests made to the technical team and summarizes the responses. Several issues that extend across methods are discussed in separate sections. An Appendix includes a list of the primary background documents that were provided to the Panel in advance of the meeting via email and on an FTP site. Wireless access to the FTP site was intermittent during one day of the meeting, but for the most part functioned well. 
+
 The Panel endorses the use of DCAC, DB-SRA and SS-CO for determining OFLs for data-poor groundfish stocks, but makes several recommendations that could improve these methods in the future. Much progress has been made in developing and testing methods that use survey index or length composition data. However none of the methods reviewed by the Panel was found to be ready for implementation without further development and technical review. This report outlines the additional steps that will need to be taken to apply these methods to data-poor stocks for the 2015-2016 management cycle. Evaluation of DCAC, DB-SRA and other simple assessment models was greatly facilitated by a simulation testing analysis of these methods presented by Chantel Wetzel. Further work using this approach is strongly encouraged by the Panel.
 
 
@@ -1295,6 +1303,7 @@ Caveats:
 
 Summary:
 A review of existing Annual Catch Limits showed that there were 371 ACLs for management (some covering multiple species), of which 193 were based on catch only methods. The authors consider that catch only methods are incompatible with an MSY approach unless additional data is included (catch composition or an index of abundance), an alternative would be to base targets on achieving high average yield and/or low risk of depletion. 
+
 An alternative to a full assessment is to use a simple management plans (Butterworth, 1997; Rademeyer et al., 2007) based on an indicator (such as average length), although this still needs an operating model to estimate suitable action points. As with catch only assessments, these would not be compatible with an MSY approach, but could be part of a risk based approach. The reason that simple management plans may be more suitable than assessments for some stocks is that they can use a wider variety of data than is used in traditional stock assessments.
 
 Methods:
@@ -1395,9 +1404,9 @@ Caveats:
 * May not be suitable for species with marked seasonality in growth, reproduction and harvest. Also, may not work well when applied to stocks with large recruitment fluctuations unrelated to population size, especially when catch-effort series is short.
 * No process error implemented (assumption that the production of biomass is a deterministic function of the current biomass).
 
-### [Prager, M.H. (1994).A suite of extensions to a nonequilibrium surplus-production model. Fishery Bulletin 92: 374-389.]http://fishbull.noaa.gov/922/prager.pdf)
+### [Prager, M.H. (1994).A suite of extensions to a nonequilibrium surplus-production model. Fishery Bulletin 92: 374-389.](http://fishbull.noaa.gov/922/prager.pdf)
 
-[Abstract:]http://fishbull.noaa.gov/922/prager.pdf) Surplus-production models, because of their simplicity and relatively undemanding data needs, are attractive tools for many stock assessments. This paper reviews the logistic production model, starting with the basic differential equation and continuing with a description of the model development without the equilibrium assumption. It then describes several extensions, including "tuning" the model to a biomass index; partitioning fishing mortality by gear, time, or area; and making projections. Computation of confidence intervals on quantities of interest (e.g. maximum sustainable yield (MSY), effort at MSY, level of stock biomass relative to the optimum level) can be done through bootstrapping, and the bootstrap can also be used to construct nonparametric tests of hypotheses about changes in catchability. To fit the model, an algorithm that uses a forward solution of the population equations can be implemented on a small computer. An example of the utility of surplus-production models (illustrating several of these extensions) is given. The example is loosely based on swordfish (Xiphias gladius) in the North Atlantic Ocean, but is not intended to describe the actual status of that stock.
+[Abstract:](http://fishbull.noaa.gov/922/prager.pdf) Surplus-production models, because of their simplicity and relatively undemanding data needs, are attractive tools for many stock assessments. This paper reviews the logistic production model, starting with the basic differential equation and continuing with a description of the model development without the equilibrium assumption. It then describes several extensions, including "tuning" the model to a biomass index; partitioning fishing mortality by gear, time, or area; and making projections. Computation of confidence intervals on quantities of interest (e.g. maximum sustainable yield (MSY), effort at MSY, level of stock biomass relative to the optimum level) can be done through bootstrapping, and the bootstrap can also be used to construct nonparametric tests of hypotheses about changes in catchability. To fit the model, an algorithm that uses a forward solution of the population equations can be implemented on a small computer. An example of the utility of surplus-production models (illustrating several of these extensions) is given. The example is loosely based on swordfish (Xiphias gladius) in the North Atlantic Ocean, but is not intended to describe the actual status of that stock.
 
 Data/information requirements:
 * Yield (harvest in weight);
@@ -1480,52 +1489,55 @@ Ability to project forward/forecast:
 
 Abstract: This research document presents a summary of relevant data inputs and an evaluation of a proposed population model for the assessment of sea scallops (Placopecten magellanicus) on the Canadian portion of Georges Bank, zone 'a'. This document was presented as a working paper as part of the advisory process for developing a new assessment framework for Georges Bank 'a' scallops.
 Until 2007, the status of the Georges Bank scallop stock has been assessed using a cohort analysis tuned to a commercial catch rate-stratified survey index and a commercial catch per unit effort index. This model suffered both from strong retrospective effects, which resulted in inconsistent estimates of biomass from year to year, and from a lack of recent, reliable aging data, which were used to construct the catch at age matrix. Georges Bank scallops are difficult to age reliably due primarily to the high prevalence of shock marks that are difficult to distinguish from annual growth rings. Consequently, an alternate population model that placed less reliance on aging data was thought to be a more appropriate candidate for assessment of this stock.
+
 A delay-difference population model fit to both the survey and commercial catch rate indices was proposed. This model was implemented in a Bayesian state-space framework, accounting for observation error and process variability separately. Model parameters were estimated using Metropolis-within-Gibbs sampling, a type of Markov chain Monte Carlo sampling method. Scallop growth rates were parameterized from previously published von Bertallanfy growth parameters for the Georges Bank scallop stock. Biomass estimates from this model were compared with estimates from both the cohort analysis and from a surplus production model. These comparisons indicated that the delay-difference model produced biomass estimates that were more consistent with the pattern suggested by both the survey and commercial catch rate indices than did the cohort analysis. Although the biomass trajectories estimated by the delay difference and surplus production models were similar, the survey catchability estimates from the delay-difference model were more consistent with estimates from the US scallop dredge survey.
+
 Development of a biological reference point was explored in the context of scallop growth rates, natural mortality and exploitation. We show that exploitation rates required for no change in stock biomass can be considered a function of scallop growth rate, discounted for natural mortality. The reference exploitation should then change as the growth rate changes, primarily through changes in average stock size. This approach can be considered precautionary as scallop recruitment to the fishery, which is currently modeled as a log-normal random process, in most years would reduce the realized exploitation level. Posterior distributions of projected biomass under different harvest scenarios, and the associated probabilities of a decrease in biomass, were used to evaluate in-season increases to the interim total allowable catch limit.
 
 Data/information requirements:
-Survey biomass indices for fully recruited and recruit size animals
-Commercial CPUE index
-Commercial catch
-Estimates of growth parameters
-Natural mortality (assumed 0.1 here)
-Prior distributions for model parameters (proportionality coefficients, K and precision terms) 
+* Survey biomass indices for fully recruited and recruit size animals
+* Commercial CPUE index
+* Commercial catch
+* Estimates of growth parameters
+* Natural mortality (assumed 0.1 here)
+* Prior distributions for model parameters (proportionality coefficients, K and precision terms) 
 
 Assumptions:
-The increase of body size with age follows a linear relationship.
-Knife-edged selection to the fishery.
-All fully-selected individuals experience the same natural mortality rate.
-Stochastic recruitment.
-Log-normal random variables for process variability and observation error.
-Proportional relationships between observed indices and true biomass.
+* The increase of body size with age follows a linear relationship.
+* Knife-edged selection to the fishery.
+* All fully-selected individuals experience the same natural mortality rate.
+* Stochastic recruitment.
+* Log-normal random variables for process variability and observation error.
+* Proportional relationships between observed indices and true biomass.
 
 Outputs expected:
-Biomass estimates
-Fishing mortality estimates
-Posterior distributions for model parameters
+* Biomass estimates
+* Fishing mortality estimates
+* Posterior distributions for model parameters
 
 Method of operation:
-The method consists of two coupled models that comprise a state-space model. 
-Scallops are divided into three size classes based on shell height: Fully-recruited, recruits and pre-recruits. The process model uses a delay-difference model to model the biomass of fully recruited scallops in terms of natural mortality, growth, catch and recruits entering the fishery.
-The observation model relates the unobserved biomass to observed indices.
-The parameters and biomass states are estimated within a Bayesian state-space approach performed using MCMC integration via Gibbs within Metropolis-Hastings sampling. The biomass terms are rescaled to improve convergence of the Gibbs sampler.
-A replacement exploitation level that allows for variable growth potential, discounted by constant natural mortality, through changes in stock size structure that are indexed by the average weight is determined by rearranging the delay-difference process model and setting Bt+1=Bt. This precautionary approach ignores recruitment and stochastic perturbation.
+* The method consists of two coupled models that comprise a state-space model. 
+* Scallops are divided into three size classes based on shell height: Fully-recruited, recruits and pre-recruits. The process model uses a delay-difference model to model the biomass of fully recruited scallops in terms of natural mortality, growth, catch and recruits entering the fishery.
+* The observation model relates the unobserved biomass to observed indices.
+* The parameters and biomass states are estimated within a Bayesian state-space approach performed using MCMC integration via Gibbs within Metropolis-Hastings sampling. The biomass terms are rescaled to improve convergence of the Gibbs sampler.
+* A replacement exploitation level that allows for variable growth potential, discounted by constant natural mortality, through changes in stock size structure that are indexed by the average weight is determined by rearranging the delay-difference process model and setting Bt+1=Bt. This precautionary approach ignores recruitment and stochastic perturbation.
 
 Testing:
-Sensitivity analyses were carried out to determine the effect of growth rate assumptions on biomass estimates and projections, and the sensitivity of the model fit to priors.
-The model was sensitive to the range of growth parameters considered, with relative differences in biomass ranging from ~ -11% to 12%.
-The model fits did not change substantially when changing from informative priors on precision terms to uninformative priors on variance or standard deviations.
-Model results were compared to those of a simple surplus production model and to the ADAPT VPA model that was used to provide management advice for the stock in the past.
-The biomass trajectories estimated by the delay-difference model and the surplus production model were similar, but the catchability estimates from the delay-difference model were more consistent with estimates from the US scallop dredge survey.
-Biomass estimates produced by the delay-difference model were more consistent with the patterns suggested by the commercial and survey indices than the ADAPT VPA model.
-Retrospective and prospective analyses were carried out, and show a sensitivity to initial conditions and a tendency to overestimate biomass and underestimate F during periods of peak biomass. Otherwise biomass and F estimates were similar to the default model fit.
-The models predictive ability was assessed by comparing one-year ahead biomass predictions to the biomass estimates for the same year. The one-year ahead predictions tend to be lower than the estimates as the stock increases and higher than the estimates as the stock declines.
+* Sensitivity analyses were carried out to determine the effect of growth rate assumptions on biomass estimates and projections, and the sensitivity of the model fit to priors.
+* The model was sensitive to the range of growth parameters considered, with relative differences in biomass ranging from ~ -11% to 12%.
+* The model fits did not change substantially when changing from informative priors on precision terms to uninformative priors on variance or standard deviations.
+* Model results were compared to those of a simple surplus production model and to the ADAPT VPA model that was used to provide management advice for the stock in the past.
+* The biomass trajectories estimated by the delay-difference model and the surplus production model were similar, but the catchability estimates from the delay-difference model were more consistent with estimates from the US scallop dredge survey.
+* Biomass estimates produced by the delay-difference model were more consistent with the patterns suggested by the commercial and survey indices than the ADAPT VPA model.
+* Retrospective and prospective analyses were carried out, and show a sensitivity to initial conditions and a tendency to overestimate biomass and underestimate F during periods of peak biomass. Otherwise biomass and F estimates were similar to the default model fit.
+* The models predictive ability was assessed by comparing one-year ahead biomass predictions to the biomass estimates for the same year. The one-year ahead predictions tend to be lower than the estimates as the stock increases and higher than the estimates as the stock declines.
 
 Caveats:
-The model has difficulty estimating biomass in unusual years, e.g. peaks in biomass.
-The model fits closer to the commercial catch rate index than to the survey indices.
+* The model has difficulty estimating biomass in unusual years, e.g. peaks in biomass.
+* The model fits closer to the commercial catch rate index than to the survey indices.
+
 Ability to project forward/forecast:
-The model provides this functionality.
+* The model provides this functionality.
 
 ### [Jiao, Y., Cortes E., Andrews, K. and F. Guo (2011). Poor-data and data-poor species stock assessment using a Bayesian hierarchical approach. Ecological applications 21, 2691–2708.](http://onlinelibrary.wiley.com/doi/10.1890/10-0526.1/full)
 
@@ -1541,8 +1553,8 @@ Kk = carrying capacity of species k (uniform distribution in the example);
 N1 = abundance in the first modelled year (lognormal distribution in the example).
 
 Assumptions:
-Abundance indices are assumed to be directly proportional to stock biomass;
-Constant q over time.
+* Abundance indices are assumed to be directly proportional to stock biomass;
+* Constant q over time.
 
 Outputs expected:
 Variance/covariance matrix at the mode of the posterior distribution;
@@ -1580,9 +1592,9 @@ The resulting distributions of rk for both data-rich and data-poor species were 
 The hierarchical population growth model can simulate population growth rate variation caused by the hierarchy of growth rates, which has been related to regime shifts and changes in productivity regimes in some cases.
 
 Caveats:
-Informative priors influence the results of both model parameters and model fit (DIC values). Therefore, the use of informative priors and model choice may also need to be justified based on an understanding of the biology of each species in the fish complex.
+* Informative priors influence the results of both model parameters and model fit (DIC values). Therefore, the use of informative priors and model choice may also need to be justified based on an understanding of the biology of each species in the fish complex.
 
-### McAllister, M.K. and E.A. Babcock (2014). Bayesian surplus production model with the Sampling Importance Resampling algorithm (BSP): a User’s Guide.
+### [McAllister, M.K. and E.A. Babcock (2014). Bayesian surplus production model with the Sampling Importance Resampling algorithm (BSP): a User’s Guide.](https://www.researchgate.net/profile/Elizabeth_Babcock/publication/228531160_Bayesian_surplus_production_model_with_the_Sampling_Importance_Resampling_algorithm_BSP_a_user%27s_guide/links/542417eb0cf238c6ea6e8f27/Bayesian-surplus-production-model-with-the-Sampling-Importance-Resampling-algorithm-BSP-a-users-guide.pdf)
 
 Abstract: The BSP program fits either a Schaefer model or a Fletcher / Schaefer model to CPUE data using the Sampling /Importance Resampling algorithm. Required inputs are catch for all years (missing catch data in the first years of the fishery are allowed), at least one catch rate (CPUE) index of abundance, with CV’s if available (missing data are allowed). The parameters that can be fit are carrying capacity (K), the intrinsic rate of population growth (r), the biomass in the first modeled year defined as a ratio of K (alpha.b0), the shape parameter for the surplus production function for the Fletcher/Schaefer fit (n), the average annual catch for years before catch data were recorded (cat0), variance parameters for each CPUE series, depending on the method used to weight the CPUE series, and the catchability (q) for each CPUE series. Priors can be used for all of the fitted parameters for a Bayesian fit. The program can be used to project the biomass trajectory under any constant catch or constant F harvest policy, with confidence bounds. Program outputs include decision tables showing the probability of stock rebuilding and other indicators of policy performance at specified time horizons.
 
