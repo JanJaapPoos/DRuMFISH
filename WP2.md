@@ -1363,14 +1363,14 @@ Outputs expected:
 * MSY, stock size at MSY, F at MSY, effort at MSY.
 
 Method of operation:
-1 Obtain starting estimates of the four parameters (B1, K, r, q);
-2 Starting with current estimates of B1, simulate the population through time according to the following equation: 
+1. Obtain starting estimates of the four parameters (B1, K, r, q);
+2. Starting with current estimates of B1, simulate the population through time according to the following equation: 
 B_(t+1)=(-B_t K(qf_t-r)e^(r-qf_t ))/(B_t re^(r-qf_t )+r(K-B_t )-qf_t K)
 
-3 For each year, compute estimated yield:
+3. For each year, compute estimated yield:
 Y ̂_t=(qf_t K)/r ln⁡((B_t re^(r-qf_t )-qf_t K+Kr-B_t r)/(Kr-qf_t K))
 
-4 During the simulation, a loss function on yield is minimized (best option is an additive proportional loss function with penalty to avoid B1 > K, i.e.:
+4. During the simulation, a loss function on yield is minimized (best option is an additive proportional loss function with penalty to avoid B1 > K, i.e.:
 loss=∑_(t=1)^t〖((Y_t-Y ̂_t)/Y_t )^2+dw_B (2 (B ̂_1-K)/(B ̂_1+K))^2 〗
 
 An alternative is a loss function on effort: 
@@ -1381,8 +1381,8 @@ loss=∑_(t=1)^t〖((f_t-f ̂_t)/f_t )^2+dw_B (2 (B ̂_1-K)/(B ̂_1+K))^2 〗
 
 Testing: 
 * 2 simulated populations (fishery following logistic dynamics): 
-  1 15% proportional noise added to the observed values of yield;
-  2 15% proportional noise added to the observed values of yield and to the observed values of effort.
+  1. 15% proportional noise added to the observed values of yield;
+  2. 15% proportional noise added to the observed values of yield and to the observed values of effort.
 * 1 real population: yellowfin tuna in East Atlantic (Fonteneau, 1989).
 * The additive proportional loss function with penalty is the best option, since constrains the estimates of B to more reasonable values but not degrades the other parameters. 
 * Estimates of MSY and effort at MSY seems to be quite robust to error in the data. 
@@ -1400,29 +1400,29 @@ Caveats:
 [Abstract:]http://fishbull.noaa.gov/922/prager.pdf) Surplus-production models, because of their simplicity and relatively undemanding data needs, are attractive tools for many stock assessments. This paper reviews the logistic production model, starting with the basic differential equation and continuing with a description of the model development without the equilibrium assumption. It then describes several extensions, including "tuning" the model to a biomass index; partitioning fishing mortality by gear, time, or area; and making projections. Computation of confidence intervals on quantities of interest (e.g. maximum sustainable yield (MSY), effort at MSY, level of stock biomass relative to the optimum level) can be done through bootstrapping, and the bootstrap can also be used to construct nonparametric tests of hypotheses about changes in catchability. To fit the model, an algorithm that uses a forward solution of the population equations can be implemented on a small computer. An example of the utility of surplus-production models (illustrating several of these extensions) is given. The example is loosely based on swordfish (Xiphias gladius) in the North Atlantic Ocean, but is not intended to describe the actual status of that stock.
 
 Data/information requirements:
-Yield (harvest in weight);
-Fishing effort (f);
-starting estimates for B1 (initial biomass), r (intrinsic growth rate of the population), k (carrying capacity) & q (catchability).
+* Yield (harvest in weight);
+* Fishing effort (f);
+* starting estimates for B1 (initial biomass), r (intrinsic growth rate of the population), k (carrying capacity) & q (catchability).
 	
 Assumptions:
-K & r assumed constant over time.
-Fishing mortality rate (F) is proportional to the fishing effort rate f, with proportionality constant q (F=qf).
-B1 < K
+* K & r assumed constant over time.
+* Fishing mortality rate (F) is proportional to the fishing effort rate f, with proportionality constant q (F=qf).
+* B1 < K
 	
 Outputs expected:
-Biomass level;
-Stock’s production during each period of time; 
-Estimates of the four parameters (k, q, r, and B1); 
-MSY, stock size at MSY, F at MSY, effort at MSY.
+* Biomass level;
+* Stock’s production during each period of time; 
+* Estimates of the four parameters (k, q, r, and B1); 
+* MSY, stock size at MSY, F at MSY, effort at MSY.
 	
 Method of operation:
-To the formulation described in Prager (1992) the following extensions are possible:
-Missing data: years with no effort (and therefore no catch) can easily be treated by defining the residual to be zero. When effort is known to have existed, but for which the data are missing or highly, effort levels can be estimated, simultaneously with the other parameters, for a limited number of such years within the series.
-Analysis of two or more gear types either the same year or serially. 
-Need to define effort (f) and yield (Y) time-variant and catchability (time-invariant) per each gear.
-Total instantaneous fishing mortality is:
-F_t=∑_(j=1)^J▒〖q_j F_jt 〗
-And the Yield will be: 
+* To the formulation described in Prager (1992) the following extensions are possible:
+  * Missing data: years with no effort (and therefore no catch) can easily be treated by defining the residual to be zero. When effort is known to have existed, but for which the data are missing or highly, effort levels can be estimated, simultaneously with the other parameters, for a limited number of such years within the series.
+  * Analysis of two or more gear types either the same year or serially. 
+  * Need to define effort (f) and yield (Y) time-variant and catchability (time-invariant) per each gear.
+  * Total instantaneous fishing mortality is:
+  * F_t=∑_(j=1)^J▒〖q_j F_jt 〗
+  * And the Yield will be: 
 Y ̂_jt=(q ̂_j F ̂_jt)/F ̂_t  Y ̂_t
 The total contribution will be composed from the sum of squared residuals for each fishery with non-zero effort.
 Incorporation of an external series of population biomass estimates. The external estimates are compared to the population estimates derived within the production model and the residuals incorporated in computation of the objective function. 
@@ -1431,15 +1431,15 @@ Bootstrap estimates of bias and variability, or to estimate bias corrections and
 Projections using the recruitment function and based on hypothetical catch or effort quotas. The modelled population can be projected forward in time by using the population equations and a proposed set of yields or effort rates.
 
 Testing: 
-North Atlantic swordfish; 2 analyses: one without and one with tuning index. Loss function on effort. Projections on 5 years. Bootstrap of 1000 iterations.
-Similar results between the 2 analyses; greatest difference in last year, since tuning index gives different signals compared to CPUE, therefore the final estimate is a compromise between the two. Estimated median biases were small in both analyses.
+* North Atlantic swordfish; 2 analyses: one without and one with tuning index. Loss function on effort. Projections on 5 years. Bootstrap of 1000 iterations.
+* Similar results between the 2 analyses; greatest difference in last year, since tuning index gives different signals compared to CPUE, therefore the final estimate is a compromise between the two. Estimated median biases were small in both analyses.
 
 Caveats:
-Large errors on Yield estimates during period of high yield to be expected due to the additive proportional error structure.
-Bias in the estimates may occur from errors in effort.
-The estimation of absolute levels of stock biomass Bt and fishing mortality rate Ft are usually not so precise. Also, the estimation of the starting biomass in the first year is quite imprecise.
-May not be suitable for species with marked seasonality in growth, reproduction and harvest. Also, may not work well when applied to stocks with large recruitment fluctuations unrelated to population size, especially when catch-effort series is short.
-No process error implemented (assumption that the production of biomass is a deterministic function of the current biomass). 
+* Large errors on Yield estimates during period of high yield to be expected due to the additive proportional error structure.
+* Bias in the estimates may occur from errors in effort.
+* The estimation of absolute levels of stock biomass Bt and fishing mortality rate Ft are usually not so precise. Also, the estimation of the starting biomass in the first year is quite imprecise.
+* May not be suitable for species with marked seasonality in growth, reproduction and harvest. Also, may not work well when applied to stocks with large recruitment fluctuations unrelated to population size, especially when catch-effort series is short.
+* No process error implemented (assumption that the production of biomass is a deterministic function of the current biomass). 
 
 ### Brandao, A. and D.S. Butterworth (2008). A “Replacement Yield” Model Fit to Catch and Survey Data for he South Coast Kingklip Resource of South Africa. 2008:WG-Dem:K:05.
 
@@ -1450,31 +1450,31 @@ Abstract: A “Replacement Yield” model is applied to the total annual catches
 Abstract: A Bayesian “Replacement Yield” model is applied to the total annual catches and the survey abundance estimates for the South African kingklip resource off the South coast and that off the West coast over the 1986 to 2012 period. A posterior median replacement yield (RY) of 1 412 tonnes is estimated for the South coast and of 4 526 tonnes for the West coast; these values are suggested as upper bounds for the catch limit recommendations. Setting the catch limit at the 25th percentile of the posterior distribution results in 1 408 t and 3 856 t for the South and West coasts respectively. The corresponding posterior median rates of increase over the last five years are estimated at 2% and 3% for the South and West coasts respectively.
 
 Data/information requirements:
-Annual catches
-Survey abundance indices, including coefficient of variation for each annual index value
+* Annual catches
+* Survey abundance indices, including coefficient of variation for each annual index value
 	
 Assumptions:
-Replacement Yield constant over the period considered
+* Replacement Yield constant over the period considered
 	
 Outputs expected:
-Replacement yield
-Biomass time series trend over last 5 years
+* Replacement yield
+* Biomass time series trend over last 5 years
 	
 Method of operation:
-Simple biomass population dynamics model:
-B_(y+1)=B_y+RY-C_y(B = biomass, RY = replacement yield, C = catch)
-Model is then fitted to survey abundance indices, assuming a log-normally distributed observation error
-Fitting performed by using Bayesian estimations and Markov Chain Monte Carlo (MCMC) algorithm (to generate random draws from model parameters, prior distribution of estimable parameters).
+* Simple biomass population dynamics model:
+* B_(y+1)=B_y+RY-C_y(B = biomass, RY = replacement yield, C = catch)
+* Model is then fitted to survey abundance indices, assuming a log-normally distributed observation error
+* Fitting performed by using Bayesian estimations and Markov Chain Monte Carlo (MCMC) algorithm (to generate random draws from model parameters, prior distribution of estimable parameters).
 	
 Testing:
-Method not simulation tested but applied for south African stocks (South Coast Kingklip, West Coast Kingklip)
+* Method not simulation tested but applied for south African stocks (South Coast Kingklip, West Coast Kingklip)
 	
 Caveats:
-Simple method
-Stock trend estimated only over a short time period (last 5 years)
+* Simple method
+* Stock trend estimated only over a short time period (last 5 years)
 	
 Ability to project forward/forecast:
-The assumptions of constant replacement yield (RY) limits the use of this method for forward projections/forecasting.
+* The assumptions of constant replacement yield (RY) limits the use of this method for forward projections/forecasting.
 
 ### Jonsen, I.D., Glass, A., Hubley, B. and J. Sameoto (2009). Georges Bank ‘a’ Scallop (Placopecten magellanicus) Framework Assessment: Data Inputs and Population Models. DFO Can. Sci. Advis. Sec. Res. Doc. 2009/034. iv + 76 p.
 
