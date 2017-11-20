@@ -47,29 +47,36 @@ The key ingredient in the evaluation of the performance of management procedures
 ### Biomass Dynamic Stocks
 Data limited stocks are usually assessed using production models [(Polacheck et al. 1993)](http://www.nrcresearchpress.com/doi/abs/10.1139/f93-284). They are not very data demanding and are easy to apply. One of the main problems in the fit of this type of models is the correlation between the parameter estimates. Hence if we want to condition an OM using a biomass dynamic model based on a production model fit we should incorporate the uncertainty inherent in the parameter estimates. We can do it easily in two steps making use of the variance covariance matrix of the stocks: 
 
-	Generate a random sample of parameters using a multi-variate normal distribution using the logarithm of the estimates of the parameters and their variance-covariance matrix.
-	 Reconstruct the historical population using the sampled parameters. Here there are two alternatives, use the mathematical formulas or refit SPiCT model fixing the parameters.
+1. Generate a random sample of parameters using a multi-variate normal distribution using the logarithm of the estimates of the parameters and their variance-covariance matrix.
+2. Reconstruct the historical population using the sampled parameters. Here there are two alternatives, use the mathematical formulas or refit SPiCT model fixing the parameters.
+
 An example of the application of this approach to red mulled, including R code, can be found in the FLR web page (http://www.flr-project.org/doc/Data_Poor_MSE_in_FLBEIA.html) or DrumFish mid-term report.
 
-Conditioning of Age Structured Stocks based on life history data
+### Conditioning of Age Structured Stocks based on life history data
 Simulating stocks using a biomass model is an over- simplification of the reality because populations, independently of what we know about them, are age structured. Furthermore, the performance of stock assessment models and HCRs in the management procedure should be done using OMs that are more biologically complex than the structure used in the management procedure.  Based on the work by (Carruthers, Punt et al. 2014) we use life history parameters to reconstruct the stocks. 
-	Collect:
-	 The biological data available in working groups, fishbase…
-	Catch and length frequency distribution data.
-	Stock  and spawning per recruit gives an intuitive frame to build sensible scenarios.
-	Steepness corresponds with the proportion of recruits produced by 20% of the virgin spawning stock. It determines the slope of the SRR in the origin. High steepness value is indicative of a resilient population.
-	Virgin biomass
-	Spawning per recruit. 
+1. Collect:
+ a. The biological data available in working groups, fishbase…
+ b. Catch and length frequency distribution data.
 
-	Growth and maturity. Usually Von Bertalanffy growth, length weight relationship and maturity parameters are available in the literature. These relationships can be combined to produce maturity at age ogives and weight at age values.  
-	Natural Mortality. There are several methods that relate life history parameters with natural mortality. Many of them are collected in the M.empirical function in fishmethods R package (https://cran.r-project.org/web/packages/fishmethods/index.html). In our example we calculate M for all the methods for which we have the necessary data and use the mean of the values obtained to condition natural mortality in the simulations. The estimates could also be used to condition a probability distribution like triangle distribution in triangle package. The parameters of this function are the ends of the range and the mean.
-	Catch at age. Catch or landing length frequency data can be transformed into age data using a knife edge assumption for age-length relationship or for example using the growth function available in FLa4a R package. This function allows introducing uncertainty in the age-length relationship using the variance-covariance matrix of the Von Bertalanffy parameters.
-	 Initial Biomass. If the stock was unfished, or nearly, in the start of the catch time series, the initial biomass could be assumed equal to pristine biomass and could be calculated using the exponential survival equation, the stock recruitment relationship and the natural mortality. Otherwise different fractions of pristine biomass can be taken as initial states. 
-	The historical stock abundance and exploitation rate is finally calculated projecting the initial biomass forward using, the exponential survival equation, the stock recruitment relationship, the natural mortality and the catch at age obtained in step 5. If catch at age is not available for the whole projection period, an assumption about the distribution of the catch or the selectivity pattern at age should be done.
+2. Stock  and spawning per recruit gives an intuitive frame to build sensible scenarios.
+ a. Steepness corresponds with the proportion of recruits produced by 20% of the virgin spawning stock. It determines the slope of the SRR in the origin. High steepness value is indicative of a resilient population.
+ b. Virgin biomass
+ c. Spawning per recruit. 
+
+3. Growth and maturity. Usually Von Bertalanffy growth, length weight relationship and maturity parameters are available in the literature. These relationships can be combined to produce maturity at age ogives and weight at age values.  
+
+4. Natural Mortality. There are several methods that relate life history parameters with natural mortality. Many of them are collected in the M.empirical function in fishmethods R package (https://cran.r-project.org/web/packages/fishmethods/index.html). In our example we calculate M for all the methods for which we have the necessary data and use the mean of the values obtained to condition natural mortality in the simulations. The estimates could also be used to condition a probability distribution like triangle distribution in triangle package. The parameters of this function are the ends of the range and the mean.
+
+5. Catch at age. Catch or landing length frequency data can be transformed into age data using a knife edge assumption for age-length relationship or for example using the growth function available in FLa4a R package. This function allows introducing uncertainty in the age-length relationship using the variance-covariance matrix of the Von Bertalanffy parameters.
+
+6. Initial Biomass. If the stock was unfished, or nearly, in the start of the catch time series, the initial biomass could be assumed equal to pristine biomass and could be calculated using the exponential survival equation, the stock recruitment relationship and the natural mortality. Otherwise different fractions of pristine biomass can be taken as initial states. 
+
+7. The historical stock abundance and exploitation rate is finally calculated projecting the initial biomass forward using, the exponential survival equation, the stock recruitment relationship, the natural mortality and the catch at age obtained in step 5. If catch at age is not available for the whole projection period, an assumption about the distribution of the catch or the selectivity pattern at age should be done.
 An example of the application of this approach to red mulled, including R code, can be found in the FLR web page (http://www.flr-project.org/doc/Data_Poor_MSE_in_FLBEIA.html) or DrumFish mid-term report.
-For some initial values the approach described above does not work because some of the age classes, or the whole population, extinguish before the end of the projection. Hence, the initial values and the production of the stock should be high enough to support the observed historical catch. To avoid this problem, we developed an alternative approach using the Bayesian approach. The approach consists in applying the same approach described above but adding in each year and iteration some random noise to the yearly recruitment and yearly catches, so the population can be projected until the end of the time series. The model is a simplification of the model described in (Fernandez, Cerviño et al. 2010). In this case we did not use any abundance index and we did not estimate discards. Furthermore, to generate recruitment we use the stock recruitment relationship in step 2.
 
-References
+For some initial values the approach described above does not work because some of the age classes, or the whole population, extinguish before the end of the projection. Hence, the initial values and the production of the stock should be high enough to support the observed historical catch. To avoid this problem, we developed an alternative approach using the Bayesian approach. The approach consists in applying the same approach described above but adding in each year and iteration some random noise to the yearly recruitment and yearly catches, so the population can be projected until the end of the time series. The model is a simplification of the model described in [(Fernandez et al. 2010)](https://academic.oup.com/icesjms/article/67/6/1185/737306). In this case we did not use any abundance index and we did not estimate discards. Furthermore, to generate recruitment we use the stock recruitment relationship in step 2.
+
+## References
 Carruthers, T. R., A. E. Punt, et al. (2014). "Evaluating methods for setting catch limits in data-limited fisheries." Fisheries Research 153: 48-68.
 Fernandez, C., S. Cerviño, et al. (2010). "Stock assessment and projections incorporating discard estimates in some years: an application to the hake stock in ICES Divisions VIIIc and IXa 
 10.1093/icesjms/fsq029." ICES Journal of Marine Science: Journal du Conseil 67(6): 1185-1197.
