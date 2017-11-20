@@ -1,13 +1,13 @@
 # FLBEIA
 
-[FLBEIA (Garcia, Sánchez et al. 2017)](http://www.sciencedirect.com/science/article/pii/S2352711017300171) is a bio-economic simulation model that follows the management strategy approach. It is multi-stock and multifleet and uncertainty is introduced using montecarlo approach. The stocks can be described using different stocks dynamics, in biomass or age structured. In turn the activity of the fleets is divided in métiers that share the same catch profile.  The main steps of the management process are modeled explicitly. Hence, the performance of the stock assessment models and the harvest control rules as part of the management process can be tested.
+[FLBEIA (Garcia et al. 2017)](http://www.sciencedirect.com/science/article/pii/S2352711017300171) is a bio-economic simulation model that follows the management strategy approach. It is multi-stock and multifleet and uncertainty is introduced using montecarlo approach. The stocks can be described using different stocks dynamics, in biomass or age structured. In turn the activity of the fleets is divided in métiers that share the same catch profile.  The main steps of the management process are modeled explicitly. Hence, the performance of the stock assessment models and the harvest control rules as part of the management process can be tested.
 In DrumFish we have added new elements to the model in order to facilitate the evaluation of management procedures in a data limited and mixed fisheries context. 
 
 ## SPiCT and a4a
-Wrappers of a4a (Jardim, Millar et al. 2014) and SPicT (Pedersen and Berg 2017) models have been developed and incorporated to the FLBEIA R package.  Now, these models can be used within the management procedure to produce estimates of the real stock abundance and exploitation rate simulated in the Operating Model. The models can be combined with observation errors and Harvest control rules to carry out an integrate evaluation of the performance of the management procedures.
+Wrappers of a4a [(Jardim et al. 2014)](https://academic.oup.com/icesjms/article/72/1/232/2804293) and SPicT [(Pedersen and Berg 2017)] (http://onlinelibrary.wiley.com/doi/10.1111/faf.12174/abstract) models have been developed and incorporated to the FLBEIA R package.  Now, these models can be used within the management procedure to produce estimates of the real stock abundance and exploitation rate simulated in the Operating Model. The models can be combined with observation errors and Harvest control rules to carry out an integrate evaluation of the performance of the management procedures.
 
 ## MultiStock Harvest Control Rule
-A multistock HCR (Garcia, Prellezo et al. 2016) have been defined and incorporated to the library. This HCR produces simultaneous management advice for the stocks selected. The main aim of the HCR is to maximize fishing opportunities while ensuring sustainability of the stocks. To achieve it we imposed the restrictions below:
+A multistock HCR (Garcia et al. 2016) have been defined and incorporated to the library. This HCR produces simultaneous management advice for the stocks selected. The main aim of the HCR is to maximize fishing opportunities while ensuring sustainability of the stocks. To achieve it we imposed the restrictions below:
 1. Produce compatible catch advice among the stocks.
 2. Take the most out of fishing opportunities.
 3. Result in fishing mortality levels compatible with MSY ranges.
@@ -26,23 +26,26 @@ Fadv<sub>st</sub> = μ<sub>0</sub>∙Fsq<sub>st</sub> =max<sub>st</sub> (Fmsy<su
 
 A more conservative approach can be obtained using the mean instead of the maximum in the equation above, i.e:
 
-Fadv<sub>st</sub>= μ<sub>0</sub>∙Fsq<sub>st</sub> =mean_st (Fmsy_st/Fsq_st )∙Fsq_st
+Fadv<sub>st</sub>= μ<sub>0</sub>∙Fsq<sub>st</sub> =mean<sub>st</sub> (Fmsy<sub>st</sub>/Fsq<sub>st</sub> )∙Fsq<sub>st</sub>
 
-	Compatible with MSY ranges
-The F advice in the previous step could be higher than the upper bound of the fishing mortality range of some stocks. Hence, a second multiplier is applied to ensure that F_"advice"  falls within the ranges for all the stocks, i.e:
-If for any st :
+### 3 Compatible with MSY ranges
+The F advice in the previous step could be higher than the upper bound of the fishing mortality range of some stocks. Hence, a second multiplier is applied to ensure that F<sub>advice</sub> falls within the ranges for all the stocks, i.e:
+If for any st:
 
 " " 〖F"adv" 〗_st={■(Fadv_(0,st)=μ_0∙Fsq_st&"if    "  μ_0∙Fsq_st≤〖F"upp" 〗_st  "for all"  st,@μ_1∙μ_0∙Fsq_st=min_st (Fupp_st/Fadv_(0,st) )∙μ_0∙Fsq_st&"if for any "  〖st     μ〗_0∙Fsq_st>〖F"upp" 〗_st )┤.
+
 where Fupp is the upper bound of fishing mortality range.
-In a TAC management system  " " 〖F"adv" 〗_st is translated afterwards in catch using the corresponding catch production function (i.e Baranov catch equation). 
-	Stocks without analytical assessment.
+
+In a TAC management system  Fadv<sub>st</sub> is translated afterwards in catch using the corresponding catch production function (i.e Baranov catch equation). 
+
+### 4 Stocks without analytical assessment.
 For stocks without analytical stock assessment the TAC can be generated using a mathematical relationship between the catch of the stock and the catch of the stock(s) with analytical assessment based on historical catch data.  
   
-Conditioning of the Operating Model
-The key ingredient in the evaluation of the performance of management procedures is the conditioning of the operating model (OM). To get reliable results, the conditioning of the operating model should produce a good representation of the system including the inherent uncertainty (Punt, Butterworth et al. 2016). To ease the conditioning of the stocks we have defined three alternative ways to condition data limited stocks which depend on the data used and the structure of the stocks.
+## Conditioning of the Operating Model
+The key ingredient in the evaluation of the performance of management procedures is the conditioning of the operating model (OM). To get reliable results, the conditioning of the operating model should produce a good representation of the system including the inherent uncertainty [(Punt et al. 2016)](http://onlinelibrary.wiley.com/doi/10.1111/faf.12104/abstract). To ease the conditioning of the stocks we have defined three alternative ways to condition data limited stocks which depend on the data used and the structure of the stocks.
 
-Biomass Dynamic Stocks
-Data limited stocks are usually assessed using production models (Polacheck, Hilborn et al. 1993). They are not very data demanding and are easy to apply. One of the main problems in the fit of this type of models is the correlation between the parameter estimates. Hence if we want to condition an OM using a biomass dynamic model based on a production model fit we should incorporate the uncertainty inherent in the parameter estimates. We can do it easily in two steps making use of the variance covariance matrix of the stocks: 
+### Biomass Dynamic Stocks
+Data limited stocks are usually assessed using production models [(Polacheck et al. 1993)](http://www.nrcresearchpress.com/doi/abs/10.1139/f93-284). They are not very data demanding and are easy to apply. One of the main problems in the fit of this type of models is the correlation between the parameter estimates. Hence if we want to condition an OM using a biomass dynamic model based on a production model fit we should incorporate the uncertainty inherent in the parameter estimates. We can do it easily in two steps making use of the variance covariance matrix of the stocks: 
 
 	Generate a random sample of parameters using a multi-variate normal distribution using the logarithm of the estimates of the parameters and their variance-covariance matrix.
 	 Reconstruct the historical population using the sampled parameters. Here there are two alternatives, use the mathematical formulas or refit SPiCT model fixing the parameters.
