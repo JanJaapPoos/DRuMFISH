@@ -32,6 +32,8 @@ Fadv<sub>st</sub>= μ<sub>0</sub>∙Fsq<sub>st</sub> =mean<sub>st</sub> (Fmsy<su
 The F advice in the previous step could be higher than the upper bound of the fishing mortality range of some stocks. Hence, a second multiplier is applied to ensure that F<sub>advice</sub> falls within the ranges for all the stocks, i.e:
 If for any st:
 
+![My image](https://github.com/JanJaapPoos/DRuMFISH/tree/master/img/BEIA_eqn.JPG)
+
 " " 〖F"adv" 〗_st={■(Fadv_(0,st)=μ_0∙Fsq_st&"if    "  μ_0∙Fsq_st≤〖F"upp" 〗_st  "for all"  st,@μ_1∙μ_0∙Fsq_st=min_st (Fupp_st/Fadv_(0,st) )∙μ_0∙Fsq_st&"if for any "  〖st     μ〗_0∙Fsq_st>〖F"upp" 〗_st )┤.
 
 where Fupp is the upper bound of fishing mortality range.
