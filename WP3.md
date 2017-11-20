@@ -12,17 +12,21 @@ A multistock HCR (Garcia, Prellezo et al. 2016) have been defined and incorporat
 2. Take the most out of fishing opportunities.
 3. Result in fishing mortality levels compatible with MSY ranges.
 
-### Compatible catch advice
-If we assume a linear relationship between fishing mortality and Effort, with catchability (q), the proportionality parameter i.e F = q x Effort. For a compatible fishing mortality advice, it is enough to multiply the current fishing mortalities, i.e the status quo fishing mortalities F_sq, by the same parameter, μ. Mathematically:
+### 1. Compatible catch advice
+If we assume a linear relationship between fishing mortality and Effort, with catchability (q), the proportionality parameter i.e F = q x Effort. For a compatible fishing mortality advice, it is enough to multiply the current fishing mortalities, i.e the status quo fishing mortalities F<sub>sq</sub>, by the same parameter, μ. Mathematically:
+
 Fadv<sub>st</sub>= μ∙Fsq<sub>st</sub>
-Where st denotes the subscript for stock and F_"adv"  the fishing mortality that will correspond with the TAC advice. Now the problem is how to define μ to fulfill the second and third properties.
-	Uses most out of fishing opportunities
-If the F_"advice"  for all the stocks is equal or higher than the corresponding F_"msy" , all fishing opportunities corresponding with MSY framework will be used. Then, μ_0 is defined as:
-Fadv_st= μ_0∙Fsq_st   =max_st (Fmsy_st/Fsq_st )∙Fsq_st
+
+Where st denotes the subscript for stock and F<sub>adv</sub> the fishing mortality that will correspond with the TAC advice. Now the problem is how to define μ to fulfill the second and third properties.
+	
+### 2 Uses most out of fishing opportunities
+If the F<sub>advice</sub> for all the stocks is equal or higher than the corresponding F<sub>msy</sub>, all fishing opportunities corresponding with MSY framework will be used. Then, μ<sub>0</sub> is defined as:
+
+Fadv<sub>st</sub> = μ<sub>0</sub>∙Fsq<sub>st</sub> =max<sub>st</sub> (Fmsy<sub>st</sub>/Fsq<sub>st</sub>)∙Fsq<sub>st</sub>
+
 A more conservative approach can be obtained using the mean instead of the maximum in the equation above, i.e:
 
-
-Fadv_st= μ_0∙Fsq_st   =mean_st (Fmsy_st/Fsq_st )∙Fsq_st
+Fadv<sub>st</sub>= μ<sub>0</sub>∙Fsq<sub>st</sub> =mean_st (Fmsy_st/Fsq_st )∙Fsq_st
 
 	Compatible with MSY ranges
 The F advice in the previous step could be higher than the upper bound of the fishing mortality range of some stocks. Hence, a second multiplier is applied to ensure that F_"advice"  falls within the ranges for all the stocks, i.e:
