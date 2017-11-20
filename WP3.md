@@ -4,7 +4,7 @@
 In DrumFish we have added new elements to the model in order to facilitate the evaluation of management procedures in a data limited and mixed fisheries context. 
 
 ## SPiCT and a4a
-Wrappers of a4a [(Jardim et al. 2014)](https://academic.oup.com/icesjms/article/72/1/232/2804293) and SPicT [(Pedersen and Berg 2017)] (http://onlinelibrary.wiley.com/doi/10.1111/faf.12174/abstract) models have been developed and incorporated to the FLBEIA R package.  Now, these models can be used within the management procedure to produce estimates of the real stock abundance and exploitation rate simulated in the Operating Model. The models can be combined with observation errors and Harvest control rules to carry out an integrate evaluation of the performance of the management procedures.
+Wrappers of a4a [(Jardim et al. 2014)](https://academic.oup.com/icesjms/article/72/1/232/2804293) and SPicT [(Pedersen and Berg 2017)](http://onlinelibrary.wiley.com/doi/10.1111/faf.12174/abstract) models have been developed and incorporated to the FLBEIA R package.  Now, these models can be used within the management procedure to produce estimates of the real stock abundance and exploitation rate simulated in the Operating Model. The models can be combined with observation errors and Harvest control rules to carry out an integrate evaluation of the performance of the management procedures.
 
 ## MultiStock Harvest Control Rule
 A multistock HCR (Garcia et al. 2016) have been defined and incorporated to the library. This HCR produces simultaneous management advice for the stocks selected. The main aim of the HCR is to maximize fishing opportunities while ensuring sustainability of the stocks. To achieve it we imposed the restrictions below:
