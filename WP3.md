@@ -77,15 +77,21 @@ An example of the application of this approach to red mulled, including R code, 
 For some initial values the approach described above does not work because some of the age classes, or the whole population, extinguish before the end of the projection. Hence, the initial values and the production of the stock should be high enough to support the observed historical catch. To avoid this problem, we developed an alternative approach using the Bayesian approach. The approach consists in applying the same approach described above but adding in each year and iteration some random noise to the yearly recruitment and yearly catches, so the population can be projected until the end of the time series. The model is a simplification of the model described in [(Fernandez et al. 2010)](https://academic.oup.com/icesjms/article/67/6/1185/737306). In this case we did not use any abundance index and we did not estimate discards. Furthermore, to generate recruitment we use the stock recruitment relationship in step 2.
 
 ## References
-Carruthers, T. R., A. E. Punt, et al. (2014). "Evaluating methods for setting catch limits in data-limited fisheries." Fisheries Research 153: 48-68.
-Fernandez, C., S. Cerviño, et al. (2010). "Stock assessment and projections incorporating discard estimates in some years: an application to the hake stock in ICES Divisions VIIIc and IXa 
-10.1093/icesjms/fsq029." ICES Journal of Marine Science: Journal du Conseil 67(6): 1185-1197.
-Garcia, D., R. Prellezo, et al. (2016). "A multi-stock harvest control rule as a step towards an ecosystem based fisheries management." Working Document presented to the ICES WKMIXFISH working group, October 2016 and in the ICES annual sciencitic conference, Riga (2016).
-Garcia, D., S. Sánchez, et al. (2017). "FLBEIA : A simulation model to conduct Bio-Economic evaluation of fisheries management strategies." SoftwareX 6: 141-147.
-Jardim, E., C. P. Millar, et al. (2014). "What if stock assessment is as simple as a linear model? The a4a initiative." ICES Journal of Marine Science: Journal du Conseil.
-Pedersen, M. W. and C. W. Berg (2017). "A stochastic surplus production model in continuous time." Fish and Fisheries 18(2): 226-243.
-Polacheck, T., R. Hilborn, et al. (1993). "Fitting Surplus Production Models: Comparing Methods and Measuring Uncertainty." Canadian Journal of fisheries and Aquatic Sciences 50: 2597-2607.
-Punt, A. E., D. S. Butterworth, et al. (2016). "Management strategy evaluation: best practices." Fish and Fisheries 17(2): 303-334.
+Carruthers, T. R., A. E. Punt, et al. (2014) "Evaluating methods for setting catch limits in data-limited fisheries." Fisheries Research 153: 48-68.
+
+Fernandez, C., S. Cerviño, et al. (2010) "Stock assessment and projections incorporating discard estimates in some years: an application to the hake stock in ICES Divisions VIIIc and IXa 10.1093/icesjms/fsq029." ICES Journal of Marine Science: Journal du Conseil 67(6): 1185-1197.
+
+Garcia, D., R. Prellezo, et al. (2016) "A multi-stock harvest control rule as a step towards an ecosystem based fisheries management." Working Document presented to the ICES WKMIXFISH working group, October 2016 and in the ICES annual sciencitic conference, Riga (2016).
+
+Garcia, D., S. Sánchez, et al. (2017) "FLBEIA: A simulation model to conduct Bio-Economic evaluation of fisheries management strategies." SoftwareX 6: 141-147.
+
+Jardim, E., C. P. Millar, et al. (2014) "What if stock assessment is as simple as a linear model? The a4a initiative." ICES Journal of Marine Science: Journal du Conseil.
+
+Pedersen, M. W. and C. W. Berg (2017) "A stochastic surplus production model in continuous time." Fish and Fisheries 18(2): 226-243.
+
+Polacheck, T., R. Hilborn, et al. (1993) "Fitting Surplus Production Models: Comparing Methods and Measuring Uncertainty." Canadian Journal of fisheries and Aquatic Sciences 50: 2597-2607.
+
+Punt, A. E., D. S. Butterworth, et al. (2016) "Management strategy evaluation: best practices." Fish and Fisheries 17(2): 303-334.
 
 
 
