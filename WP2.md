@@ -321,7 +321,7 @@ Outputs expected:
 Method of operation:
 * The method applies a Graham-Shaefer surplus production model, starting with prior ranges for carrying capacity K and intrinsic growth rate r, and including available catch data:
 
-B<sub>(t+1)</sub>=B<sub>t</subh>+rB<sub>t</sub> (1-B<sub>t</sub>/B<sub>0</sub> )-C<sub>t</sub>
+B<sub>(t+1)</sub>=B<sub>t</sub>+rB<sub>t</sub> (1-B<sub>t</sub>/B<sub>0</sub> )-C<sub>t</sub>
 
 * A series of assumed depletion levels is set up:
 
@@ -717,12 +717,12 @@ Data/information requirements:
 Assumptions:
 * Assumes a model in which catches for a fish population increase during fisheries development and subsequently decline as fisheries become increasingly exploited. 
 * Given a time series of catch data, the total production per year is calculated. This is then used to classify the status of the fishery in any given year into one of the following (arbitrary) development stages:
-  * Undeveloped: Ccur before Cmax and Ccur < 0.1 Cmax.
-  * Developing: Ccur before Cmax and 0.1 Cmax < Ccur < 0.5 Cmax.
-  * Fully exploited: Ccur > 0.5 Cmax.
-  * Overfished: Ccur after Cmax and 0.1 Cmax < Ccur < 0.5 Cmax.
-  * Collapsed/Closed: Ccur after Cmax and Ccur < 0.1 Cmax.
-Where Ccur is the current catch and Cmax is the maximum catch in the time series.
+  * Undeveloped: C<sub>cur</<sub> before C<sub>max</<sub> and C<sub>cur</sub> < 0.1 C<sub>max</<sub>.
+  * Developing: C<sub>cur</<sub> before C<sub>max</<sub> and 0.1 C<sub>max</<sub> < C<sub>cur</<sub> < 0.5 C<sub>max</<sub>.
+  * Fully exploited: C<sub>cur</<sub> > 0.5 C<sub>max</<sub>.
+  * Overfished: C<sub>cur</<sub> after C<sub>max</<sub> and 0.1 C<sub>max</<sub> < C<sub>cur</<sub> < 0.5 C<sub>max</<sub>.
+  * Collapsed/Closed: C<sub>cur</<sub> after C<sub>max</<sub> and C<sub>cur</<sub> < 0.1 C<sub>max</<sub>.
+Where C<sub>cur</<sub> is the current catch and C<sub>max</<sub> is the maximum catch in the time series.
 * The first and last year are excluded as the ‘after maximum year’ and ‘before maximum year’ criteria cannot be applied to them.
 * Assumes catch data are representative of changes in abundance.
 
@@ -824,7 +824,7 @@ Caveats:
 
 ### [Karnauskas, M., McClellan, D.B., Wiener, J.W., Miller, M.W. and E.A. Babcock (2011). Inferring trends in a small-scale, data-limited tropical fishery based on fishery-independent data. Fish. Res. 111: 40-52.](http://www.sciencedirect.com/science/article/pii/S016578361100227X)
 
-[Abstract:](http://www.sciencedirect.com/science/article/pii/S016578361100227X) Size-based indicators have emerged as useful tools to analyze the status of fisheries which lack fishery dependent data over long time series, such as many coral reef fisheries. In this study, we calculate a number of size-based indicators for the Haitian fishery at the remote Navassa Island, where a reef fish visual census (RVC) data set is available over an 8-year study period (2002–2009). We also calculate the slope of the size spectrum indicator within a Bayesian framework, which allows for potential biases inherent in the RVC method to be accounted for in credibility intervals around parameter estimates. Results of our analyses suggest that stocks targeted by traps declined from 2002 to 2004, followed by a period of increase from 2006 to 2009. The slope of the size spectrum declined from 2002 to 2004 and remained constant for the remainder of the study period, and this pattern was driven by a decrease in abundance of larger species targeted by hook-and-line. Analysis of the Lmax spectrum also indicated a decrease in the occurrence rates of larger species throughout the study period. Our methods can be applied to fisheries in other areas where limited fishery-independent data and no fishery-dependent data are available.
+[Abstract:](http://www.sciencedirect.com/science/article/pii/S016578361100227X) Size-based indicators have emerged as useful tools to analyze the status of fisheries which lack fishery dependent data over long time series, such as many coral reef fisheries. In this study, we calculate a number of size-based indicators for the Haitian fishery at the remote Navassa Island, where a reef fish visual census (RVC) data set is available over an 8-year study period (2002–2009). We also calculate the slope of the size spectrum indicator within a Bayesian framework, which allows for potential biases inherent in the RVC method to be accounted for in credibility intervals around parameter estimates. Results of our analyses suggest that stocks targeted by traps declined from 2002 to 2004, followed by a period of increase from 2006 to 2009. The slope of the size spectrum declined from 2002 to 2004 and remained constant for the remainder of the study period, and this pattern was driven by a decrease in abundance of larger species targeted by hook-and-line. Analysis of the L<sub>max</sub> spectrum also indicated a decrease in the occurrence rates of larger species throughout the study period. Our methods can be applied to fisheries in other areas where limited fishery-independent data and no fishery-dependent data are available.
 
 Data/information requirements:
 * Limited fishery-independent data
@@ -841,13 +841,13 @@ Outputs expected:
   * Time series of mean length and density for individual species
   * Time series of density for fish communities
   * Slope of size spectrum indicator for fish communities
-  * Lmax spectra for fish communities
+  * L<sub>max</sub> spectra for fish communities
 	
 Method of operation:
 * A three-way mixed-effects analysis of variance (ANOVA) is used to analyse changes in length for each species.
 * A three-way ANOVA was used on log-transformed densities to analyse changes in mean density over time for the entire fished community and some sub-communities. For individual species and one sub-community the delta lognormal method was used to test for trends due to the large number of zero counts.
 * The size spectrum slope indicator is calculated using a Bayesian hierarchical model to account for potential biases inherent in the sampling method.
-* Fish species were assigned to one of six Lmax classes. The changes in mean density were analysed for each group using a three-way ANOVA and the delta lognormal method on log-transformed densities.
+* Fish species were assigned to one of six L<sub>max</sub> classes. The changes in mean density were analysed for each group using a three-way ANOVA and the delta lognormal method on log-transformed densities.
 * The analysis was run using both the full data set from the unbalanced survey design and on a balanced subsample of the data set. There was little difference in the results.
 * Five models were considered for the slope of the size spectrum for the entire fished community. The final model was chosen based on the lowest deviance information criterion (DIC) value.
 	
@@ -870,7 +870,7 @@ Assumptions:
 * This model makes the same assumptions and uses the same classification system as Froese and Kesner-Reyes (2002), except:
   * There is no ‘undeveloped stage’. This is combined with the ‘developing’ stage.
   * Stocks that have a peak in catch in the final year of the time series are classified as ‘developing’.
-  * An additional category ‘recovery’, which is a form of stock (re-) development, is defined as: Ccur & Cmin after Cmax, Ccur after Cmin, Cmin < 0.1 Cmax and Ccur < 0.5 Cmax. Where Cmin is a ‘post-maximum minimum’, i.e. the minimum landing occurring after the maximum landing.
+  * An additional category ‘recovery’, which is a form of stock (re-) development, is defined as: C<sub>cur</sub> & C<sub>min</sub> after C<sub>max</sub>, C<sub>cur</sub> after C<sub>min</sub>, C<sub>min</sub> < 0.1 C<sub>max</sub> and C<sub>cur</sub> < 0.5 C<sub>max</sub>. Where C<sub>min</sub> is a ‘post-maximum minimum’, i.e. the minimum landing occurring after the maximum landing.
 	
 Outputs expected:
 * A stock-status plot showing the percentage of stocks by status over time.
@@ -989,7 +989,7 @@ The aim of this paper was to use simulation to test the performance of Depletion
 
 Testing:
 An operating model was used to simulate the population dynamics of two life-histories, flatfish and rockfish, common on the US west coast. The HLs estimated by DCAC, DB-SRA and SS (10,000 parameter draws) were compared to the true overfishing level (OFL) for each life-history.
-* Four cases were created to explore the effect of mis-specifications of the biology-based parameters (natural mortality, M, and the ratio of FMSY to M) for the two life-histories: (1) M and FMSY/M were centred about the true values, (2) FMSY/M was centred about an incorrect value, (3) M was centred about an incorrect value and (4) M and FMSY/M were centred about incorrect values. Three catch histories were used to examine the effect of catch history on estimation performance: (1) constant catch, (2) ramp up and (3) ramp and decline. Three additional analyses were applied to DCAC to explore the implications of truncating the catch history: use only the years where the catches were at least (1) 10%, (2) 20% and (3) 30% of the maximum.
+* Four cases were created to explore the effect of mis-specifications of the biology-based parameters (natural mortality, M, and the ratio of F<sub>MSY</sub> to M) for the two life-histories: (1) M and F<sub>MSY</sub>/M were centred about the true values, (2) FMSY/M was centred about an incorrect value, (3) M was centred about an incorrect value and (4) M and F<sub>MSY</sub>/M were centred about incorrect values. Three catch histories were used to examine the effect of catch history on estimation performance: (1) constant catch, (2) ramp up and (3) ramp and decline. Three additional analyses were applied to DCAC to explore the implications of truncating the catch history: use only the years where the catches were at least (1) 10%, (2) 20% and (3) 30% of the maximum.
   * DCAC and DB-SRA were robust to mis-specification of the biology-based parameters for the flatfish life-history with estimates of the HL low relative to the true OFL values.
   * DCAC and DB-SRA were more sensitive to mis-specification of the distribution of M for the rockfish life-history, especially when both biology-based parameters were mis-specified. 
 * A fifth case was created to examine the effect of an underestimation in the final depletion.
@@ -999,7 +999,7 @@ An operating model was used to simulate the population dynamics of two life-hist
   
 Method of operation:
 * Multiple runs examining the impact of assumed depletion should be conducted routinely to determine the potential range of HLs when using DCAC or DB-SRA.
-* The analysis should examine various parameter distributions for the biology-based parameters (natural mortality and the ratio FMSY/M).
+* The analysis should examine various parameter distributions for the biology-based parameters (natural mortality and the ratio F<sub>MSY</sub>/M).
 
 ### [Carruthers, T.R., Walters, C.J. and M.K. McAllister (2012). Evaluating methods that classify fisheries stock status using only fisheries catch data. Fish. Res. 119-120: 66-79.](http://www.sciencedirect.com/science/article/pii/S0165783611003894)
 
@@ -1033,51 +1033,8 @@ This paper evaluates the reliability of the [Froese and Kesner-Reyes (2002)](#fr
 
 Data/information requirements:
 Adapted from the paper (P* is the probability of overfishing):
-Type	Methods considered	Scalers	Catch	Depletion	Fmsy/M	Bmsy/B0	M	Age at 50% mat	Current biomass	Von Bert. K	Length at 1st mat
-Catch-based static	Mean Catch 3 
-Median catch 10 years
-3rd highest catch	None	X								
-Catch-based dynamic	DACS (depletion-adjusted catch scaler)	75%
-100%	X	X							
-Depletion-based static	DB-SRA with depletion fixed at 40% B0	69.4%
-83.4%
-91.3%	X		X	X	X	X			
-	DCAC with depletion fixed at 40% B0	69.4%
-83.4%
-91.3%	X		X	X	X				
-Depletion-based dynamic	DB-SRA with depletion adjusted	25% P*
-50% P*	X	X	X	X	X	X			
-	DCAC with depletion adjusted	25% P*
-50% P*	X	X	X	X	X				
-Abundance-based dynamic	Life history analysis
-(Beddington and Kirkwood 2005)	75%
-100%							X	X	X
-	Fmsy/M assumed low (0.5)
-Fmsy/M assumed high (0.8)	75%
-100%					X		X		
-Reference cases	Static:
-Current Catch
-Current Effort	None	X					X		X	X
-	Dynamic:
-Delay difference^	75%
-100%	X					X		X	X
+![TableWp2](img/TableWP2.PNG "tableWP2")
 ^Note, this method also included effort data
-
-| Type  |Method considered |Scalars  |Catch |Depletion |FMSY/M |BMSY/B0 |M |Age at 50% mat |Current B |VB K  |L at 1st mat   |   |   |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Catch-based static   | Mean catch 3  | None   | x  |   |   |   |   |   |   |   |   |   |   |
-|                      | Median catch 10 yrs   | None   | x  |   |   |   |   |   |   |   |   |   |   |
-|                      | 3rd highest catch     | None | x  |   |   |   |   |   |   |   |   |   |   |
-|  Catch-based dynamic | DACS( depletion adjusted catch scalar  |75%/100%   | x  | x  |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 
 Assumptions:
 See description of methods elsewhere
