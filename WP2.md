@@ -1333,16 +1333,16 @@ Outputs expected:
 Method of operation:
 1. Obtain starting estimates of the four parameters (B1, K, r, q);
 2. Starting with current estimates of B1, simulate the population through time according to the following equation: 
-B_(t+1)=(-B_t K(qf_t-r)e^(r-qf_t ))/(B_t re^(r-qf_t )+r(K-B_t )-qf_t K)
+![PragerEqn1](img/PragerEqn1.PNG "prager1")
 
 3. For each year, compute estimated yield:
-Y ̂_t=(qf_t K)/r ln⁡((B_t re^(r-qf_t )-qf_t K+Kr-B_t r)/(Kr-qf_t K))
+![PragerEqn2](img/PragerEqn2.PNG "prager2")
 
 4. During the simulation, a loss function on yield is minimized (best option is an additive proportional loss function with penalty to avoid B1 > K, i.e.:
-loss=∑_(t=1)^t〖((Y_t-Y ̂_t)/Y_t )^2+dw_B (2 (B ̂_1-K)/(B ̂_1+K))^2 〗
+![PragerEqn3](img/PragerEqn3.PNG "prager3")
 
 An alternative is a loss function on effort: 
-loss=∑_(t=1)^t〖((f_t-f ̂_t)/f_t )^2+dw_B (2 (B ̂_1-K)/(B ̂_1+K))^2 〗
+![PragerEqn4](img/PragerEqn4.PNG "prager4")
 
 * The variability in the estimated quantities is implemented using bootstrap method with resampled residuals.
 * Auxiliary series of population biomass estimates can be incorporated, either as absolute values or index of biomass.
