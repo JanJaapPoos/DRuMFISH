@@ -520,7 +520,7 @@ Outputs expected:
 Method of operation:
 * Based on the ideas of Froese (2004), calculation of the three values:
 
-* ![Pmat]() 
+* ![Pmat](img/Pmat.PNG "pmat") 
 
 (PL is proportion of catch that is in length-class L, Lmat is length at 50% maturity, L<sub>max</sub> is maximum length, L<sub>opt</sub> is the length at which the biomass of a cohort is maximized)
 * Calculation of objective value: P<sub>obj</sub> = P<sub>mat</sub> + P<sub>opt</sub>+P<sub>mega</sub>
