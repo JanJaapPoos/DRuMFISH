@@ -268,7 +268,7 @@ Data/information requirements:
 * Prior distributions for model parameters
   
 Assumptions:
-* BMSY is equal to half of the average unfished biomass.
+* B<sub>MSY</sub> is equal to half of the average unfished biomass.
 * Effort enters and exits the fishery as a function of the difference between current biomass and biomass at bioeconomic equilibrium, and follows semipredictable dynamics.
 * There is a yield that will produce both a biological and economic (average revenue equals average costs) equilibrium.
 * Nominal effort is proportional to fishing mortality, where either the catchability coefficient is constant or fluctuates around an average value due to random variation in fish vulnerability and fishing efficiency.
@@ -321,11 +321,11 @@ Outputs expected:
 Method of operation:
 * The method applies a Graham-Shaefer surplus production model, starting with prior ranges for carrying capacity K and intrinsic growth rate r, and including available catch data:
 
-B_(t+1)=B_t+rB_t (1-B_t/B_0 )-C_t
+B<sub>(t+1)</sub>=B<sub>t</subh>+rB<sub>t</sub> (1-B<sub>t</sub>/B<sub>0</sub> )-C<sub>t</sub>
 
 * A series of assumed depletion levels is set up:
 
-D=B_T/K
+D=B<sub>T</sub>/K
 
 * The model systematically searches through possible parameter spaces retaining feasible parameter values and discarding mathematically and biologically unfeasible values to progressively derive basic parameters.
 * Stochastic simulations are carried out using the base parameters to obtain biomass trajectories and additional parameters.
@@ -410,7 +410,7 @@ Method of operation:
 * Actual yield was calculated by transforming length into weight multiplying weight classes with the respective frequencies, and summing over all classes. 
 * For the estimation of potential yield, Lopt was derived from growth parameters as:
 
-Lopt = L∞ x [3/(3 + M/K)]
+L<sub>opt</sub> = L∞ x [3/(3 + M/K)]
 
 * Frequencies in lower length classes reduced by natural mortality and added to the length class containing Lopt. Multiplying the frequency of the Lopt class with the corresponding weight gave the potential yield. Specimens in length classes above Lopt excluded. 
 * A ‘Length–Frequency Wizard’ to perform these calculations is available in [FishBase](http://www.fishbase.org).
@@ -432,7 +432,7 @@ Data/information requirements:
 * An age-length relationship (e.g., von Bertalanffy)
 * A length-egg production (or biomass) relationship. If not available, a length-weight relationship may be substituted, as weight can be correlated with fecundity
 * An estimate of M
-* Size boundaries for the selectivity of F (without independent knowledge of the selectivity ogive, the size ranges over which F operates can be arbitrarily chosen). Here lc (length at first capture) and lr (length at full recruitment) were chosen a priori based on characteristics of the catch data.
+* Size boundaries for the selectivity of F (without independent knowledge of the selectivity ogive, the size ranges over which F operates can be arbitrarily chosen). Here l<sub>c</sub> (length at first capture) and l<sub>r</sun> (length at full recruitment) were chosen a priori based on characteristics of the catch data.
   
 Assumptions:
 * Constant recruitment to the earliest age-class (age 0).
@@ -468,8 +468,8 @@ Caveats:
 
 Data/information requirements:
 * Bertalanffy growth parameters K and L∞
-* Length of first capture Lc
-* Mean length of animals larger than Lc
+* Length of first capture L<sub>c</sub>
+* Mean length of animals larger than L<sub>c</sub>
 * Length frequency time series
   
 Assumptions:
@@ -477,9 +477,9 @@ Assumptions:
   1 asymptotic growth with known parameters K and L∞, which are constant over time
   2 no individual variability in growth
   3 constant and continuous recruitment over time
-  4 the mortality rate is constant with age for all ages greater than tc;
+  4 the mortality rate is constant with age for all ages greater than t<sub>c</sub>;
   5 the mortality rate is constant over time
-* Knife-edge selection by fisheries at Lc
+* Knife-edge selection by fisheries at L<sub>c</sub>
   
 Outputs expected:
 *Estimates of historical total mortality
@@ -504,24 +504,26 @@ Caveats:
 
 ### [Cope, J. M. and A.E. Punt (2009). Length‐based reference points for data‐limited situations: applications and restrictions. Marine and Coastal Fisheries: Dynamics, Management, and Eco-system Science 1: 169–186.](http://www.bioone.org/doi/abs/10.1577/c08-025.1)
 
-[Abstract:](http://www.bioone.org/doi/abs/10.1577/c08-025.1) Current fisheries management policies generally require an assessment of stock status, which is a difficult task when population and fisheries data are limited. Three simple metrics based on catch length compositions (i.e., that reflect exclusive take of mature individuals, Pmat; that consist primarily of fish of optimal size, the size at which the highest yield from a cohort occurs, Popt; and that demonstrate the conservation of large, mature individuals, Pmega) can be used to monitor population status relative to exploitation. The metrics (collectively referred to as Px) were intended to avoid growth and recruitment overfishing, but there was no quantitative linkage to stock status and calculation of future sustainable catches. We attempt to make this connection by exploring the relationship of Px measures to fishing mortality and spawning biomass (SB). The relationships are compared specifically to the current target reference point (0.4 times the virgin, or unfished, SB [SB0]) and limit reference point (0.25SB0) used for the U.S. West Coast groundfish fishery by using simulations based on a deterministic age-structured population dynamics model. Sensitivity to fishery selectivity, life history traits, and recruitment compensation (steepness) is explored. Each Px measure showed a wide range of possible values depending on fishery selectivity, steepness, and the ratio of the length at maturity (Lmat) to the optimal fishing length (Lopt). Although the values of Px may be compatible with sustainable fishing, these values are not always sufficient to ensure stock protection from overfishing. Moreover, values for Px cannot be interpreted adequately without knowledge of the selectivity pattern. A new measure, Pobj (the sum of Pmat, Popt, and Pmega), is introduced to distinguish selectivity patterns and construct a decision tree for development of stock status indicators. Heuristic indicator values are presented to demonstrate the utility of this approach. Although several caveats remain, this approach builds on the recommendations of previous literature by giving further guidance related to interpreting catch length composition data under variable fishery conditions without collecting additional information. It also provides a link to developing harvest control rules that inform proactive fisheries management under data-limited conditions.
+[Abstract:](http://www.bioone.org/doi/abs/10.1577/c08-025.1) Current fisheries management policies generally require an assessment of stock status, which is a difficult task when population and fisheries data are limited. Three simple metrics based on catch length compositions (i.e., that reflect exclusive take of mature individuals, Pmat; that consist primarily of fish of optimal size, the size at which the highest yield from a cohort occurs, Popt; and that demonstrate the conservation of large, mature individuals, Pmega) can be used to monitor population status relative to exploitation. The metrics (collectively referred to as Px) were intended to avoid growth and recruitment overfishing, but there was no quantitative linkage to stock status and calculation of future sustainable catches. We attempt to make this connection by exploring the relationship of Px measures to fishing mortality and spawning biomass (SB). The relationships are compared specifically to the current target reference point (0.4 times the virgin, or unfished, SB [SB0]) and limit reference point (0.25SB0) used for the U.S. West Coast groundfish fishery by using simulations based on a deterministic age-structured population dynamics model. Sensitivity to fishery selectivity, life history traits, and recruitment compensation (steepness) is explored. Each Px measure showed a wide range of possible values depending on fishery selectivity, steepness, and the ratio of the length at maturity (L<sub>mat</sub>) to the optimal fishing length (L<sub>opt</sub>). Although the values of Px may be compatible with sustainable fishing, these values are not always sufficient to ensure stock protection from overfishing. Moreover, values for Px cannot be interpreted adequately without knowledge of the selectivity pattern. A new measure, P<sub>obj</sub> (the sum of P<sub>mat</sub>, P<sub>opt</sub>, and P<sub>mega</sub>), is introduced to distinguish selectivity patterns and construct a decision tree for development of stock status indicators. Heuristic indicator values are presented to demonstrate the utility of this approach. Although several caveats remain, this approach builds on the recommendations of previous literature by giving further guidance related to interpreting catch length composition data under variable fishery conditions without collecting additional information. It also provides a link to developing harvest control rules that inform proactive fisheries management under data-limited conditions.
 
 Data/information requirements:
 * Catch length composition data
-* Estimates of Lmat and Lopt (length at 50% maturity and length at which the biomass of a cohort is maximized)
+* Estimates of L<sub>mat</sub> and L<sub>opt</sub> (length at 50% maturity and length at which the biomass of a cohort is maximized)
   
 Assumptions:
 * Catch length composition is representative of fishery catch at length
   
 Outputs expected:
 * Statement about selectivity of the fishery and whether the spawning biomass is at or above reference points
-* Reference (trigger) points for Pmat, Popt and Pmega for individual stocks
+* Reference (trigger) points for P<sub>mat</sub>, P<sub>opt</sub> and P<sub>mega</sub> for individual stocks
   
 Method of operation:
 * Based on the ideas of Froese (2004), calculation of the three values:
-* P_mat= ∑_(L_mat)^(L_max) P_L ; P_opt= ∑_(0.9L_opt)^(1.1L_opt) P_L ; P_mega= ∑_(1.1L_opt)^(L_max) P_L 
-(PL is proportion of catch that is in length-class L, Lmat is length at 50% maturity, Lmax is maximum length, Lopt is the length at which the biomass of a cohort is maximized)
-* Calculation of objective value: P_obj=P_mat+P_opt+P_mega
+
+* ![Pmat]() 
+
+(PL is proportion of catch that is in length-class L, Lmat is length at 50% maturity, L<sub>max</sub> is maximum length, L<sub>opt</sub> is the length at which the biomass of a cohort is maximized)
+* Calculation of objective value: P<sub>obj</sub> = P<sub>mat</sub> + P<sub>opt</sub>+P<sub>mega</sub>
 * Statement about the stock by using the following decision tree:  
 	
 Testing:
@@ -896,12 +898,12 @@ Assumptions:
 * The status of a population is a function of its life-history traits and harvest history, and the manner in which these variables collectively affect fishery status is consistent across species with similar characteristics.
 
 Outputs expected:
-* An estimate of B/BMSY with 95% confidence intervals
+* An estimate of B/B<sub>MSY</sub> with 95% confidence intervals
 
 Method of operation:
-* mPRM is a regression model that estimates log(B/BMSY) from predictors of stock status, and  was trained on a subset of assessed fisheries from the [RAM Legacy database](http://www.ramlegacy.org/). This model is used to predict the status of unassessed fisheries using the same regression coefficients as estimated for the assessed species.
+* mPRM is a regression model that estimates log(B/B<sub>MSY</sub>) from predictors of stock status, and  was trained on a subset of assessed fisheries from the [RAM Legacy database](http://www.ramlegacy.org/). This model is used to predict the status of unassessed fisheries using the same regression coefficients as estimated for the assessed species.
 * The mPRM only uses the “developed” period of a fishery, which is defined as the period that begins once catch exceeds 15% of the maximum catch recorded for that fishery.
-* It is necessary to correct for a retransformation bias as mPRM predicts log(B/BMSY).
+* It is necessary to correct for a retransformation bias as mPRM predicts log(B/B<sub>MSY</sub>).
 
 Caveats:
 * This approach is not suitable for formal assessment as it does not produce precise estimates for individual fisheries.
@@ -1006,7 +1008,7 @@ Method of operation:
 The aim of this paper was to use simulation to test the reliability of the Froese and Kesner-Reyes (2002) and Kleisner and Pauly (2011) catch-based methods, and compare this to the reliability of two stock assessment methods that use additional fishing effort data.
 
 Testing:
-This paper evaluates the reliability of the [Froese and Kesner-Reyes (2002)](#froese-r-and-k-kesner-reyes-2002-impact-of-fishing-on-the-abundance-of-marine-species-ices-document-cm-2002l-12-15-pp) and [Kleisner and Pauly (2011)](#kleisner-k-and-d-pauly-2011-stock-status-plots-of-fisheries-for-regional-seas-in-christensen-v-lai-s-palomares-m-l-d-zeller-d-and-pauly-d-eds-the-state-of-biodiversity-and-fisheries-in-regional-seas-fisheries-centre-research-reports-193-fisheries-centre-university-of-british-columbia-pp-37-40-issn-1198-6727) catch-based methods under a range of simulated fishery development and exploitation scenarios. Success rate and bias were quantified by comparing the stock status (final year) conclusions of the two catch-based methods to reference points (BMSY and FMSY) obtained from the simulated ‘truth’.
+This paper evaluates the reliability of the [Froese and Kesner-Reyes (2002)](#froese-r-and-k-kesner-reyes-2002-impact-of-fishing-on-the-abundance-of-marine-species-ices-document-cm-2002l-12-15-pp) and [Kleisner and Pauly (2011)](#kleisner-k-and-d-pauly-2011-stock-status-plots-of-fisheries-for-regional-seas-in-christensen-v-lai-s-palomares-m-l-d-zeller-d-and-pauly-d-eds-the-state-of-biodiversity-and-fisheries-in-regional-seas-fisheries-centre-research-reports-193-fisheries-centre-university-of-british-columbia-pp-37-40-issn-1198-6727) catch-based methods under a range of simulated fishery development and exploitation scenarios. Success rate and bias were quantified by comparing the stock status (final year) conclusions of the two catch-based methods to reference points (B<sub>MSY</sub> and F<sub>MSY</sub>) obtained from the simulated ‘truth’.
 * Success rate was calculated as the fraction of simulations the methods correctly classified.
   * The success rate of the Froese and Kesner-Reyes (2002) method was 34% and the success rate of the Kleisner and Pauly (2011) method was 31%. Hence both methods are error-prone, but average success rates are above the 20% that could be expected by random selection of stock classification.
   * Both models were unable to achieve success rates appreciably higher than random selection when the current spawning stock level is higher than 10% unfished biomass.
