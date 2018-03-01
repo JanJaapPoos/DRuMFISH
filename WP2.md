@@ -629,7 +629,7 @@ Ability to project forward/forecast:
 
 ### [Hordyk, A., Ono, K., Sainsbury, K., Loneragen, N. and J. Prince (2015a). Some explorations of the life history ratios to describe length composition, spawning-per-recruit and the spawning potential ratio. ICES Journal of Marine Science, 72(1): 204-216.](https://academic.oup.com/icesjms/article/72/1/204/815363/Some-explorations-of-the-life-history-ratios-to)
 
-[Abstract:](https://academic.oup.com/icesjms/article/72/1/204/815363/Some-explorations-of-the-life-history-ratios-to) Evaluating the status of data-poor fish stocks is often limited by incomplete knowledge of the basic life history parameters: the natural mortality rate (M), the von Bertalanffy growth parameters (L and k), and the length at maturity (Lm). A common approach to estimate these individual parameters has been to use the Beverton–Holt life history invariants, the ratios M/k and Lm/L, especially for estimating M. In this study, we assumed no knowledge of the individual parameters, and explored how the information on life history strategy contained in these ratios can be applied to assessing data-poor stocks. We developed analytical models to develop a relationship between M/k and the von Bertalanffy growth curve, and demonstrate the link between the life history ratios and yield- and spawning-per-recruit. We further developed the previously recognized relationship between M/k and yield- and spawning-per-recruit by using information on Lm/L, knife-edge selectivity (Lc/L), and the ratio of fishing to natural mortality (F/M), to demonstrate the link between an exploited stock’s expected length composition, and its spawning potential ratio (SPR), an internationally recognized measurement of stock status. Variation in length-at-age and logistic selectivity patterns were incorporated in the model to demonstrate how SPR can be calculated from the observed size composition of the catch; an advance which has potential as a cost-effective method for assessing data-poor stocks. A companion paper investigates the effects of deviations in the main assumptions of the model on the application of the analytical models developed in this study as a cost-effective method for stock assessment [Hordyk, A. R., Ono, K., Valencia, S., Loneragan, N. R., and Prince, J. D. this issue. A novel length based empirical estimation method of spawning potential ratio (SPR), and tests of its performance, for small-scale, data-poor fisheries. ICES Journal of Marine Science].
+[Abstract:](https://academic.oup.com/icesjms/article/72/1/204/815363/Some-explorations-of-the-life-history-ratios-to) Evaluating the status of data-poor fish stocks is often limited by incomplete knowledge of the basic life history parameters: the natural mortality rate (M), the von Bertalanffy growth parameters (L∞ and k), and the length at maturity (Lm). A common approach to estimate these individual parameters has been to use the Beverton–Holt life history invariants, the ratios M/k and Lm/L∞, especially for estimating M. In this study, we assumed no knowledge of the individual parameters, and explored how the information on life history strategy contained in these ratios can be applied to assessing data-poor stocks. We developed analytical models to develop a relationship between M/k and the von Bertalanffy growth curve, and demonstrate the link between the life history ratios and yield- and spawning-per-recruit. We further developed the previously recognized relationship between M/k and yield- and spawning-per-recruit by using information on Lm/L∞, knife-edge selectivity (Lc/L∞), and the ratio of fishing to natural mortality (F/M), to demonstrate the link between an exploited stock’s expected length composition, and its spawning potential ratio (SPR), an internationally recognized measurement of stock status. Variation in length-at-age and logistic selectivity patterns were incorporated in the model to demonstrate how SPR can be calculated from the observed size composition of the catch; an advance which has potential as a cost-effective method for assessing data-poor stocks. A companion paper investigates the effects of deviations in the main assumptions of the model on the application of the analytical models developed in this study as a cost-effective method for stock assessment [Hordyk, A. R., Ono, K., Valencia, S., Loneragan, N. R., and Prince, J. D. this issue. A novel length based empirical estimation method of spawning potential ratio (SPR), and tests of its performance, for small-scale, data-poor fisheries. ICES Journal of Marine Science].
 
 Data/information requirements:
 * Knowledge of the proportion of population that survive to some maximum age tmax in virgin state, which is used to estimate M.
@@ -664,14 +664,14 @@ Data/information requirements:
   
 Assumptions:
 * Model follows the size-based theory of exploited fish stocks (Andersen and Beyer, 2013)
-* A species-independent set of life-history parameters together with asymptotic size W define a stock
+* A species-independent set of life-history parameters together with asymptotic size W∞ define a stock
 * The model assumes steady-state, and uses a Beverton-Holt stock-recruit function, von Bertalanffy growth parameters, size-dependent M, and a sigmoid curve for selection.
   
 Outputs expected:
 * Distribution of F/Fmsy (with sensitivity intervals defined by scanning over a range of plausible physiological mortality values) for each year of available catch-at-size data
   
 Method of operation:
-* Given catch-at-size data and a life-history parameter set (if available), the model estimates only three parameters, namely fishing mortality, asymptotic weight W and the size at 50% retainment. All other parameters are constant during the estimation.
+* Given catch-at-size data and a life-history parameter set (if available), the model estimates only three parameters, namely fishing mortality, asymptotic weight W∞ and the size at 50% retainment. All other parameters are constant during the estimation.
 	
 Testing:
 * Simulation testing was based on 100 artificial stocks, with 20 catch-at-size data sets (each with 10 000 individuals) with varying fishing mortality (ranging from 0.1Fmsy to 2Fmsy) generated for each. The analysis was repeated for three asymptotic weights (0.1, 1 and 10 kg).
@@ -2290,7 +2290,7 @@ The extent of uncertainty, as reflected by pre-specified distributions, may need
 
 Data/information requirements:
 For survey-based HCRs: time series of survey biomass indices (survey-based HCR) 
-For length-based HCR: current mean length in the catch, mean length at first capture (Lc), and the von Bertalanffy growth parameters L.
+For length-based HCR: current mean length in the catch, mean length at first capture (Lc), and the von Bertalanffy growth parameters L∞.
 	
 Assumptions:
 For survey-based HCRs: Survey biomass indices reflect unbiased population trends
@@ -2302,7 +2302,7 @@ HCRs that can be applied to obtain catch advice in data-limited scenarios that a
 Method of operation:
 Survey-based HCR1: calculate the ratio of the mean of the most recent two years relative to the mean of the three preceding years for the survey biomass index, and apply this ratio to recent catch to obtain catch advice
 Survey-based HCR2: compare the most recent survey index to survey confidence intervals based on survey means and standard deviations that are continuously updated with new data, and apply a multiplier depending on whether the recent index is above or below the survey confidence interval. Apply this multiplier to recent catch to obtain catch advice. The interval need not be symmetrical, nor the multipliers equal.
-Length-based HCR3: calculate the ratio of the current mean length in the catch (LSQ) o the mean length used as a proxy for the mean catch length at MSY (LF=M=0.75Lc+0.25L), and apply this ratio to recent catch to obtain catch advice
+Length-based HCR3: calculate the ratio of the current mean length in the catch (LSQ) o the mean length used as a proxy for the mean catch length at MSY (LF=M=0.75Lc+0.25L∞), and apply this ratio to recent catch to obtain catch advice
 
 Testing:
 Testing within an MSE framework (FLR), accounting for observation, process and implementation error.
