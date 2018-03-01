@@ -4,7 +4,7 @@
 In DrumFish we have added new elements to the model in order to facilitate the evaluation of management procedures in a data limited and mixed fisheries context. 
 
 ## SPiCT and a4a
-Wrappers of a4a [(Jardim et al. 2014)](https://academic.oup.com/icesjms/article/72/1/232/2804293) and SPicT [(Pedersen and Berg 2017)](http://onlinelibrary.wiley.com/doi/10.1111/faf.12174/abstract) models have been developed and incorporated to the FLBEIA R package.  Now, these models can be used within the management procedure to produce estimates of the real stock abundance and exploitation rate simulated in the Operating Model. The models can be combined with observation errors and Harvest control rules to carry out an integrate evaluation of the performance of the management procedures.
+Wrappers of a4a [(Jardim et al. 2015)](https://academic.oup.com/icesjms/article/72/1/232/2804293) and SPicT [(Pedersen and Berg 2017)](http://onlinelibrary.wiley.com/doi/10.1111/faf.12174/abstract) models have been developed and incorporated to the FLBEIA R package.  Now, these models can be used within the management procedure to produce estimates of the real stock abundance and exploitation rate simulated in the Operating Model. The models can be combined with observation errors and Harvest control rules to carry out an integrate evaluation of the performance of the management procedures.
 
 ## MultiStock Harvest Control Rule
 A multistock HCR (Garcia et al. 2016) have been defined and incorporated to the library. This HCR produces simultaneous management advice for the stocks selected. The main aim of the HCR is to maximize fishing opportunities while ensuring sustainability of the stocks. To achieve it we imposed the restrictions below:
@@ -79,13 +79,13 @@ For some initial values the approach described above does not work because some 
 ## References
 Carruthers, T. R., A. E. Punt, et al. (2014) "Evaluating methods for setting catch limits in data-limited fisheries." Fisheries Research 153: 48-68.
 
-Fernandez, C., S. Cerviño, et al. (2010) "Stock assessment and projections incorporating discard estimates in some years: an application to the hake stock in ICES Divisions VIIIc and IXa 10.1093/icesjms/fsq029." ICES Journal of Marine Science: Journal du Conseil 67(6): 1185-1197.
+Fernandez, C., S. Cerviño, et al. (2010) "Stock assessment and projections incorporating discard estimates in some years: an application to the hake stock in ICES Divisions VIIIc and IXa 10.1093/icesjms/fsq029." ICES Journal of Marine Science 67(6): 1185-1197.
 
-Garcia, D., R. Prellezo, et al. (2016) "A multi-stock harvest control rule as a step towards an ecosystem based fisheries management." Working Document presented to the ICES WKMIXFISH working group, October 2016 and in the ICES annual sciencitic conference, Riga (2016).
+Garcia, D., R. Prellezo, et al. (2016) "A multi-stock harvest control rule as a step towards an ecosystem based fisheries management." Working Document presented to the ICES WKMIXFISH working group, October 2016 and in the ICES annual scientific conference, Riga (2016).
 
 Garcia, D., S. Sánchez, et al. (2017) "FLBEIA: A simulation model to conduct Bio-Economic evaluation of fisheries management strategies." SoftwareX 6: 141-147.
 
-Jardim, E., C. P. Millar, et al. (2014) "What if stock assessment is as simple as a linear model? The a4a initiative." ICES Journal of Marine Science: Journal du Conseil.
+Jardim, E., C. P. Millar, et al. (2015) "What if stock assessment is as simple as a linear model? The a4a initiative." ICES Journal of Marine Science 72: 232-236.
 
 Pedersen, M. W. and C. W. Berg (2017) "A stochastic surplus production model in continuous time." Fish and Fisheries 18(2): 226-243.
 
