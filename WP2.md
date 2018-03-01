@@ -717,12 +717,12 @@ Data/information requirements:
 Assumptions:
 * Assumes a model in which catches for a fish population increase during fisheries development and subsequently decline as fisheries become increasingly exploited. 
 * Given a time series of catch data, the total production per year is calculated. This is then used to classify the status of the fishery in any given year into one of the following (arbitrary) development stages:
-  * Undeveloped: C<sub>cur</<sub> before C<sub>max</<sub> and C<sub>cur</sub> < 0.1 C<sub>max</<sub>.
-  * Developing: C<sub>cur</<sub> before C<sub>max</<sub> and 0.1 C<sub>max</<sub> < C<sub>cur</<sub> < 0.5 C<sub>max</<sub>.
-  * Fully exploited: C<sub>cur</<sub> > 0.5 C<sub>max</<sub>.
-  * Overfished: C<sub>cur</<sub> after C<sub>max</<sub> and 0.1 C<sub>max</<sub> < C<sub>cur</<sub> < 0.5 C<sub>max</<sub>.
-  * Collapsed/Closed: C<sub>cur</<sub> after C<sub>max</<sub> and C<sub>cur</<sub> < 0.1 C<sub>max</<sub>.
-Where C<sub>cur</<sub> is the current catch and C<sub>max</<sub> is the maximum catch in the time series.
+  * Undeveloped: C<sub>cur</sub> before C<sub>max</sub> and C<sub>cur</sub> < 0.1 C<sub>max</sub>.
+  * Developing: C<sub>cur</sub> before C<sub>max</sub> and 0.1 C<sub>max</sub> < C<sub>cur</sub> < 0.5 C<sub>max</sub>.
+  * Fully exploited: C<sub>cur</sub> > 0.5 C<sub>max</sub>.
+  * Overfished: C<sub>cur</sub> after C<sub>max</sub> and 0.1 C<sub>max</sub> < C<sub>cur</sub> < 0.5 C<sub>max</sub>.
+  * Collapsed/Closed: C<sub>cur</sub> after C<sub>max</sub> and C<sub>cur</sub> < 0.1 C<sub>max</sub>.
+Where C<sub>cur</sub> is the current catch and C<sub>max</sub> is the maximum catch in the time series.
 * The first and last year are excluded as the ‘after maximum year’ and ‘before maximum year’ criteria cannot be applied to them.
 * Assumes catch data are representative of changes in abundance.
 
