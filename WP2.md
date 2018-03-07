@@ -482,11 +482,11 @@ Assumptions:
 * Knife-edge selection by fisheries at L<sub>c</sub>
   
 Outputs expected:
-*Estimates of historical total mortality
-*Estimates about years in which changes in mortality occurred in history
+* Estimates of historical total mortality
+* Estimates about years in which changes in mortality occurred in history
   
 Method of operation:
-*Beverton—Holt mortality estimator
+* Beverton—Holt mortality estimator
   * Extended for the case that population is not in equilibrium
 * Maximum likelihood estimation 
 * Year(s) of change in mortality determined either by repeating the model iteratively for all possible years or by estimating within the maximization procedure
