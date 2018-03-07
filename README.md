@@ -6,7 +6,7 @@ In order to meet the project aim, we are in the process of undertaking a review 
 
 The project is structured in several work packages, each reflecting a part of the work envisaged in the project. In the “Review” work package a review is conducted of methods for data-poor stock assessment. This work package will finish in spring 2017 and the results will be disseminated.
 
-The review identified two methods that have already been used within the ICES advisory system and provide the required tools for DRUMFISH: catch-MSY (CMSY, Martel and Froese 2013) for data-limited cases, and the stochastic surplus production model in continuous time (SPiCT, Pedersen and Berg in press) for data-moderate cases. These methods produce consistent outputs, and can be straight-forwardly incorporated into the simulation tools currently available for DRUMFISH.
+The review identified two methods that have already been used within the ICES advisory system and provide the required tools for DRUMFISH: catch-MSY (CMSY, Martell and Froese 2013) for data-limited cases, and the stochastic surplus production model in continuous time (SPiCT, Pedersen and Berg 2017) for data-moderate cases. These methods produce consistent outputs, and can be straight-forwardly incorporated into the simulation tools currently available for DRUMFISH.
 
 In the “Simulation test” work package we focus on the identification of tools to conduct mixed-fisheries simulations. This work package will develop the methods required to incorporate the data poor stocks in simulation frameworks. This work package will finish towards the end of 2017.
 
