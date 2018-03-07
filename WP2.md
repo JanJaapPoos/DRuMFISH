@@ -432,7 +432,7 @@ Data/information requirements:
 * An age-length relationship (e.g., von Bertalanffy)
 * A length-egg production (or biomass) relationship. If not available, a length-weight relationship may be substituted, as weight can be correlated with fecundity
 * An estimate of M
-* Size boundaries for the selectivity of F (without independent knowledge of the selectivity ogive, the size ranges over which F operates can be arbitrarily chosen). Here l<sub>c</sub> (length at first capture) and l<sub>r</sun> (length at full recruitment) were chosen a priori based on characteristics of the catch data.
+* Size boundaries for the selectivity of F (without independent knowledge of the selectivity ogive, the size ranges over which F operates can be arbitrarily chosen). Here l<sub>c</sub> (length at first capture) and l<sub>r</sub> (length at full recruitment) were chosen a priori based on characteristics of the catch data.
   
 Assumptions:
 * Constant recruitment to the earliest age-class (age 0).
