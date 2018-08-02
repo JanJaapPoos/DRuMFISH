@@ -2638,6 +2638,5 @@ Figure 1: From Newman et al. 2015: OFL/ABC setting methods by region. Respective
 
 Abstract: Estimation of population abundances in the absence of good observational data are notoriously difficult, yet urgently needed for biodiversity conservation and sustainable use of natural resources. In the field of fisheries research, management regulations have long demanded population abundance estimates even if data available are sparse, leading to the development of a range of fish stock assessment methods designed for data-poor populations. Here, we present methods developed within the context of fisheries research that can be applied to conduct population abundance estimations when facing data-limitations. We begin the review from the less data-demanding approaches and continue with more data-intensive ones. We discuss the advantages and caveats of these approaches, the challenges and management implications associated with data-poor stock assessments, and we propose the implementation of the Bayesian hierarchical framework as the most promising avenue for future development and improvement of the current practices.
 
-
-
-
+## Funding
+The DRuMFISH project was funded under EU Service Contract N° EASME/EMFF/2014/1.3.2.4/SI2.721116. Ownership of all results is by EASME, the Contracting Authority.
