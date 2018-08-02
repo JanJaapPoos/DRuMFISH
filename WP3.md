@@ -94,4 +94,6 @@ Polacheck, T., R. Hilborn, et al. (1993) "Fitting Surplus Production Models: Com
 Punt, A. E., D. S. Butterworth, et al. (2016) "Management strategy evaluation: best practices." Fish and Fisheries 17(2): 303-334.
 
 
+## Funding
+The DRuMFISH project was funded under EU Service Contract N° EASME/EMFF/2014/1.3.2.4/SI2.721116. Ownership of all results is by EASME, the Contracting Authority.
 
