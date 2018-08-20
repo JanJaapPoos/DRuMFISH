@@ -15,3 +15,5 @@ The project organized a seminar on “management of data poor stocks in mixed fi
 ### Funding
 
 The DRuMFISH project was funded under EU Service Contract N° EASME/EMFF/2014/1.3.2.4/SI2.721116. Ownership of all results is by EASME, the Contracting Authority.
+
+The information and views set out in this webpage are those of the author(s) and do not necessarily reflect the official opinion of the Executive Agency for Small- and Medium-sized Enterprises (EASME) or of the European Commission. Neither EASME, nor the Commission can guarantee the accuracy of the data included in this webpage. Neither EASME, nor the Commission or any person acting on their behalf may be held responsible for the use which may be made of the information contained therein.
